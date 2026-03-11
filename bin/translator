@@ -42,7 +42,7 @@ for x in $@; do
 
    if [[ "$x" == *"sum1.ph2.xml"* ]]; then
       base=`basename $x .ph2.xml`
-      phase3ParseXmlSummary1 $electionDate $countyNum <$x  >/tmp/j3
+      phase3ParseXmlSummary1.php $electionDate $countyNum <$x  >/tmp/j3
       cp /tmp/j3 $base.ph3.tsv
 
    elif [[ "$x" == *"column.ph2.xml"* ]]; then
@@ -77,7 +77,7 @@ for x in $@; do
    fi
 
    if test "$state" = "n"; then
-      phase4IgnoreRaces   <$base.ph3.tsv >/tmp/j4
+      phase4IgnoreRaces.php   <$base.ph3.tsv >/tmp/j4
       cp /tmp/j4 $base.ph4.tsv
    
       phase5ParseVotes    <$base.ph4.tsv >/tmp/j5
