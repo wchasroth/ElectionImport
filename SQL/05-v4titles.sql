@@ -1,0 +1,5 @@
+DROP   TABLE IF EXISTS v4titles;
+
+CREATE TABLE v4titles LIKE title26;
+
+INSERT INTO  v4titles SELECT * FROM title26;
