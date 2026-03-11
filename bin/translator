@@ -42,25 +42,25 @@ for x in $@; do
 
    if [[ "$x" == *"sum1.ph2.xml"* ]]; then
       base=`basename $x .ph2.xml`
-      phase3ParseXmlSummary1.php $electionDate $countyNum <$x  >/tmp/j3
+      phase03ParseXmlSummary1.php $electionDate $countyNum <$x  >/tmp/j3
       cp /tmp/j3 $base.ph3.tsv
 
    elif [[ "$x" == *"column.ph2.xml"* ]]; then
       base=`basename $x .ph2.xml`
-      phase3ParseColumn $electionDate $countyNum <$x  >/tmp/j3
+      phase03ParseColumn $electionDate $countyNum <$x  >/tmp/j3
       cp /tmp/j3 $base.ph3.tsv
 
    elif [[ "$x" == *"clarity.ph1.csv"* ]]; then
       base=`basename $x .ph1.csv`
-      phase3Clarity  $electionDate $countyNum     <$x  >$base.ph3.tsv
+      phase03Clarity  $electionDate $countyNum     <$x  >$base.ph3.tsv
 
    elif [[ "$x" == *"clarity.ph1.html"* ]]; then
       base=`basename $x .ph1.html`
-      phase3ClarityHtml  $electionDate $countyNum <$x  >$base.ph3.tsv
+      phase03ClarityHtml  $electionDate $countyNum <$x  >$base.ph3.tsv
 
    elif [[ "$x" == *"json.ph1.json"* ]]; then
       base=`basename $x .ph1.json`
-      phase3ParseJson $x  >$base.ph3.tsv
+      phase03ParseJson $x  >$base.ph3.tsv
 
    elif [[ "$x" == *"state.ph1.csv"* ]]; then
       base=`basename $x .ph1.csv`
@@ -77,19 +77,19 @@ for x in $@; do
    fi
 
    if test "$state" = "n"; then
-      phase4IgnoreRaces.php   <$base.ph3.tsv >/tmp/j4
+      phase04IgnoreRaces.php  <$base.ph3.tsv >/tmp/j4
       cp /tmp/j4 $base.ph4.tsv
    
-      phase5ParseVotes    <$base.ph4.tsv >/tmp/j5
+      phase05ParseVotes.php   <$base.ph4.tsv >/tmp/j5
       cp /tmp/j5 $base.ph5.tsv
    
-      phase6ParseOrg      <$base.ph5.tsv >/tmp/j6  $debug
+      phase06ParseOrg         <$base.ph5.tsv >/tmp/j6  $debug
       cp /tmp/j6 $base.ph6.tsv
    
-      phase7Districts     <$base.ph6.tsv >/tmp/j7  $debug
+      phase07Districts        <$base.ph6.tsv >/tmp/j7  $debug
       cp /tmp/j7 $base.ph7.tsv
    fi
 
-   phase8TermLenFinder <$base.ph7.tsv >/tmp/j8
+   phase08TermLenFinder <$base.ph7.tsv >/tmp/j8
    cp /tmp/j8 $base.ph8.tsv
 done
