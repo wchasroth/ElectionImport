@@ -1,6 +1,6 @@
 <?php
 
-namespace CharlesRothDotNet\ImportTools;
+namespace CharlesRothDotNet\ElectionImport;
 
 class Column {
    public const YEAR      =  0;

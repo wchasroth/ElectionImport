@@ -10,7 +10,7 @@ declare(strict_types=1);
 // of the locale.  That problem makes this tool necessary, because the raw HTML *does* contain the full
 // title and locale, that we need.
 
-namespace CharlesRothDotNet\ImportTools;
+namespace CharlesRothDotNet\ElectionImport;
 
 use DOMDocument;
 use CharlesRothDotNet\Alfred\Str;
