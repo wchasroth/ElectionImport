@@ -2,11 +2,11 @@
 <?php
 declare(strict_types=1);
 
-namespace CharlesRothDotNet\ImportTools;
+namespace CharlesRothDotNet\ElectionImport;
 
 use CharlesRothDotNet\Alfred\Csv;
 use CharlesRothDotNet\Alfred\Str;
-use CharlesRothDotNet\ImportTools\Column;
+use CharlesRothDotNet\ElectionImport\Column;
 
 require "vendor/autoload.php";
 

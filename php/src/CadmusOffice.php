@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace CharlesRothDotNet\ImportTools;
+namespace CharlesRothDotNet\ElectionImport;
 
 use CharlesRothDotNet\Alfred\Str;
 

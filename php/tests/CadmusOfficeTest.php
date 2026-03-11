@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\Test;
 
 use CharlesRothDotNet\Alfred\Str;
-use CharlesRothDotNet\ImportTools\CadmusOffice;
+use CharlesRothDotNet\ElectionImport\CadmusOffice;
 
 class CadmusOfficeTest extends TestCase {
    #[Test]

@@ -83,10 +83,10 @@ for x in $@; do
       phase05ParseVotes.php   <$base.ph4.tsv >/tmp/j5
       cp /tmp/j5 $base.ph5.tsv
    
-      phase06ParseOrg         <$base.ph5.tsv >/tmp/j6  $debug
+      phase06ParseOrg.php     <$base.ph5.tsv >/tmp/j6  $debug
       cp /tmp/j6 $base.ph6.tsv
    
-      phase07Districts        <$base.ph6.tsv >/tmp/j7  $debug
+      phase07Districts.php    <$base.ph6.tsv >/tmp/j7  $debug
       cp /tmp/j7 $base.ph7.tsv
    fi
 
