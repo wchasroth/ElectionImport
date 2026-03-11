@@ -1,0 +1,31 @@
+{
+    "name": "charlesrothdotnet/electionimport",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "CharlesRothDotNet\\ElectionImport\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Charles Roth",
+            "email": "wchasroth@thedance.net"
+        }
+    ],
+    "require": {
+        "charlesrothdotnet/alfred": "dev-main",
+        "google/apiclient": "^2.18",
+        "om/icalparser": "^3.1",
+        "paquettg/php-html-parser": "^2.2",
+        "google-gemini-php/client": "^2.6",
+        "gemini-api-php/client": "^1.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.4"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
