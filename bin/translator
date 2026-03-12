@@ -90,6 +90,6 @@ for x in $@; do
       cp /tmp/j7 $base.ph7.tsv
    fi
 
-   phase08TermLenFinder <$base.ph7.tsv >/tmp/j8
+   phase08TermLenFinder.php <$base.ph7.tsv >/tmp/j8
    cp /tmp/j8 $base.ph8.tsv
 done
