@@ -47,7 +47,7 @@ for x in $@; do
 
    elif [[ "$x" == *"column.ph2.xml"* ]]; then
       base=`basename $x .ph2.xml`
-      phase03ParseColumn $electionDate $countyNum <$x  >/tmp/j3
+      phase03ParseColumn.py $electionDate $countyNum <$x  >/tmp/j3
       cp /tmp/j3 $base.ph3.tsv
 
    elif [[ "$x" == *"clarity.ph1.csv"* ]]; then
@@ -60,11 +60,13 @@ for x in $@; do
 
    elif [[ "$x" == *"json.ph1.json"* ]]; then
       base=`basename $x .ph1.json`
-      phase03ParseJson $x  >$base.ph3.tsv
+      name=`basename $x`
+      county=`echo $name | sed "s/-.*$//"`
+      phase03ParseJson.py $county <$x  >$base.ph3.tsv
 
    elif [[ "$x" == *"state.ph1.csv"* ]]; then
       base=`basename $x .ph1.csv`
-      parseStateResultsTsv <$x >$base.ph7.tsv   # Note phase SEVEN!
+      parseStateResultsTsv.php <$x >$base.ph7.tsv   # Note phase SEVEN!
       state="y"
 
    elif [[ "$x" == *"man.ph2.man"* ]]; then

@@ -20,7 +20,7 @@ use DOMXPath;
 require "vendor/autoload.php";
 
 if ($argc < 3) {
-   fwrite(STDERR, "Usage: php phase2ClarityHtml.php yyyy-mm-dd county#\n");
+   fwrite(STDERR, "Usage: phase03ClarityHtml.php yyyy-mm-dd county#\n");
    exit();
 }
 $text = file_get_contents('php://stdin');
