@@ -10,7 +10,7 @@ declare(strict_types=1);
 // of the locale.  That problem makes this tool necessary, because the raw HTML *does* contain the full
 // title and locale, that we need.
 
-namespace CharlesRothDotNet\ElectionImport;
+namespace CharlesRothDotNet\ImportTools;
 
 use DOMDocument;
 use CharlesRothDotNet\Alfred\Str;
@@ -20,7 +20,7 @@ use DOMXPath;
 require "vendor/autoload.php";
 
 if ($argc < 3) {
-   fwrite(STDERR, "Usage: phase03ClarityHtml.php yyyy-mm-dd county#\n");
+   fwrite(STDERR, "Usage: php phase2ClarityHtml.php yyyy-mm-dd county#\n");
    exit();
 }
 $text = file_get_contents('php://stdin');

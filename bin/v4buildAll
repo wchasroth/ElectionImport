@@ -32,9 +32,9 @@ for x in *; do
       fi
    fi
 done
-exit
 
 #---Remove known error files (that are really OK)
+rm barry/x.08-barry_2024-11-05.sum1.ph2.xml
 rm iron/x.36-iron_2020-11-03.sum1.ph2.xml
 rm mackinac/x.49-mackinac_2020-11-03.sum1.ph2.xml
 rm mackinac/x.49-mackinac_2021-11-02.sum1.ph2.xml
@@ -45,6 +45,8 @@ if test $xs -gt 0; then
    ls -l */x*
    exit
 fi
+
+exit
 
 #---Create the empty v4elections table
 echo "source $ELECTION_IMPORT/V4database/03-v4elections.sql" | my

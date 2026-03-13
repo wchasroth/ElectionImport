@@ -10,7 +10,7 @@ use CharlesRothDotNet\Alfred\Str;
 require "vendor/autoload.php";
 
 if ($argc < 3) {
-   fwrite(STDERR, "Usage: php phase3Clarity.php yyyy-mm-dd county#\n");
+   fwrite(STDERR, "Usage: phase03Clarity.php yyyy-mm-dd county#\n");
    exit();
 }
 $year   = $argv[1];

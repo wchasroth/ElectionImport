@@ -52,11 +52,11 @@ for x in $@; do
 
    elif [[ "$x" == *"clarity.ph1.csv"* ]]; then
       base=`basename $x .ph1.csv`
-      phase03Clarity  $electionDate $countyNum     <$x  >$base.ph3.tsv
+      phase03Clarity.php  $electionDate $countyNum     <$x  >$base.ph3.tsv
 
    elif [[ "$x" == *"clarity.ph1.html"* ]]; then
       base=`basename $x .ph1.html`
-      phase03ClarityHtml  $electionDate $countyNum <$x  >$base.ph3.tsv
+      phase03ClarityHtml.php  $electionDate $countyNum <$x  >$base.ph3.tsv
 
    elif [[ "$x" == *"json.ph1.json"* ]]; then
       base=`basename $x .ph1.json`
