@@ -34,5 +34,8 @@ for ($i=1;   $i < $rowCount;   $i++) {
    $sqlFields = new SqlFields( ['org' => $row['org'], 'office' => $row['office'], 'district' => $row['district'],
       'subdist' => $row['subdist'], 'termlen' => $row['termlen']]);
    $result = $pdo->runSF("INSERT INTO v4termlen ", "", $sqlFields);
-   if ($result->failed()) echo $result->getError() . "\n";
+   if ($result->failed()) {
+       $error = $result->getError();
+       if (! Str::contains($error, "Duplicate entry"))  echo "$error\n";
+   }
 }
