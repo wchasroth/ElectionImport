@@ -22,7 +22,7 @@ $env  = new EnvFile("_env");
 $pdo  = PdoHelper::makePdo($env);
 
 $sql = "SELECT DISTINCT org, office, district, subdist, partial, termlen, incumbent, cycle "
-     . "  FROM elections WHERE year='$year' "
+     . "  FROM v4elections WHERE year='$year' "
      . " ORDER BY org, office, district, subdist, incumbent, name";
 $result = $pdo->run($sql);
 $races  = $result->getRows();
@@ -35,7 +35,7 @@ foreach ($races as $race) {
    $fields = new SqlFields(['org' => $race['org'], 'office' => $race['office'], 'district' => $race['district'], 'subdist' => $race['subdist'],
       'partial' => $race['partial'], 'year' => $year, 'termlen' => $race['termlen'], 'incumbent' => $race['incumbent'],
       'cycle' => $race['cycle']]);
-   $result = $pdo->runSF("SELECT * FROM elections WHERE ", "", $fields);
+   $result = $pdo->runSF("SELECT * FROM v4elections WHERE ", "", $fields);
    $rows = $result->getRows();
    $rowCount = count($rows);
    ++$block;
@@ -46,7 +46,7 @@ foreach ($races as $race) {
       $row = $rows[$i];
       if (Str::contains($row['org'], "city-cou", "cnty-com")) {
          if (intval($row['voteFor']) == 0 && intval($row['subdist']) > 0) {
-            $sql = "UPDATE elections SET voteFor=1 WHERE id=" . $row['id'];
+            $sql = "UPDATE v4elections SET voteFor=1 WHERE id=" . $row['id'];
             $pdo->run($sql);
             $rows[$i]['voteFor'] = "1";
          }
@@ -57,7 +57,7 @@ foreach ($races as $race) {
    if ($rowCount == 1  &&  intval($row['voteFor']) == 0) {
       $row = $rows[0];
       if (intval($row['voteFor']) == 0) {
-         $sql = "UPDATE elections SET voteFor=1 WHERE id=" . $row['id'];
+         $sql = "UPDATE v4elections SET voteFor=1 WHERE id=" . $row['id'];
          $pdo->run($sql);
          $rows[0]['voteFor'] = "1";
          continue;
@@ -78,7 +78,7 @@ foreach ($races as $race) {
    // Case 4: some have maxVoteFor, rest have 0. Fix the ones with 0!
    $zeroes = getIdsWithVoteForCount($rows, 0);
    if (count($zeroes) + count($goodIds) == $rowCount)  {
-      $sql = "UPDATE elections SET voteFor=$maxVoteFor WHERE id IN (" . Str::join($zeroes, ',') . ")";
+      $sql = "UPDATE v4elections SET voteFor=$maxVoteFor WHERE id IN (" . Str::join($zeroes, ',') . ")";
       $pdo->run($sql);
       continue;
    }
