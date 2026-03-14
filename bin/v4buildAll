@@ -42,7 +42,7 @@ fi
 #---Create the empty v4elections table
 echo "source $ELECTION_IMPORT/SQL/03-v4elections.sql" | my
 
-#---For (ONLY) the completed counties, import the TSV files into v4elections.
+#---For (ONLY) the completed counties, import the phase8 TSV files into v4elections.
 cd $ELECTION_IMPORT/Counties
 for x in *; do
    cd $x
@@ -69,42 +69,42 @@ if test $ys -gt 0; then
 fi
 
 #---Section 3: cleaning.  Attempt to fix bad values for voteFor.
-rm -f buildAll.*
+rm -f $ELECTION_IMPORT/buildAll.*
 (
-   phase10clean  2018-11-06
-   phase10clean  2020-11-03
-   phase10clean  2021-11-02
-   phase10clean  2022-11-08
-   phase10clean  2023-11-07
-   phase10clean  2024-11-05
-   phase10clean  2025-11-04
-) 2>buildAll.clean
+   phase10clean.php  2018-11-06
+   phase10clean.php  2020-11-03
+   phase10clean.php  2021-11-02
+   phase10clean.php  2022-11-08
+   phase10clean.php  2023-11-07
+   phase10clean.php  2024-11-05
+   phase10clean.php  2025-11-04
+) 2>$ELECTION_IMPORT/buildAll.clean
 
 #---Some election reports have 'X' for unknown party.
 echo "UPDATE elections SET party='?' WHERE party='X'" | my
 
-
 #---Section 4: Dedup & Winners.  
 #   Merge races that cross counties (e.g. some school boards)
 #   Identify the winners, mark them with elections.winner=1
-rm -f buildAll.win
+rm -f $ELECTION_IMPORT/buildAll.win
 (
-   phase11dedup  2018-11-06
-   phase11dedup  2020-11-03
-   phase11dedup  2021-11-02
-   phase11dedup  2022-11-08
-   phase11dedup  2023-11-07
-   phase11dedup  2024-11-05
-   phase11dedup  2025-11-04
+   phase11dedup.php  2018-11-06
+   phase11dedup.php  2020-11-03
+   phase11dedup.php  2021-11-02
+   phase11dedup.php  2022-11-08
+   phase11dedup.php  2023-11-07
+   phase11dedup.php  2024-11-05
+   phase11dedup.php  2025-11-04
   
-   phase12win    2018-11-06
-   phase12win    2020-11-03
-   phase12win    2021-11-02
-   phase12win    2022-11-08
-   phase12win    2023-11-07
-   phase12win    2024-11-05
-   phase12win    2025-11-04
-) 2>buildAll.win
+   phase12winners.php    2018-11-06
+   phase12winners.php    2020-11-03
+   phase12winners.php    2021-11-02
+   phase12winners.php    2022-11-08
+   phase12winners.php    2023-11-07
+   phase12winners.php    2024-11-05
+   phase12winners.php    2025-11-04
+) 2>$ELECTION_IMPORT/buildAll.win
+exit
 
 #---Section 5: Apply goodparty and CER data and manually fixed termlens and voteFor's
 for s in REPORT/2*.sql; do
