@@ -81,7 +81,7 @@ foreach ($rows as $row) {
    }
 
    //---Check v4termlen to see if it has a value for this tuple.
-   $termlen = getTermLenFromV4TtermlenTable($pdo, $row[Column::ORG], $row[Column::OFFICE], $row[Column::DIST], $row[Column::SUBDIST]);
+   $termlen = getTermLenFromV4TermlenTable($pdo, $row[Column::ORG], $row[Column::OFFICE], $row[Column::DIST], $row[Column::SUBDIST]);
    if ($termlen > 0) {
       $termLenCache[$cacheKey] = $termlen;
       $row[Column::TERMLEN] = strval($termlen);
