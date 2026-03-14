@@ -12,6 +12,15 @@ use CharlesRothDotNet\Alfred\Str;
 
 require "vendor/autoload.php";
 
+//---importTermLen.
+//
+//   Reads from the 'vishu' extended format county files, and uses the 'termlen' values there
+//   to populate the v4termlen table.  This provides the secondary source of termlen by
+//   org/office/district/subdist, that is in turn used by phase08TermLenFinder.php.
+//
+//   It does a lot of duplicate inserts (since we don't care about seatnum), but those
+//   fail cheerfully -- which is fine.
+
 $env = new EnvFile("_env");
 $pdo = PdoHelper::makePdo($env);
 

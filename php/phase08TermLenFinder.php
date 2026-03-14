@@ -80,6 +80,15 @@ foreach ($rows as $row) {
       }
    }
 
+   //---Check v4termlen to see if it has a value for this tuple.
+   $termlen = getTermLenFromV4TtermlenTable($pdo, $row[Column::ORG], $row[Column::OFFICE], $row[Column::DIST], $row[Column::SUBDIST]);
+   if ($termlen > 0) {
+      $termLenCache[$cacheKey] = $termlen;
+      $row[Column::TERMLEN] = strval($termlen);
+      writeRow($row, "db", $cacheKey);
+      continue;
+   }
+
    #---No data found so far
    writeRow($row, "no-data", $cacheKey);
 }
@@ -97,6 +106,13 @@ function writeRow (array $row, string $diag="", $key=''): void {
 function getTermLenFromTitleTable (AlfredPDO $pdo, string $org, string $office): int {
    $sqlFields = new SqlFields(['org' => $org, 'office' => $office]);
    $result = $pdo->runSF("SELECT termlen FROM v4titles WHERE ", "", $sqlFields);
+   if ($result->failed()  ||  $result->getRowcount() == 0)   return 0;
+   return intval($result->getRows()[0]['termlen']);
+}
+
+function getTermLenFromV4TermlenTable (AlfredPDO $pdo, string $org, string $office, string $district, string $subdist): int {
+   $sqlFields = new SqlFields(['org' => $org, 'office' => $office, 'district' => $district, 'subdist' => $subdist]);
+   $result = $pdo->runSF("SELECT termlen FROM v4termlen WHERE ", "", $sqlFields);
    if ($result->failed()  ||  $result->getRowcount() == 0)   return 0;
    return intval($result->getRows()[0]['termlen']);
 }
