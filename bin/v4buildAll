@@ -61,23 +61,6 @@ for x in *; do
    cd ..
 done
 
-exit
-
-#---Section 2: import the phase 8 tsv files into the 'elections' table.
-if test ! -f /tmp/buildAll.2; then
-   echo "source 20-elections.sql" | my
-   
-   importAll 2018-11-06
-   importAll 2020-11-03
-   importAll 2021-11-02
-   importAll 2022-11-08
-   importAll 2023-11-07
-   importAll 2024-11-05
-   importAll 2025-11-04
-
-   date >/tmp/buildAll.2
-fi
-
 ys=`ls Counties/*/y* 2>/dev/null | wc -l`
 if test $ys -gt 0; then
    echo "These are the database errors.  Resolve them, or delete the files."
