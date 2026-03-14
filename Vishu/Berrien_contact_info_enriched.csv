@@ -1,0 +1,342 @@
+id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	termlen	open	Res	Part	manual	web	email	phone	address	headshot
+683	cnty	81	__	atty	1	0	Amy Byrd	2024-11-05	R	47903	58	4					www.berriencounty.org/170/Prosecuting-Attorney		(269) 983-7111	811 Port Street, St. Joseph MI 49085	
+719	cnty	81	__	clerk	1	0	Stacy Loar-Porter	2024-11-05	R	46312	57	4					www.berriencounty.org/152/County-Clerk		(269) 983-7111	811 Port Street, St. Joseph MI 49805	
+756	cnty	81	__	drain	1	0	George McManus III	2024-11-05	R	56223	95	4					www.berriencounty.org/269/Drain-Commissioner		(269) 983-7111	701 Main Street, St. Joseph MI 49085	
+793	cnty	81	__	reg	1	0	Lora Gnodtke Freehling	2024-11-05	R	56379	95	4					www.berriencounty.org/296/Register-of-Deeds	lfreehling@berriencounty.org	(269) 983-7111	701 Main Street, St. Joseph MI 49085	https://www.berriencounty.org/ImageRepository/Document?documentID=8130
+830	cnty	81	__	sheriff	1	0	Chuck Heit	2024-11-05	R	50660	73	4					www.berriencounty.org/253/Sheriffs-Office	cheit@berriencounty.org	269-983-7141	919 Port Street, St. Joseph MI 49085	
+866	cnty	81	__	surv	1	0	John G. Kamer	2024-11-05	R	55722	95	4					www.berriencounty.org/1077/County-Surveyor	jkamer1401@gmail.com	269-983-7111	701 Main Street, St. Joseph MI 49085	
+884	cnty	81	__	treas	1	0	Shelly Weich	2024-11-05	R	56822	95	4					www.berriencounty.org/819/Treasurer	sweich@berriencounty.org	(269) 983-7111	701 Main Street, St. Joseph MI 49085	https://www.berriencounty.org/ImageRepository/Document?documentID=11851
+941	cnty-com	81	__		1	1	Dave Vollrath	2024-11-05	R	5259	97	4					www.berriencounty.org/705/Board-of-Commissioners	dvollrath@berriencounty.org	(269) 983-7111	701 Main Street, St. Joseph MI 49085	
+942	cnty-com	81	__		1	2	Jon Hinkelman	2024-11-05	R	5364	97	4					www.berriencounty.org/705/Board-of-Commissioners	jhinkelm@berriencounty.org	(269) 983-7111	701 Main Street, St. Joseph MI 49085	
+943	cnty-com	81	__		1	3	Chokwe Pitchford	2024-11-05	D	3564	92	4					www.berriencounty.org/705/Board-of-Commissioners	cpitchford@berriencounty.org	(269) 983-7111	701 Main Street, St. Joseph MI 49085	
+944	cnty-com	81	__		1	4	Mamie Luella Yarbrough	2024-11-05	D	3946	81	4					www.berriencounty.org/705/Board-of-Commissioners	myarbrou@berriencounty.org	(269) 983-7111	701 Main Street, St. Joseph MI 49085	
+945	cnty-com	81	__		1	5	Rayonté D. Bell	2024-11-05	D	4216	52	4					www.berriencounty.org/705/Board-of-Commissioners		(269) 983-7111	701 Main Street, St. Joseph MI 49085	
+946	cnty-com	81	__		1	6	Julie Wuerfel	2024-11-05	R	5045	61	4					www.berriencounty.org/705/Board-of-Commissioners	jwuerfel@berriencounty.org	(269) 983-7111	701 Main Street, St. Joseph MI 49085	
+947	cnty-com	81	__		1	7	Robert Harrison	2024-11-05	R	5910	98	4					www.berriencounty.org/705/Board-of-Commissioners	bharrison@berriencounty.org	(269) 983-7111	701 Main Street, St. Joseph MI 49085	
+948	cnty-com	81	__		1	8	Teri Sue Freehling	2024-11-05	R	3971	95	4					www.berriencounty.org/705/Board-of-Commissioners	tfreehling@berriencounty.org	(269) 983-7111	701 Main Street, St. Joseph MI 49085	
+949	cnty-com	81	__		1	9	Alex R. Ott	2024-11-05	R	4216	52	4					www.berriencounty.org/705/Board-of-Commissioners	arott@berriencounty.org	(269) 983-7111	701 Main Street, St. Joseph MI 49085	
+950	cnty-com	81	__		1	10	Mac Elliott	2024-11-05	R	5428	96	4					www.berriencounty.org/705/Board-of-Commissioners		(269) 983-7111	701 Main Street, St. Joseph MI 49085	
+951	cnty-com	81	__		1	11	Jim Curran	2024-11-05	R	5047	97	4					www.berriencounty.org/705/Board-of-Commissioners	jcurran@berriencounty.org	(269) 983-7111	701 Main Street, St. Joseph MI 49085	
+952	cnty-com	81	__		1	12	Sharon J. Tyler	2024-11-05	R	2902	55	4					www.berriencounty.org/705/Board-of-Commissioners		(269) 983-7111	701 Main Street, St. Joseph MI 49085	
+2637	town	4840	bainbridge	town-clerk	1	0	Patty Hiler-Molter	2024-11-05	R	1324	98	4					https://bainbridgetownship.org/township-officials/clerk/	clerk@bainbridgetownship.org	(269) 468-8040		
+3302	town	4840	bainbridge	town-super	1	0	Andy J. Gardiner	2024-11-05	R	1311	98	4					https://www.michigan.gov/egle/about/organization/water-resources/stormwater/industrial/operator-certification/list-of-certified-operators	supervisor@bainbridgetownship.org	(800) 662-9278	7315 Territorial Road, Watervliet, MI 49098	
+3923	town	4840	bainbridge	town-treas	1	0	Nancy C. Weber	2024-11-05	R	1318	98	4					https://bainbridgetownship.org/township-officials/clerk/	treasurer@bainbridgetownship.org	(269) 468-8040	7315 Territorial Rd., Watervliet, MI 49098	
+4768	town-cou	4840	bainbridge	council	2	0	Donald Baiers	2024-11-05	R	1242	49	4					https://bainbridgetownship.org/township-officials/clerk/		(269) 468-8040		
+10494	town-cou	4840	bainbridge	council	2	0	John Yetzke	2024-11-05	R	1245	49	4					https://bainbridgetownship.org/township-officials/clerk/		(269) 468-8040		
+2685	town	5520	baroda	town-clerk	1	0	Christina Price	2024-11-05	R	1361	96	4					barodatownship.org	Barodaclerk@gmail.com		9091 First St. Baroda MI 49101	
+3351	town	5520	baroda	town-super	1	0	Dennis M. Krotzer	2024-11-05	R	1187	79	4					barodatownship.org	Barodasupervisor01@gmail.com		9091 First St. Baroda MI 49101	
+3972	town	5520	baroda	town-treas	1	0	William G. Hurst	2024-11-05	N	737	94	4					barodatownship.org	Barodatreasurer@gmail.com		9091 First St. Baroda MI 49101	
+4860	town-cou	5520	baroda	council	2	0	Larry G. Klug	2024-11-05	R	1324	50	4					barodatownship.org		(269) 921-2877	9091 First St. Baroda MI 49101	
+10563	town-cou	5520	baroda	council	2	0	David P. Wolf	2024-11-05	R	1265	48	4					https://barodatownship.org/about/		(269) 465-3258	9091 First St. Baroda MI 49101	
+5461	vil	5500	baroda	pres	1	0	Michael Price	2024-11-05	?	206	44	2	Y				https://barodavillage.org/government/village-council		(269) 422-1779	PO Box 54, Baroda, MI 49101	
+5715	vil-cou	5500	baroda	council	4	0	Nikki Andrews	2024-11-05	?	234	25	4		R			https://barodavillage.org/government/village-council		(269) 422-1779	9091 First Street, Baroda, Michigan, 49101	
+5716	vil-cou	5500	baroda	council	4	0	Julie Elliott	2024-11-05	?	216	23	4		R			https://barodavillage.org/government/village-council		(269) 422-1779	2026 Village of Baroda Offices. PO Box 54, Baroda, MI 49101	
+7750	vil-cou	5500	baroda	council	4	0	Steve Hillhouse	2024-11-05	?	229	56	4	Y		P		https://barodavillage.org/government/village-council		(269) 422-1779	2026 Village of Baroda Offices. PO Box 54, Baroda, MI 49101	
+7751	vil-cou	5500	baroda	council	4	0	Katie Zordell	2024-11-05	?	248	26	4					https://barodavillage.org/government/village-council		(269) 422-1779	PO Box 54, Baroda, MI 49101	
+2835	town	7400	benton charter	town-clerk	1	0	Carolyn Phillips	2024-11-05	D	4519	93	4					https://bentonchartertwp.org/township-board	cphillips@bentonchartertownship-mi.gov	(269) 925-0616	1725 Territorial Rd Benton Harbor, MI 49022	
+3503	town	7400	benton charter	town-super	1	0	Cathy Yates	2024-11-05	D	4516	93	4					https://bentonchartertwp.org/township-board	cyates@bentonchartertownship-mi.gov	(269) 925-0616	1725 Territorial Rd Benton Harbor, MI 49022	
+4124	town	7400	benton charter	town-treas	1	0	Debra Boothby	2024-11-05	D	4510	93	4					https://bentonchartertwp.org/township-board	dboothby@bentonchartertwp-mi.gov	(269) 925-0616	1725 Territorial Rd Benton Harbor, MI 49022	
+5144	town-cou	7400	benton charter	council	4	0	Margaret Clayborn	2024-11-05	D	3923	21	4					https://bentonchartertwp.org/township-board		(269) 925-0616	1725 Territorial Rd Benton Harbor, MI 49022	
+10752	town-cou	7400	benton charter	council	4	0	Rosie L. Hudson	2024-11-05	D	3894	21	4					https://bentonchartertwp.org/township-board		(269) 925-0616	1725 Territorial Rd Benton Harbor, MI 49022	
+10753	town-cou	7400	benton charter	council	4	0	Linda Scarbrough	2024-11-05	D	4004	22	4					https://bentonchartertwp.org/township-board		(269) 925-0616	1725 Territorial Rd Benton Harbor, MI 49022	
+10754	town-cou	7400	benton charter	council	4	0	Joseph Taylor	2024-11-05	D	3905	21	4					https://bentonchartertwp.org/township-board		(269) 925-0616	1725 Territorial Rd Benton Harbor, MI 49022	https://www.cityoftaylor.com/ImageRepository/Document?documentID=7422
+7886	city	7520	benton harbor	mayor	1	0	Marcus Muhammad	2023-11-07	?	483	57	4					www.bhcity.us	mmuhammad@bhcity.us		200 E Wall St Benton Harbor, MI 49022	
+6192	city-cou	7520	benton harbor		4	0	Deidre Fields	2025-11-04	?	479	27	4					www.bhcity.us		(269) 363-2899	200 E Wall St Benton Harbor, MI 49022	
+8118	city-cou	7520	benton harbor		1	1	Sharon R. Henderson	2023-11-07	?	171	74	4					www.bhcity.us	shenderson@bhcity.us		200 E Wall St Benton Harbor, MI 49022	
+8119	city-cou	7520	benton harbor		1	2	SaTanna Warren	2023-11-07	?	105	92	4					www.bhcity.us	swarren@bhcity.us		200 E Wall St Benton Harbor, MI 49022	
+6194	city-cou	7520	benton harbor		1	3	Juanita Henry	2025-11-04	?	203	90	4					www.bhcity.us	jhenry@bhcity.us		200 E Wall St Benton Harbor, MI 49022	
+6195	city-cou	7520	benton harbor		1	4	Ethel Clark-Griffin	2025-11-04	?	187	73	4					www.bhcity.us	eclark-griffin@bhcity.us		200 E Wall St Benton Harbor, MI 49022	
+6193	city-cou	7520	benton harbor		4	0	Shaquille Turner	2025-11-04	?	484	27	4					www.bhcity.us		(269) 927-8457	200 E Wall St Benton Harbor, MI 49022	
+8116	city-cou	7520	benton harbor		4	0	Edward Isom	2023-11-07	?	403	27	4					www.bhcity.us	eisom@bhcity.us		200 E Wall St Benton Harbor, MI 49022	
+8117	city-cou	7520	benton harbor		4	0	Emma Kinnard	2023-11-07	?	356	24	4					www.bhcity.us	ekinnard@bhcity.us		200 E Wall St Benton Harbor, MI 49022	
+2243	schl-cou	4830	benton harbor		5	0	Trenton M. Bowens	2024-11-05	?	4777	17	4					www.bhas.org			870 Colfax Avenue Benton Harbor, MI 49022	
+7407	schl-cou	4830	benton harbor		5	0	Elnora Gavin	2022-11-08	?	3211	21	4	Y				www.bhas.org	info@thepulseinstitute.org	(313) 800-0142	870 Colfax Avenue Benton Harbor, MI 49022	https://thepulseinstitute.org/wp-content/uploads/2023/09/Elnora-Gavin-Headshot-1920-×-1920-px-840x840.png
+9282	schl-cou	4830	benton harbor		5	0	Matthew A. Bradley	2024-11-05	?	3614	13	4					www.bhas.org			870 Colfax Avenue Benton Harbor, MI 49022	
+9283	schl-cou	4830	benton harbor		5	0	Stephanie Rockette-Martin	2024-11-05	?	5141	18	4					www.bhas.org			870 Colfax Avenue Benton Harbor, MI 49022	
+9284	schl-cou	4830	benton harbor		5	0	Reinaldo Tripplett	2024-11-05	?	5887	21	4					https://www.bhas.org/page/board-members			870 Colfax Avenue Benton Harbor, MI 49022	
+2869	town	7820	berrien	town-clerk	1	0	Mary Jane Dean	2024-11-05	R	2014	98	4					www.berrientownship.org	clerk@berrrientownship.org		8916 M-140 Berrien Center, Michigan  49102	
+3537	town	7820	berrien	town-super	1	0	Bryan Paul Bixby	2024-11-05	R	2016	98	4					www.berrientownship.org	supervisor@berrientownship.org		8916 M-140 Berrien Center, Michigan 49102	
+4158	town	7820	berrien	town-treas	1	0	Michael Jenks	2024-11-05	R	1976	97	4					www.berrientownship.org	treasurer@berrientownship.org		8916 M-140 Berrien Center, Michigan  49102	
+5213	town-cou	7820	berrien	council	4	0	Harold Bishop	2024-11-05	R	1743	24	4					www.berrientownship.org			8916 M-140 Berrien Center, Michigan  49102	
+10804	town-cou	7820	berrien	council	4	0	Julie Burke	2024-11-05	R	1806	25	4					www.berrientownship.org			8916 M-140 Berrien Center, Michigan  49102	
+10805	town-cou	7820	berrien	council	4	0	Kevin Klug	2024-11-05	R	1794	24	4					https://www.berrientownship.org/index.php/township-officials/board-of-trustees/	supervisor@berrientownship.org	(269) 684-3311	8916 M-140 Berrien Center, Michigan  49102	
+10806	town-cou	7820	berrien	council	4	0	Cynthia L. Layman	2024-11-05	R	1774	24	4					www.berrientownship.org			8916 M-140 Berrien Center, Michigan  49102	
+2251	schl-cou	5430	berrien springs		5	0	Paul Toliver	2020-11-03	?	2995	32	6	Y				www.homeoftheshamrocks.org	ptoliver@homeoftheshamrocks.org		One Sylvester Ave. Berrien Springs, MI 49103	
+2252	schl-cou	5430	berrien springs		5	0	Kim Keigley	2020-11-03	?	3565	97	6			P		www.homeoftheshamrocks.org			One Sylvester Ave. Berrien Springs, MI 49103	
+7416	schl-cou	5430	berrien springs		5	0	Erica Molden	2024-11-05	?	3698	96	6			P		www.homeoftheshamrocks.org	emolden@homeoftheshamrocks.org		One Sylvester Ave. Berrien Springs, MI 49103	
+9290	schl-cou	5430	berrien springs		5	0	Stephanie James	2024-11-05	?	3762	87	6					www.homeoftheshamrocks.org	sjames@homeoftheshamrocks.org		One Sylvester Ave. Berrien Springs, MI 49103	
+9291	schl-cou	5430	berrien springs		5	0	Justin Vurlin Turner	2024-11-05	?	155	3	6					https://www.homeoftheshamrocks.org/district/board-of-education/	jturner@homeoftheshamrocks.org	(269) 473-6921	One Sylvester Ave. Berrien Springs, MI 49103	https://www.villageofberriensprings.com/wp-content/uploads/2023/10/Justin-photo.jpg
+5495	vil	7860	berrien springs	pres	1	0	Sheila Snyder	2024-11-05	?	413	59	2	Y				https://www.villageofberriensprings.com/council-committees/		(269) 473-6921	112 North Cass Street, Berrien Springs, MI 49103	
+5495	vil	7860	berrien springs	pres	1	0	Sheila Snyder	2024-11-05	?	413	59	2	Y				https://www.villageofberriensprings.com/council-committees/		(269) 473-6921	112 North Cass Street, Berrien Springs, MI 49103	
+5805	vil-cou	7860	berrien springs	council	6	0	Jack Davis	2024-11-05	?	297	20	4		R			https://www.villageofberriensprings.com/council-committees/		(269) 473-6921	112 North Cass Street, Berrien Springs, MI 49103	
+5805	vil-cou	7860	berrien springs	council	6	0	Jack Davis	2024-11-05	?	297	20	4		R			https://www.villageofberriensprings.com/council-committees/		(269) 473-6921	112 North Cass Street, Berrien Springs, MI 49103	
+5806	vil-cou	7860	berrien springs	council	6	0	Brandon Lowry	2024-11-05	?	281	19	4		R			https://www.villageofberriensprings.com/council-committees/		(269) 473-6921	112 North Cass Street, Berrien Springs, MI 49103	
+5806	vil-cou	7860	berrien springs	council	6	0	Brandon Lowry	2024-11-05	?	281	19	4		R			https://www.villageofberriensprings.com/council-committees/		(269) 473-6921	112 North Cass Street, Berrien Springs, MI 49103	
+7823	vil-cou	7860	berrien springs	council	6	0	Sheila Snyder	2022-11-08	?	305	24	4	Y				https://www.villageofberriensprings.com/council-committees/		(269) 473-6921	112 North Cass Street, Berrien Springs, MI 49103	
+7823	vil-cou	7860	berrien springs	council	6	0	Sheila Snyder	2022-11-08	?	305	24	4	Y				https://www.villageofberriensprings.com/council-committees/		(269) 473-6921	112 North Cass Street, Berrien Springs, MI 49103	
+7824	vil-cou	7860	berrien springs	council	6	0	Jason Terrence Ramtahal	2024-11-05	?	180	12	4					https://www.villageofberriensprings.com/council-committees/		(269) 473-6921	112 North Cass Street, Berrien Springs, MI 49103	
+7824	vil-cou	7860	berrien springs	council	6	0	Jason Terrence Ramtahal	2024-11-05	?	180	12	4					https://www.villageofberriensprings.com/council-committees/		(269) 473-6921	112 North Cass Street, Berrien Springs, MI 49103	
+11271	vil-cou	7860	berrien springs	council	6	0	Mark VandeVere	2024-11-05	?	295	20	4					https://www.villageofberriensprings.com/council-committees/		(269) 473-6921	112 North Cass Street, Berrien Springs, MI 49103	
+11271	vil-cou	7860	berrien springs	council	6	0	Mark VandeVere	2024-11-05	?	295	20	4					https://www.villageofberriensprings.com/council-committees/		(269) 473-6921	112 North Cass Street, Berrien Springs, MI 49103	
+11272	vil-cou	7860	berrien springs	council	6	0	Kristin von Maur	2024-11-05	?	337	23	4					https://www.villageofberriensprings.com/council-committees/		(269) 473-6921	112 North Cass Street, Berrien Springs, MI 49103	
+11272	vil-cou	7860	berrien springs	council	6	0	Kristin von Maur	2024-11-05	?	337	23	4					https://www.villageofberriensprings.com/council-committees/		(269) 473-6921	112 North Cass Street, Berrien Springs, MI 49103	
+2873	town	7920	bertrand	town-clerk	1	0	Polly Louise White	2024-11-05	R	1250	98	4					bertrandtownship.com	Clerk@bertrandtownship.com		3835 Buffalo Rd, Buchanan, MI 49107	
+3541	town	7920	bertrand	town-super	1	0	Steve Hicks	2024-11-05	R	1255	98	4					bertrandtownship.com	supervisor@bertrandtownship.com		3835 Buffalo Rd, Buchanan, MI 49107	
+4162	town	7920	bertrand	town-treas	1	0	David W. Kuhn	2024-11-05	R	1255	98	4					bertrandtownship.com	treasurer@bertrandtownship.com		3835 Buffalo Rd, Buchanan, MI 49107	
+5219	town-cou	7920	bertrand	council	4	0	Alice L. Kring	2024-11-05	R	1190	25	4					bertrandtownship.com	trustee4@bertrandtownship.com		3835 Buffalo Rd, Buchanan, MI 49107	
+10808	town-cou	7920	bertrand	council	4	0	Ryan Loveing	2024-11-05	R	1097	23	4					bertrandtownship.com	trustee3@bertrandtownship.com		3835 Buffalo Rd, Buchanan, MI 49107	
+10809	town-cou	7920	bertrand	council	4	0	Gordon Payton	2024-11-05	R	1108	24	4					bertrandtownship.com	trustee2@bertrandtownship.com		3835 Buffalo Rd, Buchanan, MI 49107	
+10810	town-cou	7920	bertrand	council	4	0	David Zelmer	2024-11-05	R	1166	25	4					bertrandtownship.com	trustee1@bertrandtownship.com		3835 Buffalo Rd, Buchanan, MI 49107	
+2277	schl-cou	6600	brandywine		4	0	Holly Pomranka	2024-11-05	?	1843	23	4					https://www.brandywinebobcats.org/board	hpomranka@brandywinebobcats.org		1830 S. THIRD STREET Niles, MI 49120	
+7436	schl-cou	6600	brandywine		4	0	John Jarpe	2024-11-05	?	2820	96	4	Y		P		https://www.brandywinebobcats.org/board	jjarpe@brandywinebobcats.org		1830 S. THIRD STREET Niles, MI 49120	
+9306	schl-cou	6600	brandywine		4	0	Jessica Crouch	2024-11-05	?	2222	28	4					https://www.brandywinebobcats.org/board	jcrouch@brandywinebobcats.org		1830 S. THIRD STREET Niles, MI 49120	
+9307	schl-cou	6600	brandywine		4	0	Shannon Daniels	2024-11-05	?	1560	20	4					https://www.brandywinebobcats.org/board			1830 S. THIRD STREET Niles, MI 49120	
+455	city-cou	10580	bridgman		7	0	Jacquie Gnodtke Blackwell	2024-11-05	?	645	24	4					https://www.bridgman.org/226/Staff-Directory	jblackwell@bridgman.org	(269) 465-5144	9765 Maple Street Bridgman, MI 49106	
+456	city-cou	10580	bridgman		7	0	John Bonkoske	2024-11-05	?	447	16	4					https://www.bridgman.org/226/Staff-Directory		(269) 465-5144	9765 Maple Street Bridgman, MI 49106	
+457	city-cou	10580	bridgman		7	0	Toni D'Agostino	2024-11-05	?	810	30	4					https://www.bridgman.org/153/City-Council		(269) 465-5144	9765 Maple Street Bridgman, MI 49106	
+6282	city-cou	10580	bridgman		7	0	William H. Boyd	2022-11-08	?	491	16	4	Y				https://www.bridgman.org/226/Staff-Directory		(269) 465-5144	9765 Maple Street Bridgman, MI 49106	
+6283	city-cou	10580	bridgman		7	0	Pam Hahaj	2022-11-08	?	520	17	4	Y				https://www.bridgman.org/226/Staff-Directory		(269) 465-5144	9765 Maple Street Bridgman, MI 49106	
+6284	city-cou	10580	bridgman		7	0	Sam Stine	2022-11-08	?	481	16	4	Y				https://www.bridgman.org/226/Staff-Directory		(269) 465-5144	9765 Maple Street Bridgman, MI 49106	
+6285	city-cou	10580	bridgman		7	0	Jan Dagostino Trapani	2022-11-08	?	501	17	4	Y				https://www.bridgman.org/153/City-Council		(269) 465-5144	9765 Maple Street Bridgman, MI 49106	
+2281	schl-cou	6840	bridgman		5	0	Tom LaVanway	2022-11-08	?	1781	98	6	Y		P		https://www.bridgmanschools.com/resources/board-of-education	info@bridgmanschools.com	(269) 465-5432	9964 Gast Rd  Bridgman, MI 49106	
+2282	schl-cou	6840	bridgman		5	0	Lisa Kiewel	2020-11-03	?	1967	99	6			P		www.bridgmanschools.com	info@bridgmanschools.com	(269) 465-5432	9964 Gast Rd  Bridgman, MI 49106	
+7439	schl-cou	6840	bridgman		5	0	Brad Owen	2022-11-08	?	1456	39	6					www.bridgmanschools.com	info@bridgmanschools.com	(269) 465-5432	9964 Gast Rd  Bridgman, MI 49106	
+9315	schl-cou	6840	bridgman		5	0	Eric D. Ramso	2024-11-05	?	1837	50	6					www.bridgmanschools.com	info@bridgmanschools.com	(269) 208-8349	9964 Gast Rd Bridgman, MI 49106	
+9316	schl-cou	6840	bridgman		5	0	Tishia Roberts	2024-11-05	?	1796	49	6					https://www.bridgmanschools.com/resources/board-of-education	info@bridgmanschools.com	(269) 465-5432	9964 Gast Rd  Bridgman, MI 49106	
+459	city-cou	11400	buchanan		5	0	Larry C. Money	2024-11-05	?	684	21	4					www.cityofbuchanan.com/home	lmoney@cityofbuchanan.com		302 N Redbud Trail | Buchanan, MI 49107	
+460	city-cou	11400	buchanan		5	0	Patrick M. Swem	2024-11-05	?	921	29	4					www.cityofbuchanan.com/home	pswem@cityofbuchanan.com		302 N Redbud Trail | Buchanan, MI 49107	
+6286	city-cou	11400	buchanan		5	0	Sean Denison	2022-11-08	?	678	23	4	Y				www.cityofbuchanan.com/home		(517) 373-1796	302 N Redbud Trail | Buchanan, MI 49107	
+6287	city-cou	11400	buchanan		5	0	Daniel Vigansky	2022-11-08	?	579	20	4	Y				www.cityofbuchanan.com/home	dvigansky@cityofbuchanan.com		302 N Redbud Trail | Buchanan, MI 49107	
+6288	city-cou	11400	buchanan		5	0	Mark W. Weedon	2022-11-08	?	536	18	4	Y				www.cityofbuchanan.com/home	mweedon@cityofbuchanan.com		302 N Redbud Trail | Buchanan, MI 49107	
+2292	schl-cou	7140	buchanan		4	0	Scott B. Carlin	2020-11-03	?	2291	20	6	Y				www.buchananschools.com	scarlin@buchananschools.com		401 W Chicago St Buchanan MI 49107	
+7451	schl-cou	7140	buchanan		4	0	Harvey J. Burnett	2022-11-08	?	1908	28	6					www.buchananschools.com	hburnett@buchananschools.com		401 W Chicago St Buchanan MI 49107	
+9328	schl-cou	7140	buchanan		4	0	Jacob Brown	2024-11-05	?	3147	47	6					www.buchananschools.com	clerk@cityofbuchanan.com	(269) 695-3844	401 W Chicago St Buchanan MI 49107	
+9329	schl-cou	7140	buchanan		4	0	Kelly Bates-Laesch	2024-11-05	?	3431	51	6					www.buchananschools.com	klaesch@buchananschools.com		401 W Chicago St Buchanan MI 49107	
+2357	town	11420	buchanan	town-clerk	1	0	Wendi Heyliger	2024-11-05	R	1577	98	4					https://www.buchanantownship.net/township-clerk/	clerk@buchanantwpmi.gov	(269) 695-6442	15235 Main Street Buchanan, Michigan 49107	
+3021	town	11420	buchanan	town-super	1	0	Malinda A. Cole-Crocker	2024-11-05	R	1583	98	4					https://www.buchanantownship.net/supervisor/		(269) 695-6442	15235 Main Street Buchanan, Michigan 49107	
+3641	town	11420	buchanan	town-treas	1	0	Amber R. Ramirez	2024-11-05	R	1551	98	4					https://www.buchanantownship.net/treasurer/	treasurer@buchanantwpmi.gov	(269) 695-6442	15235 Main Street Buchanan, Michigan 49107	
+4273	town-cou	11420	buchanan	council	4	0	Adam Phillip Byrdak	2024-11-05	R	1446	25	4					www.buchanantownship.net		(269) 695-6442	15235 Main Street Buchanan, Michigan 49107	
+10070	town-cou	11420	buchanan	council	4	0	Lynn Ferris	2024-11-05	R	1416	24	4					www.buchanantownship.net		(269) 695-6442	15235 Main Street Buchanan, Michigan 49107	
+10071	town-cou	11420	buchanan	council	4	0	Thomas Gordon	2024-11-05	R	1377	24	4					www.buchanantownship.net		(269) 695-6442	15235 Main Street Buchanan, Michigan 49107	
+10072	town-cou	11420	buchanan	council	4	0	Brad Huebner	2024-11-05	R	1395	24	4					www.buchanantownship.net		(269) 695-6442	15235 Main Street Buchanan, Michigan 49107	
+2393	town	15480	chikaming	town-clerk	1	0	Paula Dudiak	2024-11-05	R	1439	98	4					www.chikamingtownship.org	pdudiak@chikamingtownship.org		13535 Red Arrow Highway PO Box 40 Harbert MI, 49115	
+2978	town	15480	chikaming	town-park	1	0	Shelly Taylor	2020-11-03	?	979	26	4	?				https://www.chikamingtownship.org/staff-directory		(269) 612-2065	13535 Red Arrow Highway PO Box 40 Harbert MI, 49115	
+3057	town	15480	chikaming	town-super	1	0	David Bunte	2024-11-05	N	1147	97	4					www.chikamingtownship.org	dbunte@chikamingtownship.org		13535 Red Arrow Highway PO Box 40 Harbert MI, 49115	
+3677	town	15480	chikaming	town-treas	1	0	Liz Rettig	2024-11-05	R	1364	97	4					www.chikamingtownship.org	lrettig@chikamingtownship.org		13535 Red Arrow Highway PO Box 40 Harbert MI, 49115	
+4329	town-cou	15480	chikaming	council	2	0	Arthur H. Anderson	2024-11-05	D	1112	37	4					https://www.chikamingtownship.org/township-board	aanderson@chikamingtownship.org	(269) 469-1676	13535 Red Arrow Highway PO Box 40 Harbert MI, 49115	
+10134	town-cou	15480	chikaming	council	2	0	Rich Sullivan	2024-11-05	R	1060	35	4					https://www.chikamingtownship.org/township-board	rsullivan@chikamingtownship.org		13535 Red Arrow Highway PO Box 40 Harbert MI, 49115	
+404	city	17320	coloma	clerk	1	0	Kelly Clements	2024-11-05	?	572	97	2	Y				www.cityofcoloma.org		(269) 468-6606	119 N. Paw Paw St | Coloma MI 49038 |	
+414	city	17320	coloma	mayor	1	0	Marsha Hammond	2024-11-05	?	578	96	4					www.cityofcoloma.org		(269) 468-6606	119 N. Paw Paw St | Coloma MI 49038&nbsp;	https://www.gohammond.com/wp-content/uploads/2024/09/water.png
+449	city	17320	coloma	treas	1	0	W. Sue Moser	2024-11-05	?	583	98	2	Y				www.cityofcoloma.org		(269) 468-6606	119 N. Paw Paw St | Coloma MI 49038 |	
+479	city-cou	17320	coloma		6	0	Jamie Balkin	2024-11-05	?	374	26	4					www.cityofcoloma.org		(269) 757-1586	119 N. Paw Paw St | Coloma MI 49038 |	
+480	city-cou	17320	coloma		6	0	Cynthia Massey	2024-11-05	?	379	26	4					www.cityofcoloma.org		(269) 468-6606	119 N. Paw Paw St | Coloma MI 49038 |	
+481	city-cou	17320	coloma		6	0	Julie Smith	2024-11-05	?	358	24	4					www.cityofcoloma.org		(269) 468-6481	119 N. Paw Paw St | Coloma MI 49038 |	
+6301	city-cou	17320	coloma		6	0	Nate Clements	2022-11-08	?	225	16	4	Y				www.cityofcoloma.org		(269) 468-6606	119 N. Paw Paw St | Coloma MI 49038 |	
+6302	city-cou	17320	coloma		6	0	Linda F. Freitag	2022-11-08	?	243	17	4	Y				www.cityofcoloma.org		(269) 468-3253	119 N. Paw Paw St | Coloma MI 49038 |	
+6303	city-cou	17320	coloma		6	0	Jason Hicks  Sr.	2022-11-08	?	221	16	4	Y				www.cityofcoloma.org		(269) 757-3978	119 N. Paw Paw St | Coloma MI 49038 |	https://www.michigan.gov/leo/-/media/Project/Websites/leo/Images/Executive1/Jason-Palmer.jpg?rev=cf9dd6f6f8fd4e3c807f7ee862eec83c&hash=786F711CB69E59F6405B6338177D6ACD
+1486	schl-cou	10380	coloma		4	0	Gordie Cartwright	2024-11-05	?	1823	18	4					www.ccs.coloma.org		(269) 468-3620	302 West St. Joseph St. Coloma, MI 49038	
+6731	schl-cou	10380	coloma		4	0	Heidi Ishmael	2022-11-08	?	1727	15	4	Y				www.ccs.coloma.org		(269) 463-6397	302 West St. Joseph St. Coloma, MI 49038	
+8574	schl-cou	10380	coloma		4	0	William Stowers	2024-11-05	?	2093	21	4					www.ccs.coloma.org	elections@michigan.gov	(888) 767-6424	302 West St. Joseph St. Coloma, MI 49038	
+8575	schl-cou	10380	coloma		4	0	Tandy Ulleg	2024-11-05	?	2378	24	4					www.ccs.coloma.org			302 West St. Joseph St. Coloma, MI 49038	
+2415	town	17340	coloma charter	town-clerk	1	0	Sheila Hickmott	2024-11-05	R	2123	97	4					https://www.colomatownship.org/board-trustees/directory-listing/sheila-hickmott	shickmott@colomatownship.org	(269) 468-7212	4919 Paw Paw Lake Rd., Coloma, Michigan 49038	
+3080	town	17340	coloma charter	town-super	1	0	Ken Parrigin	2024-11-05	R	2124	96	4					https://www.colomatownship.org/board-trustees/directory-listing/kenneth-parrigin		(269) 468-7212	4919 Paw Paw Lake Rd., Coloma, Michigan 49038	
+3700	town	17340	coloma charter	town-treas	1	0	James G. Fulton	2024-11-05	R	2098	97	4					https://www.colomatownship.org/board-trustees/directory-listing/jim-fulton		(269) 468-7212	4919 Paw Paw Lake Rd., Coloma, Michigan 49038	
+4368	town-cou	17340	coloma charter	council	4	0	Kendyl A. Adams	2024-11-05	R	1936	24	4					https://www.colomatownship.org/board-trustees/directory-listing/kendyl-adams		(269) 468-7212	4919 Paw Paw Lake Rd., Coloma, Michigan 49038	
+10165	town-cou	17340	coloma charter	council	4	0	Lance Becht	2024-11-05	R	1906	24	4					https://www.colomatownship.org/board-trustees		(269) 468-7212	4919 Paw Paw Lake Rd., Coloma, Michigan 49038	
+10166	town-cou	17340	coloma charter	council	4	0	Bryan Keith Duffield	2024-11-05	R	1986	25	4					https://www.colomatownship.org/board-trustees/directory-listing/bryan-duffield		(269) 468-7212	4919 Paw Paw Lake Rd., Coloma, Michigan 49038	
+10167	town-cou	17340	coloma charter	council	4	0	Jerry Willmeng	2024-11-05	R	1860	23	4					https://www.colomatownship.org/board-trustees/directory-listing/jerry-willmeng		(269) 468-7212	4919 Paw Paw Lake Rd., Coloma, Michigan 49038	
+1499	schl-cou	10980	covert		6	0	Cheryl McCray	2024-11-05	?	424	29	4					https://www.covertps.org/board	mccrayc@covertps.org		35323 M 140 Hwy Covert, MI 49043	
+1500	schl-cou	10980	covert		6	0	Kayla Perry	2020-11-03	?	685	95	4			P		https://www.covertps.org/board		(269) 369-9068	35323 M 140 Hwy Covert, MI 49043	
+6741	schl-cou	10980	covert		6	0	Dewayne Curtis Swans	2022-11-08	W	5	4	4			P		https://www.covertps.org/board	swansd@covertps.org		35323 M 140 Hwy Covert, MI 49043	
+6742	schl-cou	10980	covert		6	0	Valerie Bury	2022-11-08	?	399	47	4	Y				https://www.covertps.org/board		(269) 764-5137	35323 M 140 Hwy Covert, MI 49043	
+8594	schl-cou	10980	covert		6	0	Ella Rae Harrington	2024-11-05	?	470	32	4					https://www.covertps.org/board	harringtone@covertps.org		35323 M 140 Hwy Covert, MI 49043	
+8595	schl-cou	10980	covert		6	0	Geoffrey M. Rose	2024-11-05	?	450	31	4					https://www.covertps.org/board	roseg@covertps.org		35323 M 140 Hwy Covert, MI 49043	
+1525	schl-cou	12150	dowagiac union		5	0	Christina Carpenter	2024-11-05	?	3652	25	4					https://www.dowagiacschools.org/board	crcarpenter@dowagiacschools.org		243 S Front Dowagiac, MI 49047	
+6770	schl-cou	12150	dowagiac union		5	0	Jeff de Varona	2024-11-05	?	4516	97	4	Y		P		https://www.dowagiacschools.org/board			243 S Front Dowagiac, MI 49047	
+8616	schl-cou	12150	dowagiac union		5	0	Dominique Hood-Charles	2024-11-05	?	2995	21	4					https://www.dowagiacschools.org/board			243 S Front Dowagiac, MI 49047	
+8617	schl-cou	12150	dowagiac union		5	0	Randi Taggart	2024-11-05	?	3817	27	4					https://www.dowagiacschools.org/board	rtaggart@dowagiacschools.org		243 S Front Dowagiac, MI 49047	
+8618	schl-cou	12150	dowagiac union		5	0	Tracey Hatcher	2024-11-05	?	3416	24	4					https://www.dowagiacschools.org/board	thatcher@dowagiacschools.org		243 S Front Dowagiac, MI 49047	
+1538	schl-cou	12810	eau claire		4	0	Chris Peters	2024-11-05	?	1133	94	4		R			https://www.eauclaireps.com/board		(888) 936-7463	6190 W Main St  Eau Claire, MI 49111	
+6782	schl-cou	12810	eau claire		4	0	Tom Ferry	2022-11-08	?	722	48	4	Y	R			https://www.eauclaireps.com/board			6190 W Main St  Eau Claire, MI 49111	
+8643	schl-cou	12810	eau claire		4	0	Bob Guse	2024-11-05	?	28	11	4			P		https://www.eauclaireps.com/board	bobguse@eauclaireps.com		6190 W Main St  Eau Claire, MI 49111	
+8644	schl-cou	12810	eau claire		4	0	Jackie Adams	2024-11-05	?	28	13	4	Y		P		https://www.eauclaireps.com/board			6190 W Main St  Eau Claire, MI 49111	
+5421	vil	24580	eau claire	pres	1	0	John H. Glassman	2024-11-05	?	192	95	2	Y				https://www.eauclairemi.com/about			6625 E. Main Street   Eau Claire, Mi. 49111	
+5421	vil	24580	eau claire	pres	1	0	John H. Glassman	2024-11-05	?	192	95	2	Y				https://www.eauclairemi.com/about			6625 E. Main Street   Eau Claire, Mi. 49111	
+5604	vil-cou	24580	eau claire	council	3	0	Virginia Jo Gonzalez	2020-11-03	?	138	49	2	?				www.eauclairemi.com			6625 E. Main Street   Eau Claire, Mi. 49111	
+5604	vil-cou	24580	eau claire	council	3	0	Virginia Jo Gonzalez	2020-11-03	?	138	49	2	?				www.eauclairemi.com			6625 E. Main Street   Eau Claire, Mi. 49111	
+7662	vil-cou	24580	eau claire	council	3	0	Kenneth Allen Karn	2022-11-08	?	95	96	2	?		P		www.eauclairemi.com			6625 E. Main Street   Eau Claire, Mi. 49111	
+7662	vil-cou	24580	eau claire	council	3	0	Kenneth Allen Karn	2022-11-08	?	95	96	2	?		P		www.eauclairemi.com			6625 E. Main Street   Eau Claire, Mi. 49111	
+11046	vil-cou	24580	eau claire	council	3	0	Kenneth A. Karn	2024-11-05	?	171	95	2	?				www.eauclairemi.com			6625 E. Main Street   Eau Claire, Mi. 49111	
+11046	vil-cou	24580	eau claire	council	3	0	Kenneth A. Karn	2024-11-05	?	171	95	2	?				www.eauclairemi.com			6625 E. Main Street   Eau Claire, Mi. 49111	
+2505	town	31320	galien	town-clerk	1	0	Jennifer Richter	2024-11-05	D	496	88	4					https://www.galientownship.org/government/township-board	jen.galientwp@gmail.com	(269) 545-8143	305 Kiley Drive, Galien MI 49113	
+3170	town	31320	galien	town-super	1	0	Tim Richter	2024-11-05	R	482	59	4					https://www.galientownship.org/government/township-board		(269) 545-8143	305 Kiley Drive, Galien MI 49113	
+3791	town	31320	galien	town-treas	1	0	Kendra Truhn	2024-11-05	D	478	89	4					https://www.galientownship.org/government/township-board	kendra.galientwp@gmail.com	(269) 545-8143	305 Kiley Drive, Galien MI 49113	
+4531	town-cou	31320	galien	council	2	0	Savannah L. DeVries	2024-11-05	R	527	38	4					https://www.galientownship.org/government/township-board		(269) 545-8143	305 Kiley Drive, Galien MI 49113	
+10297	town-cou	31320	galien	council	2	0	Matthew Kinne	2024-11-05	R	539	39	4					https://www.galientownship.org/government/township-board	matt.galientwp@gmail.com	(269) 545-8143	305 Kiley Drive, Galien MI 49113	
+5426	vil	31300	galien	pres	1	0	Paul Palmer	2024-11-05	?	182	95	2	Y				https://www.galientownship.org/government/village-of-galien		(269) 545-3647	121 South Cleveland Ave, Galien, MI 49113	
+5615	vil-cou	31300	galien	council	4	0	Donna L. Batagianis	2024-11-05	?	139	36	4		R			https://www.galientownship.org/government/village-of-galien		(269) 545-3647	121 South Cleveland Ave, Galien, MI 49113	
+5616	vil-cou	31300	galien	council	4	0	Steven Schmitz	2024-11-05	?	117	30	4		R			https://www.galientownship.org/government/township-board		(269) 545-3647	121 South Cleveland Ave, Galien, MI 49113	
+5618	vil-cou	31300	galien	council	4	0	Philip Mielke	2022-11-08	?	94	31	4	Y				https://www.galientownship.org/government/village-of-galien		(269) 545-3647	121 South Cleveland Ave, Galien, MI 49113	
+7672	vil-cou	31300	galien	council	4	0	Earl Swank	2024-11-05	?	116	30	4					https://www.galientownship.org/government/village-of-galien		(269) 545-3647	121 South Cleveland Ave, Galien, MI 49113	
+5619	vil-cou	33260	grand beach	council	4	0	Blake H. O'Halloran	2020-11-03	?	149	41	4	?				www.grandbeach.org	bohalloran@grandbeach.org	(269) 469-3141	48200 Perkins Blvd.  Grand Beach, MI 49117	
+7674	vil-cou	33260	grand beach	council	4	0	Peter Doerr	2022-11-08	?	131	28	4	?				www.grandbeach.org	pdoerr@grandbeach.org	(269) 469-3141	48200 Perkins Blvd.  Grand Beach, MI 49117	
+11077	vil-cou	33260	grand beach	council	4	0	Jack Grace	2024-11-05	?	185	56	4	?				https://www.grandbeach.org/village-council	jgrace@grandbeach.org	(269) 469-3141	48200 Perkins Blvd.  Grand Beach, MI 49117	
+11078	vil-cou	33260	grand beach	council	4	0	Ed Sebastian	2024-11-05	?	133	40	4	?				https://www.grandbeach.org/village-council	esebastian@grandbeach.org	(269) 469-3141	48200 Perkins Blvd.  Grand Beach, MI 49117	
+2538	town	35860	hagar	town-clerk	1	0	Thomas Allen	2024-11-05	D	933	89	4					www.hagartownship.org	clerk@hagartownship.gov	(269) 934-5705	 3900 Riverside Road P.O. Box 87 Riverside, MI 49084	
+3203	town	35860	hagar	town-super	1	0	Izzy DiMaggio	2024-11-05	R	1407	95	4					www.hagartownship.org		(269) 449-3628	3900 Riverside Road P.O. Box 87 Riverside, MI 49084	
+3824	town	35860	hagar	town-treas	1	0	Kim LaSata	2024-11-05	R	1396	97	4					www.hagartownship.org		(269) 208-0090	 3900 Riverside Road P.O. Box 87 Riverside, MI 49084	
+4585	town-cou	35860	hagar	council	2	0	Andrew Ulleg	2024-11-05	R	1348	73	4					www.hagartownship.org		(269) 934-5701	3900 Riverside Road P.O. Box 87 Riverside, MI 49084	
+10364	town-cou	35860	hagar	council	2	0	Wade B. Arends	2024-11-05	N	453	24	4					www.hagartownship.org		(269) 934-5701	3900 Riverside Road P.O. Box 87 Riverside, MI 49084	
+1619	schl-cou	17340	hagar township 6		2	0	Sarah Kovar	2024-11-05	?	192	95	4					www.riversidehagar.org			3422 Riverside Rd.  Benton Harbor, MI 49022	
+6873	schl-cou	17340	hagar township 6		2	0	Julia Joan Bell	2022-11-08	?	145	92	4	Y				www.riversidehagar.org				
+2609	town	44260	lake charter	town-clerk	1	0	Miranda Companion	2024-11-05	R	1639	98	4					https://www.lake-township.org/contact-us	clerk@lake-township.org	(269) 465-6601	3220 Shawnee Rd P.O. Box 818 Bridgman, MI 49106	
+3274	town	44260	lake charter	town-super	1	0	Zach Carson	2024-11-05	R	1652	98	4					https://www.lake-township.org/supervisor	zach@lake-township.org	(269) 465-6601	3220 Shawnee Rd P.O. Box 818 Bridgman, MI 49106	
+3895	town	44260	lake charter	town-treas	1	0	Jennifer Adams	2024-11-05	R	1624	98	4					https://www.lake-township.org/treasurer	treasurer@lake-township.org	(269) 465-6601	3220 Shawnee Rd P.O. Box 818 Bridgman, MI 49106	
+4720	town-cou	44260	lake charter	council	4	0	Amanda Drew	2024-11-05	R	1474	24	4					https://www.lake-township.org/trustees		(269) 465-6601	3220 Shawnee Rd P.O. Box 818 Bridgman, MI 49106	
+10452	town-cou	44260	lake charter	council	4	0	Mike Essig	2024-11-05	R	1478	24	4					https://www.lake-township.org/trustees		(269) 465-6601	3220 Shawnee Rd P.O. Box 818 Bridgman, MI 49106	
+10453	town-cou	44260	lake charter	council	4	0	Nancy Mensinger	2024-11-05	R	1499	25	4					https://www.lake-township.org/trustees		(269) 465-6601	3220 Shawnee Rd P.O. Box 818 Bridgman, MI 49106	
+10454	town-cou	44260	lake charter	council	4	0	William N. Shuler	2024-11-05	R	1472	24	4					https://www.lake-township.org/contact-us		(269) 465-6601	3220 Shawnee Rd P.O. Box 818 Bridgman, MI 49106	
+1737	schl-cou	20820	lakeshore		5	0	Jason R. Beckrow	2024-11-05	?	7121	98	6	Y		P		https://www.lakeshoreschools.k12.mi.us/board		(269) 429-7100	5771 Cleveland Ave, Stevensville, MI 49127	https://lakelandcare.com/sites/default/files/styles/thumbnail/public/2024-02/Jason%20Beckrow%20DO.jpg?h=c9b98ec2&itok=r8UBEGVw
+1738	schl-cou	20820	lakeshore		5	0	Scott Allan	2020-11-03	?	6286	98	6			P		https://www.lakeshoreschools.k12.mi.us/board		(517) 351-6840	5771 Cleveland Ave, Stevensville, MI 49127	
+6978	schl-cou	20820	lakeshore		5	0	Lori VonKoenig	2022-11-08	?	4877	31	6					https://www.lakeshoreschools.k12.mi.us/board			5771 Cleveland Ave, Stevensville, MI 49127	
+8844	schl-cou	20820	lakeshore		5	0	Jessica R. Bigley	2024-11-05	?	4825	33	6					https://www.lakeshoreschools.k12.mi.us/board			5771 Cleveland Ave, Stevensville, MI 49127	
+8845	schl-cou	20820	lakeshore		5	0	Rachel Wade	2024-11-05	?	4884	33	6					https://www.lakeshoreschools.k12.mi.us/board			5771 Cleveland Ave, Stevensville, MI 49127	
+2632	town	47600	lincoln charter	town-clerk	1	0	Michael Andrew Brown	2024-11-05	R	5586	62	4					https://lctberrien.org/Directory.aspx?did=18	clerk@lctberrien.org	(269) 428-2385	2055 W. John Beers Rd Stevensville, MI 49127	
+3297	town	47600	lincoln charter	town-super	1	0	Glenn Youngstedt	2024-11-05	R	6736	98	4					https://lctberrien.org/Directory.aspx?did=19	supervisor@lctberrien.org	(269) 428-2385	2055 W. John Beers Rd Stevensville, MI 49127	
+3918	town	47600	lincoln charter	town-treas	1	0	Terrie L. Smith	2024-11-05	R	6722	98	4					https://lctberrien.org/Directory.aspx?did=18	tsmith@lctberrien.org	(269) 428-2385	2055 W. John Beers Rd Stevensville, MI 49127	
+4762	town-cou	47600	lincoln charter	council	4	0	Marc D. Florian	2024-11-05	R	6043	25	4					https://lctberrien.org/192/Board-of-Trustees	info@lctberrien.org	(269) 429-0880	2055 W. John Beers Rd Stevensville, MI 49127	
+10485	town-cou	47600	lincoln charter	council	4	0	Deborah K. Peterson	2024-11-05	R	5962	24	4					https://lctberrien.org/192/Board-of-Trustees	dkpeterson51@comcast.net	(269) 428-2385	2055 W. John Beers Rd Stevensville, MI 49127	
+10486	town-cou	47600	lincoln charter	council	4	0	Amy Pheifer	2024-11-05	R	5981	24	4					https://lctberrien.org/192/Board-of-Trustees	info@lctberrien.org	(269) 429-1589	2055 W. John Beers Rd Stevensville, MI 49127	
+10487	town-cou	47600	lincoln charter	council	4	0	Richard C. Stauffer	2024-11-05	R	5829	24	4					https://lctberrien.org/Directory.aspx?did=12	info@lctberrien.org	(269) 429-2919	2055 W. John Beers Rd Stevensville, MI 49127	
+5705	vil-cou	53500	michiana	council	4	0	Michael Botelho	2024-11-05	?	105	35	4		R			https://michianavillage.org/council-meetings	mbotelho@michianavillage.org	(269) 469-4600	4000 Cherokee Drive | Michiana, MI | 49117	
+5706	vil-cou	53500	michiana	council	4	0	Nancy Thill	2024-11-05	?	86	28	4		R			https://michianavillage.org/council-meetings		(269) 469-4600	4000 Cherokee Drive | Michiana, MI | 49117	
+7742	vil-cou	53500	michiana	council	4	0	Mike Mumper	2024-11-05	?	100	97	4	Y		P		https://michianavillage.org/council-meetings	mmumper@michianavillage.org	(269) 469-4600	4000 Cherokee Drive | Michiana, MI | 49117	
+7743	vil-cou	53500	michiana	council	4	0	Tim McCarthy	2024-11-05	?	103	34	4					https://michianavillage.org/council-meetings	tmccarthy@michianavillage.org	(269) 469-4600	4000 Cherokee Drive | Michiana, MI | 49117	
+568	city-cou	57220	new buffalo		5	0	Karen J. Gear	2024-11-05	?	469	21	4					cityofnewbuffalomi.gov		(269) 469-1011	224 W. Buffalo, New Buffalo 49117	
+569	city-cou	57220	new buffalo		5	0	Rich Knoll	2024-11-05	?	570	26	4					cityofnewbuffalomi.gov	elections@michigan.gov	(888) 767-6424	224 W. Buffalo, New Buffalo 49117	
+570	city-cou	57220	new buffalo		5	0	Roger Lijewski	2024-11-05	?	569	25	4					cityofnewbuffalomi.gov	rlijewski@cityofnewbuffalomi.gov		224 W. Buffalo, New Buffalo 49117	
+6377	city-cou	57220	new buffalo		5	0	Vance Price	2022-11-08	?	451	33	4	Y				cityofnewbuffalomi.gov	vprice@cityofnewbuffalomi.gov		224 W. Buffalo, New Buffalo 49117	
+6378	city-cou	57220	new buffalo		5	0	Mark Robertson	2022-11-08	?	368	27	4	Y				cityofnewbuffalomi.gov	mrobertson@cityofnewbuffalomi.gov		224 W. Buffalo, New Buffalo 49117	
+1878	schl-cou	25140	new buffalo		5	0	John Haskins	2024-11-05	?	1495	33	4					www.nbas.org	jhaskins@nbs.org		1112 East Clay Street New Buffalo, MI 49117	
+7090	schl-cou	25140	new buffalo		5	0	Vanessa Thun	2024-11-05	?	1790	98	4			P		www.nbas.org	vthun@nbas.org		1112 East Clay Street New Buffalo, MI 49117	
+7091	schl-cou	25140	new buffalo		5	0	Jennifer Summers	2024-11-05	?	1681	98	4	Y		P		www.nbas.org	jsummers@nbas.org		1112 East Clay Street New Buffalo, MI 49117	
+7092	schl-cou	25140	new buffalo		5	0	Stephen Donnelly	2024-11-05	?	1633	36	4					www.nbas.org	sdonnelly@nbas.org		1112 East Clay Street New Buffalo, MI 49117	
+8967	schl-cou	25140	new buffalo		5	0	Greg Vosberg	2024-11-05	?	1302	29	4					www.nbas.org	gvosberg@nbas.org		1112 East Clay Street New Buffalo, MI 49117	
+2698	town	57230	new buffalo	town-clerk	1	0	Michelle Hannon	2024-11-05	D	1114	96	4					https://newbuffalotownship.org/about/board-members	mhannon@newbuffalotownship.org	(269) 469-1011	17425 Red Arrow Highway New Buffalo, MI 49117	
+3364	town	57230	new buffalo	town-super	1	0	Michelle Heit	2024-11-05	R	1000	95	4					https://newbuffalotownship.org/about/board-members	mheit@newbuffalotownship.org	(269) 469-1011	17425 Red Arrow Highway New Buffalo, MI 49117	
+3986	town	57230	new buffalo	town-treas	1	0	Patricia Iazzetto	2024-11-05	R	989	96	4					https://newbuffalotownship.org/about/board-members	piazzetto@newbuffalotownship.org	(269) 469-1011	17425 Red Arrow Highway New Buffalo, MI 49117	https://newbuffalotownship.org/assets/files/board-members/PATTY-2.jpg
+4880	town-cou	57230	new buffalo	council	2	0	Barb Anderson	2024-11-05	D	976	37	4					https://newbuffalotownship.org/about/board-members		(269) 469-1011	17425 Red Arrow Highway New Buffalo, MI 49117	https://newbuffalotownship.org/assets/files/board-members/BARB.jpg
+10588	town-cou	57230	new buffalo	council	2	0	Howard Males	2024-11-05	D	869	33	4					https://newbuffalotownship.org/about/board-members		(269) 469-1011	17425 Red Arrow Highway New Buffalo, MI 49117	https://newbuffalotownship.org/assets/files/board-members/HOWARD.jpg
+429	city	57760	niles	mayor	1	0	Nick Shelton	2024-11-05	?	3585	95	4					www.nilesmi.org	mayor@nilesmi.org		333 N 2nd St., Ste 301 Niles, MI 49120	
+571	city-cou	57760	niles		2	1	Georgia Boggs	2024-11-05	?	387	52	4					www.nilesmi.org		(269) 683-3873	333 N. 2nd Street, Niles, MI 49120	
+572	city-cou	57760	niles		2	2	Sheila A. Koebel	2024-11-05	?	652	63	4					www.nilesmi.org			604 N. 15th St. Niles MI 49120	
+573	city-cou	57760	niles		2	3	Charlie McAfee	2024-11-05	?	398	52	4					www.nilesmi.org		(269) 325-1834	4700 Visit Website More Details Municipalities Cornerstone Alliance 80 W Main St , Benton Harbor , MI 49022	
+574	city-cou	57760	niles		2	4	Jessica J. Nelson	2024-11-05	?	731	60	4					www.nilesmi.org		(231) 429-9385	52 1870 Saint Johns Boulevard Apt 4, Lincoln Park, MI 48146	
+6379	city-cou	57760	niles		2	1	Gretchen G. Bertschy	2022-11-08	?	367	95	4	Y				www.nilesmi.org			333 N. 2nd Street, Niles, MI 49120	
+6380	city-cou	57760	niles		2	2	Timothy John Rogers	2022-11-08	W	14	13	4	Y				www.nilesmi.org			333 N. 2nd Street, Niles, MI 49120	
+6381	city-cou	57760	niles		2	3	William R. Weimer	2022-11-08	?	403	96	4	Y				www.nilesmi.org		(269) 683-4446	333 N. 2nd Street, Niles, MI 49120	
+6382	city-cou	57760	niles		2	4	Michael Andrew Thompson	2022-11-08	W	7	5	4	Y				www.nilesmi.org			333 N. 2nd Street, Niles, MI 49120	
+1893	schl-cou	25560	niles		4	0	Joshua Asmus	2020-11-03	?	4524	26	6	Y				https://nilesschools.org/ncs/district/board-of-education-2/board-agendas-minutes/		(269) 683-0732	2120 20th Place, Niles, MI 49120	
+7102	schl-cou	25560	niles		4	0	Kelly Gaideski	2024-11-05	?	7290	96	6			P		https://nilesschools.org/ncs/district/board-of-education-2/board-agendas-minutes/		(269) 683-0732	2120 20th Place, Niles, MI 49120	
+8978	schl-cou	25560	niles		4	0	David Fish	2024-11-05	?	6955	94	6					https://nilesschools.org/ncs/district/board-of-education-2/board-agendas-minutes/		(269) 683-0732	2120 20th Place, Niles, MI 49120	
+8979	schl-cou	25560	niles		4	0	Paulette Johnson	2024-11-05	?	15	0	6					https://nilesschools.org/ncs/district/board-of-education-2/board-agendas-minutes/		(269) 683-0732	2120 20th Place, Niles, MI 49120	
+2705	town	57780	niles charter	town-clerk	1	0	Daniel C. Pulaski Jr.	2024-11-05	R	5245	97	4					www.nilestwpmi.gov	dpulaski@nilestwpmi.gov		320 Bell Rd, Niles, MI 49120	
+2987	town	57780	niles charter	town-park	1	0	Christopher J. Warburton	2024-11-05	R	4379	20	4	?				www.nilestwpmi.gov			320 Bell Rd, Niles, MI 49120	
+3371	town	57780	niles charter	town-super	1	0	Marge Durm-Hiatt	2024-11-05	R	5325	97	4					www.nilestwpmi.gov	mdurmhiatt@nilestwpmi.gov		320 Bell Rd, Niles, MI 49120	
+3993	town	57780	niles charter	town-treas	1	0	James H. Ringler	2024-11-05	R	5252	96	4					www.nilestwpmi.gov	jringler@nilestwpmi.gov		320 Bell Rd, Niles, MI 49120	
+4890	town-cou	57780	niles charter	council	4	0	Richard L. Cooper	2024-11-05	R	4677	24	4					www.nilestwpmi.gov	rcooper@nilestwpmi.gov		320 Bell Rd, Niles, MI 49120	
+10591	town-cou	57780	niles charter	council	4	0	Terri Grimes	2024-11-05	R	4696	24	4					www.nilestwpmi.gov	tgrimes@ci.niles.mi.us	(269) 683-8364	320 Bell Rd, Niles, MI 49120	
+10592	town-cou	57780	niles charter	council	4	0	Herschel Hoese	2024-11-05	R	4535	24	4					www.nilestwpmi.gov	hhoese@nilestwpmi.gov		320 Bell Rd, Niles, MI 49120	
+10593	town-cou	57780	niles charter	council	4	0	Christine Vella	2024-11-05	R	4666	24	4					www.nilestwpmi.gov	cvella@nilestwpmi.gov		320 Bell Rd, Niles, MI 49120	
+2730	town	61180	oronoko charter	town-clerk	1	0	Michelle Bolin	2024-11-05	R	2634	94	4					https://www.oronokotownship.org/officials/index.php	clerk@oronokotownship.org	(269) 471-2824	4583 E Snow Road, Berrien Springs, MI 49103	
+3396	town	61180	oronoko charter	town-super	1	0	Mike Hildebrand	2024-11-05	R	2670	94	4					https://www.oronokotownship.org/officials/index.php	supervisor@oronokotownship.org		4583 E Snow Road, Berrien Springs, MI 49103	
+4018	town	61180	oronoko charter	town-treas	1	0	Lawrence E. Schalk	2024-11-05	R	2620	94	4					https://www.oronokotownship.org/officials/index.php			4583 E Snow Road, Berrien Springs, MI 49103	
+4942	town-cou	61180	oronoko charter	council	4	0	Rich Albers	2024-11-05	R	2199	24	4					https://www.oronokotownship.org/officials/index.php			4583 E Snow Road, Berrien Springs, MI 49103	
+10620	town-cou	61180	oronoko charter	council	4	0	Don Damron	2024-11-05	R	2267	25	4					https://www.oronokotownship.org/officials/index.php			4583 E Snow Road, Berrien Springs, MI 49103	
+10621	town-cou	61180	oronoko charter	council	4	0	Marc Kerlikowske	2024-11-05	R	2177	24	4					https://www.oronokotownship.org/officials/index.php		(269) 471-7548	4583 E Snow Road, Berrien Springs, MI 49103	
+10622	town-cou	61180	oronoko charter	council	4	0	Tyson Keigley	2024-11-05	N	1150	12	4					https://www.oronokotownship.org/officials/index.php			4583 E Snow Road, Berrien Springs, MI 49103	https://static.change.org/profile-img/default-user-profile.svg
+2754	town	64480	pipestone	town-clerk	1	0	Karen K. Basham	2024-11-05	R	1010	98	4					https://pipestonetownship.org/contact-us/		(269) 461-6151	N. Elm St.  Eau Claire, MI 49111	
+3420	town	64480	pipestone	town-super	1	0	Doug Davis	2024-11-05	R	1006	98	4					https://pipestonetownship.org/contact-us/	supervisor@pipestonetownship.org	(269) 461-6151	N. Elm St. Eau Claire, MI 49111	
+4042	town	64480	pipestone	town-treas	1	0	Virginia Jo Gonzalez	2024-11-05	N	472	97	4					https://pipestonetownship.org/treasurer/	treasurer@pipestonetownship.org	(269) 461-6151	N. Elm St.  Eau Claire, MI 49111	
+4987	town-cou	64480	pipestone	council	2	0	Robert G. Bishop	2024-11-05	R	968	51	4					https://pipestonetownship.org/contact-us/	supervisor@pipestonetownship.org	(269) 782-8181	N. Elm St.  Eau Claire, MI 49111	
+10656	town-cou	64480	pipestone	council	2	0	Floyd Sommer	2024-11-05	R	910	48	4					https://pipestonetownship.org/contact-us/	supervisor@pipestonetownship.org	(269) 461-6151	N. Elm St.  Eau Claire, MI 49111	
+2026	schl-cou	29790	river valley		4	0	Gail Freehling	2020-11-03	?	2738	35	6	Y				www.rivervalleyschools.org/en-US		(269) 983-7111	15480 THREE OAKS RD  THREE OAKS, MI 49128	
+2027	schl-cou	29790	river valley		4	0	Nikki Springer	2022-11-08	?	2398	53	6					www.rivervalleyschools.org/en-US			15480 THREE OAKS RD  THREE OAKS, MI 49128	
+9056	schl-cou	29790	river valley		4	0	Jennifer Alderink	2024-11-05	?	2462	44	6					www.rivervalleyschools.org/en-US			15480 THREE OAKS RD  THREE OAKS, MI 49128	
+9057	schl-cou	29790	river valley		4	0	Jen Strefling	2024-11-05	?	3015	54	6					www.rivervalleyschools.org/en-US			15480 THREE OAKS RD  THREE OAKS, MI 49128	
+2798	town	70100	royalton	town-clerk	1	0	Rachel Bernard	2024-11-05	R	2349	98	4					https://royaltontownship.org/clerk/	rbernard@royaltontownship.org	(269) 429-2501	980 Miners Road St. Joseph, MI 49085	
+3466	town	70100	royalton	town-super	1	0	Robert L. Basselman	2024-11-05	R	2361	98	4					https://royaltontownship.org/board-of-review/	info@royaltontownship.org	(269) 429-2501	980 Miners Road St. Joseph, MI 49085	
+4087	town	70100	royalton	town-treas	1	0	Michael Joseph Eisenhart	2024-11-05	R	2348	98	4					https://royaltontownship.org/board-of-trustees/	meisenhart@royaltontownship.org	(269) 429-2501	980 Miners Road St. Joseph, MI 49085	
+5079	town-cou	70100	royalton	council	2	0	Jason K. Ackerman	2024-11-05	R	2190	49	4					royaltontownship.org	ackerman94@yahoo.com	(269) 429-2501	980 Miners Road St. Joseph, MI 49085	
+10709	town-cou	70100	royalton	council	2	0	Julie A. Marsh	2024-11-05	R	2177	49	4					royaltontownship.org	julieamarsh1972@gmail.com	(269) 429-2501	980 Miners Road St. Joseph, MI 49085	
+5394	vil	73660	shoreham	clerk	1	0	Stephanie Clarke	2024-11-05	?	393	96	2	Y				https://www.shorehamvillagemi.org/staff.aspx		(269) 408-1393	2120 Brown School Road Saint Joseph MI 49085	
+5488	vil	73660	shoreham	pres	1	0	Robert Clarke	2024-11-05	?	387	96	2	Y				https://www.shorehamvillagemi.org/pview.aspx?id=2044&catid=26		(269) 408-1393	2120 Brown School Road Saint Joseph MI 49085	
+7588	vil	73660	shoreham	treas	1	0	Pete Plikaitis	2024-11-05	?	396	97	2	Y				https://www.shorehamvillagemi.org/pview.aspx?id=2017&catid=26		(269) 408-1393	2120 Brown School Road Saint Joseph MI 49085	
+5788	vil-cou	73660	shoreham	council	3	0	Stephanie Clarke	2020-11-03	?	337	51	2	?				https://www.shorehamvillagemi.org/staff.aspx		(269) 408-1393	2120 Brown School Road Saint Joseph MI 49085	
+7806	vil-cou	73660	shoreham	council	3	0	Michael Allard	2022-11-08	?	318	49	2	?				https://www.shorehamvillagemi.org/staff.aspx	allard.shoreham@gmail.com	(269) 408-1393	2120 Brown School Road Saint Joseph MI 49085	
+11252	vil-cou	73660	shoreham	council	3	0	Susan King	2024-11-05	?	386	96	2	?				https://www.shorehamvillagemi.org/staff.aspx	king.shoreham@gmail.com	(269) 408-1393	2120 Brown School Road Saint Joseph MI 49085	
+2839	town	74440	sodus	town-clerk	1	0	Cheryl Andres	2024-11-05	R	852	97	4					www.sodustwp.org	clerk@sodustwp.org		4056 King Drive  Sodus, MI 49126	
+3507	town	74440	sodus	town-super	1	0	David I. Chandler	2024-11-05	R	769	79	4					www.sodustwp.org	chandler@sodustwp.org		4056 King Drive Sodus, MI 49126	
+4128	town	74440	sodus	town-treas	1	0	Terry Gilson-McCain	2024-11-05	R	829	97	4					www.sodustwp.org	treasurer@sodustwp.org		4056 King Drive  Sodus, MI 49126	
+5153	town-cou	74440	sodus	council	2	0	Loyall Bennett	2024-11-05	R	803	50	4					https://www.sodustwp.org/boardofreview		(269) 925-6285	4056 King Drive  Sodus, MI 49126	
+10755	town-cou	74440	sodus	council	2	0	Ken Peters	2024-11-05	R	772	48	4					https://www.sodustwp.org/boardofreview		(269) 926-6285	4056 King Drive  Sodus, MI 49126	
+7242	schl-cou	32070	sodus township 5		2	0	Erica Santiago	2022-11-08	?	42	75	4	Y				https://riverschoolk8.org/board-of-education/	esantiago@riverschoolk8.org		4439 River Road, Sodus, Michigan	
+6169	city-cou	70960	st joseph		6	0	Michael Fernandez	2025-11-04	?	1241	18	4					https://www.sjcity.com/directory-listing/michael-fernandez	mfernandez@sjcity.com	(269) 983-5541	700 Broad St. | St. Joseph, MI 49085	https://www.sjcity.com/sites/default/files/styles/full_node_primary/public/imageattachments/directory/3230/michael_fernandez.jpg?itok=E0LTwCyT
+6170	city-cou	70960	st joseph		6	0	Mike Sarola	2025-11-04	?	1141	16	4					https://www.sjcity.com/directory-listing/michael-fernandez	elections@michigan.gov	(888) 767-6424	700 Broad St. | St. Joseph, MI 49085	
+6171	city-cou	70960	st joseph		6	0	Lisa Vetne	2025-11-04	?	1428	20	4					https://www.sjcity.com/directory-listing/lisa-vetne	lvetne@sjcity.com	(269) 983-5541	700 Broad St. | St. Joseph, MI 49085	
+8098	city-cou	70960	st joseph		6	0	Michael Fernandez	2023-11-07	?	882	17	4					https://www.sjcity.com/directory-listing/michael-fernandez	mfernandez@sjcity.com	(269) 983-5541	700 Broad St. | St. Joseph, MI 49085	https://www.sjcity.com/sites/default/files/styles/full_node_primary/public/imageattachments/directory/3230/michael_fernandez.jpg?itok=E0LTwCyT
+8099	city-cou	70960	st joseph		6	0	Brook Thomas	2023-11-07	?	1287	25	4					https://www.sjcity.com/directory-listing/brook-thomas	bthomas@sjcity.com	(269) 983-5541	700 Broad St. | St. Joseph, MI 49085	https://www.sjcity.com/sites/default/files/styles/full_node_primary/public/imageattachments/directory/2345/brook_thomas.jpg?itok=tIzdytBa
+8100	city-cou	70960	st joseph		6	0	Tess Ulrey	2023-11-07	?	934	18	4					https://www.sjcity.com/directory-listing/tess-ulrey	tulrey@sjcity.com	(269) 983-5541	700 Broad St. | St. Joseph, MI 49085	
+2097	schl-cou	32850	st joseph		5	0	Amy Marohn	2020-11-03	?	7383	51	6	Y				www.sjschools.org			2580 S. Cleveland Avenue St Joseph, MI 49085	
+7265	schl-cou	32850	st joseph		5	0	Barry Conybeare	2022-11-08	?	5695	32	6					www.sjschools.org		(269) 983-0561	2580 S. Cleveland Avenue St Joseph, MI 49085	https://abotami.org/wp-content/uploads/2020/11/ConybeareBarry.jpg
+9117	schl-cou	32850	st joseph		5	0	Becky Clarke Foster	2024-11-05	?	5919	26	6					www.sjschools.org			2580 S. Cleveland Avenue St Joseph, MI 49085	
+9118	schl-cou	32850	st joseph		5	0	Brett Wier	2024-11-05	?	6085	26	6					https://www.sjschools.org/page/board-of-education		(269) 369-8622	2580 S. Cleveland Avenue St Joseph, MI 49085	
+9119	schl-cou	32850	st joseph		5	0	Kerry M. Wright II	2024-11-05	?	6381	28	6					www.sjschools.org			2580 S. Cleveland Avenue St Joseph, MI 49085	
+2807	town	70980	st joseph charter	town-clerk	1	0	Patrice Rose	2024-11-05	R	3738	57	4					http://sjct.org/departments/clerks-office	prose@sjct.org	(269) 429-7703	3000 Washington Avenue, P.O. Box 147, St. Joseph, MI 49085	
+3475	town	70980	st joseph charter	town-super	1	0	Roger Seely	2024-11-05	R	4431	95	4					http://sjct.org/departments/clerks-office		(269) 429-7703	3000 Washington Ave. P.O. Box 147, St. Joseph, MI 49085-0147	
+4096	town	70980	st joseph charter	town-treas	1	0	David Vonk	2024-11-05	R	3751	57	4					http://sjct.org/departments/treasurers-office		(269) 429-7703	3000 Washington Ave. P.O. Box 147, St. Joseph, MI 49085-0147	
+5094	town-cou	70980	st joseph charter	council	4	0	Timothy Drews	2024-11-05	R	3458	17	4					https://www.michigan.gov/egle/about/organization/water-resources/stormwater/construction/operator-certification/list-of-certified-operators		(989) 894-6200	3000 Washington Ave. P.O. Box 147, St. Joseph, MI 49085-0147	
+10721	town-cou	70980	st joseph charter	council	4	0	Melissa Hahn	2024-11-05	R	3775	18	4					https://www.michigan.gov/egle/about/organization/water-resources/stormwater/construction/operator-certification/list-of-certified-operators		(269) 429-7703	3000 Washington Ave. P.O. Box 147, St. Joseph, MI 49085-0147	
+10722	town-cou	70980	st joseph charter	council	4	0	Edward Meny	2024-11-05	R	3396	16	4					https://www.michigan.gov/egle/about/organization/water-resources/stormwater/construction/operator-certification/list-of-certified-operators		(269) 429-7703	3000 Washington Ave. P.O. Box 147, St. Joseph, MI 49085-0147	
+10723	town-cou	70980	st joseph charter	council	4	0	Thomas Milnikel	2024-11-05	R	3440	17	4					https://www.michigan.gov/egle/about/organization/water-resources/stormwater/construction/operator-certification/list-of-certified-operators		(269) 429-7703	3000 Washington Ave. P.O. Box 147, St. Joseph, MI 49085-0147	
+5493	vil	76500	stevensville	pres	1	0	Bert Peters	2024-11-05	?	260	49	2	Y				https://www.villageofstevensville.us/staff.aspx		(269) 429-1802	5768 Saint Joseph Avenue Stevensville, MI 49127	
+5801	vil-cou	76500	stevensville	council	4	0	Pat Arter	2020-11-03	?	419	34	2	?				www.villageofstevensville.us		(269) 429-1802	5768 Saint Joseph Avenue Stevensville, MI 49127	
+7814	vil-cou	76500	stevensville	council	4	0	Jessica Patterson	2022-11-08	?	363	49	2	?				www.villageofstevensville.us		(269) 429-1802	5768 Saint Joseph Avenue Stevensville, MI 49127	
+11260	vil-cou	76500	stevensville	council	4	0	Chris Mason	2024-11-05	?	371	49	2	?				www.villageofstevensville.us		(269) 429-1802	5768 Saint Joseph Avenue Stevensville, MI 49127	
+11261	vil-cou	76500	stevensville	council	4	0	Holly Bitz Schewe	2024-11-05	?	368	49	2	?				www.villageofstevensville.us		(269) 429-1802	5768 Saint Joseph Avenue Stevensville, MI 49127	
+2877	town	79740	three oaks	town-clerk	1	0	Marcie B. Miles	2024-11-05	R	905	98	4					https://www.threeoakstownship.org/township-board/		(269) 756-9801	6810 U.S. Hwy., Three Oaks, MI 49128	
+3545	town	79740	three oaks	town-super	1	0	Philip Smith	2024-11-05	R	927	98	4					https://www.threeoakstownship.org/township-board/		(269) 756-9801	6810 U.S. Hwy., Three Oaks, MI 49128	
+4166	town	79740	three oaks	town-treas	1	0	Kathleen Osburn	2024-11-05	R	922	98	4					https://www.threeoakstownship.org/township-board/	kosburnthreeoakstwp@yahoo.com	(269) 756-9801	6810 U.S. Hwy., Three Oaks, MI 49128	
+5229	town-cou	79740	three oaks	council	2	0	Christian Mitchell	2024-11-05	D	672	45	4					https://www.threeoakstownship.org/township-board/		(269) 756-9801	6810 U.S. Hwy., Three Oaks, MI 49128	
+10820	town-cou	79740	three oaks	council	2	0	John Swanstrom	2024-11-05	R	785	53	4					https://www.threeoakstownship.org/township-board/		(269) 756-9801	6810 U.S. Hwy., Three Oaks, MI 49128	
+5497	vil	79720	three oaks	pres	1	0	Steve Graziano	2024-11-05	?	490	97	2	Y				www.threeoaksvillage.org			21 North Elm Three Oaks, MI 49128	
+5812	vil-cou	79720	three oaks	council	5	0	Joe Hinman	2020-11-03	?	366	22	2	?				www.threeoaksvillage.org	jhinman@threeoaksvillage.org		21 North Elm Three Oaks, MI 49128	
+7831	vil-cou	79720	three oaks	council	5	0	Becky Thomas	2022-11-08	?	314	25	2	?				www.threeoaksvillage.org	bthomas@threeoaksvillage.org		21 North Elm Three Oaks, MI 49128	
+11273	vil-cou	79720	three oaks	council	5	0	Joseph Hinman	2024-11-05	?	390	28	2	?				www.threeoaksvillage.org			21 North Elm Three Oaks, MI 49128	
+11274	vil-cou	79720	three oaks	council	5	0	John C. Kramer	2024-11-05	?	357	26	2	?				www.threeoaksvillage.org	jkramer@threeoaksvillage.org		21 North Elm Three Oaks, MI 49128	
+11275	vil-cou	79720	three oaks	council	5	0	Mike Springer	2024-11-05	?	385	28	2	?				www.threeoaksvillage.org		(269) 756-9585	21 North Elm Three Oaks, MI 49128	
+441	city	84500	watervliet	mayor	1	0	Deah Muth	2024-11-05	?	554	95	2	Y				http://www.watervliet.org			158 W Pleasant St, PO Box 86, Watervliet, MI 49098	
+652	city-cou	84500	watervliet		7	0	Michael A. Bumstead	2024-11-05	?	330	27	4		R			https://www.watervliet.org/boardofreview		(269) 463-6769	158 W Pleasant St, PO Box 86, Watervliet, MI 49098	
+653	city-cou	84500	watervliet		7	0	Duane Cobb	2024-11-05	?	270	22	4		R			https://www.watervliet.org/boardofreview			158 W Pleasant St, PO Box 86, Watervliet, MI 49098	
+6433	city-cou	84500	watervliet		7	0	David Brinker	2022-11-08	?	274	29	4	Y				http://www.watervliet.org		(517) 243-4041	158 W Pleasant St, PO Box 86, Watervliet, MI 49098	
+6434	city-cou	84500	watervliet		7	0	John LaRatta	2022-11-08	?	290	30	4	Y				http://www.watervliet.org			158 W Pleasant St, PO Box 86, Watervliet, MI 49098	
+6435	city-cou	84500	watervliet		7	0	Rebecca E. Oliphant	2022-11-08	?	356	37	4	Y				http://www.watervliet.org	info@watervlietny.gov	(269) 463-5495	158 W Pleasant St, PO Box 86, Watervliet, MI 49098	
+6436	city-cou	84500	watervliet		7	0	William Whitney Jr.	2024-11-05	?	303	25	4					https://www.watervliet.org/boardofreview			158 W Pleasant St, PO Box 86, Watervliet, MI 49098	
+8268	city-cou	84500	watervliet		7	0	Zachary Smith	2024-11-05	?	511	95	4	Y				http://www.watervliet.org			158 W Pleasant St, PO Box 86, Watervliet, MI 49098	https://www.michigan.gov/leo/-/media/Project/Websites/leo/Images/Executive1/Jonathan-Smith.JPG?rev=d97c689b1b564bab9de8aa985c1b0ffc&hash=158049200941D75BF74A7757822B5E6B
+2177	schl-cou	35460	watervliet		5	0	Wendy Jean Hart	2020-11-03	W	13	4	6			P		https://www.watervlietps.org/board			450 E. St. Joseph St Watervliet, Michigan 49098	
+2178	schl-cou	35460	watervliet		5	0	Brian Gruszczyk	2022-11-08	?	1638	97	6	Y		P		https://www.watervlietps.org/board	brian.gruszczyk@watervlietps.org		450 E. St. Joseph St Watervliet, Michigan 49098	
+7332	schl-cou	35460	watervliet		5	0	James Tyler	2024-11-05	?	2148	97	6			P		https://www.watervlietps.org/board			450 E. St. Joseph St Watervliet, Michigan 49098	
+9203	schl-cou	35460	watervliet		5	0	Amanda Morlock-Fisher	2024-11-05	?	1301	33	6					https://www.watervlietps.org/board	info@watervlietny.gov	(269) 463-5495	450 E. St. Joseph St Watervliet, Michigan 49098	
+9204	schl-cou	35460	watervliet		5	0	Gina Grear	2024-11-05	?	1426	36	6					https://www.watervlietps.org/board			450 E. St. Joseph St Watervliet, Michigan 49098	
+2915	town	84520	watervliet charter	town-clerk	1	0	Linda Rizzo	2024-11-05	R	1223	98	4					http://www.watervliettownship.org		(269) 465-6601	4959 M-140 Watervliet, MI 49098	
+3583	town	84520	watervliet charter	town-super	1	0	Bob Wallace	2024-11-05	R	1210	97	4					http://www.watervliettownship.org		(269) 463-5113	4959 M-140 Watervliet, MI 49098	
+4203	town	84520	watervliet charter	town-treas	1	0	Thomas Scheid	2024-11-05	R	1221	98	4					http://www.watervliettownship.org			4959 M-140 Watervliet, MI 49098	
+5291	town-cou	84520	watervliet charter	council	4	0	Kevin Cole	2024-11-05	R	1083	24	4					http://www.watervliettownship.org		(269) 468-8040	4959 M-140 Watervliet, MI 49098	
+10859	town-cou	84520	watervliet charter	council	4	0	Colleen Curtis	2024-11-05	R	1149	25	4					http://www.watervliettownship.org			4959 M-140 Watervliet, MI 49098	
+10860	town-cou	84520	watervliet charter	council	4	0	Vick Kinzler	2024-11-05	R	1066	24	4					http://www.watervliettownship.org		(269) 463-3422	4959 M-140 Watervliet, MI 49098	
+10861	town-cou	84520	watervliet charter	council	4	0	Mary Ann Pater	2024-11-05	R	1087	24	4					http://www.watervliettownship.org		(269) 588-4024	4959 M-140 Watervliet, MI 49098	
+2923	town	85120	weesaw	town-clerk	1	0	Erika Burcham	2024-11-05	R	833	97	4					www.weesawtownship.net			13518 State Street, New Troy, MI 49119	
+3591	town	85120	weesaw	town-super	1	0	Gary Sommers	2024-11-05	R	824	96	4					www.weesawtownship.net		(269) 422-1432	13518 State Street, New Troy, MI 49119	
+4211	town	85120	weesaw	town-treas	1	0	Michelle Tackitt	2024-11-05	R	808	83	4					www.weesawtownship.net			13518 State Street, New Troy, MI 49119	
+5305	town-cou	85120	weesaw	council	2	0	Arthur R. King	2024-11-05	R	795	50	4					www.weesawtownship.net			13518 State Street, New Troy, MI 49119	
+10865	town-cou	85120	weesaw	council	2	0	James Pelletier	2024-11-05	R	755	47	4					www.weesawtownship.net			13518 State Street, New Troy, MI 49119	

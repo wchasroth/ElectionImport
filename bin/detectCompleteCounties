@@ -1,0 +1,16 @@
+#!/bin/bash
+
+cd $ELECTION_IMPORT/Counties
+for x in *; do
+   if test -d $x; then
+      cd $x
+      if test ! -s complete; then
+         ph1s=`ls *.ph1.* 2>/dev/null | wc -l`
+         ph8s=`ls *.ph8.* 2>/dev/null | wc -l`
+         if test "$ph1s" = "$ph8s" -a "$ph1s" -gt 0; then
+            echo "$x"
+         fi
+      fi
+      cd ..
+   fi
+done

@@ -1,0 +1,330 @@
+id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	termlen	open	Res	Part	manual	web	email	phone	address	headshot
+695	cnty	81	__	atty	1	0	Jeffrey S. Getting	2024-11-05	D	97113	95	4					www.kalcounty.com/opa		269-383-8900	227 West Kalamazoo Avenue, Kalamazoo MI 49007	
+745	cnty	81	__	clerkreg	1	0	Meredith Place	2024-11-05	D	79017	56	4					www.kalcounty.com/clerk		269-383-8840	201 West Kalamazoo Avenue, Kalamazoo MI 49007	https://www.kalcounty.gov/ImageRepository/Document?documentID=4749
+767	cnty	81	__	drain	1	0	Jason Wiersma	2024-11-05	D	96029	95	4					www.kalcounty.com/drain		269-384-8117	201 West Kalamazoo Avenue, Kalamazoo MI 49007	
+842	cnty	81	__	sheriff	1	0	Richard C. Fuller III	2024-11-05	D	84478	59	4					www.kalcounty.com/sheriff		269-383-8821	1500 Lamont Avenue, Kalamazoo MI 49048	
+871	cnty	81	__	surv	1	0	Gary Hahn	2024-11-05	D	95579	95	4					www.kalcounty.com/opa	ghahn@gowightman.com	269-384-8111	201 West Kalamazoo Avenue, Kalamazoo MI 49007	
+895	cnty	81	__	treas	1	0	Thomas Whitener	2024-11-05	D	75509	54	4					www.kalcounty.com/treasurer		269-384-8124	201 West Kalamazoo Avenue, Kalamazoo MI 49007	
+1029	cnty-com	81	__		1	1	Tami Rey	2024-11-05	D	8607	75	4					www.kalcounty.com/board	tami.rey@kalcounty.com	269-384-8111	201 West Kalamazoo Avenue, Kalamazoo MI 49007	
+1030	cnty-com	81	__		1	2	Jen Strebs	2024-11-05	D	8855	71	4					www.kalcounty.com/board	jen.strebs@kalcounty.com	269-384-8111	201 West Kalamazoo Avenue, Kalamazoo MI 49007	
+1031	cnty-com	81	__		1	3	Monteze O. Morales	2024-11-05	D	11432	76	4					www.kalcounty.com/board	monteze.morales@kalcounty.com	269-384-8111	201 West Kalamazoo Avenue, Kalamazoo MI 49007	
+1032	cnty-com	81	__		1	4	Abigail Wheeler	2024-11-05	D	9465	57	4					www.kalcounty.com/board	abigail.wheeler@kalcounty.com	269-384-8111	201 West Kalamazoo Avenue, Kalamazoo MI 49007	
+1033	cnty-com	81	__		1	5	John Patrick Taylor	2024-11-05	D	11053	95	4					www.kalcounty.com/board	john.taylor2@kalcounty.com	269-384-8111	201 West Kalamazoo Avenue, Kalamazoo MI 49007	
+1034	cnty-com	81	__		1	6	John Gisler	2024-11-05	R	11831	96	4					www.kalcounty.com/board	john.gisler@kalcounty.com	269-384-8111	201 West Kalamazoo Avenue, Kalamazoo MI 49007	
+1035	cnty-com	81	__		1	7	Jeff Heppler	2024-11-05	R	10241	57	4					www.kalcounty.com/board	jeff.heppler@kalcounty.com	269-384-8111	201 West Kalamazoo Avenue, Kalamazoo MI 49007	
+1036	cnty-com	81	__		1	8	Wendy Mazer	2024-11-05	R	10121	55	4					www.kalcounty.com/board	wendy.mazer@kalcounty.com	269-384-8111	201 West Kalamazoo Avenue, Kalamazoo MI 49007	
+1037	cnty-com	81	__		1	9	Dale DeLeeuw	2024-11-05	D	8121	55	4					www.kalcounty.com/board	dale.deleeuw@kalcounty.com	269-384-8111	201 West Kalamazoo Avenue, Kalamazoo MI 49007	
+2908	town	840	alamo	town-clerk	1	0	Barbara Venema	2024-11-05	R	1842	97	4					alamotownshipmi.gov/township-board		269-382-3366	7901 North 6th Street Kalamazoo, Michigan  49009	
+3576	town	840	alamo	town-super	1	0	Russell A. Scott	2024-11-05	R	1858	97	4					alamotownshipmi.gov/township-board	supervisor@alamotownship.org	269-382-3366	7901 North 6th Street Kalamazoo, Michigan  49009	
+4196	town	840	alamo	town-treas	1	0	Denise G. Wilcox	2024-11-05	R	1826	97	4					alamotownshipmi.gov/township-board	treasurer@alamotownship.org	269-382-3366	7901 North 6th Street Kalamazoo, Michigan  49009	
+5277	town-cou	840	alamo	council	2	0	Priscilla LoBretto	2024-11-05	R	1707	49	4					alamotownshipmi.gov/township-board		269-382-3366	7901 North 6th Street Kalamazoo, Michigan  49009	
+5278	town-cou	840	alamo	council	2	0	Andrea Venema	2024-11-05	R	1673	48	4					alamotownshipmi.gov/township-board	andrea.k.venema@gmail.com	269-382-3366	7901 North 6th Street Kalamazoo, Michigan  49009	
+2159	schl-cou	3510	athens		8	0	Rachel Hunt	2024-11-05	?	1130	22	4		R			www.athensk12.org		269-729-5414	300 E Holcomb St, Athens, MI 49011	
+2160	schl-cou	3510	athens		8	0	Eric McClure	2024-11-05	?	1496	30	4		R			www.athensk12.org	mccluree@athensk12.org	269-729-5414	300 E Holcomb St, Athens, MI 49011	
+2161	schl-cou	3510	athens		8	0	Jason Stanton	2020-11-03	N	1415	27	4		R			www.athensk12.org	stantonj@athensk12.org	269-729-5414	300 E Holcomb St, Athens, MI 49011	
+7319	schl-cou	3510	athens		8	0	Hilary Setlak	2022-11-08	N	1232	24	4	Y				www.athensk12.org	setlakh@athensk12.org	269-729-5414	300 E Holcomb St, Athens, MI 49011	
+7320	schl-cou	3510	athens		8	0	Jeffrey A. Penick	2022-11-08	N	1192	23	4	Y				www.athensk12.org	penickj@athensk12.org	269-729-5414	300 E Holcomb St, Athens, MI 49011	
+7321	schl-cou	3510	athens		8	0	John Knowles	2022-11-08	N	1315	25	4	Y				www.athensk12.org	knowlesj@athensk12.org	269-729-5414	300 E Holcomb St, Athens, MI 49011	
+7322	schl-cou	3510	athens		8	0	Mike R. Harvey	2022-11-08	N	1349	26	4	Y				www.athensk12.org	harveym@athensk12.org	269-729-5414	300 E Holcomb St, Athens, MI 49011	
+7323	schl-cou	3510	athens		8	0	Teri S. Loew	2024-11-05	?	1288	26	4					www.athensk12.org	loewt@athensk12.org	269-729-5414	300 E Holcomb St, Athens, MI 49011	
+5436	vil	4160	augusta	pres	1	0	John E. Thomas	2024-11-05	?	291	94	2	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	jethomas@tds.net	269-731-4146	109 W. Clinton St., Augusta, MI 49012	
+5436	vil	4160	augusta	pres	1	0	John E. Thomas	2024-11-05	?	291	94	2	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	jethomas@tds.net	269-731-4146	109 W. Clinton St., Augusta, MI 49012	
+5651	vil-cou	4160	augusta	council	10	0	Harvey Beatty	2020-11-03	N	216	24	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	hbeatty@tds.net	269-217-2664	109 W. Clinton St., Augusta, MI 49012	
+5651	vil-cou	4160	augusta	council	10	0	Harvey Beatty	2020-11-03	N	216	24	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	hbeatty@tds.net	269-217-2664	109 W. Clinton St., Augusta, MI 49012	
+5652	vil-cou	4160	augusta	council	10	0	Jeff Brink	2020-11-03	N	249	28	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	jeffdbrink@comcast.net	269-286-9550	109 W. Clinton St., Augusta, MI 49012	
+5652	vil-cou	4160	augusta	council	10	0	Jeff Brink	2020-11-03	N	249	28	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	jeffdbrink@comcast.net	269-286-9550	109 W. Clinton St., Augusta, MI 49012	
+5653	vil-cou	4160	augusta	council	10	0	Christina L. Thomas	2020-11-03	N	246	27	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	chris77thomas@gmail.com	269-731-4146	109 W. Clinton St., Augusta, MI 49012	
+5653	vil-cou	4160	augusta	council	10	0	Christina L. Thomas	2020-11-03	N	246	27	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	chris77thomas@gmail.com	269-731-4146	109 W. Clinton St., Augusta, MI 49012	
+7702	vil-cou	4160	augusta	council	10	0	Kim Carlton	2022-11-08	N	203	35	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	hbeatty@tds.net	269-217-2664	109 W. Clinton St., Augusta, MI 49012	
+7702	vil-cou	4160	augusta	council	10	0	Kim Carlton	2022-11-08	N	203	35	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	hbeatty@tds.net	269-217-2664	109 W. Clinton St., Augusta, MI 49012	
+7703	vil-cou	4160	augusta	council	10	0	Ann Daly	2022-11-08	N	193	33	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	anndaly64@gmail.com	269-365-1321	109 W. Clinton St., Augusta, MI 49012	
+7703	vil-cou	4160	augusta	council	10	0	Ann Daly	2022-11-08	N	193	33	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	anndaly64@gmail.com	269-365-1321	109 W. Clinton St., Augusta, MI 49012	
+7704	vil-cou	4160	augusta	council	10	0	Valerie Silkworth	2022-11-08	N	244	98	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	hbeatty@tds.net	269-217-2664	109 W. Clinton St., Augusta, MI 49012	
+7704	vil-cou	4160	augusta	council	10	0	Valerie Silkworth	2022-11-08	N	244	98	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	hbeatty@tds.net	269-217-2664	109 W. Clinton St., Augusta, MI 49012	
+11101	vil-cou	4160	augusta	council	10	0	Terry L. Burghdoff	2024-11-05	?	223	32	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	hbeatty@tds.net	269-217-2664	109 W. Clinton St., Augusta, MI 49012	
+11101	vil-cou	4160	augusta	council	10	0	Terry L. Burghdoff	2024-11-05	?	223	32	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	hbeatty@tds.net	269-217-2664	109 W. Clinton St., Augusta, MI 49012	
+11102	vil-cou	4160	augusta	council	10	0	H. Valerie Silkworth	2024-11-05	?	205	29	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	hbeatty@tds.net	269-217-2664	109 W. Clinton St., Augusta, MI 49012	
+11102	vil-cou	4160	augusta	council	10	0	H. Valerie Silkworth	2024-11-05	?	205	29	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	hbeatty@tds.net	269-217-2664	109 W. Clinton St., Augusta, MI 49012	
+11103	vil-cou	4160	augusta	council	10	0	Christina L. Thomas	2024-11-05	?	240	34	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	hbeatty@tds.net	269-217-2664	109 W. Clinton St., Augusta, MI 49012	
+11103	vil-cou	4160	augusta	council	10	0	Christina L. Thomas	2024-11-05	?	240	34	4	?				sites.google.com/villageofaugusta.com/villageofaugusta-com/home	hbeatty@tds.net	269-217-2664	109 W. Clinton St., Augusta, MI 49012	
+11104	vil-cou	4160	augusta	council	10	0	Andrew Ackley	2024-11-05	?	289	96	4	?		P		sites.google.com/villageofaugusta.com/villageofaugusta-com/home	hbeatty@tds.net	269-217-2664	109 W. Clinton St., Augusta, MI 49012	
+11104	vil-cou	4160	augusta	council	10	0	Andrew Ackley	2024-11-05	?	289	96	4	?		P		sites.google.com/villageofaugusta.com/villageofaugusta-com/home	hbeatty@tds.net	269-217-2664	109 W. Clinton St., Augusta, MI 49012	
+2954	town	9920	brady	town-clerk	1	0	Reagan Hunter	2024-11-05	R	1798	65	4					https://www.bradytwp.org/board-of-trustees/		(269) 649-1813	68044 Riverview Drive, South Haven, MI 49090	
+3623	town	9920	brady	town-super	1	0	Randy Smith	2024-11-05	R	2109	97	4					https://www.bradytwp.org/board-of-trustees/		(269) 649-1813	13123 S. 24th Street, Vicksburg, MI 49097	
+4243	town	9920	brady	town-treas	1	0	Elise Stephens	2024-11-05	R	2129	98	4					https://www.bradytwp.org/board-of-trustees/		(269) 649-1813	PO Box 20, Vicksburg, MI 49087-0020	
+5369	town-cou	9920	brady	council	4	0	John D. Meyer	2024-11-05	R	1898	25	4					https://www.bradytwp.org/board-of-trustees/		(269) 649-1813	13123 S. 24th Street PO Box 20 Vicksburg, Michigan  49097	
+5370	town-cou	9920	brady	council	4	0	Lee A. Naplin	2024-11-05	R	1825	24	4					https://www.bradytwp.org/board-of-trustees/		(269) 649-1813	13123 S. 24th Street, Vicksburg, MI 49097	
+10922	town-cou	9920	brady	council	4	0	Rodney C. Richardson	2024-11-05	R	1847	24	4					https://www.bradytwp.org/board-of-trustees/		(269) 649-1813	13123 S. 24th Street, Vicksburg, MI 49097	
+10923	town-cou	9920	brady	council	4	0	Todd Thompson	2024-11-05	R	1853	24	4					https://www.bradytwp.org/board-of-trustees/		(269) 649-1813	13123 S. 24th Street, Vicksburg, MI 49097	
+2386	town	14720	charleston	town-clerk	1	0	Alese LePert	2024-11-05	N	636	96	4					www.charlestontownship.org	charclerk@charlestontownship.org	269-665-7805	1499 South 38th St. PO Box 336 Galesburg, Michigan  49053	
+3050	town	14720	charleston	town-super	1	0	Jerry Vander Roest	2024-11-05	R	899	94	4					www.charlestontownship.org		269-665-7805	1499 South 38th St. PO Box 336 Galesburg, Michigan  49053	
+3670	town	14720	charleston	town-treas	1	0	Kim Balkema	2024-11-05	R	923	97	4					www.charlestontownship.org	chartreasurer@charlestontownship.org	269-665-7805	1499 South 38th St. PO Box 336 Galesburg, Michigan  49053	
+4318	town-cou	14720	charleston	council	2	0	Joshua Balkema	2024-11-05	R	831	64	4					www.charlestontownship.org		269-665-7805	1499 South 38th St. PO Box 336 Galesburg, Michigan  49053	
+4319	town-cou	14720	charleston	council	2	0	Brian Moravek	2024-11-05	N	439	34	4					www.charlestontownship.org	bamoravek@comcast.net	269-665-7805	1499 South 38th St. PO Box 336 Galesburg, Michigan  49053	
+2407	town	16460	climax	town-clerk	1	0	Sarah DeBoer	2024-11-05	R	1137	98	4					www.climaxtownship.org		269-746-4103	110 N. Main St. P. O. Box 369 Climax, Michigan  49034-0369	
+3072	town	16460	climax	town-super	1	0	Trent Piper	2024-11-05	R	1140	97	4					www.climaxtownship.org	Supervisor@climaxtownship.org	269-746-5572	110 N. Main St. P. O. Box 369 Climax, Michigan  49034-0369	
+3692	town	16460	climax	town-treas	1	0	Steven Walman	2024-11-05	R	1136	98	4					www.climaxtownship.org	Treasurer@climaxtownship.org	269-746-4103	110 N. Main St. P. O. Box 369 Climax, Michigan  49034-0369	
+4357	town-cou	16460	climax	council	2	0	Cheryl Bates	2024-11-05	D	564	34	4					www.climaxtownship.org	CherylCtwp@gmail.com	269-746-4103	110 N. Main St. P. O. Box 369 Climax, Michigan  49034-0369	
+10153	town-cou	16460	climax	council	2	0	Richard Thierjung	2024-11-05	R	1051	64	4					www.climaxtownship.org		269-746-4654	110 N. Main St. P. O. Box 369 Climax, Michigan  49034-0369	
+10934	vil	16440	climax	pres	1	0	Bill Lewis	2024-11-05	?	213	53	2	?				https://www.villageofclimax.org/council		(269) 251-5932	114 E. Maple St., Climax, MI 49034	
+5574	vil-cou	16440	climax	council	9	0	Denise Kenney	2020-11-03	N	218	47	4	?				https://www.villageofclimax.org/council		(269) 251-5932	114 E. Maple St., Climax, MI 49034	
+5575	vil-cou	16440	climax	council	9	0	Janet Sutherland	2020-11-03	N	208	45	4	?				https://www.villageofclimax.org/council	jjsutherland96@yaboo.com	269-568-0982	114 E. Maple St., Climax, MI 49034	
+7622	vil-cou	16440	climax	council	9	0	Joline E. Chaney	2022-11-08	N	183	32	4	?				https://www.villageofclimax.org/council	jolines@gmail.com	269-317-5207	114 E. Maple St., Climax, MI 49034	
+7623	vil-cou	16440	climax	council	9	0	Carolyn Kelly	2022-11-08	N	195	34	4	?				https://www.villageofclimax.org/council	carolynvillage21@gmail.com	269-377-3508	114 E. Maple St., Climax, MI 49034	
+7624	vil-cou	16440	climax	council	9	0	David R. Miller	2022-11-08	N	166	29	4	?				https://www.villageofclimax.org/council		(269) 251-5932	114 E. Maple St., Climax, MI 49034	
+11007	vil-cou	16440	climax	council	9	0	Nicholas D. Ludwig	2024-11-05	?	233	27	4	?				https://www.villageofclimax.org/council	nludwig4451@gmail.com	269-589-5899	114 E. Maple St., Climax, MI 49034	
+11008	vil-cou	16440	climax	council	9	0	Denise Munoz Pyle	2024-11-05	?	148	17	4	?				https://www.villageofclimax.org/council		(269) 744-7822	114 E. Maple St., Climax, MI 49034	
+11009	vil-cou	16440	climax	council	9	0	Janet M. Sutherland	2024-11-05	?	156	18	4	?				https://www.villageofclimax.org/council		(269) 746-4174	114 E. Maple St., Climax, MI 49034	
+11010	vil-cou	16440	climax	council	9	0	Benjerman Moore	2024-11-05	?	242	69	4	?		P		https://www.villageofclimax.org/council		(269) 251-5932	114 E. Maple St., Climax, MI 49034	https://www.benjaminmoore.com/-/media/sites/benjaminmoore/images/forms/national-accounts/na_couponlocalretailer_card_482x370.jpg
+1476	schl-cou	10020	climax-scotts		7	0	Jacqueline Longman	2024-11-05	?	1120	24	4					www.csschools.net	jackie.longman@csschools.net	269-532-8248	114 Maple Circle, Climax, Michigan 49034	
+1477	schl-cou	10020	climax-scotts		7	0	Lori Bagwell	2024-11-05	?	1110	24	4					www.csschools.net	lori.bagwell@csschools.net	269-979-2954	11514 2 Mile Road, Climax, Michigan 49034	
+1478	schl-cou	10020	climax-scotts		7	0	Susan K. Reichert	2024-11-05	?	1048	23	4					www.csschools.net				
+1479	schl-cou	10020	climax-scotts		7	0	Trent Piper	2024-11-05	?	1214	26	4					www.csschools.net	trent.piper@csschools.net	269-746-5572	9388 South 45th Street, Climax, Michigan 49034	
+6720	schl-cou	10020	climax-scotts		7	0	Matt Birkam	2022-11-08	N	936	29	4	Y				www.csschools.net	matt.birkam@csschools.net	269-350-6933	224 S Lovell St., Climax, Michigan 49034	
+6721	schl-cou	10020	climax-scotts		7	0	Steve Wurtzel	2022-11-08	N	1081	34	4	Y				www.csschools.net	steve.wurtzel@csschools.net	269-207-5071	16447 Q Avenue, East, Climax, MI  49034	
+6722	schl-cou	10020	climax-scotts		7	0	Terri VandeGiessen	2022-11-08	N	1095	34	4	Y				www.csschools.net	terri.vandegiessen@csschools.net	269-626-8681	6896 36th Street South, Scotts, MI 49088	
+1488	schl-cou	10410	colon		8	0	Kendra Ackerman	2024-11-05	?	149	19	4					https://www.colonschools.org/staff?page_no=3		(517) 227-0156	890 Ralston Rd, Colon, MI 49040	
+1489	schl-cou	10410	colon		8	0	Paige Smolarz	2024-11-05	?	248	32	4					https://www.colonschools.org/staff?page_no=3		(517) 227-0156	890 Ralston Rd, Colon, MI 49040	
+1490	schl-cou	10410	colon		8	0	Nathan D. Clipfell	2024-11-05	?	375	100	4			P		https://www.colonschools.org/staff?page_no=3		(517) 227-0156	890 Ralston Rd, Colon, MI 49040	
+6732	schl-cou	10410	colon		8	0	Tim Trattles	2024-11-05	?	203	51	4	Y		P		https://www.colonschools.org/staff?page_no=3		(517) 227-0156	890 Ralston Rd, Colon, MI 49040	
+8576	schl-cou	10410	colon		8	0	Kendra Ackerman	2024-11-05	?	645	19	4					https://www.colonschools.org/staff?page_no=3		(517) 227-0156	890 Ralston Rd, Colon, MI 49040	
+8577	schl-cou	10410	colon		8	0	Paige Smolarz	2024-11-05	?	1123	33	4					https://www.colonschools.org/staff?page_no=3		(517) 227-0156	890 Ralston Rd, Colon, MI 49040	
+8578	schl-cou	10410	colon		8	0	Nathan D. Clipfell	2024-11-05	?	1533	96	4			P		https://www.colonschools.org/staff?page_no=3		(517) 227-0156	890 Ralston Rd, Colon, MI 49040	
+8579	schl-cou	10410	colon		8	0	Tim Trattles	2024-11-05	?	871	49	4	Y		P		https://www.colonschools.org/staff?page_no=3		(517) 227-0156	890 Ralston Rd, Colon, MI 49040	
+1491	schl-cou	10590	comstock		8	0	Pamela Dickinson	2024-11-05	?	2921	22	4					www.comstockps.org	pamela.dickinson@comstockps.org	269-250-8900	3010 Gull Road, Kalamazoo, MI 49048	
+1492	schl-cou	10590	comstock		8	0	Paul Lamphear	2024-11-05	?	2396	18	4					www.comstockps.org	Paul.Lamphear@ComstockPS.org	269-250-8900	3010 Gull Road, Kalamazoo, MI 49048	
+1493	schl-cou	10590	comstock		8	0	Kristie Poulson	2024-11-05	?	2959	23	4					www.comstockps.org	Kristie.Poulson@ComstockPS.org	269-250-8900	3010 Gull Road, Kalamazoo, MI 49048	
+6733	schl-cou	10590	comstock		8	0	Richard B. Hathaway	2022-11-08	N	2418	19	4	Y				www.comstockps.org	Richard.Hathaway@ComstockPS.org	269-250-8900	3010 Gull Road, Kalamazoo, MI 49048	
+6734	schl-cou	10590	comstock		8	0	Saralyn Heckema-Brown	2022-11-08	N	2543	20	4	Y				www.comstockps.org	saralyn.brown@comstockps.org	269-250-8900	3010 Gull Road, Kalamazoo, MI 49048	
+6735	schl-cou	10590	comstock		8	0	Dori Scholly	2022-11-08	N	2572	20	4	Y				www.comstockps.org		269-250-8900	3010 Gull Road, Kalamazoo, MI 49048	
+6736	schl-cou	10590	comstock		8	0	Matthew D. Schreiner	2022-11-08	N	2501	19	4	Y				www.comstockps.org	matt.schreiner@comstockps.org	269-250-8900	3010 Gull Road, Kalamazoo, MI 49048	
+8580	schl-cou	10590	comstock		8	0	Hillary Cook	2024-11-05	?	48	4	4			P		www.comstockps.org		269-250-8900	3010 Gull Road, Kalamazoo, MI 49048	
+2422	town	17680	comstock	town-clerk	1	0	Nicole M. Beauchamp	2024-11-05	D	5600	94	4					https://comstockmi.gov/clerk/	clerk@comstockmi.gov	269-381-2360	6138 King Highway Kalamazoo, Michigan  49048	
+2979	town	17680	comstock	town-park	1	0	Patrick McVerry	2024-11-05	R	4251	16	4	?				https://comstockmi.gov/clerk/		269-381-2360	6138 King Highway Kalamazoo, Michigan  49048	
+3087	town	17680	comstock	town-super	1	0	Benjamin Martin	2024-11-05	R	4558	52	4					https://comstockmi.gov/clerk/		269-381-2360	6138 King Highway Kalamazoo, Michigan  49048	
+3707	town	17680	comstock	town-treas	1	0	Sandra K. Bloomfield	2024-11-05	R	4776	55	4					https://comstockmi.gov/clerk/		269-381-2360	6138 King Highway Kalamazoo, Michigan  49048	
+4381	town-cou	17680	comstock	council	4	0	Robert E. Pratt	2024-11-05	D	4094	14	4					https://comstockmi.gov/clerk/	BPratt@comstockmi.gov	269-381-2360	6138 King Highway Kalamazoo, Michigan  49048	
+4382	town-cou	17680	comstock	council	4	0	Jerry Amos	2024-11-05	R	4212	14	4					https://comstockmi.gov/clerk/	JAmos@comstockmi.gov	269-381-2360	6138 King Highway Kalamazoo, Michigan  49048	
+4383	town-cou	17680	comstock	council	4	0	Kristie Cherry	2024-11-05	R	4324	14	4					https://comstockmi.gov/clerk/		269-381-2360	6138 King Highway Kalamazoo, Michigan  49048	
+4384	town-cou	17680	comstock	council	4	0	Terry McIver	2024-11-05	R	4164	14	4					https://comstockmi.gov/clerk/	TMciver@comstockmi.gov	269-381-2360	6138 King Highway Kalamazoo, Michigan  49048	
+2426	town	17980	cooper	town-clerk	1	0	DeAnna Janssen	2024-11-05	R	4484	96	4					https://www.coopertwp.org/township-officials-and-staff/	clerk@coopertwp.org	269-382-0223	1590 West D Avenue Kalamazoo, Michigan  49009	https://www.coopertwp.org/wp-content/uploads/2017/01/DeAnna-Janssen-Clerk.jpg
+3091	town	17980	cooper	town-super	1	0	Jeff Sorensen	2024-11-05	R	3461	55	4					https://www.coopertwp.org/township-officials-and-staff/	supervisor@coopertwp.org	269-382-0223	1590 West D Avenue Kalamazoo, Michigan  49009	https://www.coopertwp.org/wp-content/uploads/2017/01/Jeff-Sorenson-Supervisor.jpg
+3711	town	17980	cooper	town-treas	1	0	Robin DeHaan	2024-11-05	R	4383	96	4					https://www.coopertwp.org/township-officials-and-staff/		269-382-0223	1590 West D Avenue Kalamazoo, Michigan  49009	
+4390	town-cou	17980	cooper	council	4	0	Marc Rowlson	2024-11-05	R	3444	20	4					https://www.coopertwp.org/boards-and-committees/		269-382-0223	1590 West D Avenue Kalamazoo, Michigan  49009	
+4391	town-cou	17980	cooper	council	4	0	Adam Tuinstra	2024-11-05	R	3512	20	4					https://www.coopertwp.org/boards-and-committees/		269-382-0223	1590 West D Avenue Kalamazoo, Michigan  49009	https://www.coopertwp.org/wp-content/uploads/2020/11/Adam-Tuinstra-photo-2-150x150.jpg
+4392	town-cou	17980	cooper	council	4	0	Fred J. Vlietstra	2024-11-05	R	3557	20	4					https://www.coopertwp.org/boards-and-committees/		269-382-0223	1590 West D Avenue Kalamazoo, Michigan  49009	https://www.coopertwp.org/wp-content/uploads/2017/01/Fred-Vlietstra-Trustee-150x150.jpg
+4393	town-cou	17980	cooper	council	4	0	Raymond Wilson	2024-11-05	R	3359	19	4					https://www.coopertwp.org/boards-and-committees/		269-382-0223	1590 West D Avenue Kalamazoo, Michigan  49009	
+420	city	31260	galesburg	mayor	1	0	Linda Marble	2024-11-05	?	609	92	2	Y				www.galesburgcity.org	lmarble@galesburgcity.org		200 E Michigan Ave Galesburg, Michigan  49053	
+512	city-cou	31260	galesburg		5	0	Roger Frazee	2024-11-05	?	477	43	4					www.galesburgcity.org	rfrazee@galesburgcity.org		200 E Michigan Ave Galesburg, Michigan  49053	
+513	city-cou	31260	galesburg		5	0	Glen Hawes	2024-11-05	?	468	42	4					www.galesburgcity.org	ghawes@galesburgcity.org		200 E Michigan Ave Galesburg, Michigan  49053	
+514	city-cou	31260	galesburg		5	0	Anthony Tipken	2024-11-05	?	39	3	4					www.galesburgcity.org			200 E Michigan Ave Galesburg, Michigan  49053	
+6323	city-cou	31260	galesburg		5	0	Ryan Harnden	2022-11-08	N	343	42	4	Y				www.galesburgcity.org	rharnden@galesburgcity.org		200 E Michigan Ave Galesburg, Michigan  49053	
+6324	city-cou	31260	galesburg		5	0	Carol L. Wortinger	2022-11-08	N	380	47	4	Y				www.galesburgcity.org		269-665-7781	200 E Michigan Ave Galesburg, Michigan  49053	
+1584	schl-cou	15450	galesburg-augusta		8	0	Jessica Eberstein	2024-11-05	?	2330	35	4					www.g-aschools.org	jessica.eberstein@garams.org	269-484-2000	1076 N. 37th, Galesburg, MI 49053	
+6825	schl-cou	15450	galesburg-augusta		8	0	Christy Corsi	2022-11-08	N	1377	18	4	Y				www.g-aschools.org	christy.corsi@garams.org	269-484-2000	1076 N. 37th, Galesburg, MI 49053	
+6826	schl-cou	15450	galesburg-augusta		8	0	Diana L. Shoup	2022-11-08	N	1304	17	4	Y				www.g-aschools.org	diana.shoup@garams.org	269-484-2000	1076 N. 37th, Galesburg, MI 49053	
+6827	schl-cou	15450	galesburg-augusta		8	0	Diana Walker	2022-11-08	N	1290	17	4	Y				www.g-aschools.org		269-484-2000	1076 N. 37th, Galesburg, MI 49053	
+6828	schl-cou	15450	galesburg-augusta		8	0	Laura Wilks	2022-11-08	N	1349	17	4	Y				www.g-aschools.org	laura.wilks@garams.org	269-484-2000	1076 N. 37th, Galesburg, MI 49053	
+8699	schl-cou	15450	galesburg-augusta		8	0	Gary Gillette	2024-11-05	?	1575	23	4					www.g-aschools.org		269-484-2000	1076 N. 37th, Galesburg, MI 49053	
+8700	schl-cou	15450	galesburg-augusta		8	0	Nathan A. Smeltzer	2024-11-05	?	1859	27	4					www.g-aschools.org	nathan.smeltzer@garams.org	269-484-2000	1076 N. 37th, Galesburg, MI 49053	
+8701	schl-cou	15450	galesburg-augusta		8	0	Sarah Davidson	2024-11-05	?	2607	96	4			P		www.g-aschools.org	sarah.davidson@garams.org	269-484-2000	1076 N. 37th, Galesburg, MI 49053	
+1617	schl-cou	17250	gull lake		7	0	Carole McFee Mendez	2020-11-03	N	4226	28	6	Y				www.gulllakecs.org	carole.mendez@hotmail.com	269-548-3400	10100 E D Ave Richland, MI 49083	
+1618	schl-cou	17250	gull lake		7	0	Krystal S. N. Scott	2020-11-03	N	4045	27	6	Y				www.gulllakecs.org	krystalscott.love@gmail.com	269-548-3400	10100 E D Ave Richland, MI 49083	
+6871	schl-cou	17250	gull lake		7	0	Desiree A. LaDuke	2022-11-08	N	3915	26	6					www.gulllakecs.org	dladukeglsb@gmail.com	269-548-3400	10100 E D Ave Richland, MI 49083	
+6872	schl-cou	17250	gull lake		7	0	Mini Murphy	2022-11-08	N	3448	23	6					www.gulllakecs.org	minipaulosemurphy@yahoo.com	269-548-3400	10100 E D Ave Richland, MI 49083	
+8747	schl-cou	17250	gull lake		7	0	Eddie Keene	2024-11-05	?	4936	31	6					www.gulllakecs.org	ekeenegl@gmail.com	269-548-3400	10100 E D Ave Richland, MI 49083	
+8748	schl-cou	17250	gull lake		7	0	John W. McCann	2024-11-05	?	5195	32	6					www.gulllakecs.org	johnmccann66@gmail.com	269-548-3400	10100 E D Ave Richland, MI 49083	
+8749	schl-cou	17250	gull lake		7	0	Laura M. Zervic	2024-11-05	?	5487	34	6					www.gulllakecs.org	ZervicGLBoard@gmail.com	269-548-3400	10100 E D Ave Richland, MI 49083	
+5896	city	42160	kalamazoo	mayor	1	0	David Anderson	2025-11-04	N	6473	64	4					www.kalamazoocity.org/Home	mayor@kalamazoocity.org		241 W South St Rm 104 Kalamazoo, Michigan  49007	
+6048	city-cou	42160	kalamazoo		6	0	Drew Duncan	2025-11-04	N	5820	21	4					www.kalamazoocity.org/Home			241 W South St Rm 104 Kalamazoo, Michigan  49007	https://ourrevolution.com/wp-content/uploads/2023/05/OR_PageHeader.png
+6049	city-cou	42160	kalamazoo		6	0	Jacqueline Slaby	2025-11-04	N	4588	16	4					www.kalamazoocity.org/Home			241 W South St Rm 104 Kalamazoo, Michigan  49007	
+6050	city-cou	42160	kalamazoo		6	0	Stephanie D Hoffman	2025-11-04	N	4914	17	4					www.kalamazoocity.org/Home	hoffmans@kalamazoocity.org		241 W South St Rm 104 Kalamazoo, Michigan  49007	
+7991	city-cou	42160	kalamazoo		6	0	JEANNE HESS	2023-11-07	N	5797	24	4					www.kalamazoocity.org/Home	hessj@kalamazoocity.org		241 W South St Rm 104 Kalamazoo, Michigan  49007	
+7992	city-cou	42160	kalamazoo		6	0	CHRISTOPHER PRAEDEL	2023-11-07	N	5343	22	4					www.kalamazoocity.org/Home	praedelc@kalamazoocity.org		241 W South St Rm 104 Kalamazoo, Michigan  49007	
+7993	city-cou	42160	kalamazoo		6	0	ALONZO WILSON	2023-11-07	N	4783	20	4					www.kalamazoocity.org/Home	wilsona@kalamazoocity.org		241 W South St Rm 104 Kalamazoo, Michigan  49007	
+1713	schl-cou	19950	kalamazoo		8	0	TiAnna L. Harrison	2020-11-03	N	18964	20	6	Y				https://www.kalamazoopublicschools.com/board/trustees	board@kalamazoopublicschools.net	269-910-6272	1220 Howard St  Kalamazoo, MI 49008	
+1714	schl-cou	19950	kalamazoo		8	0	Megan Maddock	2020-11-03	N	18413	20	6	Y				https://www.kalamazoopublicschools.com/board/trustees	board@kalamazoopublicschools.net	(269) 337-0123	1220 Howard St  Kalamazoo, MI 49008	
+1715	schl-cou	19950	kalamazoo		8	0	Ken Greschak	2020-11-03	N	28187	95	6	Y				https://www.kalamazoopublicschools.com/board/trustees	board@kalamazoopublicschools.net	(269) 337-0123	1220 Howard St  Kalamazoo, MI 49008	
+6954	schl-cou	19950	kalamazoo		8	0	Jennie Hill	2022-11-08	N	17932	37	6					https://www.kalamazoopublicschools.com/board/trustees	board@kalamazoopublicschools.net	(269) 337-0123	1220 Howard St  Kalamazoo, MI 49008	
+6955	schl-cou	19950	kalamazoo		8	0	Karla Murphy	2022-11-08	N	14181	29	6					https://www.kalamazoopublicschools.com/board/trustees	board@kalamazoopublicschools.net	989-577-0000	1220 Howard St  Kalamazoo, MI 49008	
+8818	schl-cou	19950	kalamazoo		8	0	Takisha Johnson	2024-11-05	?	13940	21	6					https://www.kalamazoopublicschools.com/board/trustees	johnsonts@kalamazoopublicschools.net	(269) 337-0123	1220 Howard St  Kalamazoo, MI 49008	
+8819	schl-cou	19950	kalamazoo		8	0	Juanita Yvonne Payton	2024-11-05	?	14620	22	6					https://www.kalamazoopublicschools.com/board/trustees	board@kalamazoopublicschools.net	(269) 337-0123	1220 Howard St  Kalamazoo, MI 49008	
+8820	schl-cou	19950	kalamazoo		8	0	Carol McGlinn	2024-11-05	?	17010	47	6			P		https://www.kalamazoopublicschools.com/board/trustees	board@kalamazoopublicschools.net	(269) 337-0123	1220 Howard St  Kalamazoo, MI 49008	
+2594	town	42180	kalamazoo	town-clerk	1	0	Lisa Mackie	2024-11-05	D	7853	68	4					www.ktwp.org	clerk@ktwp.org	269-381-8080	1720 Riverview Dr Kalamazoo, Michigan  49004	
+3259	town	42180	kalamazoo	town-super	1	0	David Combs	2024-11-05	D	8857	96	4					www.ktwp.org		(269) 381-8085	1720 Riverview Dr Kalamazoo, Michigan  49004	
+3880	town	42180	kalamazoo	town-treas	1	0	Sherine Marie Miller	2024-11-05	D	8800	96	4					www.ktwp.org			1720 Riverview Dr Kalamazoo, Michigan  49004	
+4693	town-cou	42180	kalamazoo	council	4	0	Ashley Glass	2024-11-05	D	7601	17	4					www.ktwp.org	glassa@ktwp.org		1720 Riverview Dr Kalamazoo, Michigan  49004	
+4694	town-cou	42180	kalamazoo	council	4	0	Colleen Leonard	2024-11-05	D	7357	16	4					www.ktwp.org			1720 Riverview Dr Kalamazoo, Michigan  49004	https://nowkalamazoo.org/wp-content/uploads/2023/07/1fva81lgzfkz10-3-1-150x150-1.png
+4695	town-cou	42180	kalamazoo	council	4	0	Craig M. Sherwood	2024-11-05	D	7324	16	4					www.ktwp.org			1720 Riverview Dr Kalamazoo, Michigan  49004	
+4696	town-cou	42180	kalamazoo	council	4	0	Clara Robinson	2024-11-05	D	7409	17	4					www.ktwp.org	robinsonc@ktwp.org		1720 Riverview Dr Kalamazoo, Michigan  49004	
+1753	schl-cou	21240	lawton		8	0	Juliann Bradish	2020-11-03	?	1107	51	6			P		https://www.lawtoncs.org/board	jbradish@lawtoncs.org		101 Primary Way, Lawton, MI 49065	
+1754	schl-cou	21240	lawton		8	0	Bryan K. Cronenwett	2020-11-03	N	1384	23	6	Y				https://www.lawtoncs.org/board	bcronenwett@lawtoncs.org		101 Primary Way, Lawton, MI 49065	
+1755	schl-cou	21240	lawton		8	0	Larissa Hunt	2020-11-03	N	1246	20	6	Y				https://www.lawtoncs.org/board	lhunt@lawtoncs.org		101 Primary Way, Lawton, MI 49065	
+1756	schl-cou	21240	lawton		8	0	Walter H. Hitchcock	2020-11-03	N	1520	25	6	Y				https://www.lawtoncs.org/board	whitchcock@lawtoncs.org		101 Primary Way, Lawton, MI 49065	
+6993	schl-cou	21240	lawton		8	0	Eric Smith	2024-11-05	?	1846	49	6					https://www.lawtoncs.org/board	esmith@lawtoncs.org		101 Primary Way, Lawton, MI 49065	
+6994	schl-cou	21240	lawton		8	0	Matt Riggs	2022-11-08	N	1630	52	6					https://www.lawtoncs.org/board	mriggs@lawtoncs.org		101 Primary Way, Lawton, MI 49065	
+6995	schl-cou	21240	lawton		8	0	Stephen E. Carroll	2022-11-08	N	1455	46	6					https://www.lawtoncs.org/board	scarroll@lawtoncs.org		101 Primary Way, Lawton, MI 49065	
+8867	schl-cou	21240	lawton		8	0	Nate Pursley	2024-11-05	?	1819	48	6					https://www.lawtoncs.org/board		(269) 624-6407	101 Primary Way, Lawton, MI 49065	
+1819	schl-cou	23250	mattawan		7	0	Mark Noffsinger	2020-11-03	N	5452	27	6	Y				www.mattawanschools.org	mnoffsinger@mattawanschools.org	269-668-3361	56720 Murray Street, Mattawan, MI 49071	
+1820	schl-cou	23250	mattawan		7	0	Ted Roethlisberger	2020-11-03	N	3823	19	6	Y				www.mattawanschools.org	troethlisberger@mattawanschools.org	269-668-3361	56720 Murray Street, Mattawan, MI 49071	
+1821	schl-cou	23250	mattawan		7	0	Vickie S. Mabin-Herzberg	2020-11-03	N	3576	18	6	Y				www.mattawanschools.org	vherzberg@mattawanschools.org	269-668-3361	56720 Murray Street, Mattawan, MI 49071	
+7056	schl-cou	23250	mattawan		7	0	Marika Hawes-Ruhrup	2022-11-08	N	3964	22	6					www.mattawanschools.org	mhawes-ruhrup@mattawanschools.org	269-668-3361	56720 Murray Street, Mattawan, MI 49071	
+7057	schl-cou	23250	mattawan		7	0	Onur Arugaslan	2022-11-08	N	3772	21	6					www.mattawanschools.org	oarugaslan@mattawanschools.org	269-668-3361	56720 Murray Street, Mattawan, MI 49071	
+7058	schl-cou	23250	mattawan		7	0	Rick George	2022-11-08	N	4406	25	6					www.mattawanschools.org	rgeorge@mattawanschools.org	269-668-3361	56720 Murray Street, Mattawan, MI 49071	
+7059	schl-cou	23250	mattawan		7	0	Shari Magrath	2022-11-08	N	4984	28	6					www.mattawanschools.org	smagrath@mattawanschools.org	269-668-3361	56720 Murray Street, Mattawan, MI 49071	
+1837	schl-cou	23520	mendon		7	0	Jeremy J. Palmer	2024-11-05	?	925	24	4					https://mendonschools.org/board-of-education/		269-496-8491	148 Kirby Road Mendon, MI 49072	
+1838	schl-cou	23520	mendon		7	0	DyAnn Steinberger	2024-11-05	?	972	25	4					https://mendonschools.org/board-of-education/		269-496-8491	148 Kirby Road Mendon, MI 49072	
+1839	schl-cou	23520	mendon		7	0	Regina Schinker	2024-11-05	?	867	23	4					https://mendonschools.org/board-of-education/		269-496-8491	148 Kirby Road Mendon, MI 49072	
+1840	schl-cou	23520	mendon		7	0	Jesse King	2024-11-05	?	978	26	4					https://mendonschools.org/board-of-education/		269-496-8491	148 Kirby Road Mendon, MI 49072	
+7064	schl-cou	23520	mendon		7	0	Norma Switalski	2022-11-08	W	33	1	4	Y				https://mendonschools.org/board-of-education/		269-496-8491	148 Kirby Road Mendon, MI 49072	
+7065	schl-cou	23520	mendon		7	0	Roger P. Cupp	2022-11-08	N	1013	52	4	Y				https://mendonschools.org/board-of-education/		269-496-8491	148 Kirby Road Mendon, MI 49072	
+7066	schl-cou	23520	mendon		7	0	Sonya Moyle	2022-11-08	N	814	42	4	Y				https://mendonschools.org/board-of-education/		269-496-8491	148 Kirby Road Mendon, MI 49072	
+2733	town	61400	oshtemo	town-clerk	1	0	Dusty Farmer	2024-11-05	D	6896	55	4					www.oshtemo.org/Home	dfarmer@oshtemo.org	269-216-5224	7275 W Main St Kalamazoo, Michigan  49009-9379	
+3399	town	61400	oshtemo	town-super	1	0	Cheri Bell	2024-11-05	D	6950	56	4					www.oshtemo.org/Home	cbell@oshtemo.org	269-216-5220	7275 W Main St Kalamazoo, Michigan  49009-9379	
+4021	town	61400	oshtemo	town-treas	1	0	Clare Buszka	2024-11-05	D	6726	54	4					www.oshtemo.org/Home	cbuszka@oshtemo.org	269-216-5221	7275 W Main St Kalamazoo, Michigan  49009-9379	
+4947	town-cou	61400	oshtemo	council	4	0	Michael J. Chapman	2024-11-05	D	7016	18	4					www.oshtemo.org/Home	mchapman@oshtemo.org	810-730-9576	7275 W Main St Kalamazoo, Michigan  49009-9379	
+4948	town-cou	61400	oshtemo	council	4	0	Neil Sikora	2024-11-05	D	6740	17	4					www.oshtemo.org/Home	nsikora@oshtemo.org	269-760-6769	7275 W Main St Kalamazoo, Michigan  49009-9379	
+4949	town-cou	61400	oshtemo	council	4	0	Kristin Cole	2024-11-05	D	7191	18	4					www.oshtemo.org/Home	kcole@oshtemo.org	269-375-4260	7275 W Main St Kalamazoo, Michigan  49009-9379	
+4950	town-cou	61400	oshtemo	council	4	0	Zak Ford	2024-11-05	D	6399	16	4					www.oshtemo.org/Home	zford@oshtemo.org	269-271-5513	7275 W Main St Kalamazoo, Michigan  49009-9379	
+1938	schl-cou	27060	otsego		8	0	Shannon Goodwin	2022-11-08	N	4442	37	6					www.otsegops.org	sgoodwin@otsegops.org	269-694-7900	400 Sherwood Street, Otsego MI 49078	
+1939	schl-cou	27060	otsego		8	0	Scot D. Reitenour	2020-11-03	N	2859	20	6	Y				www.otsegops.org		269-694-7900	400 Sherwood Street, Otsego MI 49078	
+1940	schl-cou	27060	otsego		8	0	Shelly Jirgens	2020-11-03	N	3472	25	6	Y				www.otsegops.org	sjirgens@otsegops.org	269-694-7900	400 Sherwood Street, Otsego MI 49078	
+1941	schl-cou	27060	otsego		8	0	Todd Bentley	2020-11-03	N	2875	21	6	Y				www.otsegops.org	tbentley@otsegops.org	269-694-7900	400 Sherwood Street, Otsego MI 49078	
+7140	schl-cou	27060	otsego		8	0	Amy Stender	2024-11-05	?	1728	49	6					www.otsegops.org	astender@otsegops.org	269-694-7900	400 Sherwood Street, Otsego MI 49078	
+7141	schl-cou	27060	otsego		8	0	Mike Keeler	2022-11-08	N	3722	31	6					www.otsegops.org	mkeeler@otsegops.org	269-694-7900	400 Sherwood Street, Otsego MI 49078	
+9012	schl-cou	27060	otsego		8	0	Jason Davis	2024-11-05	?	1749	49	6					www.otsegops.org		269-694-7900	400 Sherwood Street, Otsego MI 49078	
+9013	schl-cou	27060	otsego		8	0	Jessica Hazelhoff	2024-11-05	?	1593	65	6			P		www.otsegops.org		269-694-7900	400 Sherwood Street, Otsego MI 49078	
+6117	city-cou	62340	parchment		7	0	Robert D Britigan III	2025-11-04	N	298	24	4					https://parchment.org/commission/	rbritigan@parchment.org	(269) 381-5957	650 S Riverview Dr Parchment, Michigan  49004	https://parchment.org/wp-content/uploads/2018/02/Rob_Britigan-5x7-1-200x200.jpeg
+6118	city-cou	62340	parchment		7	0	Kristen Capelli	2025-11-04	N	180	14	4					www.parchment.org			650 S Riverview Dr Parchment, Michigan  49004	
+6119	city-cou	62340	parchment		7	0	Michael E Conner	2025-11-04	N	191	15	4					www.parchment.org		269-569-4294	650 S Riverview Dr Parchment, Michigan  49004	
+6120	city-cou	62340	parchment		7	0	Tammy Cooper	2025-11-04	N	170	13	4					www.parchment.org		616-260-4842	650 S Riverview Dr Parchment, Michigan  49004	
+8060	city-cou	62340	parchment		7	0	DOUGLAS FOOY	2023-11-07	N	148	22	4					www.parchment.org		269-385-2631	650 S Riverview Dr Parchment, Michigan  49004	
+8061	city-cou	62340	parchment		7	0	ROBIN MADARAS	2023-11-07	N	200	30	4					www.parchment.org		269-217-9967	650 S Riverview Dr Parchment, Michigan  49004	
+8062	city-cou	62340	parchment		7	0	JUSTIN MENDOZA	2023-11-07	N	202	30	4					www.parchment.org		269-666-1492	650 S Riverview Dr Parchment, Michigan  49004	
+1950	schl-cou	27420	parchment		7	0	Cheryl A. Balmer	2020-11-03	N	2930	48	6	Y	R			https://www.parchmentschools.org/board		269-488-1050	520 N. Orient Street, Kalamazoo, MI 49004	
+1951	schl-cou	27420	parchment		7	0	Robert N. Winter	2020-11-03	N	2638	43	6	Y	R			https://www.parchmentschools.org/board		269-488-1050	520 N. Orient Street, Kalamazoo, MI 49004	
+7149	schl-cou	27420	parchment		7	0	Corinne Bradley	2022-11-08	N	1835	35	6					https://www.parchmentschools.org/board		269-488-1050	520 N. Orient Street, Kalamazoo, MI 49004	
+7150	schl-cou	27420	parchment		7	0	Dodi L. Leckie	2022-11-08	N	2037	39	6					https://www.parchmentschools.org/board	dleckie@parchmentschools.org	269-488-1050	520 N. Orient Street, Kalamazoo, MI 49004	
+7151	schl-cou	27420	parchment		7	0	Amy Followell	2022-11-08	N	2765	98	6	Y		P		https://www.parchmentschools.org/board	amy.followell@parchmentschools.org	269-488-1050	520 N. Orient Street, Kalamazoo, MI 49004	
+9021	schl-cou	27420	parchment		7	0	Michael Andrew Sanford	2024-11-05	?	3242	95	6					https://www.parchmentschools.org/board		269-488-1050	520 N. Orient Street, Kalamazoo, MI 49004	
+9022	schl-cou	27420	parchment		7	0	Jeff Haspas	2024-11-05	?	3284	48	6			P		https://www.parchmentschools.org/board	jeff.haspas@parchmentschools.org	269-488-1050	520 N. Orient Street, Kalamazoo, MI 49004	
+2743	town	62960	pavilion	town-clerk	1	0	Karen Emily Siegwart	2024-11-05	R	2579	97	4					https://www.paviliontwpmi.gov/meet-your-township-officials	clerk@paviliontwpmi.gov	269-327-0462	7510 Q Ave E Scotts, Michigan  49088	
+3409	town	62960	pavilion	town-super	1	0	John R. Speeter	2024-11-05	R	2576	97	4					https://www.paviliontwpmi.gov/meet-your-township-officials	supervisor@paviliontwpmi.gov	(269) 327-0462	7510 East Q Avenue, Pavilion Township, Michigan	
+4031	town	62960	pavilion	town-treas	1	0	Robyn Maxson	2024-11-05	R	2554	97	4					https://www.paviliontwpmi.gov/meet-your-township-officials	supervisor@paviliontwpmi.gov	(269) 327-0462	7510 East Q Avenue, Scotts, MI 49088	
+4970	town-cou	62960	pavilion	council	4	0	Edward Cagney	2024-11-05	R	2265	25	4					https://www.paviliontwpmi.gov/meet-your-township-officials	supervisor@paviliontwpmi.gov	(269) 327-0462	7510 East Q Avenue	
+4971	town-cou	62960	pavilion	council	4	0	Dan Frizzo	2024-11-05	R	2149	24	4					https://www.paviliontwpmi.gov/meet-your-township-officials	supervisor@paviliontwpmi.gov	(269) 327-0462	7510 East Q Ave., Scotts, MI 49088	
+10639	town-cou	62960	pavilion	council	4	0	David Steffens	2024-11-05	R	2100	23	4					https://www.paviliontwpmi.gov/meet-your-township-officials	supervisor@paviliontwpmi.gov	(269) 327-0462	7510 East Q Ave., Scotts, MI 49088	
+10640	town-cou	62960	pavilion	council	4	0	Greg Thomas	2024-11-05	R	2140	24	4					https://www.paviliontwpmi.gov/meet-your-township-officials	supervisor@paviliontwpmi.gov	(269) 327-0462	7510 East Q Ave., Scotts, MI 49088	
+1978	schl-cou	28530	plainwell		7	0	Derek Dunn	2024-11-05	?	1418	26	4					https://www.plainwellschools.org/board		269-685-5823	600 School Drive, Plainwell, MI 49080	
+1979	schl-cou	28530	plainwell		7	0	Jill Dunham	2024-11-05	?	1463	27	4					https://www.plainwellschools.org/board	jill.dunham@plainwellschools.org	269-365-6678	600 School Drive, Plainwell, MI 49080	
+1980	schl-cou	28530	plainwell		7	0	Michael Hopson	2024-11-05	?	1339	24	4					https://www.plainwellschools.org/board	mike.hopson@plainwellschools.org	269-685-5823	600 School Drive, Plainwell, MI 49080	
+7172	schl-cou	28530	plainwell		7	0	Andrea Barrows	2022-11-08	N	3070	10	4	Y				https://www.plainwellschools.org/board	andrea.barrows@plainwellschools.org	269-685-5823	600 School Drive, Plainwell, MI 49080	
+7173	schl-cou	28530	plainwell		7	0	Julli Bennett	2022-11-08	N	4034	14	4	Y				https://www.plainwellschools.org/board	julli.bennett@plainwellschools.org	269-290-5178	600 School Drive, Plainwell, MI 49080	
+7174	schl-cou	28530	plainwell		7	0	Rex Hall, Jr.	2022-11-08	N	3952	13	4	Y				https://www.plainwellschools.org/board	rex.hall@plainwellschools.org	269-685-5823	600 School Drive, Plainwell, MI 49080	
+7175	schl-cou	28530	plainwell		7	0	Shannon Zabaldo	2022-11-08	N	3424	12	4	Y				https://www.plainwellschools.org/board	shannon.zabaldo@gmail.com	248-250-4339	600 School Drive, Plainwell, MI 49080	
+5913	city	65560	portage	mayor	1	0	Patricia M Randall	2025-11-04	N	8071	61	4					www.portagemi.gov	patricia.randall@portagemi.gov	269-329-4400	7900 South Westnedge Avenue Portage, Michigan  49002	
+6134	city-cou	65560	portage		6	0	Kathleen Olmsted	2025-11-04	N	5327	15	4					www.portagemi.gov	kathleen@clerkforkalamazoo.com	(269) 329-4400	7900 South Westnedge Avenue Portage, Michigan  49002	
+6135	city-cou	65560	portage		6	0	Victor Ledbetter	2025-11-04	N	6770	19	4					https://www.portagemi.gov/directory.aspx		(269) 330-6404	7900 South Westnedge Avenue Portage, Michigan  49002	
+6136	city-cou	65560	portage		6	0	Jihan Ain Young	2025-11-04	N	6276	17	4					www.portagemi.gov	jihan.young@portagemi.gov	269-759-0323	7900 South Westnedge Avenue Portage, Michigan  49002	
+8070	city-cou	65560	portage		6	0	CHRISTOPHER BURNS	2023-11-07	N	4248	17	4					www.portagemi.gov	chris.burns@portagemi.gov	708-710-3102	7900 South Westnedge Avenue Portage, Michigan  49002	
+8071	city-cou	65560	portage		6	0	NICOLE MILLER	2023-11-07	N	3809	15	4					www.portagemi.gov	nicole.miller@portagemi.gov	269-339-0927	7900 South Westnedge Avenue Portage, Michigan  49002	
+8072	city-cou	65560	portage		6	0	JAMES PEARSON	2023-11-07	N	3972	16	4					www.portagemi.gov	councilmemberjp@portagemi.gov	269-303-5459	7900 South Westnedge Avenue Portage, Michigan  49002	
+1994	schl-cou	28950	portage		7	0	Terri Novaria	2024-11-05	?	16608	21	4					https://www.portageps.org/board	tnovaria@portageps.org	269-345-2404	8107 Mustang Drive, Portage, MI 49002	
+1995	schl-cou	28950	portage		7	0	Mary Lou Rohwer	2024-11-05	?	17131	22	4					https://www.portageps.org/board	mrohwer@portageps.org	(269) 267-3727	8107 Mustang Drive, Portage, MI 49002	
+1996	schl-cou	28950	portage		7	0	Mark Stevenson	2024-11-05	?	16112	21	4					https://www.portageps.org/board	mstevenson@portageps.org	(269) 267-4339	8107 Mustang Drive, Portage, MI 49002	
+1997	schl-cou	28950	portage		7	0	Bo Snyder	2024-11-05	?	16106	21	4					https://www.portageps.org/board	rsnyder@portageps.org	(269) 381-3585	8107 Mustang Drive, Portage, MI 49002	
+7186	schl-cou	28950	portage		7	0	Emily Crawford	2022-11-08	N	9733	18	4	Y				https://www.portageps.org/board	ejcrawford@portageps.org	214-476-1325	8107 Mustang Drive, Portage, MI 49002	
+7187	schl-cou	28950	portage		7	0	Kimberly Larson	2022-11-08	N	9813	18	4	Y				https://www.portageps.org/board	kjlarson@portageps.org	269-350-3773	8107 Mustang Drive, Portage, MI 49002	
+7188	schl-cou	28950	portage		7	0	Randy Van Antwerp	2022-11-08	N	9751	18	4	Y				https://www.portageps.org/board	rvanantwerp@portageps.org	269-599-0822	8107 Mustang Drive, Portage, MI 49002	
+2770	town	66200	prairie ronde	town-clerk	1	0	Dale Smith	2024-11-05	N	794	90	4					prairierondetwp.net	clerk@prairierondetwp.net	269-267-4883	14050 S 6th Street P. O. Box 794 Schoolcraft, Michigan  49087	
+3436	town	66200	prairie ronde	town-super	1	0	Michael J. Tomlinson	2024-11-05	R	1198	98	4					prairierondetwp.net	supervisor@prairierondetwp.net	269-679-5567	14050 S 6th Street P. O. Box 794 Schoolcraft, Michigan  49087	
+4058	town	66200	prairie ronde	town-treas	1	0	Sarah Lott	2024-11-05	R	1191	98	4					prairierondetwp.net	treasurer@prairierondetwp.net	269-806-0149	14050 S 6th Street P. O. Box 794 Schoolcraft, Michigan  49087	
+5014	town-cou	66200	prairie ronde	council	2	0	John M. Chapin	2024-11-05	R	1133	51	4					prairierondetwp.net		269-679-2003	14050 S 6th Street P. O. Box 794 Schoolcraft, Michigan  49087	
+10679	town-cou	66200	prairie ronde	council	2	0	Leonard Griffin	2024-11-05	R	1059	47	4					prairierondetwp.net		269-679-2003	14050 S 6th Street P. O. Box 794 Schoolcraft, Michigan  49087	
+2779	town	68260	richland	town-clerk	1	0	Art White	2024-11-05	R	3723	97	4					www.richlandtwp.net		(989) 268-5286	7401 N 32nd Street Richland, Michigan  49083	
+3447	town	68260	richland	town-super	1	0	Bear Priest	2024-11-05	R	3736	96	4					www.richlandtwp.net			7401 N 32nd Street Richland, Michigan  49083	
+4068	town	68260	richland	town-treas	1	0	Marsha Drouin	2024-11-05	R	3702	97	4					www.richlandtwp.net	MDrouin@richlandtwp.net		7401 N 32nd Street Richland, Michigan  49083	
+5038	town-cou	68260	richland	council	4	0	Andrew S. Woolf	2024-11-05	R	3058	20	4					www.richlandtwp.net			7401 N 32nd Street Richland, Michigan  49083	
+5039	town-cou	68260	richland	council	4	0	Loyal Eldridge III	2024-11-05	R	2965	20	4					www.richlandtwp.net			7401 N 32nd Street Richland, Michigan  49083	
+5040	town-cou	68260	richland	council	4	0	Bill Peter	2024-11-05	R	2911	19	4					www.richlandtwp.net	bpeter@richlandtwp.net		7401 N 32nd Street Richland, Michigan  49083	
+5041	town-cou	68260	richland	council	4	0	David Wendzel	2024-11-05	R	3154	21	4					www.richlandtwp.net	dwendzel@richlandtwp.net		7401 N 32nd Street Richland, Michigan  49083	
+5478	vil	68240	richland	pres	1	0	David Greve	2024-11-05	?	386	97	2	?				villageofrichland.org		269-629-9903	8985 Gull Road, Richland, MI 49083	
+5762	vil-cou	68240	richland	council	9	0	Anthony Brenner	2020-11-03	N	343	46	4	?				villageofrichland.org		269-629-9903	8985 Gull Road, Richland, MI 49083	
+5763	vil-cou	68240	richland	council	9	0	Gail Koporetz	2020-11-03	N	368	50	4	?				villageofrichland.org		269-629-9903	8985 Gull Road, Richland, MI 49083	
+5764	vil-cou	68240	richland	council	9	0	John T. Smith	2020-11-03	N	409	98	4	?				villageofrichland.org		269-629-9903	8985 Gull Road, Richland, MI 49083	
+7788	vil-cou	68240	richland	council	9	0	Deanne Austin	2022-11-08	N	301	33	4	?				villageofrichland.org		269-629-9903	8985 Gull Road, Richland, MI 49083	
+7789	vil-cou	68240	richland	council	9	0	Kim Lewis	2022-11-08	N	316	34	4	?				villageofrichland.org		269-629-9903	8985 Gull Road, Richland, MI 49083	
+7790	vil-cou	68240	richland	council	9	0	John T. Smith	2022-11-08	N	355	97	4	?				villageofrichland.org		269-629-9903	8985 Gull Road, Richland, MI 49083	
+11217	vil-cou	68240	richland	council	9	0	Gail Koporetz	2024-11-05	?	344	52	4	?				villageofrichland.org		269-629-9903	8985 Gull Road, Richland, MI 49083	
+11218	vil-cou	68240	richland	council	9	0	Jason Edward Mechenbier	2024-11-05	?	290	44	4	?				villageofrichland.org		269-629-9903	8985 Gull Road, Richland, MI 49083	
+11219	vil-cou	68240	richland	council	9	0	Paul Foust	2024-11-05	?	4	0	4	?				villageofrichland.org		269-629-9903	8985 Gull Road, Richland, MI 49083	
+2795	town	69820	ross	town-clerk	1	0	Mary Stage	2024-11-05	R	2431	98	4					https://rosstownshipmi.gov/board-agenda-november-29-2022/	clerk@rosstownshipmi.gov	269-731-4888	12086 M-89 Richland, Michigan  49083	
+3463	town	69820	ross	town-super	1	0	Christina Hutchings	2024-11-05	R	2416	97	4					https://rosstownshipmi.gov/board-agenda-november-29-2022/	supervisor@rosstownshipmi.gov	(269) 731-4888	12086 M-89 Richland, Michigan  49083	
+4084	town	69820	ross	town-treas	1	0	Amanda J. Wiersma	2024-11-05	R	2404	98	4					https://rosstownshipmi.gov/board-agenda-november-29-2022/	treasurer@rosstownshipmi.gov	(269) 731-4888	12086 M-89 Richland, Michigan  49083	
+5069	town-cou	69820	ross	council	5	0	Michael Bekes	2024-11-05	R	2119	24	4					rosstownshipmi.gov	bekes@rosstownshipmi.gov	(269) 731-4888	12086 M-89 Richland, Michigan  49083	
+5070	town-cou	69820	ross	council	5	0	Lynn M. Harmon	2024-11-05	R	2182	25	4					rosstownshipmi.gov	harmon@rosstownshipmi.gov	(269) 731-4888	12086 M-89 Richland, Michigan  49083	
+5071	town-cou	69820	ross	council	5	0	Diana Langshaw	2024-11-05	R	2166	25	4					rosstownshipmi.gov	langshaw@rosstownshipmi.gov	(269) 731-4888	12086 M-89 Richland, Michigan  49083	
+5072	town-cou	69820	ross	council	5	0	Todd White	2024-11-05	R	2084	24	4					rosstownshipmi.gov	langshaw@rosstownshipmi.gov	(269) 731-4888	12086 M-89 Richland, Michigan  49083	
+7551	town-cou	69820	ross	council	5	0	Diana Langshaw	2022-11-08	R	1797	73	4	Y				rosstownshipmi.gov	langshaw@rosstownshipmi.gov	(269) 731-4888	12086 M-89 Richland, Michigan  49083	
+2064	schl-cou	31020	schoolcraft		7	0	Katie Redmond	2020-11-03	N	1531	26	6	Y				https://www.schoolcraftschools.org/board	katie@kredmondphotography.com	269-488-7350	13400 S. 14th Street, Schoolcraft, MI 49087	
+2065	schl-cou	31020	schoolcraft		7	0	Jason Walther	2020-11-03	N	1407	24	6	Y				https://www.schoolcraftschools.org/board	jason.walther@waltherfarms.com	269-488-7350	13400 S. 14th Street, Schoolcraft, MI 49087	
+2066	schl-cou	31020	schoolcraft		7	0	Wade T. Rutkoskie	2020-11-03	N	2022	97	6	Y				https://www.schoolcraftschools.org/board	Wade.Rutkoskie@teknateam.com	269-488-7350	13400 S. 14th Street, Schoolcraft, MI 49087	
+7238	schl-cou	31020	schoolcraft		7	0	Randy Blankenship	2022-11-08	N	1364	34	6					https://www.schoolcraftschools.org/board	rlblank03@gmail.com	269-488-7350	13400 S. 14th Street, Schoolcraft, MI 49087	
+7239	schl-cou	31020	schoolcraft		7	0	Jennifer Gottschalk	2022-11-08	N	1598	40	6					https://www.schoolcraftschools.org/board	jenniferjgottschalk@gmail.com	269-488-7350	13400 S. 14th Street, Schoolcraft, MI 49087	
+7240	schl-cou	31020	schoolcraft		7	0	Christopher Blodgett	2024-11-05	?	2013	53	6					https://www.schoolcraftschools.org/board	cwblodgett@yahoo.com	269-488-7350	13400 S. 14th Street, Schoolcraft, MI 49087	
+9084	schl-cou	31020	schoolcraft		7	0	Wade T. Rutkoskie	2024-11-05	?	1720	45	6					https://www.schoolcraftschools.org/board	Wade.Rutkoskie@teknateam.com	269-488-7350	13400 S. 14th Street, Schoolcraft, MI 49087	
+2816	town	71880	schoolcraft	town-clerk	1	0	Eska Brown	2024-11-05	R	3940	97	4					https://schoolcrafttownshipmi.gov/supervisor/		(269) 729-5355	50 E Vw Ave Vicksburg, Michigan  49097	
+3484	town	71880	schoolcraft	town-super	1	0	Donald K. Ulsh	2024-11-05	R	3885	96	4					https://schoolcrafttownshipmi.gov/supervisor/	dulsh@schoolcrafttownshipmi.gov	(269) 729-5355	50 E Vw Ave Vicksburg, Michigan  49097	
+4105	town	71880	schoolcraft	town-treas	1	0	Teresa A. Scott	2024-11-05	R	3958	97	4					https://schoolcrafttownshipmi.gov/treasurer/	tscott@schoolcrafttownshipmi.gov	(269) 729-5355	50 E Vw Ave Vicksburg, Michigan  49097	
+5114	town-cou	71880	schoolcraft	council	2	0	Jennifer Sportel	2024-11-05	R	3669	50	4					https://schoolcrafttownshipmi.gov/supervisor/	jsportel@schoolcrafttownshipmi.gov	(269) 729-5355	50 E Vw Ave Vicksburg, Michigan  49097	
+5115	town-cou	71880	schoolcraft	council	2	0	Tamra Stafford	2024-11-05	R	3513	48	4					https://schoolcrafttownshipmi.gov/supervisor/	tstafford@schoolcrafttownshipmi.gov	(269) 729-5355	50 E Vw Ave Vicksburg, Michigan  49097	
+5484	vil	71860	schoolcraft	pres	1	0	Michael Rochholz	2024-11-05	?	547	97	2	Y				https://villageofschoolcraft.com/village-council/	mrochholz@villageofschoolcraft.com	269-679-4304	442 N. Grand St, Schoolcraft, MI 49087	https://villageofschoolcraft.com/wp-content/uploads/2024/08/Rochholz.jpg
+5781	vil-cou	71860	schoolcraft	council	9	0	Russell Lee Barnes	2020-11-03	N	447	33	2	?				villageofschoolcraft.com		269-679-4304	442 N. Grand St, Schoolcraft, MI 49087	
+5782	vil-cou	71860	schoolcraft	council	9	0	Kirk V. Bergland	2020-11-03	N	424	31	2	?				villageofschoolcraft.com		269-679-4304	442 N. Grand St, Schoolcraft, MI 49087	
+5783	vil-cou	71860	schoolcraft	council	9	0	Michael Rochholz	2020-11-03	N	451	33	2	?				villageofschoolcraft.com	mrochholz@villageofschoolcraft.com	269-679-4304	442 N. Grand St, Schoolcraft, MI 49087	
+7801	vil-cou	71860	schoolcraft	council	9	0	Joseph A. Beck	2022-11-08	N	337	31	2	?				villageofschoolcraft.com		269-679-4304	442 N. Grand St, Schoolcraft, MI 49087	
+7802	vil-cou	71860	schoolcraft	council	9	0	Todd S. Carlin	2022-11-08	N	329	30	2	?				villageofschoolcraft.com		269-679-4304	442 N. Grand St, Schoolcraft, MI 49087	
+7803	vil-cou	71860	schoolcraft	council	9	0	Kathy L. Mastenbrook	2022-11-08	N	392	36	2	?				villageofschoolcraft.com		269-679-4304	442 N. Grand St, Schoolcraft, MI 49087	
+11243	vil-cou	71860	schoolcraft	council	9	0	Kirk V. Bergland	2024-11-05	?	401	32	2	?				villageofschoolcraft.com		269-679-4304	442 N. Grand St, Schoolcraft, MI 49087	
+11244	vil-cou	71860	schoolcraft	council	9	0	Jennifer Doorn	2024-11-05	?	475	38	2	?				villageofschoolcraft.com		269-679-4304	442 N. Grand St, Schoolcraft, MI 49087	
+11245	vil-cou	71860	schoolcraft	council	9	0	Shawn Rance	2024-11-05	?	362	28	2	?				villageofschoolcraft.com		269-679-4304	442 N. Grand St, Schoolcraft, MI 49087	
+2874	town	79300	texas	town-clerk	1	0	Emily Beutel	2024-11-05	D	7175	96	4					www.texastownship.org	ebeutel@texastownship.org	269-548-4308	7110 W. Q Ave Kalamazoo, Michigan  49009	
+3542	town	79300	texas	town-super	1	0	JoAnne O'Rourke	2024-11-05	D	5724	50	4					https://www.texastownship.org/182/Supervisor	supervisor@texastownship.org	(269) 330-7030	7110 W. Q Ave Kalamazoo, Michigan  49009	https://www.texastownship.org/ImageRepository/Document?documentID=1506
+4163	town	79300	texas	town-treas	1	0	Emily Meinema	2024-11-05	D	7057	96	4					https://www.texastownship.org/184/Treasurer	emeinema@texastownship.onmicrosoft.com	(269) 548-4307	7110 W. Q Ave Kalamazoo, Michigan  49009	https://www.texastownship.org/ImageRepository/Document?documentID=1504
+5220	town-cou	79300	texas	council	4	0	Barb Hammon	2024-11-05	D	5698	16	4					www.texastownship.org	bhammon@texastownship.org	269-929-4875	7110 W. Q Ave Kalamazoo, Michigan  49009	
+5221	town-cou	79300	texas	council	4	0	Donald D. Boven	2024-11-05	R	5623	16	4					www.texastownship.org	dboven@texastownship.org	269-330-2044	7110 W. Q Ave Kalamazoo, Michigan  49009	
+5222	town-cou	79300	texas	council	4	0	Lisa Koop	2024-11-05	R	6202	17	4					https://www.texastownship.org/214/Township-Board	supervisor@texastownship.org	(269) 330-7030	7110 W. Q Ave Kalamazoo, Michigan  49009	https://www.texastownship.org/ImageRepository/Document?documentID=1502
+5223	town-cou	79300	texas	council	4	0	Michelle L. O'Neill	2024-11-05	R	6005	17	4					www.texastownship.org	moneill@texastownship.org	269-366-7228	7110 W. Q Ave Kalamazoo, Michigan  49009	
+2152	schl-cou	34950	vicksburg		8	0	Dan Grabowski	2020-11-03	N	3822	22	6	Y				www.vicksburgschools.org	dwgrabow@comcast.net	269-321-1000	301 S Kalamazoo Ave Vicksburg, MI 49097	
+2153	schl-cou	34950	vicksburg		8	0	David J. Schriemer	2020-11-03	N	4276	24	6	Y				www.vicksburgschools.org	david.schriemer@sbcglobal.net	269-321-1000	301 S Kalamazoo Ave Vicksburg, MI 49097	
+2154	schl-cou	34950	vicksburg		8	0	Stephanie Willoughby	2020-11-03	N	3919	22	6	Y				www.vicksburgschools.org	swilloughby@vicksburgschools.org	269-321-1000	301 S Kalamazoo Ave Vicksburg, MI 49097	
+7315	schl-cou	34950	vicksburg		8	0	Christina Forsyth	2022-11-08	N	2596	23	6					www.vicksburgschools.org	tinaforsyth@yahoo.com	269-321-1000	301 S Kalamazoo Ave Vicksburg, MI 49097	
+7316	schl-cou	34950	vicksburg		8	0	Jennifer Buikema	2022-11-08	N	2493	22	6					www.vicksburgschools.org		269-321-1000	301 S Kalamazoo Ave Vicksburg, MI 49097	
+9183	schl-cou	34950	vicksburg		8	0	Lisa Hostetler	2024-11-05	?	2795	18	6					www.vicksburgschools.org		269-321-1000	301 S Kalamazoo Ave Vicksburg, MI 49097	
+9184	schl-cou	34950	vicksburg		8	0	Rick Burmeister	2024-11-05	?	2711	18	6					www.vicksburgschools.org		269-321-1000	301 S Kalamazoo Ave Vicksburg, MI 49097	
+9185	schl-cou	34950	vicksburg		8	0	Ron Centofanti	2024-11-05	?	5950	96	6			P		www.vicksburgschools.org	rcentofanti@vicksburgschools.org	269-321-1000	301 S Kalamazoo Ave Vicksburg, MI 49097	
+5504	vil	82300	vicksburg	pres	1	0	Timothy B. Frisbie	2024-11-05	?	1310	95	2	?				vicksburgmi.org	tfrisbie@vicksburgmi.org	269-649-1919	915 Maple Meadows, Vicksburg, MI  49097	
+5504	vil	82300	vicksburg	pres	1	0	Timothy B. Frisbie	2024-11-05	?	1310	95	2	?				vicksburgmi.org	tfrisbie@vicksburgmi.org	269-649-1919	915 Maple Meadows, Vicksburg, MI  49097	
+5834	vil-cou	82300	vicksburg	council	9	0	Denny Olson	2020-11-03	N	898	30	4	?				vicksburgmi.org	dolson@vicksburgmi.org	269-649-1281	1113 Winter Cherry Lane, Vicksburg, MI 49097	
+5834	vil-cou	82300	vicksburg	council	9	0	Denny Olson	2020-11-03	N	898	30	4	?				vicksburgmi.org	dolson@vicksburgmi.org	269-649-1281	1113 Winter Cherry Lane, Vicksburg, MI 49097	
+5835	vil-cou	82300	vicksburg	council	9	0	Gail A. Reisterer	2020-11-03	N	993	33	4	?				vicksburgmi.org	greisterer@vicksburgmi.org	269-649-1696	502 S Michigan Ave, Vicksburg, MI 49097	
+5835	vil-cou	82300	vicksburg	council	9	0	Gail A. Reisterer	2020-11-03	N	993	33	4	?				vicksburgmi.org	greisterer@vicksburgmi.org	269-649-1696	502 S Michigan Ave, Vicksburg, MI 49097	
+5836	vil-cou	82300	vicksburg	council	9	0	Ryan Wagner	2020-11-03	N	1001	34	4	?				vicksburgmi.org	rwagner@vicksburgmi.org	269-816-8850	1025 Odell Farm Lane, Vicksburg, MI 49097	
+5836	vil-cou	82300	vicksburg	council	9	0	Ryan Wagner	2020-11-03	N	1001	34	4	?				vicksburgmi.org	rwagner@vicksburgmi.org	269-816-8850	1025 Odell Farm Lane, Vicksburg, MI 49097	
+7844	vil-cou	82300	vicksburg	council	9	0	Rick Holmes	2022-11-08	N	808	29	4	?				vicksburgmi.org	rholmes@vicksburgmi.org	269-207-5582	14211 CB MacDonald Way, Vicksburg, MI 49097	
+7844	vil-cou	82300	vicksburg	council	9	0	Rick Holmes	2022-11-08	N	808	29	4	?				vicksburgmi.org	rholmes@vicksburgmi.org	269-207-5582	14211 CB MacDonald Way, Vicksburg, MI 49097	
+7845	vil-cou	82300	vicksburg	council	9	0	Carl E. Keller	2022-11-08	N	618	22	4	?				vicksburgmi.org	ckeller@vicksburgmi.org	269-649-1919	500 E Prairie Street, Vicksburg, MI  49097	
+7845	vil-cou	82300	vicksburg	council	9	0	Carl E. Keller	2022-11-08	N	618	22	4	?				vicksburgmi.org	ckeller@vicksburgmi.org	269-649-1919	500 E Prairie Street, Vicksburg, MI  49097	
+7846	vil-cou	82300	vicksburg	council	9	0	Wendy Pheils	2022-11-08	N	704	25	4	?				vicksburgmi.org	wpheils@vicksburgmi.org	269-649-1919	214 W Park St., Vicksburg, MI  49097	
+7846	vil-cou	82300	vicksburg	council	9	0	Wendy Pheils	2022-11-08	N	704	25	4	?				vicksburgmi.org	wpheils@vicksburgmi.org	269-649-1919	214 W Park St., Vicksburg, MI  49097	
+11295	vil-cou	82300	vicksburg	council	9	0	Jessica Cox	2024-11-05	?	879	23	4	?				vicksburgmi.org	dolson@vicksburgmi.org	269-649-1919	1113 Winter Cherry Lane, Vicksburg, MI 49097	
+11295	vil-cou	82300	vicksburg	council	9	0	Jessica Cox	2024-11-05	?	879	23	4	?				vicksburgmi.org	dolson@vicksburgmi.org	269-649-1919	1113 Winter Cherry Lane, Vicksburg, MI 49097	
+11296	vil-cou	82300	vicksburg	council	9	0	Gail Reisterer	2024-11-05	?	757	19	4	?				vicksburgmi.org	dolson@vicksburgmi.org	269-649-1919	1113 Winter Cherry Lane, Vicksburg, MI 49097	
+11296	vil-cou	82300	vicksburg	council	9	0	Gail Reisterer	2024-11-05	?	757	19	4	?				vicksburgmi.org	dolson@vicksburgmi.org	269-649-1919	1113 Winter Cherry Lane, Vicksburg, MI 49097	
+11297	vil-cou	82300	vicksburg	council	9	0	Ryan Wagner	2024-11-05	?	896	23	4	?				vicksburgmi.org	dolson@vicksburgmi.org	269-649-1919	1113 Winter Cherry Lane, Vicksburg, MI 49097	
+11297	vil-cou	82300	vicksburg	council	9	0	Ryan Wagner	2024-11-05	?	896	23	4	?				vicksburgmi.org	dolson@vicksburgmi.org	269-649-1919	1113 Winter Cherry Lane, Vicksburg, MI 49097	
+2905	town	82840	wakeshma	town-clerk	1	0	Michael Fry	2024-11-05	N	425	96	4					www.wakeshmatownship.com			13988 South 42nd St P. O. Box 136 Fulton, Michigan  49052-0136	
+3573	town	82840	wakeshma	town-super	1	0	Jason Gatlin	2024-11-05	R	583	97	4					www.wakeshmatownship.com	supervisor@wakeshmatownship.com	269-389-9675	13988 South 42nd St P. O. Box 136 Fulton, Michigan  49052-0136	
+10035	town	82840	wakeshma	town-treas	1	0	Leanne Munn	2024-11-05	R	575	97	4					www.wakeshmatownship.com	treasurer@wakeshmatownship.com	269-778-3728	13988 South 42nd St P. O. Box 136 Fulton, Michigan  49052-0136	
+5272	town-cou	82840	wakeshma	council	2	0	Trevor Bennett	2024-11-05	R	560	52	4					www.wakeshmatownship.com		(269) 254-2811	13988 South 42nd St P. O. Box 136 Fulton, Michigan  49052-0136	
+5273	town-cou	82840	wakeshma	council	2	0	Barbara Thole	2024-11-05	R	488	45	4					www.wakeshmatownship.com			13988 South 42nd St P. O. Box 136 Fulton, Michigan  49052-0136	

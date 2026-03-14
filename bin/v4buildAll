@@ -2,13 +2,6 @@
 #
 #---v4buildAll.  Build the entire elections v4 database.
 
-#---These are the counties that are "complete".  Each such folder should have a file named 'complete'
-#   (usually with just the date/time).  Update this list manually as we progress.  Keep the existing
-#   order, which helps keep the database keys and entries in the same order.
-counties="aa-state arenac baraga barry berrien cass chippewa eaton gratiot houghton ingham isabella jackson kalamazoo kent"
-counties="$counties lake lenawee macomb manistee midland newaygo oakland roscommon saginaw shiawassee stclair stjoseph"
-counties="$counties vanburen washtenaw wayne monroe"
-
 #---For the counties that are NOT complete, run the translator on the files that we do have,
 #   so we can detect errors or problems.
 cd $ELECTION_IMPORT/Counties
@@ -46,25 +39,25 @@ if test $xs -gt 0; then
    exit
 fi
 
-exit
-
 #---Create the empty v4elections table
-echo "source $ELECTION_IMPORT/V4database/03-v4elections.sql" | my
+echo "source $ELECTION_IMPORT/SQL/03-v4elections.sql" | my
 
 #---For (ONLY) the completed counties, import the TSV files into v4elections.
 cd $ELECTION_IMPORT/Counties
-for x in $counties; do
+for x in *; do
    cd $x
-   rm -f y*
-   for f in *.ph8.tsv; do
-      if test -f $f; then
-         echo $f
-         phase9db.php <$f 2>y.$f
-         if [[ -f "y.$f" && ! -s "y.$f" ]]; then
-            rm -f  y.$f
+   if test -s complete; then
+      rm -f y*
+      for f in *.ph8.tsv; do
+         if test -f $f; then
+            echo $f
+            phase09db.php <$f 2>y.$f
+            if [[ -f "y.$f" && ! -s "y.$f" ]]; then
+               rm -f  y.$f
+            fi
          fi
-      fi
-   done
+      done
+   fi
    cd ..
 done
 

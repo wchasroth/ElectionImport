@@ -1,0 +1,291 @@
+id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	termlen	open	Res	Part	manual	web	email	phone	address	headshot
+688	cnty	81	__	atty	1	0	Doug Lloyd	2024-11-05	R	40	100	4					www.eatoncounty.org/154/Prosecuting-Attorney	prosecutingattorney@eatoncounty.org	517-543-4801	1045 Independence Boulevard, Charlotte MI 48813	
+741	cnty	81	__	clerkreg	1	0	Diana Bosworth	2024-11-05	R	40	100	4					www.eatoncounty.org/219/County-Clerks-Office	countyclerk@eatoncounty.org	517-543-2426	1045 Independence Boulevard, Charlotte MI 48813	https://www.eatoncounty.org/ImageRepository/Document?documentID=9078
+761	cnty	81	__	drain	1	0	Richard Wagner	2024-11-05	R	32	53	4					www.eatoncounty.org/207/Drain-Office	rwagner@eatoncounty.org	517-543-3809	1045 Independence Boulevard, Charlotte MI 48813	
+835	cnty	81	__	sheriff	1	0	Tom Reich	2024-11-05	D	35	56	4					www.eatoncounty.org/356/Office-of-the-Sheriff	treich@eatoncounty.org	517-543-3512	1025 Independence Boulevard, Charlotte MI 48813	
+889	cnty	81	__	treas	1	0	Dairus Reynnet	2024-11-05	R	31	51	4					www.eatoncounty.org/154/Prosecuting-Attorney			1045 Independence Boulevard, Charlotte MI 48813	
+977	cnty-com	81	__		1	1	Andy Shaver	2025-11-04	R	862	50	4			P		www.eatoncounty.org/295/Board-of-Commissioners-Home-Page		517-543-2122	1045 Independence Boulevard, Charlotte MI 48813	
+978	cnty-com	81	__		1	2	Landon Myers	2024-11-05	D	2	50	4					www.eatoncounty.org/295/Board-of-Commissioners-Home-Page		517-543-2122	1045 Independence Boulevard, Charlotte MI 48813	
+979	cnty-com	81	__		1	3	Jason Peek	2024-11-05	D	2	66	4					www.eatoncounty.org/295/Board-of-Commissioners-Home-Page		(517) 543-7500	1045 Independence Boulevard, Charlotte MI 48813	
+980	cnty-com	81	__		1	4	Rick Olivarez	2024-11-05	N	954	99	4					www.eatoncounty.org/295/Board-of-Commissioners-Home-Page		517-543-2122	1045 Independence Boulevard, Charlotte MI 48813	
+981	cnty-com	81	__		1	5	Jeanne Pearl-Wright	2024-11-05	D	2	100	4					www.eatoncounty.org/295/Board-of-Commissioners-Home-Page	jpearlwright@eatoncounty.org	517-543-2122	1045 Independence Boulevard, Charlotte MI 48813	https://www.eatoncounty.org/ImageRepository/Document?documentID=8708
+982	cnty-com	81	__		1	6	Jane M. Whitacre	2024-11-05	D	2	100	4					www.eatoncounty.org/295/Board-of-Commissioners-Home-Page		(517) 543-7500	1045 Independence Boulevard, Charlotte MI 48813	
+983	cnty-com	81	__		1	7	Mark J. Mudry	2024-11-05	D	2	66	4					www.eatoncounty.org/295/Board-of-Commissioners-Home-Page	mmudry@eatoncounty.org	517-543-2122	1045 Independence Boulevard, Charlotte MI 48813	https://www.eatoncounty.org/ImageRepository/Document?documentID=8715
+984	cnty-com	81	__		1	8	Kevin J. Bush	2024-11-05	R	858	99	4					www.eatoncounty.org/295/Board-of-Commissioners-Home-Page		517-543-2122	1045 Independence Boulevard, Charlotte MI 48813	
+985	cnty-com	81	__		1	9	Brian Droscha	2024-11-05	R	2	66	4					www.eatoncounty.org/295/Board-of-Commissioners-Home-Page	bdroscha@eatoncounty.org	517-543-2122	1045 Independence Boulevard, Charlotte MI 48813	https://www.eatoncounty.org/ImageRepository/Document?documentID=8717
+986	cnty-com	81	__		1	10	Jacob Toomey	2024-11-05	D	2	50	4					www.eatoncounty.org/295/Board-of-Commissioners-Home-Page	jtoomey@eatoncounty.org	517-543-2122	1045 Independence Boulevard, Charlotte MI 48813	https://www.eatoncounty.org/ImageRepository/Document?documentID=6854
+987	cnty-com	81	__		1	11	Shawn Furgala	2024-11-05	N	230	98	4					www.eatoncounty.org/295/Board-of-Commissioners-Home-Page		517-543-2122	1045 Independence Boulevard, Charlotte MI 48813	
+988	cnty-com	81	__		1	12	Nicole Christensen	2024-11-05	R	2	66	4					www.eatoncounty.org/295/Board-of-Commissioners-Home-Page		(517) 543-7500	1045 Independence Boulevard, Charlotte MI 48813	https://eatoncounty.org/ImageRepository/Document?documentID=8719
+989	cnty-com	81	__		1	13	Carl Berendsohn	2024-11-05	D	850	99	4					www.eatoncounty.org/295/Board-of-Commissioners-Home-Page		517-543-2122	1045 Independence Boulevard, Charlotte MI 48813	
+990	cnty-com	81	__		1	14	Frank Holmes	2024-11-05	R	2	66	4					www.eatoncounty.org/295/Board-of-Commissioners-Home-Page	fholmes@eatoncounty.org	517-543-2122	1045 Independence Boulevard, Charlotte MI 48813	https://www.eatoncounty.org/ImageRepository/Document?documentID=6847
+991	cnty-com	81	__		1	15	Keith Barber	2024-11-05	R	2	66	4					www.eatoncounty.org/295/Board-of-Commissioners-Home-Page		(517) 543-7500	1045 Independence Boulevard, Charlotte MI 48813	https://eatoncounty.org/ImageRepository/Document?documentID=8721
+2241	schl-cou	4650	bellevue		7	0	Michael DeRyder	2020-11-03	?	1140	32	6	Y				https://www.bellevue-schools.com/board	deryderm@bellevue-schools.com	517-541-6022	904 W. Capital Bellevue, MI 49021	
+2242	schl-cou	4650	bellevue		7	0	Seth C. Madry	2020-11-03	?	1542	43	6	Y				https://www.bellevue-schools.com/board	madrys@bellevue-schools.com	269-275-3982	904 W. Capital Bellevue, MI 49021	
+7402	schl-cou	4650	bellevue		7	0	Jessica Angus	2024-11-05	W	91	22	6					https://www.bellevue-schools.com/board			904 W. Capital Bellevue, MI 49021	
+7403	schl-cou	4650	bellevue		7	0	Roger Mathewson	2024-11-05	?	298	74	6					https://www.bellevue-schools.com/board	mathewsonr@bellevue-schools.com	269-967-0670	904 W. Capital Bellevue, MI 49021	
+7404	schl-cou	4650	bellevue		7	0	Jill Caro	2022-11-08	?	1101	41	6					https://www.bellevue-schools.com/board	caroj@bellevue-schools.com	269-569-1279	904 W. Capital Bellevue, MI 49021	
+7405	schl-cou	4650	bellevue		7	0	Scott Byers	2022-11-08	?	1430	54	6					https://www.bellevue-schools.com/board	byerss@bellevue-schools.com	517-719-9832	904 W. Capital Bellevue, MI 49021	
+7406	schl-cou	4650	bellevue		7	0	Shannon Visger	2022-11-08	W	52	3	6					https://www.bellevue-schools.com/board	visgers@bellevue-schools.com	269-317-7506	904 W. Capital Bellevue, MI 49021	
+2805	town	7080	bellevue	town-clerk	1	0	Lisa Lawitzke	2024-11-05	D	838	100	4					https://bellevuetownship.org/author/clerk/	bellevueclerk@gmail.com	269-763-2989	121 N. Main St. PO Box 6 Bellevue, Michigan  49021	
+3473	town	7080	bellevue	town-super	1	0	Don Chase	2024-11-05	R	1	100	4					https://bellevuetownship.org/township-board-members/		269-763-2989	121 N. Main St. PO Box 6 Bellevue, Michigan  49021	
+4094	town	7080	bellevue	town-treas	1	0	Vickie L. Madry	2024-11-05	R	1	100	4					https://bellevuetownship.org/author/clerk/		269-763-2989	121 N. Main St. PO Box 6 Bellevue, Michigan  49021	
+5090	town-cou	7080	bellevue	council	2	0	Kyle Lang	2024-11-05	R	1	50	4					https://bellevuetownship.org/author/clerk/		269-763-2989	121 N. Main St. PO Box 6 Bellevue, Michigan  49021	
+5091	town-cou	7080	bellevue	council	2	0	Don Malinowski	2024-11-05	R	1	50	4					https://bellevuetownship.org/author/clerk/		269-763-2989	121 N. Main St. PO Box 6 Bellevue, Michigan  49021	
+7581	vil	7060	bellevue	pres	1	0	Brandon L. Balkema	2022-11-08	?	322	100	4	Y				www.bellevuemi.net		269-763-9571	201 N. Main St. Bellevue, MI 49021	
+5774	vil-cou	7060	bellevue	council	8	0	Dulcey L. Miller	2020-11-03	?	318	36	4	?				www.bellevuemi.net		269-763-9571	201 N. Main St. Bellevue, MI 49021	
+5775	vil-cou	7060	bellevue	council	8	0	Robert Earl Miller	2020-11-03	?	271	30	4	?				www.bellevuemi.net		269-763-9571	201 N. Main St. Bellevue, MI 49021	
+5776	vil-cou	7060	bellevue	council	8	0	William Dennis Swartz	2020-11-03	?	289	32	4	?				www.bellevuemi.net		269-763-9571	201 N. Main St. Bellevue, MI 49021	
+7795	vil-cou	7060	bellevue	council	8	0	Hannah Coy	2022-11-08	?	191	21	4	?				www.bellevuemi.net		269-763-9571	201 N. Main St. Bellevue, MI 49021	
+7796	vil-cou	7060	bellevue	council	8	0	Scott Roberts	2022-11-08	?	216	23	4	?				www.bellevuemi.net		269-763-9571	201 N. Main St. Bellevue, MI 49021	
+7797	vil-cou	7060	bellevue	council	8	0	Randy Spaulding	2022-11-08	?	318	35	4	?				www.bellevuemi.net		269-763-9571	201 N. Main St. Bellevue, MI 49021	
+11231	vil-cou	7060	bellevue	council	8	0	Laurie Pfiester	2024-11-05	?	426	97	4	?				www.bellevuemi.net		269-763-9571	201 N. Main St. Bellevue, MI 49021	
+11232	vil-cou	7060	bellevue	council	8	0	Janeen Willis	2024-11-05	W	9	2	4	?				www.bellevuemi.net		269-763-9571	201 N. Main St. Bellevue, MI 49021	
+2838	town	7440	benton	town-clerk	1	0	Carah Spadafore	2024-11-05	R	1	100	4					bentontownship.net	bentontownship.clerk@gmail.com	517-645-7880	5136 Windsor Hwy. Potterville, MI 48876	
+3506	town	7440	benton	town-super	1	0	Gary Suits	2024-11-05	R	1	100	4					bentontownship.net	benton_twp_super@aol.com	517-645-7880	5136 Windsor Hwy. Potterville, MI 48876	
+4127	town	7440	benton	town-treas	1	0	Karen L. Miller	2024-11-05	R	1	100	4					bentontownship.net	bentontwptreasurer@gmail.com	517-645-7880	5136 Windsor Hwy. Potterville, MI 48876	
+5149	town-cou	7440	benton	council	4	0	David A. Falsetta	2024-11-05	R	1	25	4					bentontownship.net	david.falsetta@gmail.com	517-645-7880	5136 Windsor Hwy. Potterville, MI 48876	
+5150	town-cou	7440	benton	council	4	0	Scott Hoornstra	2024-11-05	R	1	25	4					bentontownship.net	bnttwptrustee.smh@yahoo.com	517-645-7880	5136 Windsor Hwy. Potterville, MI 48876	
+5151	town-cou	7440	benton	council	4	0	Neal O. Rohrs	2024-11-05	R	1	25	4					bentontownship.net		517-645-7880	5136 Windsor Hwy. Potterville, MI 48876	
+5152	town-cou	7440	benton	council	4	0	Chris Tennes	2024-11-05	R	1	25	4					bentontownship.net	bentontrustee1@yahoo.com	517-645-7880	5136 Windsor Hwy. Potterville, MI 48876	
+2350	town	10920	brookfield	town-clerk	1	0	Tara Miller	2024-11-05	R	680	100	4					https://www.brookfieldtownship.com			2638 E Bellevue Hwy, CHARLOTTE MI, 48813	
+3014	town	10920	brookfield	town-super	1	0	Nolan Spotts	2024-11-05	D	464	100	4					https://www.brookfieldtownship.com				
+3634	town	10920	brookfield	town-treas	1	0	Helene Larson	2024-11-05	R	688	100	4					https://www.brookfieldtownship.com		(517) 663-3832	4380 E Bellevue Hwy, Eaton Rapids	
+4260	town-cou	10920	brookfield	council	2	0	Jim Orr	2024-11-05	R	622	51	4					https://www.brookfieldtownship.com		(517) 230-4022	2638 E Bellevue Hwy, Charlotte, MI 48813	
+4261	town-cou	10920	brookfield	council	2	0	Marshall Williams	2024-11-05	R	597	48	4					https://www.brookfieldtownship.com		(517) 543-6165		
+2377	town	13380	carmel	town-clerk	1	0	Quinn Underwood	2024-11-05	D	990	100	4					carmeltownship-mi.gov	clerk@carmeltownship-mi.gov	517-543-9650	661 Beech Hwy Charlotte, Michigan  48813	
+3041	town	13380	carmel	town-super	1	0	Daniel Daly	2024-11-05	N	345	99	4					carmeltownship-mi.gov		517-543-9650	661 Beech Hwy Charlotte, Michigan  48813	
+3661	town	13380	carmel	town-treas	1	0	Michele Wise	2024-11-05	N	772	100	4					carmeltownship-mi.gov	treasurer@carmeltownship-mi.gov	517-543-9650	661 Beech Hwy Charlotte, Michigan  48813	
+4304	town-cou	13380	carmel	council	2	0	Jennifer Beck	2024-11-05	N	294	31	4					carmeltownship-mi.gov		517-543-9650	661 Beech Hwy Charlotte, Michigan  48813	
+4305	town-cou	13380	carmel	council	2	0	Debra Montgomery	2024-11-05	N	312	33	4					carmeltownship-mi.gov	trusteeB@carmeltownship-mi.gov	517-930-0354	661 Beech Hwy Charlotte, Michigan  48813	
+5872	city	14820	charlotte	mayor	1	0	Tim Lewis	2023-11-07	?	862	60	2					charlottemi.gov	tlewis@charlottemi.org	517-281-1446	111 E. Lawrence Ave. Charlotte, Michigan  48813	
+5949	city-cou	14820	charlotte		2	1	Curt Scott	2023-11-07	?	480	100	5					charlottemi.gov			111 E. Lawrence Ave. Charlotte, Michigan  48813	
+7906	city-cou	14820	charlotte		2	2	Joseph D. Chin Jr	2023-11-07	?	51	100	5					charlottemi.gov			111 E. Lawrence Ave. Charlotte, Michigan  48813	
+7904	city-cou	14820	charlotte		2	0	Michael H. Duweck	2023-11-07	?	1	100	5					charlottemi.gov	mduweck@charlottemi.org	517-888-3544	111 E. Lawrence Ave. Charlotte, Michigan  48813	
+7905	city-cou	14820	charlotte		2	1	Jeffrey A. Christensen	2023-11-07	?	490	100	5	Y		P		charlottemi.gov			111 E. Lawrence Ave. Charlotte, Michigan  48813	
+7907	city-cou	14820	charlotte		2	2	Kevin Fullerton	2023-11-07	?	458	59	5	Y		P		charlottemi.gov			111 E. Lawrence Ave. Charlotte, Michigan  48813	
+2318	schl-cou	8770	charlotte		8	0	Mark Lorne Byers	2020-11-03	?	4	28	6	Y				www.charlotteorioles.com			378 State Street Charlotte MI, 48837	
+2319	schl-cou	8770	charlotte		8	0	James M. Cicorelli	2020-11-03	?	5	35	6	Y				www.charlotteorioles.com			378 State Street Charlotte MI, 48837	
+2320	schl-cou	8770	charlotte		8	0	Joel F. Fox	2020-11-03	?	5	35	6	Y				www.charlotteorioles.com			378 State Street Charlotte MI, 48837	
+2321	schl-cou	8770	charlotte		8	0	Mike Baker	2022-11-08	?	3	1	6		R			www.charlotteorioles.com			378 State Street Charlotte MI, 48837	
+7473	schl-cou	8770	charlotte		8	0	Andrea Renee Smith	2022-11-08	W	191	95	6		R			www.charlotteorioles.com			378 State Street Charlotte MI, 48837	
+9380	schl-cou	8770	charlotte		8	0	Jill Shaver	2024-11-05	?	6	60	6					www.charlotteorioles.com			378 State Street Charlotte MI, 48837	
+9381	schl-cou	8770	charlotte		8	0	Brad Wurfel	2024-11-05	?	4	40	6					www.charlotteorioles.com			378 State Street Charlotte MI, 48837	
+9382	schl-cou	8770	charlotte		8	0	Kate Durda	2024-11-05	?	6	100	6			P		www.charlotteorioles.com			378 State Street Charlotte MI, 48837	
+2392	town	15260	chester	town-clerk	1	0	Sheila K. Draper	2024-11-05	R	802	100	4					https://www.chestertownship.org/index.php/departments/directory	froglady0816@gmail.com	517-543-7750	5044 Moyer Road Charlotte, Michigan  48813	
+3056	town	15260	chester	town-super	1	0	Justin Vedder	2024-11-05	R	842	100	4					https://www.chestertownship.org/index.php/departments/directory				
+3676	town	15260	chester	town-treas	1	0	Leslie S. Garn	2024-11-05	R	834	100	4					https://www.chestertownship.org/index.php/departments/directory		(517) 231-1635		
+4327	town-cou	15260	chester	council	2	0	Randall A. Carlson	2024-11-05	R	724	49	4					https://www.chestertownship.org/index.php/departments/directory		(800) 837-3374		
+4328	town-cou	15260	chester	council	2	0	Kim Walters	2024-11-05	R	743	50	4					https://www.chestertownship.org/index.php/departments/directory				
+2441	town	21520	delta charter	town-clerk	1	0	Mary R. Clark	2024-11-05	D	14	100	4					www.deltami.gov	mclark@deltami.gov	517-323-8500	7710 W Saginaw Hwy Lansing, Michigan  48917	
+3106	town	21520	delta charter	town-super	1	0	Saturn Wells	2024-11-05	W	832	87	4					www.deltami.gov		517-323-8590	7710 W Saginaw Hwy Lansing, Michigan  48917	
+3727	town	21520	delta charter	town-treas	1	0	Dennis R. Fedewa	2024-11-05	D	13	100	4					www.deltami.gov	dfedewa@deltami.gov	517-323-8590	7710 W Saginaw Hwy Lansing, Michigan  48917	
+4417	town-cou	21520	delta charter	council	4	0	Beth Bowen	2024-11-05	D	11	18	4					www.deltami.gov		517-323-8590	7710 W Saginaw Hwy Lansing, Michigan  48917	
+4418	town-cou	21520	delta charter	council	4	0	Fonda Brewer	2024-11-05	D	11	18	4					www.deltami.gov	fbrewer@deltami.gov	517-323-8590	7710 W Saginaw Hwy Lansing, Michigan  48917	
+4419	town-cou	21520	delta charter	council	4	0	Andrea Cascarilla	2024-11-05	D	12	20	4					www.deltami.gov	acascarilla@deltami.gov	517-323-8590	7710 W Saginaw Hwy Lansing, Michigan  48917	
+4420	town-cou	21520	delta charter	council	4	0	Karen J. Mojica	2024-11-05	D	10	16	4					www.deltami.gov	kmojica@deltami.gov	517-323-8590	7710 W Saginaw Hwy Lansing, Michigan  48917	
+5420	vil	22380	dimondale	pres	1	0	Ralph R. Reznick	2024-11-05	?	515	100	2	Y				https://www.villageofdimondale.org/council	dimondalepresident@gmail.com	517-646-0230	136 N. Bridge St., POB 26, Dimondale, MI 48821	
+5599	vil-cou	22380	dimondale	council	9	0	William Bower	2020-11-03	?	346	24	2	?				https://www.villageofdimondale.org/council	trusteebower1@gmail.com	517-646-0230	136 N. Bridge St., POB 26, Dimondale, MI 48821	
+5600	vil-cou	22380	dimondale	council	9	0	Lori Conarton	2020-11-03	?	466	32	2	?				https://www.villageofdimondale.org/council	trusteeconarton@gmail.com	517-646-0230	136 N. Bridge St., POB 26, Dimondale, MI 48821	
+5601	vil-cou	22380	dimondale	council	9	0	Jacob L. Toomey	2020-11-03	?	372	26	2	?				https://www.villageofdimondale.org/council	trusteeconarton@gmail.com	517-646-0230	136 N. Bridge St., POB 26, Dimondale, MI 48821	
+7654	vil-cou	22380	dimondale	council	9	0	Matthew Bowen	2022-11-08	?	256	22	2	?				https://www.villageofdimondale.org/council	trusteembowen@gmail.com	517-646-0230	136 N. Bridge St., POB 26, Dimondale, MI 48821	
+7655	vil-cou	22380	dimondale	council	9	0	Keri Haidamous	2022-11-08	?	232	20	2	?				https://www.villageofdimondale.org/council	vodtrusteehaidamous@gmail.com	517-646-0230	136 N. Bridge St., POB 26, Dimondale, MI 48821	
+7656	vil-cou	22380	dimondale	council	9	0	Andrea Tardino	2022-11-08	?	273	23	2	?				https://www.villageofdimondale.org/council	trusteetardino@gmail.com	517-646-0230	136 N. Bridge St., POB 26, Dimondale, MI 48821	
+11034	vil-cou	22380	dimondale	council	9	0	Robert J. Campbell	2024-11-05	?	359	32	2	?				https://www.villageofdimondale.org/council	trusteecampbell@gmail.com	517-646-0230	136 N. Bridge St., POB 26, Dimondale, MI 48821	
+11035	vil-cou	22380	dimondale	council	9	0	Lori Conarton	2024-11-05	?	404	36	2	?				https://www.villageofdimondale.org/council	trusteeconarton@gmail.com	517-646-0230	136 N. Bridge St., POB 26, Dimondale, MI 48821	
+11036	vil-cou	22380	dimondale	council	9	0	Curtis O'Neal	2024-11-05	?	329	30	2	?				https://www.villageofdimondale.org/council	trusteeconarton@gmail.com	517-646-0230	136 N. Bridge St., POB 26, Dimondale, MI 48821	
+2456	town	24520	eaton	town-clerk	1	0	Corie Morris	2024-11-05	R	1	100	4					https://eatontownship.com/board/	clerk@eatontownship.com	517-543-3308	3981 E Clinton Trail Charlotte, Michigan  48813	
+3121	town	24520	eaton	town-super	1	0	David W. Roberts	2024-11-05	R	1	100	4					https://eatontownship.com/board/	supervisor@eatontownship.com	517-543-3308	3981 E Clinton Trail Charlotte, Michigan  48813	
+3742	town	24520	eaton	town-treas	1	0	Becky Dolman	2024-11-05	R	1	100	4					https://eatontownship.com/board/	treasurer@eatontownship.com	517-543-3308	3981 E Clinton Trail Charlotte, Michigan  48813	
+4448	town-cou	24520	eaton	council	2	0	Richard Harvey	2024-11-05	R	1	50	4					https://eatontownship.com/board/		517-543-3308	3981 E Clinton Trail Charlotte, Michigan  48813	
+4449	town-cou	24520	eaton	council	2	0	James R. Droscha	2024-11-05	R	1	50	4					https://eatontownship.com/board/		517-243-5770	3981 E Clinton Trail Charlotte, Michigan  48813	
+5880	city	24540	eaton rapids	mayor	1	0	Pamela K. Colestock	2021-11-02	?	376	100	4					https://www.cityofeatonrapids.gov/mayors-corner/	pcolestock@cityofeatonrapids.gov	517-663-8118	200 S Main St Eaton Rapids, Michigan  48827	https://www.cityofeatonrapids.gov/wp-content/uploads/2022/03/Pam-300x300.jpg
+7930	city-cou	24540	eaton rapids		2	0	William Z. Steele	2023-11-07	?	182	46	4					https://www.cityofeatonrapids.gov/government/board-commission-opportunities/	wsteele@cityofeatonrapids.gov	517-663-8118	200 S Main St Eaton Rapids, Michigan  48827	
+1534	schl-cou	12690	eaton rapids		7	0	Steven Curry	2020-11-03	?	3	27	6	Y				https://www.erpsk12.org/apps/pages/Board-Members	stevecurry@erpsk12.org	517-663-8155	912 Greyhound Dr., Eaton Rapids, MI 48827	https://3.files.edl.io/8cc8/21/01/07/174921-3cc9450c-00e5-47a4-b889-7a380842fa21.jpg
+1535	schl-cou	12690	eaton rapids		7	0	Daniel E. Guy	2020-11-03	?	3	27	6	Y				https://www.erpsk12.org/apps/pages/Board-Members	dguy@erpsk12.org	517-663-8155	912 Greyhound Dr., Eaton Rapids, MI 48827	https://3.files.edl.io/03ea/18/07/23/203219-ccef87c5-e9e2-4f94-8c01-d955e47a1ee9.jpg
+1536	schl-cou	12690	eaton rapids		7	0	Jann Jansen	2020-11-03	?	3	27	6	Y				https://www.erpsk12.org/apps/pages/Board-Members	jjansen@erpsk12.org	517-663-8155	912 Greyhound Dr., Eaton Rapids, MI 48827	https://3.files.edl.io/aed5/21/01/07/182957-83033448-eba0-4cd8-96a6-0bb2f888e1bf.jpg
+6780	schl-cou	12690	eaton rapids		7	0	Becky Sue Thompson	2022-11-08	N	497	31	6					https://www.erpsk12.org/apps/pages/Board-Members	bthompson@erpsk12.org	517-663-8155	912 Greyhound Dr., Eaton Rapids, MI 48827	https://3.files.edl.io/c41a/23/01/24/155241-09156626-f47d-4ca6-bc7f-68e020d0c6df.jpg
+6781	schl-cou	12690	eaton rapids		7	0	Valerie VanSandt	2022-11-08	N	447	28	6					https://www.erpsk12.org/apps/pages/Board-Members	vvansandt@erpsk12.org	517-663-8155	912 Greyhound Dr., Eaton Rapids, MI 48827	https://3.files.edl.io/56bc/18/07/23/203340-781e4c8f-5b9f-4f47-9c1c-171a9073b90d.jpg
+8641	schl-cou	12690	eaton rapids		7	0	Brian D. Ross	2024-11-05	?	433	26	6					https://www.erpsk12.org/apps/pages/Board-Members	bross@erpsk12.org	517-663-8155	912 Greyhound Dr., Eaton Rapids, MI 48827	https://3.files.edl.io/86d8/18/07/23/203146-412d94ff-6440-4b0b-802f-dd52a16888c5.jpg
+8642	schl-cou	12690	eaton rapids		7	0	Melissa Eckman	2024-11-05	?	370	22	6					https://www.erpsk12.org/apps/pages/Board-Members	meckman@erpsk12.org	(517) 394-2985	912 Greyhound Dr., Eaton Rapids, MI 48827	https://3.files.edl.io/99be/25/01/21/184458-175a9620-e454-439c-8bb4-7288992b4e85.jpg
+2457	town	24560	eaton rapids	town-clerk	1	0	Diane Vogel	2024-11-05	R	1	100	4					https://eatonrapidstwp.org/township-board/		517-663-7407	2512 S. Canal Rd. Eaton Rapids, Michigan  48827	
+3122	town	24560	eaton rapids	town-super	1	0	Scott E. Wilson	2024-11-05	R	1	100	4					https://eatonrapidstwp.org/township-board/	supervisor@eatonrapidstwp.org	517-663-7407	2512 S. Canal Rd. Eaton Rapids, Michigan  48827	
+3743	town	24560	eaton rapids	town-treas	1	0	Janice A. Heck	2024-11-05	R	1	100	4					https://eatonrapidstwp.org/township-board/	treasurer@eatonrapidstwp.org	517-663-7407	2512 S. Canal Rd. Eaton Rapids, Michigan  48827	
+4450	town-cou	24560	eaton rapids	council	2	0	Stephen Benkovsky	2024-11-05	R	1	50	4					https://eatonrapidstwp.org/township-board/	benkovskys@att.net	517-663-7407	2512 S. Canal Rd. Eaton Rapids, Michigan  48827	
+4451	town-cou	24560	eaton rapids	council	2	0	Amanda L. Brown	2024-11-05	R	1	50	4					https://eatonrapidstwp.org/township-board/		517-663-7407	2512 S. Canal Rd. Eaton Rapids, Michigan  48827	
+6264	city	33420	grand ledge	mayor	1	0	Keith O. Mulder	2022-11-08	?	2	100	4	Y				www.cityofgrandledge.com		517-627-3512	310 Greenwood St Grand Ledge, Michigan  48837	
+515	city-cou	33420	grand ledge		2	1	Brett Gillespie	2024-11-05	?	768	100	4					https://www.cityofgrandledge.com/FormCenter/Mayor-City-Council-7/Contact-Brett-Gillespie-Ward-1-61		(517) 449-7243		
+516	city-cou	33420	grand ledge		2	2	Rick Lantz	2024-11-05	?	812	100	4					https://www.cityofgrandledge.com/FormCenter/Mayor-City-Council-7/Contact-Rick-Lantz-Mayor-ProTem-Ward-2-57	ricklantz@cityofgrandledge.com	(517) 627-3389	310 Greenwood St., Grand Ledge MI 48837	
+517	city-cou	33420	grand ledge		2	3	Thomas Jancek	2024-11-05	?	995	100	4					https://www.cityofgrandledge.com/FormCenter/Mayor-City-Council-7/Contact-Tom-Jancek-Ward-3-56		(517) 627-6558		
+6328	city-cou	33420	grand ledge		2	1	David Logel	2022-11-08	?	655	100	4	Y				https://cityofgrandledge.com/FormCenter/Mayor-City-Council-7/Contact-Dave-Logel-Ward-1-68	dlogel@cityofgrandledge.com	(989) 493-9780		
+6329	city-cou	33420	grand ledge		2	2	Lynne MacDowell	2022-11-08	?	735	100	4	Y				https://www.cityofgrandledge.com/FormCenter/Mayor-City-Council-7/Contact-Lynne-MacDowell-Ward-2-58	lmacdowell@cityofgrandledge.com	(517) 627-2149		
+6330	city-cou	33420	grand ledge		2	3	Don Willems	2022-11-08	?	964	100	4	Y				https://www.cityofgrandledge.com/FormCenter/Mayor-City-Council-7/Contact-Don-Willems-Ward-3-60	donwillems@cityofgrandledge.com	(517) 980-5415		
+1606	schl-cou	16410	grand ledge		8	0	Patrick McKennon	2020-11-03	?	5	26	6	Y	R			www.glcomets.net			220 Lamson Street Grand Ledge, MI 48837	
+1607	schl-cou	16410	grand ledge		8	0	Nicole Shannon	2020-11-03	?	6	31	6	Y	R			www.glcomets.net	shannon4gl@gmail.com		220 Lamson Street Grand Ledge, MI 48837	
+6859	schl-cou	16410	grand ledge		8	0	Denise DuFort	2022-11-08	?	7	29	6					www.glcomets.net	denisedufort@gmail.com		220 Lamson Street Grand Ledge, MI 48837	
+6860	schl-cou	16410	grand ledge		8	0	Ashley Kuykendoll	2022-11-08	?	7	29	6					www.glcomets.net			220 Lamson Street Grand Ledge, MI 48837	
+6861	schl-cou	16410	grand ledge		8	0	Toni Hughes Glasscoe	2022-11-08	?	6	50	6	Y		P		www.glcomets.net	toniglasscoe@comcast.net		220 Lamson Street Grand Ledge, MI 48837	
+8728	schl-cou	16410	grand ledge		8	0	Coban Holmes	2024-11-05	?	5	16	6					www.glcomets.net			220 Lamson Street Grand Ledge, MI 48837	
+8729	schl-cou	16410	grand ledge		8	0	Matt Oppenheim	2024-11-05	?	6	20	6					www.glcomets.net			220 Lamson Street Grand Ledge, MI 48837	
+8730	schl-cou	16410	grand ledge		8	0	Kali Stevens	2024-11-05	?	8	26	6					www.glcomets.net			220 Lamson Street Grand Ledge, MI 48837	
+2541	town	36200	hamlin	town-clerk	1	0	Katherine C. King	2024-11-05	R	1	100	4					www.hamlintownshipmi.com	clerk@hamlintownshipmi.com	517-663-7777	6463 S Clinton Trail Eaton Rapids, Michigan  48827	
+3206	town	36200	hamlin	town-super	1	0	Phillip A. Bombrys	2024-11-05	R	1	100	4					www.hamlintownshipmi.com	supervisor@hamlintownshipmi.com	517-663-7777	6463 S Clinton Trail Eaton Rapids, Michigan  48827	
+3827	town	36200	hamlin	town-treas	1	0	Denise M. Perkins	2024-11-05	R	1	100	4					www.hamlintownshipmi.com	treasurer@hamlintownshipmi.com	517-663-7777	6463 S Clinton Trail Eaton Rapids, Michigan  48827	
+4588	town-cou	36200	hamlin	council	2	0	Erin Reincke	2024-11-05	D	896	99	4					www.hamlintownshipmi.com		517-663-7777	6463 S Clinton Trail Eaton Rapids, Michigan  48827	
+4589	town-cou	36200	hamlin	council	2	0	Matt Gleeson	2024-11-05	R	1	0	4					www.hamlintownshipmi.com		517-663-8350	6463 S Clinton Trail Eaton Rapids, Michigan  48827	
+1668	schl-cou	18480	holt		7	0	Amy M. Dalton	2020-11-03	?	1	0	6	Y				https://www.hpsk12.net/board-of-education/meet-our-board-members/	amy.dalton@hpsk12.net	517-694-7459	5780 West Holt Road Holt, MI 48842	https://www.hpsk12.net/downloads/board_policies/robel_headshot.jpg
+1669	schl-cou	18480	holt		7	0	Francisca G. Garcia	2020-11-03	?	814	45	6	Y				https://www.hpsk12.net/board-of-education/meet-our-board-members/	francisca.garcia@hpsk12.net	(517) 694-0401	5780 West Holt Road Holt, MI 48842	
+1670	schl-cou	18480	holt		7	0	Mark Perry	2020-11-03	?	974	54	6	Y				https://www.hpsk12.net/board-of-education/meet-our-board-members/	mark.perry@hpsk12.net	517-694-5715	5780 West Holt Road Holt, MI 48842	https://www.hpsk12.net/downloads/board_policies/robel_headshot.jpg
+6922	schl-cou	18480	holt		7	0	Jessie Jones	2022-11-08	N	7575	49	6					https://www.hpsk12.net/board-of-education/meet-our-board-members/	jessie.jones@hpsk12.net	517-694-5715	5780 West Holt Road Holt, MI 48842	https://www.hpsk12.net/downloads/logo__image_assets/2020_jones_reduced_1.jpg
+6923	schl-cou	18480	holt		7	0	Kevin P. Leonard	2022-11-08	N	7843	50	6					https://www.hpsk12.net/board-of-education/meet-our-board-members/	kevin.leonard@hpsk12.net	517-694-5715	5780 West Holt Road Holt, MI 48842	https://www.hpsk12.net/downloads/logo__image_assets/2020_leonard_reduced.jpg
+6924	schl-cou	18480	holt		7	0	Marisa Anderson	2024-11-05	?	8411	54	6					https://www.hpsk12.net/board-of-education/meet-our-board-members/	marisa.anderson@hpsk12.net	517-420-6272	5780 West Holt Road Holt, MI 48842	
+8780	schl-cou	18480	holt		7	0	Robert G. Halgren	2024-11-05	?	6878	44	6					https://www.hpsk12.net/board-of-education/meet-our-board-members/	robert.halgren@hpsk12.net	517-694-5715	5780 West Holt Road Holt, MI 48842	https://www.hpsk12.net/downloads/board_policies/robel_headshot.jpg
+2595	town	42220	kalamo	town-clerk	1	0	Dawn Conklin	2024-11-05	R	811	100	4						kt0849@yahoo.com	517-726-1266	8960 Spore St Vermontville, Michigan  49096	
+3260	town	42220	kalamo	town-super	1	0	Brett Ramey	2024-11-05	R	813	100	4							(517) 331-2113	216 S. Pease Rd. Vermontville, MI 49096	
+3881	town	42220	kalamo	town-treas	1	0	Heather Newsome	2024-11-05	R	794	100	4							(517) 726-0579	8960 Spore Hwy, Vermontville MI 49096	
+4697	town-cou	42220	kalamo	council	2	0	Mike Newsome	2024-11-05	R	729	50	4									
+4698	town-cou	42220	kalamo	council	2	0	Willis Rugg	2024-11-05	R	709	49	4									
+1743	schl-cou	20980	lakewood		7	0	Darin Weller	2020-11-03	?	1487	28	6	Y				https://www.lakewoodps.org/o/lps/page/board-members	darinweller@lakewoodps.org			
+1744	schl-cou	20980	lakewood		7	0	Jamie Brodbeck Krenz	2020-11-03	?	1805	35	6	Y				https://www.lakewoodps.org/o/lps/page/board-members	krenzj@lakewoodps.org			
+1745	schl-cou	20980	lakewood		7	0	Kerry Possehn	2020-11-03	?	1737	33	6	Y				https://www.lakewoodps.org/o/lps/page/board-members	KerryPossehn@lakewoodps.org	(616) 527-1790	375 Apple Tree Dr. Ionia, MI 48846	
+1746	schl-cou	20980	lakewood		7	0	Adam W. McArthur	2024-11-05	?	720	47	6					https://www.lakewoodps.org/o/lps/page/board-members				
+6982	schl-cou	20980	lakewood		7	0	Paige OMara	2022-11-08	?	1366	33	6					https://www.lakewoodps.org/o/lps/page/board-members	paigeomara@lakewoodps.org			
+6983	schl-cou	20980	lakewood		7	0	Wendy Behrenwald	2022-11-08	?	1317	32	6					https://www.lakewoodps.org/o/lps/page/board-members	wendybehrenwald@lakewoodps.org			
+8857	schl-cou	20980	lakewood		7	0	Zeke Cappon	2024-11-05	?	788	52	6					https://www.lakewoodps.org/o/lps/page/board-members				
+5866	city	46000	lansing	clerk	1	0	Chris Swope	2025-11-04	?	17981	98	4					mi-lansing3.civicplus.pro/185/City-Clerk	city.clerk@lansingmi.gov	517-483-4131	1221 Reo RdLansing MI, 48910	
+5900	city	46000	lansing	mayor	1	0	Andy Schor	2025-11-04	?	12881	66	4					mi-lansing3.civicplus.pro/179/Mayors-Office	Lansing.mayor@lansginmi.gov	517-483-4141	124 W Michigan Avenue Lansing, MI 48933	
+6065	city-cou	46000	lansing		4	0	Jeremy A. Garza	2025-11-04	?	10394	29	4					mi-lansing3.civicplus.pro/260/Council-Members	jeremy.garza@lansingmi.gov	517-483-4184	124 W Michigan Avenue Lansing, MI 48933	
+6355	city-cou	46000	lansing		2	1	Ryan Kost	2022-11-08	N	3764	50	4	Y				mi-lansing3.civicplus.pro/260/Council-Members	Ryan.kost@lansingmi.gov	517-483-4181	124 W Michigan Avenue Lansing, MI 48933	
+6066	city-cou	46000	lansing		1	2	Deyanira Nevarez Martinez	2025-11-04	?	3133	71	4					https://www.lansingmi.gov/260/Council-Members?contentId=24c534ce-d5d7-411e-8788-9bcd42aaebab	Deyanira.n.Martinez@lansingmi.gov	(517) 483-4190	124 W Michigan Avenue, 10th Floor, City Hall, Lansing, MI 48933	
+8009	city-cou	46000	lansing		1	3	Adam Hussain	2023-11-07	?	2345	74	4					mi-lansing3.civicplus.pro/260/Council-Members	Adam.hussain@lansingmi.gov	517-483-4191	124 W Michigan Avenue Lansing, MI 48933	
+6067	city-cou	46000	lansing		1	4	Peter Spadafore	2025-11-04	?	3362	58	4					mi-lansing3.civicplus.pro/260/Council-Members	Peter.spadafore@lansingmi.gov	517-483-4180	124 W Michigan Avenue Lansing, MI 48933	
+8006	city-cou	46000	lansing		4	0	Tamera Carter	2023-11-07	?	8663	34	4					https://www.lansingmi.gov/260/Council-Members?contentId=873d63bb-233d-4adb-bc15-a71a10ab2062	tamera.carter@lansingmi.gov	(517) 483-4170	124 W Michigan Avenue Lansing, MI 48933	
+8008	city-cou	46000	lansing		2	1	Ryan Kost	2023-11-07	?	2463	76	4					mi-lansing3.civicplus.pro/260/Council-Members	Ryan.kost@lansingmi.gov	517-483-4181	124 W Michigan Avenue Lansing, MI 48933	
+8007	city-cou	46000	lansing		4	0	Trini Lopez Pehlivanoglu	2023-11-07	?	8425	33	4					mi-lansing3.civicplus.pro/260/Council-Members	trini.lopez@lansingmi.gov	517-483-4188	2843 E Grand River Ave, East Lansing, MI 48823	
+11399	city-cou	46000	lansing		4	0	Clara Martinez	2025-11-04	?	11387	32	4					https://www.lansingmi.gov/745/City-Council-Staff?contentId=9f3fe017-ad23-4b91-abdf-d697029b4a58	clara.martinez@lansingmi.gov	517-483-4171	124 W Michigan Avenue 10th Floor City Hall Lansing, MI 48933	
+1749	schl-cou	21150	lansing		10	0	Guillermo Z. Lopez	2020-11-03	?	943	35	6	Y				https://www.lansingschools.net/profiles/guillermo_z_lopez/	Guillermo.lopez@lansingschools.net	517-755-1010	519 West Kalamazoo Street Lansing, MI 48933	
+1750	schl-cou	21150	lansing		10	0	Robin M. Moore	2020-11-03	?	980	36	6	Y				https://www.lansingschools.net/profiles/Robin_Moore/	robin.moore@lansingschools.net	517-755-1010	519 West Kalamazoo Street Lansing, MI 48933	
+1751	schl-cou	21150	lansing		10	0	Nino Rodriguez	2020-11-03	?	728	27	6	Y				https://www.lansingschools.net/profiles/dr_nino_rodriguez/	nino.rodriguez@lansingschools.net	517-755-1010	519 West Kalamazoo Street Lansing, MI 48933	
+6987	schl-cou	21150	lansing		10	0	Caitlin Cavanagh	2022-11-08	N	20804	29	6		R			https://www.lansingschools.net/profiles/caitlin-cavanagh/	caitlin.cavanagh@lansingschools.net	517-755-1010	519 West Kalamazoo Street Lansing, MI 48933	https://alpha.creativecirclecdn.com/citypulse/original/20220925-150210-Cavanagh_headshot%20copy%202.jpg
+6988	schl-cou	21150	lansing		10	0	Kurt Richardson	2022-11-08	N	11738	16	6		R			www.lansingschools.net	kurtrichardson2@gmail.com	(517) 371-5600	519 West Kalamazoo Street Lansing, MI 48933	https://alpha.creativecirclecdn.com/citypulse/original/20220925-143328-Richardson.jpg
+6989	schl-cou	21150	lansing		10	0	Rosalyn Williams	2022-11-08	N	13965	19	6		R			https://www.lansingschools.net/profiles/Rosalyn_Williams/	Willir0000@lansingschools.net	517-755-1010	519 West Kalamazoo Street	
+6990	schl-cou	21150	lansing		10	0	Cirea Strode	2024-11-05	?	16514	17	6					https://www.lansingschools.net/profiles/Cirea_Strode/	cirea.strode@lansingschools.net	517-755-1010	519 West Kalamazoo Street Lansing, MI 48933	https://www.lansingschools.net/downloads/_acct_/00/01/55/85/71b3757f9d7f4508984baf8c9838c6fa.jpg
+8861	schl-cou	21150	lansing		10	0	Deyanira Nevarez Martinez	2024-11-05	?	31111	97	6			P		www.lansingschools.net		(517) 483-4190	124 W Michigan Avenue, 10th Floor, City Hall, Lansing, MI 48933	
+8862	schl-cou	21150	lansing		10	0	Keturah Bouyer	2024-11-05	?	12888	13	6					www.lansingschools.net		(888) 281-3634	2843 E Grand River Ave, East Lansing, MI 48823	
+8863	schl-cou	21150	lansing		10	0	LaVont Heard	2024-11-05	?	16228	17	6					www.lansingschools.net		(248) 500-1790	519 West Kalamazoo Street Lansing, MI 48933	
+1794	schl-cou	22620	maple valley		8	0	Craig M. Lackscheide	2022-11-08	?	1234	13	4	Y				mvs.k12.mi.us	CLackscheide@mvs.k12.mi.us		11090 Nashville Highway Vermontville, MI 49096	
+1795	schl-cou	22620	maple valley		8	0	Chelsea Campbell	2024-11-05	?	999	34	4		R			mvs.k12.mi.us			11090 Nashville Highway Vermontville, MI 49096	
+1796	schl-cou	22620	maple valley		8	0	Jacob Williams	2024-11-05	?	950	32	4		R			mvs.k12.mi.us			11090 Nashville Highway Vermontville, MI 49096	
+1797	schl-cou	22620	maple valley		8	0	Justin Keiffer	2024-11-05	?	985	33	4		R			mvs.k12.mi.us	JKeiffer@mvs.k12.mi.us		11090 Nashville Highway Vermontville, MI 49096	
+7032	schl-cou	22620	maple valley		8	0	Kelly Dunham	2022-11-08	?	1480	16	4	Y				mvs.k12.mi.us	KDunham@mvs.k12.mi.us		11090 Nashville Highway Vermontville, MI 49096	
+7033	schl-cou	22620	maple valley		8	0	Kimberlee Kenyon	2022-11-08	?	1286	14	4	Y				mvs.k12.mi.us	KKenyon@mvs.k12.mi.us		11090 Nashville Highway Vermontville, MI 49096	
+7034	schl-cou	22620	maple valley		8	0	Kristen Miller	2022-11-08	?	1375	15	4	Y				mvs.k12.mi.us	KMiller@mvs.k12.mi.us		11090 Nashville Highway Vermontville, MI 49096	
+7035	schl-cou	22620	maple valley		8	0	Kimberly Wilkes	2022-11-08	?	1167	100	4			P		mvs.k12.mi.us	KWilkes@mvs.k12.mi.us		11090 Nashville Highway Vermontville, MI 49096	
+5387	vil	56140	mulliken	clerk	1	0	Cheryl Goodrich	2024-11-05	?	216	100	2	Y				https://villageofmulliken.org/board-members/	clerk@villageofmulliken.org	517-927-2627	263 Main St. Mulliken, MI 48861	
+5463	vil	56140	mulliken	pres	1	0	Dennis Kepitis	2024-11-05	?	202	100	2	Y				https://villageofmulliken.org/board-members/	president@villageofmulliken.org	517-281-7758	263 Main St. Mulliken, MI 48861	
+5526	vil	56140	mulliken	treas	1	0	Kelli Jo Waldo	2024-11-05	?	216	100	2	Y				https://villageofmulliken.org/board-members/	treasurer@villageofmulliken.org	517-881-7544	263 Main St. Mulliken, MI 48861	
+5719	vil-cou	56140	mulliken	council	8	0	Corey Stiles	2024-11-05	W	48	16	4					https://villageofmulliken.org/board-members/			263 Main St. Mulliken, MI 48861	
+5720	vil-cou	56140	mulliken	council	8	0	Gregory Guilford	2024-11-05	W	43	14	4					https://villageofmulliken.org/board-members/			263 Main St. Mulliken, MI 48861	
+5721	vil-cou	56140	mulliken	council	8	0	Sharon Kempf	2024-11-05	?	207	69	4					https://villageofmulliken.org/board-members/	sherry@villageofmulliken.org	517-649-8918	263 Main St. Mulliken, MI 48861	
+5722	vil-cou	56140	mulliken	council	8	0	Brandon Lambrix	2022-11-08	?	107	20	4	Y				https://villageofmulliken.org/board-members/	brandon@villageofmulliken.org	517-231-8074	263 Main St. Mulliken, MI 48861	
+7754	vil-cou	56140	mulliken	council	8	0	Robert McCausey	2022-11-08	?	99	19	4	Y				https://villageofmulliken.org/board-members/	bob@villageofmulliken.com	517-649-8862	263 Main St. Mulliken, MI 48861	
+7755	vil-cou	56140	mulliken	council	8	0	Terry E. O'Dell	2022-11-08	?	89	17	4	Y				https://villageofmulliken.org/board-members/			263 Main St. Mulliken, MI 48861	
+7756	vil-cou	56140	mulliken	council	8	0	Will Simon	2022-11-08	?	140	27	4	Y				https://villageofmulliken.org/board-members/	will@villageofmulliken.org	517-599-3803	263 Main St. Mulliken, MI 48861	
+7757	vil-cou	56140	mulliken	council	8	0	Fred Walsh	2022-11-08	?	77	15	4	Y				https://villageofmulliken.org/board-members/			263 Main St. Mulliken, MI 48861	
+5910	city	60580	olivet	mayor	1	0	Laura Barlond-Maas	2023-11-07	?	82	100	2					cityofolivet.org	mayor@cityofolivet.org	269-749-4961	117 S Main Street Olivet, Michigan  49076	
+6114	city-cou	60580	olivet		3	0	Joseph Davis	2023-11-07	?	76	33	4					cityofolivet.org		269-749-4961	117 S Main Street Olivet, Michigan  49076	
+8058	city-cou	60580	olivet		3	0	Joe Hoffdahl	2023-11-07	?	76	33	4					cityofolivet.org		269-749-4961	117 S Main Street Olivet, Michigan  49076	
+8059	city-cou	60580	olivet		3	0	Donald E. Walker	2023-11-07	?	74	32	4					cityofolivet.org		269-749-4961	117 S Main Street Olivet, Michigan  49076	
+1920	schl-cou	26370	olivet		8	0	Gregory O'Dell	2020-11-03	?	389	38	6	Y	R			https://www.olivetschools.org/board			255 First Street  Olivet Michigan, 49076	
+1921	schl-cou	26370	olivet		8	0	Sarah Scott	2020-11-03	?	351	34	6	Y	R			https://www.olivetschools.org/board			255 First Street  Olivet Michigan, 49076	
+7121	schl-cou	26370	olivet		8	0	Amber Sinclair	2022-11-08	?	391	100	6	Y		P		https://www.olivetschools.org/board			255 First Street  Olivet Michigan, 49076	
+7122	schl-cou	26370	olivet		8	0	Austin Williams	2022-11-08	?	723	13	6					https://www.olivetschools.org/board			255 First Street  Olivet Michigan, 49076	
+7123	schl-cou	26370	olivet		8	0	Geoffrey Britton	2022-11-08	?	922	16	6					https://www.olivetschools.org/board			255 First Street  Olivet Michigan, 49076	
+7124	schl-cou	26370	olivet		8	0	Kalyn Critchlow	2022-11-08	?	983	17	6					https://www.olivetschools.org/board			255 First Street  Olivet Michigan, 49076	
+9002	schl-cou	26370	olivet		8	0	Jeff Barkley	2024-11-05	?	391	37	6					https://www.olivetschools.org/board			255 First Street  Olivet Michigan, 49076	
+9003	schl-cou	26370	olivet		8	0	Katie Starkweather	2024-11-05	?	330	31	6					https://www.olivetschools.org/board			255 First Street  Olivet Michigan, 49076	
+2724	town	60700	oneida charter	town-clerk	1	0	Jacqueline Kilgore	2024-11-05	N	1	100	4					https://oneidatownship.org/board-of-review/	clerk@oneidatownship.org	517-622-8078	11041 Oneida Rd Grand Ledge, Michigan  48837	
+3390	town	60700	oneida charter	town-super	1	0	Justin M. Kilgore	2024-11-05	N	781	99	4					https://oneidatownship.org/board-of-review/		517-622-8078	11041 Oneida Rd Grand Ledge, Michigan  48837	
+4012	town	60700	oneida charter	town-treas	1	0	Melissa A. Goschka	2024-11-05	R	1	100	4					https://oneidatownship.org/treasurer/	mgoschka@oneidatownship.org	517-622-8078	11041 Oneida Rd Grand Ledge, Michigan  48837	
+4927	town-cou	60700	oneida charter	council	4	0	Susan Deer Dembowski	2024-11-05	D	1	16	4					http://oneidatownship.org		517-622-8078	11041 Oneida Rd Grand Ledge, Michigan  48837	
+4928	town-cou	60700	oneida charter	council	4	0	Jim Green	2024-11-05	D	1	16	4					http://oneidatownship.org	greenj2@outlook.com	517-614-3832	11041 Oneida Rd Grand Ledge, Michigan  48837	
+4929	town-cou	60700	oneida charter	council	4	0	Thomas D. Campbell	2024-11-05	R	1	16	4					http://oneidatownship.org		517-622-8078	11041 Oneida Rd Grand Ledge, Michigan  48837	
+4930	town-cou	60700	oneida charter	council	4	0	Jeri E. Haddix	2024-11-05	R	1	16	4					http://oneidatownship.org		517-622-8078	11041 Oneida Rd Grand Ledge, Michigan  48837	
+1923	schl-cou	26430	oneida township		2	0	Rachael Brunger	2024-11-05	?	33	89	4					https://www.change.org/decision-makers/rachael-brunger-oneida-township-3-school-board		(517) 923-2910		
+1924	schl-cou	26430	oneida township		2	0	Cynthia Coakley	2024-11-05	W	4	10	4					https://www.change.org/decision-makers/rachael-brunger-oneida-township-3-school-board		(517) 282-3419		
+7189	schl-cou	29120	portland		3	0	Kurt Sandborn	2022-11-08	?	1	100	6					https://www.portlandk12.org/board/board-home/kurt-sandborn	school-board-portland-michigan@portlandk12.org	(517) 647-4161	1100 Ionia Rd Portland MI, 48875	
+9042	schl-cou	29120	portland		3	0	Patrick M. Duff	2024-11-05	?	1	50	6					https://www.portlandk12.org/board/board-home/patrick-duff	school-board-portland-michigan@portlandk12.org	(517) 647-4161	1100 Ionia Rd Portland MI, 48875	
+9043	schl-cou	29120	portland		3	0	Brian D. Pohl	2024-11-05	?	1	50	6					https://www.portlandk12.org/board/board-home/brian-pohl	school-board-portland-michigan@portlandk12.org	(517) 647-4161	1100 Ionia Rd Portland MI, 48875	
+8073	city-cou	66100	potterville		5	0	Zachary Connor	2023-11-07	?	157	14	5					pottervillemi.org		517-645-7641	319 N. Nelson Potterville, MI 48876	
+8074	city-cou	66100	potterville		5	0	Hannah Myers-Southerly	2023-11-07	?	143	12	5					pottervillemi.org	hmyers-southerly@pottervillemi.org	517-645-7641	319 N. Nelson Potterville, MI 48876	
+8075	city-cou	66100	potterville		5	0	Bob Nichols	2023-11-07	?	188	16	5					pottervillemi.org	bnichols@pottervillemi.org	517-645-7641	319 N. Nelson Potterville, MI 48876	
+8076	city-cou	66100	potterville		5	0	Dawn M. Sweeney	2023-11-07	?	186	16	5					pottervillemi.org	dsweeney@pottervillemi.org	517-645-7641	319 N. Nelson Potterville, MI 48876	
+8077	city-cou	66100	potterville		5	0	Libby Ranshaw	2023-11-07	?	217	100	5	Y		P		pottervillemi.org		517-645-7641	319 N. Nelson Potterville, MI 48876	
+1998	schl-cou	29160	potterville		7	0	Jason W. Baker	2024-11-05	?	1	33	4					www.ppsvikings.org			425 East Main Street Potterville, MI 48876	
+1999	schl-cou	29160	potterville		7	0	Sara McDonald	2024-11-05	?	1	33	4					www.ppsvikings.org			425 East Main Street Potterville, MI 48876	
+2000	schl-cou	29160	potterville		7	0	Sarah C. Vandenboss	2024-11-05	?	1	33	4					www.ppsvikings.org			425 East Main Street Potterville, MI 48876	
+7190	schl-cou	29160	potterville		7	0	Katherine Bussard	2022-11-08	?	969	27	4	Y				www.ppsvikings.org			425 East Main Street Potterville, MI 48876	
+7191	schl-cou	29160	potterville		7	0	Thomas Marciniak	2022-11-08	?	870	24	4	Y				www.ppsvikings.org			425 East Main Street Potterville, MI 48876	
+7192	schl-cou	29160	potterville		7	0	Loren Smalley Jr.	2022-11-08	?	965	27	4	Y				www.ppsvikings.org			425 East Main Street Potterville, MI 48876	
+7193	schl-cou	29160	potterville		7	0	Jack Temsey	2022-11-08	?	735	20	4	Y				www.ppsvikings.org			425 East Main Street Potterville, MI 48876	
+2796	town	70020	roxand	town-clerk	1	0	Patti Kepitis	2024-11-05	R	833	100	4					https://mdoe.state.mi.us/legislators/Legislator/LegislatorDetail/5478	pkepitis@hotmail.com	517-649-3033	100 Ionia Street P O Box 127 Mulliken, Michigan  48861	
+3464	town	70020	roxand	town-super	1	0	Larry L. Mead	2024-11-05	R	587	59	4					https://mdoe.state.mi.us/legislators/Legislator/LegislatorDetail/5478		517-649-8525	9126 Mulliken Rd, Mulliken, MI 48861	
+4085	town	70020	roxand	town-treas	1	0	Melanie Dow	2024-11-05	R	850	100	4					https://mdoe.state.mi.us/legislators/Legislator/LegislatorDetail/5478		517-649-8536		
+5073	town-cou	70020	roxand	council	2	0	Jim Lilly	2024-11-05	R	774	52	4					https://mdoe.state.mi.us/legislators/Legislator/LegislatorDetail/5478				
+5074	town-cou	70020	roxand	council	2	0	Armon Southworth	2024-11-05	R	688	47	4					https://mdoe.state.mi.us/legislators/Legislator/LegislatorDetail/5478		(517) 627-4391	124 W. Mt Hope, Grand Rapids, MI	
+2088	schl-cou	32610	springport		9	0	Alyse Rainey	2022-11-08	?	1233	33	6		R			https://www.springportschools.net/page/members	alyse.rainey@springportschools.net	517-392-3108	300 West Main Street Springport, MI 49284	
+2089	schl-cou	32610	springport		9	0	Pamela Lynn Parish	2020-11-03	W	2	0	6			P		https://www.springportschools.net/board	pparish@springportschools.net	(517) 857-3495	300 West Main Street Springport, MI 49284	
+2090	schl-cou	32610	springport		9	0	Crystal Nowery	2020-11-03	?	1405	43	6	Y				https://www.springportschools.net/page/members	crystal.nowery@springportschools.net	517-395-1279	300 West Main Street Springport, MI 49284	
+2091	schl-cou	32610	springport		9	0	David Lightner	2020-11-03	?	1830	56	6	Y				https://www.springportschools.net/page/members	dslightner@yahoo.com	517-857-2554	300 West Main Street Springport, MI 49284	https://dtj5wlj7ond0z.cloudfront.net/uploads/2021/04/HS_Lightner_0421_NSC_0141-scaled.jpg
+7258	schl-cou	32610	springport		9	0	Brian Sanford	2022-11-08	?	1250	34	6		R			https://www.springportschools.net/page/members	brian.sanford@springportschools.net	517-256-7750	300 West Main Street Springport, MI 49284	
+7259	schl-cou	32610	springport		9	0	Rick Adams	2022-11-08	?	1169	32	6		R			https://www.springportschools.net/board	radams@springportschools.net	(517) 206-8218	300 West Main Street Springport, MI 49284	
+9104	schl-cou	32610	springport		9	0	Dean Dyer	2024-11-05	?	1386	36	6					https://www.springportschools.net/page/members	dean.dyer@springportschools.net	(517) 867-7910	300 West Main Street Springport, MI 49284	
+9105	schl-cou	32610	springport		9	0	Jeff Caudill	2024-11-05	?	1369	36	6					https://www.springportschools.net/page/members	jeff.caudill@springportschools.net	517-474-1901	300 West Main Street Springport, MI 49284	
+9106	schl-cou	32610	springport		9	0	Vanessa D. Mulnix	2024-11-05	?	1181	54	6			P		https://www.springportschools.net/page/members	vanessa.mulnix@springportschools.net	(517) 857-3495	300 West Main Street Springport, MI 49284	
+2861	town	77440	sunfield	town-clerk	1	0	Betsy Gibbs	2024-11-05	R	984	100	4					www.sunfieldtownship.org	clerk@sunfieldtownship.org	517-652-9385	145 Main St Sunfield, Michigan 48890	
+3529	town	77440	sunfield	town-super	1	0	Selena M. Duits	2024-11-05	R	985	100	4					www.sunfieldtownship.org	supervisor@sunfieldtownship.org	269-838-7251	145 Main St Sunfield, Michigan 48890	
+4150	town	77440	sunfield	town-treas	1	0	Stacie McNees	2024-11-05	R	947	100	4					www.sunfieldtownship.org	sunfieldtownshiptreasurer@gmail.com	517-566-8888	145 Main St Sunfield, Michigan 48890	
+5198	town-cou	77440	sunfield	council	2	0	Terry McCullough	2024-11-05	R	861	49	4					www.sunfieldtownship.org		517-648-1893	145 Main St Sunfield, Michigan 48890	
+5199	town-cou	77440	sunfield	council	2	0	Jeff Smith	2024-11-05	R	885	50	4					www.sunfieldtownship.org	jsmith@sunfieldtownship.org	517-490-1924	145 Main St Sunfield, Michigan 48890	
+5494	vil	77420	sunfield	pres	1	0	Roy Morris	2024-11-05	?	237	100	2	?				www.villageofsunfieldmi.com		616-717-8792	131 Second Street, Sunfield, MI  48890	
+5802	vil-cou	77420	sunfield	council	9	0	Joyce A. Martin	2020-11-03	?	185	38	4	?				www.villageofsunfieldmi.com		517-490-2690	131 Second Street, Sunfield, MI  48890	
+5803	vil-cou	77420	sunfield	council	9	0	Brett McCoy	2020-11-03	?	144	29	4	?				www.villageofsunfieldmi.com		517-490-2690	131 Second Street, Sunfield, MI  48890	
+5804	vil-cou	77420	sunfield	council	9	0	Rachel D. Steele	2020-11-03	?	152	31	4	?				www.villageofsunfieldmi.com		517-231-4461	131 Second Street, Sunfield, MI  48890	
+7819	vil-cou	77420	sunfield	council	9	0	Vicky Beers	2022-11-08	?	130	25	4	?				www.villageofsunfieldmi.com		314-568-9347	131 Second Street, Sunfield, MI  48890	
+7820	vil-cou	77420	sunfield	council	9	0	Emery Harold Fox	2022-11-08	?	117	22	4	?				www.villageofsunfieldmi.com		616-581-2402	131 Second Street, Sunfield, MI  48890	
+7821	vil-cou	77420	sunfield	council	9	0	Roy Morris	2022-11-08	?	130	25	4	?				www.villageofsunfieldmi.com		616-717-8792	131 Second Street, Sunfield, MI  48890	
+7822	vil-cou	77420	sunfield	council	9	0	Wendel Peabody	2022-11-08	?	139	26	4	?				www.villageofsunfieldmi.com		517-449-6018	131 Second Street, Sunfield, MI  48890	
+11266	vil-cou	77420	sunfield	council	9	0	Brett McCoy	2024-11-05	?	177	49	4	?				www.villageofsunfieldmi.com		517-490-2690	131 Second Street, Sunfield, MI  48890	
+11267	vil-cou	77420	sunfield	council	9	0	Scott L. Smith	2024-11-05	?	178	50	4	?				www.villageofsunfieldmi.com		517-490-2690	131 Second Street, Sunfield, MI  48890	
+2899	town	81980	vermontville	town-clerk	1	0	Jamie L. Platte	2024-11-05	R	839	100	4					vermontvilletownshipmi.gov			120 E First St. Vermontville, Michigan 49096	
+3567	town	81980	vermontville	town-super	1	0	Jack Owens	2024-11-05	R	840	100	4					vermontvilletownshipmi.gov		517-403-4486	120 E First St. Vermontville, Michigan 49096	
+4188	town	81980	vermontville	town-treas	1	0	Amy Peters	2024-11-05	R	849	100	4					vermontvilletownshipmi.gov	treasurer@vermontvilletownship.org	517-726-0355	120 E First St. Vermontville, Michigan 49096	
+5264	town-cou	81980	vermontville	council	2	0	Marilyn M. Frith	2024-11-05	D	381	32	4					vermontvilletownshipmi.gov	mfrith@vermontvilletownship.org		120 E First St. Vermontville, Michigan 49096	
+5265	town-cou	81980	vermontville	council	2	0	Timothy James	2024-11-05	R	789	67	4					vermontvilletownshipmi.gov	tjames@vermontvilletownship.org		120 E First St. Vermontville, Michigan 49096	
+5502	vil	81960	vermontville	pres	1	0	Gary Franklin Goris	2024-11-05	?	256	100	2	Y				vermontville-mi.gov	president@vermontville-mi.gov		194 S. Main St. Vermontville, MI 49096	
+5830	vil-cou	81960	vermontville	council	7	0	Kimberlee Kenyon	2024-11-05	?	190	29	4		R			vermontville-mi.gov	clerk@vermontville-mi.gov		194 S. Main St. Vermontville, MI 49096	
+5831	vil-cou	81960	vermontville	council	7	0	Christopher Morris	2024-11-05	?	158	24	4		R			vermontville-mi.gov	cmorris20296@yahoo.com		194 S. Main St. Vermontville, MI 49096	
+5832	vil-cou	81960	vermontville	council	7	0	Mark Wenger	2024-11-05	?	173	26	4		R			vermontville-mi.gov	wengermark5@gmail.com		194 S. Main St. Vermontville, MI 49096	
+7840	vil-cou	81960	vermontville	council	7	0	Ira Flowers	2022-11-08	?	164	50	4	Y	R			vermontville-mi.gov	iraflwr@yahoo.com		194 S. Main St. Vermontville, MI 49096	
+7841	vil-cou	81960	vermontville	council	7	0	Thomas Lesage	2022-11-08	?	161	49	4	Y	R			vermontville-mi.gov	clerk@vermontville-mi.gov		194 S. Main St. Vermontville, MI 49096	
+7842	vil-cou	81960	vermontville	council	7	0	Steven Miller	2022-11-08	?	191	100	4			P		vermontville-mi.gov	clerk@vermontville-mi.gov		194 S. Main St. Vermontville, MI 49096	
+11292	vil-cou	81960	vermontville	council	7	0	Rick Salisbury	2024-11-05	?	251	100	4	Y		P		vermontville-mi.gov	clerk@vermontville-mi.gov		194 S. Main St. Vermontville, MI 49096	
+2907	town	83180	walton	town-clerk	1	0	Erin L. Cummings	2024-11-05	R	1	100	4					www.waltontwpmi.com	walton.clerk@gmail.com	269-317-2101	8730 S Cochran Rd Olivet, Michigan  49076	
+3575	town	83180	walton	town-super	1	0	Doug Thering	2024-11-05	R	1	100	4					www.waltontwpmi.com			8730 S Cochran Rd Olivet, Michigan  49076	
+4195	town	83180	walton	town-treas	1	0	Christina M. Heisler	2024-11-05	R	1	100	4					www.waltontwpmi.com			8730 S Cochran Rd Olivet, Michigan  49076	
+5275	town-cou	83180	walton	council	2	0	Bob E. Starkweather	2024-11-05	R	918	48	4					www.waltontwpmi.com			8730 S Cochran Rd Olivet, Michigan  49076	
+5276	town-cou	83180	walton	council	2	0	Richard Heisler	2024-11-05	R	963	51	4					www.waltontwpmi.com			8730 S Cochran Rd Olivet, Michigan  49076	
+2179	schl-cou	35520	waverly		8	0	Andrea Torres	2024-11-05	?	1300	33	4		R			https://www.waverlycommunityschools.net/profiles/Andrea_Torres/	atorres@waverlyk12.net	(517) 321-7265	515 Snow Rd. Lansing MI 48917	
+2180	schl-cou	35520	waverly		8	0	Emily J. Lenneman	2024-11-05	?	1267	32	4		R			https://www.waverlycommunityschools.net/profiles/Emily_Lenneman/	elenneman@waverlyk12.net	(517) 321-7265	515 Snow Rd. Lansing MI 48917	
+7333	schl-cou	35520	waverly		8	0	Alicia Guevara-Warren	2022-11-08	N	814	17	4	Y	R			https://www.waverlycommunityschools.net/profiles/Alicia_Guevara/	awarren@waverlyk12.net	(517) 371-9000	515 Snow Rd. Lansing MI 48917	https://www.ecic4kids.org/wp-content/uploads/2019/09/Alicia-Guevara-Warren-e1568321469382-300x300.jpg
+7334	schl-cou	35520	waverly		8	0	Debbie Lopez	2022-11-08	N	1020	22	4	Y	R			https://www.waverlycommunityschools.net/profiles/Deborah_Lopez/	dlopez@waverlyk12.net	(517) 321-7265	0587 Federal Office Building U.S. Post Office and U.S. Courthouse 410 W Michigan Ave, Kalamazoo, MI 49007-3757	
+7335	schl-cou	35520	waverly		8	0	Mary Ann Martin	2022-11-08	N	885	19	4	Y	R			https://www.waverlycommunityschools.net/profiles/Andrea_Torres/	mmartin@waverlyk12.net	(517) 485-3417	1045 Independence Blvd, Charlotte, MI 48813	
+7336	schl-cou	35520	waverly		8	0	Vincent Perkins	2022-11-08	N	711	15	4	Y	R			https://www.waverlycommunityschools.net/profiles/Vince_Perkins/	vperkins@waverlyk12.net	(517) 719-7060	334 Green Meadows Dr, Lansing MI 48917	
+7337	schl-cou	35520	waverly		8	0	Catherine M. Pike	2024-11-05	?	1243	32	4					https://www.waverlycommunityschools.net/profiles/Catherine_Pike/	cpike@waverlyk12.net	(517) 321-7265	515 Snow Rd. Lansing MI 48917	
+9205	schl-cou	35520	waverly		8	0	Ty Liggons	2024-11-05	?	1530	98	4	Y		P		https://www.waverlycommunityschools.net/profiles/Ty_Liggons/	tliggons@waverlyk12.net	(517) 321-7265	515 Snow Rd. Lansing MI 48917	
+2936	town	87840	windsor charter	town-clerk	1	0	Meredith Lea Barnhart-Smith	2024-11-05	R	2	100	4					https://windsortownship.com/contacts/	clerk@windsortownship.com	(517) 646-0772	300 W. Jefferson, Dimondale, Michigan	
+3605	town	87840	windsor charter	town-super	1	0	Beth Shaw	2024-11-05	R	3	100	4					https://windsortownship.com/contacts/	supervisor@windsortownship.com	(517) 648-3528	300 W. Jefferson, Dimondale, MI 48821	
+4225	town	87840	windsor charter	town-treas	1	0	Lisa A. Rumsey	2024-11-05	R	2	100	4					https://windsortownship.com/contacts/	treasurer@windsortownship.com	(517) 646-0772	405 W. Jefferson, Dimondale, MI 48821	
+5333	town-cou	87840	windsor charter	council	4	0	Robert W. Gardner	2024-11-05	D	2	16	4					https://windsortownship.com/contacts/	rgardner@windsortownship.com	(517) 927-4503		
+5334	town-cou	87840	windsor charter	council	4	0	Curt M. Myers	2024-11-05	D	2	16	4					https://windsortownship.com/contacts/	cmyers@windsortownship.com	517-645-0156	405 West Jefferson Dimondale, Michigan  48821	
+5335	town-cou	87840	windsor charter	council	4	0	Jason Glenn Knott	2024-11-05	R	2	16	4					https://windsortownship.com/contacts/		(517) 646-0772		
+5336	town-cou	87840	windsor charter	council	4	0	Anthony W. Piper Jr.	2024-11-05	R	2	16	4					https://windsortownship.com/contacts/		(517) 646-0772	300 W. Jefferson, Dimondale, MI	
