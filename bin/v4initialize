@@ -35,6 +35,7 @@ done
 cd $ELECTION_IMPORT/Counties
 rm -f */.tsv
 rm -f */all-parsed
+rm -f */complete
 rm -f */x*
 rm -f */y*
 
@@ -45,7 +46,7 @@ for x in *; do
                *.clarity.ph1.csv *.clarity.ph1.html  *.state.ph1.csv;  do
          if test -f $f; then
             echo $f
-            translator $f 2>x.$f
+            parser $f 2>x.$f
             if [[ -f "x.$f" && ! -s "x.$f" ]]; then
                rm -f x.$f
             fi

@@ -1,0 +1,177 @@
+#!/bin/bash
+#
+#---v4elections.  Build the master tables that derive or are used in
+
+#---Create the empty v4elections table
+echo "source $ELECTION_IMPORT/SQL/03-v4elections.sql" | my
+
+#---For (ONLY) the completed counties, import the phase8 TSV files into v4elections.
+cd $ELECTION_IMPORT/Counties
+for x in *; do
+   cd $x
+   if test -s all-parsed; then
+      rm -f y*
+      for f in *.ph8.tsv; do
+         if test -f $f; then
+            echo $f
+            phase09db.php <$f 2>y.$f
+            if [[ -f "y.$f" && ! -s "y.$f" ]]; then
+               rm -f  y.$f
+            fi
+         fi
+      done
+   fi
+   cd ..
+done
+
+ys=`ls Counties/*/y* 2>/dev/null | wc -l`
+if test $ys -gt 0; then
+   echo "These are the database errors.  Resolve them, or delete the files."
+   ls -l Counties/*/y*
+   exit
+fi
+exit
+
+#---Section 3: cleaning.  Attempt to fix bad values for voteFor.
+rm -f $ELECTION_IMPORT/buildAll.*
+(
+   phase10clean.php  2018-11-06
+   phase10clean.php  2020-11-03
+   phase10clean.php  2021-11-02
+   phase10clean.php  2022-11-08
+   phase10clean.php  2023-11-07
+   phase10clean.php  2024-11-05
+   phase10clean.php  2025-11-04
+) 2>$ELECTION_IMPORT/buildAll.clean
+
+#---Some election reports have 'X' for unknown party.
+echo "UPDATE elections SET party='?' WHERE party='X'" | my
+
+#---Section 4: Dedup & Winners.  
+#   Merge races that cross counties (e.g. some school boards)
+#   Identify the winners, mark them with elections.winner=1
+rm -f $ELECTION_IMPORT/buildAll.win
+(
+   phase11dedup.php  2018-11-06
+   phase11dedup.php  2020-11-03
+   phase11dedup.php  2021-11-02
+   phase11dedup.php  2022-11-08
+   phase11dedup.php  2023-11-07
+   phase11dedup.php  2024-11-05
+   phase11dedup.php  2025-11-04
+  
+   phase12winners.php    2018-11-06
+   phase12winners.php    2020-11-03
+   phase12winners.php    2021-11-02
+   phase12winners.php    2022-11-08
+   phase12winners.php    2023-11-07
+   phase12winners.php    2024-11-05
+   phase12winners.php    2025-11-04
+) 2>$ELECTION_IMPORT/buildAll.win
+exit
+
+#---Section 5: Apply goodparty and CER data and manually fixed termlens and voteFor's
+for s in REPORT/2*.sql; do
+   echo "source $s" | my
+done
+
+#---Section 6: fix missing termlen's, where same race in other year has a valid termlen
+rm -f buildAll.termlen
+php phase15termlen.php >buildAll.termlen
+echo "source buildAll.termlen" | my
+
+echo "source 28-termsource.sql" | my
+php phase16termsource.php >buildAll.termsource
+
+#---Fixes for Manchester, which changed from village to city in 2023.
+echo "source 29-fixManchester.sql" | my
+
+#---Section 7:
+#   Completely empty the v3seats and v3incumbents table,
+#   and rebuild their contents from the elections table.
+
+echo "source 26-v3seats.sql"      | my
+echo "source 24-v3incumbents.sql" | my
+rm -f buildAll.com1 buildAll.com2
+(
+   php phase14compress.php 2018-11-06 2>>buildAll.com2
+   php phase14compress.php 2020-11-03 2>>buildAll.com2
+   php phase14compress.php 2021-11-02 2>>buildAll.com2
+   php phase14compress.php 2022-11-08 2>>buildAll.com2
+   php phase14compress.php 2023-11-07 2>>buildAll.com2
+   php phase14compress.php 2024-11-05 2>>buildAll.com2
+
+   #---As of the 2024 election, all county commissioners were made 4 year terms, cycle matching presidential elections
+   echo "UPDATE v3seats SET termlen=4, termcycle=2024 WHERE org='cnty-com'" | my
+
+   php phase14compress.php 2025-11-04 2>>buildAll.com2
+) >buildAll.com1
+
+php phase15deleteSeats.php                  #---Seats that no longer exist, like us-hou 14
+
+echo "source 27-v3lastelection.sql" | my >/dev/null   # Find the last election year for each county
+
+php phase17expired.php  >buildAll.expired  #---Remove incumbents & seats that should have 'expired'
+
+#---Remove known resignations or replacements not already covered.  Note syntax!
+removeIncumbentAndSeat "s.org='schl-cou' AND s.district= 8940 AND i.name='Ross Greenstein'"
+removeIncumbentAndSeat "s.org='schl-cou' AND s.district= 8940 AND i.name='Mark Allen VanDeWege'"
+removeIncumbentAndSeat "s.org='schl-cou' AND s.district= 8940 AND i.name='Tammy Lehman'"
+removeIncumbentAndSeat "s.org='town-cou' AND s.district=58280 AND i.name='Rachel S. Smith'"
+removeIncumbentAndSeat "s.org='town-cou' AND s.district=71940 AND i.name='Jillian Michele Kerry'"
+removeIncumbentAndSeat "s.org='town-cou' AND s.district=22180 AND i.name='Lonnie Scott'"
+removeIncumbentAndSeat "s.org='city-cou' AND s.district=89140 AND i.name='Jennifer Symanns'"
+removeIncumbentAndSeat "s.org='schl-cou' AND s.district= 2820 AND i.name='Jacinda Townsend Gides'"
+removeIncumbentAndSeat "s.org='city-cou' AND s.district=50660 AND i.name='Amelia L. Woods' AND i.elected='2023-11-07'"
+removeIncumbentAndSeat "s.org='schl-cou' AND s.district=28140 AND i.name='Bethany Mohr'"
+removeIncumbentAndSeat "s.org='schl-cou' AND s.district=28560 AND i.name='Sheryl Picard'   AND i.elected='2020-11-03'"
+removeIncumbentAndSeat "s.org='schl-cou' AND s.district=30660 AND i.name='M. Aramide Boatswain'"
+removeIncumbentAndSeat "s.org='schl-cou' AND s.district=36330 AND i.name='Laura Schwennesen'"
+removeIncumbentAndSeat "s.org='schl-cou' AND s.district=36630 AND i.name='Meredith Schindler'"
+removeIncumbentAndSeat "s.org='sup-crt'  AND                      i.name='Bridget Mary McCormack'"
+removeIncumbentAndSeat "s.org='town-cou' AND s.district=47200 AND i.name='Greg Gilliland' AND i.elected='2022-11-08'"
+removeIncumbentAndSeat "s.org='town-cou' AND s.district=53140 AND i.name='Marna Wilson'   AND i.elected='2022-11-08'"
+
+replaceIncumbent "Kristine Bolhuis"    "s.org='town'     AND s.district=3020  AND s.office='town-clerk'"
+replaceIncumbent "Jacquelyn Bullerman" "s.org='city-cou' AND s.district=15020 AND i.name='Beth Morris'"
+replaceIncumbent "Nicholia Heineman"   "s.org='schl-cou' AND s.district= 8940 AND i.name='Kate Henson'"
+replaceIncumbent "Zakary McNitt"       "s.org='schl-cou' AND s.district=10050 AND i.name='Monica Renee VanTuyle'"
+replaceIncumbent "Pavlo Popov"         "s.org='city-cou' AND s.district=22160 AND i.name='Zach Michels'"
+replaceIncumbent "Sanam Aldag"         "s.org='city-cou' AND s.district=22160 AND i.name='Sanam Arab'"
+replaceIncumbent "David Pisano"        "s.org='schl-cou' AND s.district=12030 AND i.name='Brian J. Arnold'"
+replaceIncumbent "JaVon Jason"         "s.org='schl-cou' AND s.district=21570 AND i.name='Thomas Rollins'"
+replaceIncumbent "Alisa Soos"          "s.org='schl-cou' AND s.district=21570 AND i.name='Stacy Kind'"
+replaceIncumbent "Christine Deacons"   "s.org='schl-cou' AND s.district=22380 AND i.name='Sarah Roth'"
+replaceIncumbent "Gabriel Burdette"    "s.org='schl-cou' AND s.district=23850 AND i.name='Betty Rosen-Leacher'"
+replaceIncumbent "Rudy Gomez"          "s.org='schl-cou' AND s.district=28140 AND i.name='James Velasco, Sr'"
+replaceIncumbent "Ashley Voss"         "s.org='schl-cou' AND s.district=28140 AND i.name='Michelle Crampo'"
+replaceIncumbent "Nathan Hanson"       "s.org='schl-cou' AND s.district=30660 AND i.name='Brad Gerge'"
+replaceIncumbent "Dean Marion"         "s.org='town-cou' AND s.district=71160 AND i.name='Robert J. Marion'"
+replaceIncumbent "David Read"          "s.org='town-cou' AND s.district=71940 AND i.name='Judy DeVooght Moenck'"
+replaceIncumbent "Michele Lake"        "s.org='schl-cou' AND s.district=32250 AND i.name='Anthony R. Abbate'"
+replaceIncumbent "Ann Rimanelli"       "s.org='schl-cou' AND s.district=32250 AND i.name='Stephanie Junkulis-Pierce'"
+replaceIncumbent "Richard Ramalia"     "s.org='schl-cou' AND s.district=33030 AND i.name='Cynthia Sue Lance'"
+replaceIncumbent "Justin Richardson"   "s.org='schl-cou' AND s.district=33030 AND i.name='Kary Gee'"
+replaceIncumbent "Tonie Brovont"       "s.org='town'     AND s.district=85100 AND s.office='town-clerk'"
+replaceIncumbent "Dave Ludwig"         "s.org='town'     AND s.district=89100 AND s.office='town-super'"
+replaceIncumbent "Noah P. Hood"        "s.org='crt-sup'                       AND i.name='Elizabeth T. Clement'"
+
+php phase18renumber.php                       #---Renumber seats if holes were introduced in phase 17 and removeIncumbent.
+
+php phase19address.php >buildAll.contactInfo  #---Import contact info from matching incumbents in 2024 db
+
+#---Import 
+for x in ImportData/*.tsv; do
+   php phase20aiContactInfo.php <$x
+done
+
+for x in ImportData/*.sql; do
+   echo "source $x" | my
+done
+
+
+#---notes
+#   David Read  appointed 3/25 to scio township board to replace Judy DeVooght Moenck
+#   dexter city council?
+#
+

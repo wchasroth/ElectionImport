@@ -4,4 +4,4 @@ CREATE TABLE v4schools LIKE school_district;
 
 INSERT INTO  v4schools SELECT * FROM school_district;
 
-ALTER  TABLE v4schools ADD COLUMN complete tinyint NOT NULL DEFAULT = 0;
+ALTER  TABLE v4schools ADD COLUMN complete tinyint NOT NULL DEFAULT 0;
