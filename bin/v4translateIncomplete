@@ -1,0 +1,58 @@
+#!/bin/bash
+#
+#---v4translateIncomplete.  Translate all known files in "incomplete" counties.
+
+#---For the counties that are NOT complete, run the translator on the files that we do have,
+#   so we can detect errors or problems.
+cd $ELECTION_IMPORT/Counties
+for x in *; do
+   if test -d $x; then 
+      if test ! -s $x/complete; then
+         cd $x
+         rm -f *.tsv
+         rm -f x* y*
+         for f in *.sum1.ph2.xml    *.json.ph1.json *.man.ph2.man *.ph2.tab \
+                  *.clarity.ph1.csv *.clarity.ph1.html  *.state.ph1.csv;  do
+            if test -f $f; then
+               echo $f
+               translator $f 2>x.$f
+               if [[ -f "x.$f" && ! -s "x.$f" ]]; then
+                  rm -f x.$f
+               fi
+            fi
+         done
+         cd ..
+      fi
+   fi
+done
+
+#---Remove known error files (that are really OK)
+rm -f barry/x.08-barry_2024-11-05.sum1.ph2.xml
+rm -f iron/x.36-iron_2020-11-03.sum1.ph2.xml
+rm -f mackinac/x.49-mackinac_2020-11-03.sum1.ph2.xml
+rm -f mackinac/x.49-mackinac_2021-11-02.sum1.ph2.xml
+
+xs=`ls */x* 2>/dev/null | wc -l`
+if test $xs -gt 0; then
+   echo "These are the translation errors.  "
+   echo "Resolve them, or delete the files and try again."
+   ls -l */x*
+   exit
+fi
+
+echo ""
+echo "Any newly-completed counties appear here."
+echo "Verify each one, and then run 'markComplete' on them."
+for x in *; do
+   if test -d $x; then
+      cd $x
+      if test ! -s complete; then
+         ph1s=`ls *.ph1.* 2>/dev/null | wc -l`
+         ph8s=`ls *.ph8.* 2>/dev/null | wc -l`
+         if test "$ph1s" = "$ph8s" -a "$ph1s" -gt 0; then
+            echo "   $x"
+         fi
+      fi
+      cd ..
+   fi
+done

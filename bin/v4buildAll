@@ -1,46 +1,17 @@
 #!/bin/bash
 #
-#---v4buildAll.  Build the entire elections v4 database.
-
-#---For the counties that are NOT complete, run the translator on the files that we do have,
-#   so we can detect errors or problems.
-cd $ELECTION_IMPORT/Counties
-for x in *; do
-   if test -d $x; then 
-      if test ! -s $x/complete; then
-         cd $x
-         rm -f *.tsv
-         rm -f x* y*
-         for f in *.sum1.ph2.xml    *.json.ph1.json *.man.ph2.man *.ph2.tab \
-                  *.clarity.ph1.csv *.clarity.ph1.html  *.state.ph1.csv;  do
-            if test -f $f; then
-               echo $f
-               translator $f 2>x.$f
-               if [[ -f "x.$f" && ! -s "x.$f" ]]; then
-                  rm -f x.$f
-               fi
-            fi
-         done
-         cd ..
-      fi
-   fi
-done
-
-#---Remove known error files (that are really OK)
-rm barry/x.08-barry_2024-11-05.sum1.ph2.xml
-rm iron/x.36-iron_2020-11-03.sum1.ph2.xml
-rm mackinac/x.49-mackinac_2020-11-03.sum1.ph2.xml
-rm mackinac/x.49-mackinac_2021-11-02.sum1.ph2.xml
-
-xs=`ls */x* 2>/dev/null | wc -l`
-if test $xs -gt 0; then
-   echo "These are the translation errors.  Resolve them, or delete the files."
-   ls -l */x*
-   exit
-fi
+#---v4buildAll.  Build the master tables that derive or are used in
+#   the elections process:
+#      v4elections
+#      v4seats
+#      v4incumbents
+#      v4counties (derived from old 'county' table, eventually becomes static)
+#
+#   Assumes that v4translateIncomplete has been run and attended to.
 
 #---Create the empty v4elections table
 echo "source $ELECTION_IMPORT/SQL/03-v4elections.sql" | my
+echo "source $ELECTION_IMPORT/SQL/10-v4counties.sql"  | my
 
 #---For (ONLY) the completed counties, import the phase8 TSV files into v4elections.
 cd $ELECTION_IMPORT/Counties

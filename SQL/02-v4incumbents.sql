@@ -8,9 +8,6 @@ CREATE TABLE           v4incumbents (
    seatnum   tinyint       NOT NULL DEFAULT  0,
    primary key (org, office, district, subdist, seatnum),
 
-   seatmax   tinyint       NOT NULL DEFAULT  0,
-   termlen   tinyint       NOT NULL DEFAULT  0,
-   termcycle smallint      NOT NULL DEFAULT  0,
    role      varchar(16)   NOT NULL DEFAULT '',
    elected   date          NOT NULL DEFAULT '2000-01-01',
    party     char(1)       NOT NULL DEFAULT '',
