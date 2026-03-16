@@ -1,0 +1,19 @@
+#!/bin/bash
+
+cd $ELECTION_IMPORT/Counties
+for x in *; do
+   if test -d $x; then
+      cd $x
+      if test ! -s all-parsed; then
+         ph1s=`ls *.ph1.* 2>/dev/null | wc -l`
+         ph8s=`ls *.ph8.* 2>/dev/null | wc -l`
+         if test "$ph1s" = "$ph8s" -a "$ph1s" -gt 0; then
+            echo "$x completely parsed"
+            date >all-parsed
+            countyNum=`ls [0-9]* | head -n 1 | sed "s/-.*$//"`
+            echo "UPDATE v4counties SET complete=1 WHERE id=$countyNum" | my 2>/dev/null
+         fi
+      fi
+      cd ..
+   fi
+done
