@@ -18,9 +18,10 @@ Level 1: parse any newly added data
    v4parse
    markCompletedCounties
 
-Level 2: completely rebuild the v4elections table
-   phase9
-   various fix-up scripts
+Level 2: completely rebuild the v4elections table.
+   Includes fix-up scripts for missing termlen, voteFor, maxseats(?)
+
+   v4elections
 
 Level 3: dedup and winners
 
