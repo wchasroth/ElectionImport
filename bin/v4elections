@@ -1,8 +1,7 @@
 #!/bin/bash
 #
-#---v4elections.  Build the master tables that derive or are used in
+#---v4elections.  Build v4elections from (ONLY completed!) TSV data.  Apply known fix-ups.
 
-#---Create the empty v4elections table
 echo "source $ELECTION_IMPORT/SQL/03-v4elections.sql" | my
 
 #---For (ONLY) the completed counties, import the phase8 TSV files into v4elections.
@@ -30,7 +29,30 @@ if test $ys -gt 0; then
    ls -l Counties/*/y*
    exit
 fi
-exit
+
+#---Fix-ups #1: Apply goodparty and CER data and manually fixed termlens and voteFor's
+for s in ZeroFixes/2*.sql; do
+   echo "source $s" | my
+done
+
+(
+   phase10clean.php  2018-11-06
+   phase10clean.php  2020-11-03
+   phase10clean.php  2021-11-02
+   phase10clean.php  2022-11-08
+   phase10clean.php  2023-11-07
+   phase10clean.php  2024-11-05
+   phase10clean.php  2025-11-04
+
+#---Section 6: fix missing termlen's, where same race in other year has a valid termlen
+rm -f buildAll.termlen
+php phase15termlen.php >buildAll.termlen
+echo "source buildAll.termlen" | my
+
+#---phase15deletSeats??
+
+#---Fixes for Manchester, which changed from village to city in 2023.
+echo "source 29-fixManchester.sql" | my
 
 #---Section 3: cleaning.  Attempt to fix bad values for voteFor.
 rm -f $ELECTION_IMPORT/buildAll.*

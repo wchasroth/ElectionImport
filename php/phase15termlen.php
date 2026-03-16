@@ -2,7 +2,7 @@
 <?php
 declare(strict_types=1);
 
-namespace CharlesRothDotNet\ElectionImportTools;
+namespace CharlesRothDotNet\ElectionImport;
 
 use CharlesRothDotNet\Alfred\AlfredPDO;
 use CharlesRothDotNet\Alfred\Csv;
@@ -17,8 +17,7 @@ require "vendor/autoload.php";
 $env  = new EnvFile("_env");
 $pdo  = PdoHelper::makePdo($env);
 
-$sql = "SELECT DISTINCT org, office, district, subdist FROM v4elections "
-     .  "WHERE winner=1 "
+$sql = "SELECT DISTINCT org, office, district, subdist FROM elections "
      . " ORDER BY org, office, district, subdist";
 $result = $pdo->run($sql);
 $offices  = $result->getRows();
@@ -26,7 +25,7 @@ $offices  = $result->getRows();
 foreach ($offices as $office) {
 
    $fields = ['org' => $office['org'], 'office' => $office['office'], 'district' => $office['district'],
-      'subdist' => $office['subdist'], 'winner' => 1];
+      'subdist' => $office['subdist'] ];
    $result = $pdo->runSF("SELECT MAX(termlen) AS maxterm, MIN(termlen) AS minterm FROM v4elections WHERE ", "", new SqlFields($fields));
    if (! found($result))  continue;
 

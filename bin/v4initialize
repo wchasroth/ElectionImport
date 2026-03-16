@@ -30,6 +30,9 @@ cd $ELECTION_IMPORT/Vishu
 for x in *.csv; do
    importTermLen.php $x
 done
+for x in *.sql; do
+   echo "source $x" | my
+done
 
 #---Wipe all parsed election county files, and re-parse them.
 cd $ELECTION_IMPORT/Counties
