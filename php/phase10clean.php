@@ -12,6 +12,11 @@ use CharlesRothDotNet\Alfred\Str;
 
 require "vendor/autoload.php";
 
+//---phase10clean.php   Fill in missing termlen's.
+//
+//   Iterate through rows in v4elections, applying heuristics to fix as many termlen=0 cases
+//   as possible.
+
 if ($argc < 2) {
   fwrite(STDERR, "Usage: phase10clean.php yyyy-mm-dd\n");
   exit(1);
@@ -30,7 +35,6 @@ $races  = $result->getRows();
 show(0, null);
 $block = 0;
 foreach ($races as $race) {
-// $raceText = Str::join([$race['org'], $race['office'], $race['district'], $race['subdist'], $race['partial']], "\t");
 
    $fields = new SqlFields(['org' => $race['org'], 'office' => $race['office'], 'district' => $race['district'], 'subdist' => $race['subdist'],
       'partial' => $race['partial'], 'year' => $year, 'termlen' => $race['termlen'], 'incumbent' => $race['incumbent'],
