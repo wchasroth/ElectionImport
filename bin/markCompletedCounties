@@ -11,7 +11,7 @@ for x in *; do
             echo "$x completely parsed"
             date >all-parsed
             countyNum=`ls [0-9]* | head -n 1 | sed "s/-.*$//"`
-            echo "UPDATE v4counties SET complete=1 WHERE id=$countyNum" | my 2>/dev/null
+#           echo "UPDATE v4counties SET complete=1 WHERE id=$countyNum" | my 2>/dev/null
          fi
       fi
       cd ..
