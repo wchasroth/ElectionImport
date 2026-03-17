@@ -47,7 +47,7 @@ phase10clean.php  2025-11-04  2>>buildAll.clean
 
 #---Fix-ups #3: Fix termlen=0 cases where different row / same race has a valid termlen
 rm -f buildAll.termlen
-phase15termlen.php >buildAll.termlen
+phase11termlen.php >buildAll.termlen
 echo "source buildAll.termlen" | my
 
 #---Fix-ups #4: Manchester changed from village to city in 2023.
