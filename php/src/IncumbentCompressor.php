@@ -37,6 +37,10 @@ class IncumbentCompressor {
       $this->pdo->run($sql);
    }
 
+   function getElectionDates(): array {
+      return ['2018-11-06', '2020-11-03', '2021-11-02', '2022-11-08', '2023-11-07', '2024-11-05', '2025-11-04'];
+   }
+
    function markRaceWinners(string $sql): void {
       $result = $this->pdo->run($sql);
       $races  = $result->getRows();
