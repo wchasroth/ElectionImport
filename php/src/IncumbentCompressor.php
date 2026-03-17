@@ -13,9 +13,11 @@ define ("MUST_MATCH_NAME", true);
 
 class IncumbentCompressor {
    private AlfredPDO $pdo;
+   private $maxSeatsCache;
 
    function __construct(AlfredPDO $pdo) {
       $this->pdo = $pdo;
+      $this->maxSeatsCache = $this->loadMaxSeatsCache($pdo);
    }
 
    function isCountyImported(int $county): bool {
@@ -210,7 +212,7 @@ class IncumbentCompressor {
 
             //---Case D: If not, have we reached the max # of seats (if there is one, per v4title)?  Error message!
             // (NOT YET: Get the seatmax value for v4seats org/office/district/subdist)
-            $maxSeats = $maxSeatsCache[$elected['org'] . "-" . $elected['office']] ?? 0;
+            $maxSeats = $this->maxSeatsCache[$elected['org'] . "-" . $elected['office']] ?? 0;
             $currentSeats = $this->getCurrentMaxSeats($this->pdo, $officeMatchClause);
             if ($maxSeats > 0 && $currentSeats >= $maxSeats) {
                fwrite(STDERR, "Too many seats? $officeMatchClause\n");
@@ -304,7 +306,7 @@ class IncumbentCompressor {
 
    private function replaceIncumbentWithMatch(AlfredPDO $pdo, int $id, array $elected, string $year, bool $debug=false): void {
       $newName = strtolower($elected['name']);
-      $updateFields = new SqlFields(makeIncumbentFields($elected, $year));
+      $updateFields = new SqlFields($this->makeIncumbentFields($elected, $year));
 
       $oldNameResult = $pdo->run("SELECT name FROM v4incumbents WHERE id=$id");
       if (found($oldNameResult)) {
