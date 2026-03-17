@@ -32,7 +32,7 @@ $maxSeatsCache = loadMaxSeatsCache($pdo);
 
 $sql = "SELECT DISTINCT org, office, district, subdist "
      . "  FROM v4elections WHERE year='$year' "
-     . "   AND org IN ('cnty', 'cnty-com') AND district=$county "
+     . "   AND org IN ('cnty', 'cnty-com', 'town', 'town-cou') AND county=$county "
      . " ORDER BY org, office, district, subdist";
 $result = $pdo->run($sql);
 $offices  = $result->getRows();
