@@ -197,7 +197,7 @@ class IncumbentCompressor {
                . "   AND MOD(s.termcycle, s.termlen) = MOD($electedCycle, s.termlen) "
                . " LIMIT 1 ";
             $match = $this->pdo->run($sql);
-            if (found($match)) {
+            if ($this->found($match)) {
                $insertFields = $this->makeIncumbentFields($elected, $year);
                $insertFields['seat_id'] = intval($match->getRows()[0]['id']);
                $result = $this->pdo->runSF("INSERT INTO v4incumbents", "", new SqlFields($insertFields), true);
@@ -272,7 +272,7 @@ class IncumbentCompressor {
    private function getCurrentMaxSeats (AlfredPDO $pdo, string $officeMatchClause): int {
       $sql = "SELECT MAX(s.seatnum) AS maxcurrent FROM v4seats AS s WHERE $officeMatchClause ";
       $result = $pdo->run($sql);
-      if (! found($result))  return 0;
+      if (! $this->found($result))  return 0;
 
       $row = $result->getRows()[0];
       return intval($row['maxcurrent']);
