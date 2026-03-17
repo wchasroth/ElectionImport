@@ -309,7 +309,7 @@ class IncumbentCompressor {
       $updateFields = new SqlFields($this->makeIncumbentFields($elected, $year));
 
       $oldNameResult = $pdo->run("SELECT name FROM v4incumbents WHERE id=$id");
-      if (found($oldNameResult)) {
+      if ($this->found($oldNameResult)) {
          echo "SUBSTITUTE: $newName REPLACES " . strtolower($oldNameResult->getRows()[0]['name']) . "\n";
       }
 
