@@ -8,6 +8,9 @@ use CharlesRothDotNet\Alfred\MatchableName;
 use CharlesRothDotNet\Alfred\SqlFields;
 use CharlesRothDotNet\Alfred\Str;
 
+define ("ANY_NAME", false);
+define ("MUST_MATCH_NAME", true);
+
 class IncumbentCompressor {
    private AlfredPDO $pdo;
 
