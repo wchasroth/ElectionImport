@@ -1,13 +1,9 @@
 DROP   TABLE IF EXISTS v4incumbents;
 
 CREATE TABLE           v4incumbents (
-   org       varchar(10)   NOT NULL DEFAULT '',   index (org),
-   office    varchar(20)   NOT NULL DEFAULT '',   index (office),
-   district  varchar(10)   NOT NULL DEFAULT '',   index (district),
-   subdist   tinyint       NOT NULL DEFAULT  0,   index (subdist),
-   seatnum   tinyint       NOT NULL DEFAULT  0,
-   primary key (org, office, district, subdist, seatnum),
-
+   id        int           NOT NULL AUTO_INCREMENT, PRIMARY KEY (id),
+   seat_id   int           NOT NULL DEFAULT  0,     index(seat_id),
+   name      varchar(100)  NOT NULL DEFAULT '',
    role      varchar(16)   NOT NULL DEFAULT '',
    elected   date          NOT NULL DEFAULT '2000-01-01',
    party     char(1)       NOT NULL DEFAULT '',
