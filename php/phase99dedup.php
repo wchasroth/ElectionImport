@@ -55,7 +55,6 @@ foreach ($races as $race) {
 }
 
 function show(int $block, $row): void {
-
    $format = "%4d %5d %-11s %-6s %-11s %-12s %-6s %-6s %-25s %2s %1s %1s %1s %8d\n";
    if ($row == null) {
       fwrite(STDERR, sprintf("       $format", 0, "id", "year", "county", "org", "office", "Dist", "Sub", "name", "V4", "P", "T", "I", "votesC"));

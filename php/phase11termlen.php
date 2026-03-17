@@ -14,7 +14,7 @@ use CharlesRothDotNet\Alfred\Str;
 
 require "vendor/autoload.php";
 
-//----phase15termlen.php.   When same office has some termlen > 0 , and some termlen = 0,
+//----phase11termlen.php.   When same office has some termlen > 0 , and some termlen = 0,
 //    set the 0 case termlen's to the max value for that same office.
 
 $env  = new EnvFile("_env");
