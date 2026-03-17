@@ -35,22 +35,24 @@ cd $ELECTION_IMPORT
 for s in ZeroFixes/2*.sql; do
    echo "source $s" | my
 done
-exit
 
-   phase10clean.php  2018-11-06
-   phase10clean.php  2020-11-03
-   phase10clean.php  2021-11-02
-   phase10clean.php  2022-11-08
-   phase10clean.php  2023-11-07
-   phase10clean.php  2024-11-05
-   phase10clean.php  2025-11-04
+#---Fix-ups #2: Apply heuristics to fix as many termlen=0 rows as possible.
+phase10clean.php  2018-11-06  2> buildAll.clean
+phase10clean.php  2020-11-03  2>>buildAll.clean
+phase10clean.php  2021-11-02  2>>buildAll.clean
+phase10clean.php  2022-11-08  2>>buildAll.clean
+phase10clean.php  2023-11-07  2>>buildAll.clean
+phase10clean.php  2024-11-05  2>>buildAll.clean
+phase10clean.php  2025-11-04  2>>buildAll.clean
 
-#---Section 6: fix missing termlen's, where same race in other year has a valid termlen
+#---Fix-ups #3: Fix termlen=0 cases where different row / same race has a valid termlen
 rm -f buildAll.termlen
-php phase15termlen.php >buildAll.termlen
+phase15termlen.php >buildAll.termlen
 echo "source buildAll.termlen" | my
 
-#---phase15deletSeats??
+#---Fix-ups #4: Manchester changed from village to city in 2023.
+echo "source SQL/11-v4FixManchester.sql" | my
 
-#---Fixes for Manchester, which changed from village to city in 2023.
-echo "source 29-fixManchester.sql" | my
+#---Fix-ups #5: Some election reports have 'X' for unknown party.
+echo "UPDATE v4elections SET party='?' WHERE party='X'" | my
+
