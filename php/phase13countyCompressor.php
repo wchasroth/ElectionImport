@@ -17,47 +17,28 @@ require "vendor/autoload.php";
 $env  = new EnvFile("_env");
 $pdo  = PdoHelper::makePdo($env);
 
+$years = ['2018-11-06', '2020-11-03', '2021-11-02', '2022-11-08', '2023-11-07', '2024-11-05', '2025-11-04'];
+
 $ic = new IncumbentCompressor($pdo);
 
-for ($county=1;  $county<=83;  ++$county) {
+for ($county=81;  $county<=81;  ++$county) {
     if ($ic->isCountyImported($county)  &&  ! $ic->isCompleted("county", $county)) {
-        echo "$county\n";
+       //---Select the winners of all of the county races.
+       $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
+          . "    FROM v4elections WHERE org in ('cnty', 'cnty-com', 'town', 'town-cou') AND county=$county "
+          . "   ORDER BY year, org, office, district, subdist, incumbent";
+       $ic->markRaceWinners($sql);
+
+       //---Layer each year's race winners "over top of" the existing incumbents, replacing them
+       //   with new incumbents as needed.
+       foreach ($years as $year) {
+          $sql = "SELECT DISTINCT org, office, district, subdist "
+             . "    FROM v4elections WHERE year='$year' "
+             . "     AND org IN ('cnty', 'cnty-com', 'town', 'town-cou') AND county=$county "
+             . "   ORDER BY org, office, district, subdist";
+          $ic->applyRaceWinnersToIncumbents($sql, $year);
+       }
     }
-}
-exit(1);
-
-$sql = "SELECT count(*) AS completed FROM v4completed WHERE type='county' AND district=$county";
-$result = $pdo->run($sql);
-$completed = intval($result->getRows()[0]['completed']);
-if ($completed === 1)  exit(0);
-
-$sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
-     . "  FROM v4elections WHERE org in ('cnty', 'cnty-com', 'town', 'town-cou') AND county=$county "
-     . " ORDER BY year, org, office, district, subdist, incumbent";
-$result = $pdo->run($sql);
-$races  = $result->getRows();
-
-show(0, null, 0);
-foreach ($races as $race) {
-
-   $fields = new SqlFields(['org' => $race['org'], 'office' => $race['office'], 'district' => $county, 'subdist' => $race['subdist'],
-      'partial' => $race['partial'], 'year' => $race['year'], 'termlen' => $race['termlen'], 'incumbent' => $race['incumbent'],
-      'cycle' => $race['cycle']]);
-   $result = $pdo->runSF("SELECT * FROM v4elections WHERE ", "ORDER BY votes_C DESC", $fields);
-   $rows = $result->getRows();
-
-   $maxVoteFor = 1;  // At least one, no matter what!
-   foreach ($rows as $row)  $maxVoteFor = max($maxVoteFor, intval($row['voteFor']));
-   $maxVoteFor = min ($maxVoteFor, count($rows));  // sometimes voteFor > number of candidates!
-
-   $winnerIds = [];
-   for ($i=0;   $i<$maxVoteFor;   $i++)  {
-      $winnerIds[] = $rows[$i]['id'];
-//    show (0, $rows[$i], count($rows));
-   }
-   $sql = "UPDATE v4elections SET winner=1 WHERE id in (" . Str::join($winnerIds, ",") . ")";
-   $result = $pdo->run($sql);
-   if ($result->failed()) fwrite(STDERR, "Failed: $sql\n");
 }
 
 function show(int $block, $row, int $candidates): void {

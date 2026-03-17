@@ -21,6 +21,8 @@ if ($argc < 2) {
 $county = $argv[1];
 $env  = new EnvFile("_env");
 $pdo  = PdoHelper::makePdo($env);
+var_dump($pdo);
+exit(1);
 
 $sql = "SELECT count(*) AS completed FROM v4completed WHERE type='county' AND district=$county";
 $result = $pdo->run($sql);
@@ -28,7 +30,7 @@ $completed = intval($result->getRows()[0]['completed']);
 if ($completed === 1)  exit(0);
 
 $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
-     . "  FROM v4elections WHERE org in ('cnty', 'cnty-com') AND district=$county "
+     . "  FROM v4elections WHERE org in ('cnty', 'cnty-com', 'town', 'town-cou') AND county=$county "
      . " ORDER BY year, org, office, district, subdist, incumbent";
 $result = $pdo->run($sql);
 $races  = $result->getRows();
