@@ -9,7 +9,6 @@ for x in *; do
       countyNum=`ls [0-9]* | head -n 1 | sed "s/-.*$//"`
       echo "$x $countyNum"
       phase12countyIncumbents.php $countyNum
-      break
    fi
    cd ..
 done
