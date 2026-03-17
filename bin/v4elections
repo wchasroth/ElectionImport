@@ -4,11 +4,12 @@
 
 echo "source $ELECTION_IMPORT/SQL/03-v4elections.sql" | my
 
-#---For (ONLY) the completed counties, import the phase8 TSV files into v4elections.
+#---For (ONLY) the imported counties, import the phase8 TSV files into v4elections.
 cd $ELECTION_IMPORT/Counties
 for x in *; do
    cd $x
-   if test -s all-parsed; then
+   countyNum=`getCountyNum $x`
+   if isImported $countyNum; then
       rm -f y*
       for f in *.ph8.tsv; do
          if test -f $f; then

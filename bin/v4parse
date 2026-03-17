@@ -7,7 +7,8 @@
 cd $ELECTION_IMPORT/Counties
 for x in *; do
    if test -d $x; then 
-      if test ! -s $x/all-parsed; then
+      countyNum=`getCountyNum $x`
+      if ! isImported $countyNum; then
          cd $x
          rm -f *.tsv
          rm -f x* y*

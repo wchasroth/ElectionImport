@@ -1,0 +1,8 @@
+#!/bin/bash
+
+result=`echo "SELECT count(*) FROM v4imported WHERE county=$1" | mycsv 2>/dev/null | tail -n +2`
+if test "$result" = "1"; then
+   exit 0
+else
+   exit 1
+fi

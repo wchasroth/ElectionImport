@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "INSERT INTO v4imported (county) VALUES ($1)" | my 2>/dev/null

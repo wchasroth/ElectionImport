@@ -1,11 +1,7 @@
 
 Level 0: complete wipe & rebuild from the ph1/ph2 data we have
-   rm */*tsv */all-parsed
-   parse ALL
-   recreate tables
-
    v4initialize
-   markCompletedCounties
+   markImportedCounties
 
    This is typically a "do once" operation, unless we're intentionally
    rebuilding EVERYTHING from scratch for some (good) reason.
@@ -16,7 +12,7 @@ Level 0: complete wipe & rebuild from the ph1/ph2 data we have
 
 Level 1: parse any newly added data
    v4parse
-   markCompletedCounties
+   markImportedCounties
 
 Level 2: completely rebuild the v4elections table.
    Includes fix-up scripts for missing termlen, voteFor, maxseats(?)

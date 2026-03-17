@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd $ELECTION_IMPORT/Counties/$1
+
+ls [0-9]* | head -n 1 | sed "s/-.*$//"

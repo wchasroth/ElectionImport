@@ -16,6 +16,8 @@ echo "source 01-v4seats.sql"          | my
 echo "source 02-v4incumbents.sql"     | my
 echo "source 03-v4elections.sql"      | my
 echo "source 09-v4termlen.sql"        | my
+echo "source 12-v4completed.sql"      | my
+echo "source 13-v4imported.sql"       | my
 
 #---These tables will eventuallly become (mostly) static.
 echo "source 04-v4jurisdictions.sql"  | my   # Cities need complete = 0 at the outset.
