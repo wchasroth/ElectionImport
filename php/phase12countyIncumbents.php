@@ -29,7 +29,6 @@ if ($result->failed()  ||  $result->getRowCount() == 0) {
     exit(1);
 }
 $complete = intval($result->getRows()[0]['complete']);
-echo "complete=$complete\n";
 if ($complete === 1)  exit(0);
 
 $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
@@ -46,20 +45,18 @@ foreach ($races as $race) {
       'cycle' => $race['cycle']]);
    $result = $pdo->runSF("SELECT * FROM v4elections WHERE ", "ORDER BY votes_C DESC", $fields);
    $rows = $result->getRows();
-   fwrite(STDERR, "\n");
-   foreach ($rows as $row)  show(0, $row, 0);
 
-//   $maxVoteFor = 1;  // At least one, no matter what!
-//   foreach ($rows as $row)  $maxVoteFor = max($maxVoteFor, intval($row['voteFor']));
-//   $maxVoteFor = min ($maxVoteFor, count($rows));  // sometimes voteFor > number of candidates!
-//
-//   $winnerIds = [];
-//   for ($i=0;   $i<$maxVoteFor;   $i++)  {
-//      $winnerIds[] = $rows[$i]['id'];
-//      show (0, $rows[$i], count($rows));
-//   }
-//   $sql = "UPDATE v4elections SET winner=1 WHERE id in (" . Str::join($winnerIds, ",") . ")";
-//   $pdo->run($sql);
+   $maxVoteFor = 1;  // At least one, no matter what!
+   foreach ($rows as $row)  $maxVoteFor = max($maxVoteFor, intval($row['voteFor']));
+   $maxVoteFor = min ($maxVoteFor, count($rows));  // sometimes voteFor > number of candidates!
+
+   $winnerIds = [];
+   for ($i=0;   $i<$maxVoteFor;   $i++)  {
+      $winnerIds[] = $rows[$i]['id'];
+      show (0, $rows[$i], count($rows));
+   }
+// $sql = "UPDATE v4elections SET winner=1 WHERE id in (" . Str::join($winnerIds, ",") . ")";
+// $pdo->run($sql);
 }
 
 function show(int $block, $row, int $candidates): void {
