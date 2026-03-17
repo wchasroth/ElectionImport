@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+#---v4addIncumbents.  Add v4seats and v4incumbents rows, based on completed jurisdictions.
+
+cd $ELECTION_IMPORT/Counties
+for x in *; do
+   cd $x
+   if test -s all-parsed; then
+      countyNum=`ls [0-9]* | head -n 1 | sed "s/-.*$//"`
+      echo "$x $countyNum"
+      phase12countyIncumbents.php $countyNum
+      break
+   fi
+   cd ..
+done
