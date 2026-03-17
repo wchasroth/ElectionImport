@@ -17,13 +17,14 @@ require "vendor/autoload.php";
 define ("ANY_NAME", false);
 define ("MUST_MATCH_NAME", true);
 
-if ($argc < 2) {
-  fwrite(STDERR, "Usage: phase14compress.php yyyy-mm-dd\n");
+if ($argc < 3) {
+  fwrite(STDERR, "Usage: phase14compress.php yyyy-mm-dd county#\n");
   exit(1);
 }
 
-$year = $argv[1];
-$yyyy = intval($year);
+$year   = $argv[1];
+$yyyy   = intval($year);
+$county = intval($argv[2]);
 $env  = new EnvFile("_env");
 $pdo  = PdoHelper::makePdo($env);
 
@@ -31,6 +32,7 @@ $maxSeatsCache = loadMaxSeatsCache($pdo);
 
 $sql = "SELECT DISTINCT org, office, district, subdist "
      . "  FROM v4elections WHERE year='$year' "
+     . "   AND org IN ('cnty', 'cnty-com') AND district=$county "
      . " ORDER BY org, office, district, subdist";
 $result = $pdo->run($sql);
 $offices  = $result->getRows();
@@ -58,9 +60,10 @@ foreach ($offices as $office) {
       //      AND where the incumbent's seat has termcycle = 0?
       //      (Typically from a case where there was a partial term election earlier, with no end year.)
       //      If so, replace that incumbent's data (best match by name, if possible) with the newly elected.
-      $sql = "SELECT i.id, i.name, i.seat_id "
+      $sql = "SELECT .id, i.name, i.seat_id "
          . "  FROM v4incumbents AS i "
-         . "  LEFT JOIN v4seats AS s  ON (i.seat_id = s.id) "
+         . "  LEFT JOIN v4seats AS s "
+         . "    ON (s.org = i.org AND s.office = i.office AND s.district = i.district AND s.subdist = i.subdist) "
          . " WHERE $officeMatchClause "
          . "   AND $yyyy > SUBSTRING(i.elected, 1, 4) "
          . "   AND s.termcycle = 0 ";

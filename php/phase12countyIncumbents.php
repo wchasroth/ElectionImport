@@ -22,14 +22,10 @@ $county = $argv[1];
 $env  = new EnvFile("_env");
 $pdo  = PdoHelper::makePdo($env);
 
-$sql = "SELECT complete FROM v4counties WHERE id = $county";
+$sql = "SELECT count(*) AS completed FROM v4completed WHERE type='county' AND district=$county";
 $result = $pdo->run($sql);
-if ($result->failed()  ||  $result->getRowCount() == 0) {
-    fwrite(STDERR, "Failed: $sql\n");
-    exit(1);
-}
-$complete = intval($result->getRows()[0]['complete']);
-if ($complete === 1)  exit(0);
+$completed = intval($result->getRows()[0]['completed']);
+if ($completed === 1)  exit(0);
 
 $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
      . "  FROM v4elections WHERE org in ('cnty', 'cnty-com') AND district=$county "
@@ -53,10 +49,11 @@ foreach ($races as $race) {
    $winnerIds = [];
    for ($i=0;   $i<$maxVoteFor;   $i++)  {
       $winnerIds[] = $rows[$i]['id'];
-      show (0, $rows[$i], count($rows));
+//    show (0, $rows[$i], count($rows));
    }
-// $sql = "UPDATE v4elections SET winner=1 WHERE id in (" . Str::join($winnerIds, ",") . ")";
-// $pdo->run($sql);
+   $sql = "UPDATE v4elections SET winner=1 WHERE id in (" . Str::join($winnerIds, ",") . ")";
+   $result = $pdo->run($sql);
+   if ($result->failed()) fwrite(STDERR, "Failed: $sql\n");
 }
 
 function show(int $block, $row, int $candidates): void {
