@@ -4,13 +4,8 @@ declare(strict_types=1);
 
 namespace CharlesRothDotNet\ElectionImport;
 
-use CharlesRothDotNet\Alfred\Csv;
-use CharlesRothDotNet\Alfred\MatchableName;
-use CharlesRothDotNet\Alfred\SqlFields;
 use CharlesRothDotNet\Alfred\EnvFile;
 use CharlesRothDotNet\Alfred\PdoHelper;
-use CharlesRothDotNet\Alfred\Str;
-use CharlesRothDotNet\ElectionImport\IncumbentCompressor;
 
 require "vendor/autoload.php";
 
@@ -38,6 +33,8 @@ for ($county=81;  $county<=81;  ++$county) {
              . "   ORDER BY org, office, district, subdist";
           $ic->applyRaceWinnersToIncumbents($sql, $year);
        }
+
+       $ic->setCompleted("county", $county);
     }
 }
 

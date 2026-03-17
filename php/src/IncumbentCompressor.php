@@ -26,10 +26,15 @@ class IncumbentCompressor {
       return $result->getRowCount() > 0;
    }
 
-   function isCompleted(string $type, int $county): bool {
-      $sql = "SELECT 1 FROM v4completed WHERE type='$type' AND county=$county LIMIT 1";
+   function isCompleted(string $type, int $district): bool {
+      $sql = "SELECT 1 FROM v4completed WHERE type='$type' AND district=$district LIMIT 1";
       $result = $this->pdo->run($sql);
       return $result->getRowCount() > 0;
+   }
+
+   function setCompleted (string $type, int $district): void {
+      $sql = "INSERT INTO v4completed (type, district) VALUES ('$type', $district)";
+      $this->pdo->run($sql);
    }
 
    function markRaceWinners(string $sql): void {
