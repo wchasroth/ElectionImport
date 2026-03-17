@@ -60,10 +60,9 @@ foreach ($offices as $office) {
       //      AND where the incumbent's seat has termcycle = 0?
       //      (Typically from a case where there was a partial term election earlier, with no end year.)
       //      If so, replace that incumbent's data (best match by name, if possible) with the newly elected.
-      $sql = "SELECT .id, i.name, i.seat_id "
+      $sql = "SELECT i.id, i.name, i.seat_id "
          . "  FROM v4incumbents AS i "
-         . "  LEFT JOIN v4seats AS s "
-         . "    ON (s.org = i.org AND s.office = i.office AND s.district = i.district AND s.subdist = i.subdist) "
+         . "  LEFT JOIN v4seats AS s ON (s.id = i.seat_id) "
          . " WHERE $officeMatchClause "
          . "   AND $yyyy > SUBSTRING(i.elected, 1, 4) "
          . "   AND s.termcycle = 0 ";
