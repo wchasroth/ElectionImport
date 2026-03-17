@@ -29,6 +29,7 @@ if ($result->failed()  ||  $result->getRowCount() == 0) {
     exit(1);
 }
 $complete = intval($result->getRows()[0]['complete']);
+echo "complete=$complete\n";
 if ($complete === 1)  exit(0);
 
 $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
