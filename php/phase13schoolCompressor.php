@@ -19,6 +19,8 @@ $schools = $ic->getUncompletedIdsFor("school");
 
 foreach ($schools as $school) {
     if ($ic->hasCompleteCountiesFor($school)) {
+        echo "$school uncompleted but ready\n";
+        continue;
        //---Select the winners of all of the county races.
        $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
           . "    FROM v4elections WHERE org in ('cnty', 'cnty-com', 'town', 'town-cou') AND county=$county "
