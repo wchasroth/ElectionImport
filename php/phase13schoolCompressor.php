@@ -21,7 +21,6 @@ $schools = $ic->getUncompletedIdsFor("school");
 
 foreach ($schools as $school) {
     if ($ic->hasCompleteCountiesFor('school', $school)) {
-        echo "$school\n";
 
         //---For school districts that cross counties, combine (add up) the individual county election rows, into one row each.
         foreach ($years as $year) {
