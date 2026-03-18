@@ -23,7 +23,7 @@ class IncumbentCompressor {
       // Cache the isImported value for a county, so we only calculate it once.
       $sql = "SELECT county FROM v4imported";
       $result = $pdo->run($sql);
-      foreach ($result->getRows() as $row)  $countiesImported[intval($row["county"])] = 1;
+      foreach ($result->getRows() as $row)  $this->countiesImported[intval($row["county"])] = 1;
    }
 
    private function getAllOfSingleFieldFrom (string $fieldName, string $sql): array {
