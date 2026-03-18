@@ -56,6 +56,7 @@ class IncumbentCompressor {
       if      ($type === 'county')  $sql = "SELECT DISTINCT id FROM v4counties      WHERE id NOT IN";
       else if ($type === 'school')  $sql = "SELECT DISTINCT id FROM v4schools       WHERE id NOT IN ";
       else if ($type === 'city')    $sql = "SELECT DISTINCT id FROM v4jurisdictions WHERE type='c' AND id NOT IN ";
+      else if ($type === 'village') $sql = "SELECT DISTINCT id FROM v4villages      WHERE id NOT IN ";
       else    throw new \Exception('Not implemented', 501);
 
       $sql = $sql . "   (SELECT district FROM v4completed WHERE type='$type')";
@@ -63,8 +64,9 @@ class IncumbentCompressor {
    }
 
    function hasCompleteCountiesFor(string $type, int $id): bool {
-      if      ($type === 'school') $sql = "SELECT DISTINCT county_id FROM v4schools       WHERE id=$id";
-      else if ($type === 'city')   $sql = "SELECT DISTINCT county_id FROM v4jurisdictions WHERE id=$id";
+      if      ($type === 'school')  $sql = "SELECT DISTINCT county_id FROM v4schools       WHERE id=$id";
+      else if ($type === 'city')    $sql = "SELECT DISTINCT county_id FROM v4jurisdictions WHERE id=$id";
+      else if ($type === 'village') $sql = "SELECT DISTINCT county_id FROM v4villages      WHERE id=$id";
       else  throw new \Exception('Not implemented', 501);
 
       $counties = $this->getAllOfSingleFieldFrom('county_id', $sql);
