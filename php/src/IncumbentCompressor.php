@@ -24,7 +24,6 @@ class IncumbentCompressor {
       $sql = "SELECT county FROM v4imported";
       $result = $pdo->run($sql);
       foreach ($result->getRows() as $row)  $isCountyImported[intval($row["county"])] = 1;
-      var_dump($isCountyImported);
    }
 
    private function getAllOfSingleFieldFrom (string $fieldName, string $sql): array {

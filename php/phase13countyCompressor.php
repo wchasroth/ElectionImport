@@ -17,6 +17,7 @@ $years    = $ic->getElectionDates();
 $counties = $ic->getUncompletedIdsFor("county");
 
 foreach ($counties as $county) {
+    echo "$county " . ($ic->isCountyImported($county) ? "Y" : "N") . "\n";
     if ($ic->isCountyImported($county)) {
        //---Select the winners of all of the county races.
        $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
