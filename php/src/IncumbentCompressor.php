@@ -14,7 +14,7 @@ define ("MUST_MATCH_NAME", true);
 class IncumbentCompressor {
    private AlfredPDO $pdo;
    private array     $maxSeatsCache;
-   private array     $isCountyImported = [];
+   private array     $countiesImported = [];
 
    function __construct(AlfredPDO $pdo) {
       $this->pdo = $pdo;
@@ -23,7 +23,7 @@ class IncumbentCompressor {
       // Cache the isImported value for a county, so we only calculate it once.
       $sql = "SELECT county FROM v4imported";
       $result = $pdo->run($sql);
-      foreach ($result->getRows() as $row)  $isCountyImported[intval($row["county"])] = 1;
+      foreach ($result->getRows() as $row)  $countiesImported[intval($row["county"])] = 1;
    }
 
    private function getAllOfSingleFieldFrom (string $fieldName, string $sql): array {
@@ -34,7 +34,7 @@ class IncumbentCompressor {
    }
 
    function isCountyImported(int $county): bool {
-      return array_key_exists($county, $this->isCountyImported);
+      return array_key_exists($county, $this->countiesImported);
    }
 
    function isCompleted(string $type, int $district): bool {
