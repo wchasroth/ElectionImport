@@ -19,25 +19,25 @@ $years = $ic->getElectionDates();
 
 //---Unlike the other kinds of orgs, v4commcolleges does NOT denormalize/duplicate rows in order to include the county!
 //   Instead, we have a link table,  v4commcolleges_county that links each college to one or more counties.
-//   But we have to BUILD that table from the v4elections data, which is a nuisance.  It also means we're not 100%
-//   sure that the info is complete UNTIL we have imported ALL counties.  (Yuck.)
+//   But we have to BUILD that table from the v4elections data, which is a nuisance.  Most of the time, we'll end
+//   up with a ton of duplicate INSERTS -- that are thrown away by the primary key rule.  That's fine.
+//   It also means we're not 100% sure that the info is complete UNTIL we have imported ALL counties.  (Yuck.)
 $sql = "SELECT DISTINCT district, county FROM v4elections WHERE org='comcol-cou'";
 $result = $pdo->run($sql);
 foreach ($result->getRows() as $row) {
     $sql = "INSERT INTO v4commcolleges_county (id, county_id) VALUES ({$row['district']}, {$row['county']})";
     $pdo->run($sql);
 }
-exit(1);
 
-$villages = $ic->getUncompletedIdsFor("village");
+$colleges = $ic->getUncompletedIdsFor("college");
 
-foreach ($villages as $village) {
-    if ($ic->hasCompleteCountiesFor('village', $village)) {
+foreach ($colleges as $college) {
+    if ($ic->hasCompleteCountiesFor('college', $college)) {
 
-        // Qualifier to match offices for this village.
-        $orgAndDistrict = " org IN ('vil', 'vil-cou') AND district=$village ";
+        // Qualifier to match offices for this college.
+        $orgAndDistrict = " org IN ('comcol-cou') AND district='$college' ";
 
-        //---For villages that cross counties, combine (add up) the individual county election rows, into one row each.
+        //---For colleges that cross counties, combine (add up) the individual county election rows, into one row each.
         foreach ($years as $year) {
            $sql = "SELECT DISTINCT org, office, district, subdist, partial, termlen, incumbent, year FROM v4elections "
                 . " WHERE year='$year' AND $orgAndDistrict "
@@ -60,6 +60,6 @@ foreach ($villages as $village) {
           $ic->applyRaceWinnersToIncumbents($sql, $year);
        }
 
-       $ic->setCompleted("village", $village);
+       $ic->setCompleted("college", $college);
     }
 }
