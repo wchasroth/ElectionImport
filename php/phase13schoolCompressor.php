@@ -13,11 +13,12 @@ $env  = new EnvFile("_env");
 $pdo  = PdoHelper::makePdo($env);
 
 $ic = new IncumbentCompressor($pdo);
-$years    = $ic->getElectionDates();
-$counties = $ic->getUncompletedIdsFor("county");
+$years = $ic->getElectionDates();
 
-foreach ($counties as $county) {
-    if ($ic->isCountyImported($county)) {
+$schools = $ic->getUncompletedIdsFor("school");
+
+foreach ($schools as $school) {
+    if ($ic->hasCompleteCountiesFor($school)) {
        //---Select the winners of all of the county races.
        $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
           . "    FROM v4elections WHERE org in ('cnty', 'cnty-com', 'town', 'town-cou') AND county=$county "

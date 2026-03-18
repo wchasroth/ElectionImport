@@ -13,17 +13,28 @@ define ("MUST_MATCH_NAME", true);
 
 class IncumbentCompressor {
    private AlfredPDO $pdo;
-   private $maxSeatsCache;
+   private array     $maxSeatsCache;
+   private array     $isCountyImported = [];
 
    function __construct(AlfredPDO $pdo) {
       $this->pdo = $pdo;
       $this->maxSeatsCache = $this->loadMaxSeatsCache($pdo);
+
+      // Cache the isImported value for a county, so we only calculate it once.
+      $sql = "SELECT county FROM v4imported";
+      $result = $pdo->run($sql);
+      foreach ($result->getRows() as $row)  $isCountyImported[intval($row["county"])] = 1;
+   }
+
+   private function getAllOfSingleFieldFrom (string $fieldName, string $sql): array {
+      $values = [];
+      $result = $this->pdo->run($sql);
+      foreach ($result->getRows() as $row)  $values[] = intval($row[$fieldName]);
+      return $values;
    }
 
    function isCountyImported(int $county): bool {
-      $sql = "SELECT 1 FROM v4imported WHERE county=$county LIMIT 1";
-      $result = $this->pdo->run($sql);
-      return $result->getRowCount() > 0;
+      return array_key_exists($county, $this->isCountyImported);
    }
 
    function isCompleted(string $type, int $district): bool {
@@ -39,6 +50,25 @@ class IncumbentCompressor {
 
    function getElectionDates(): array {
       return ['2018-11-06', '2020-11-03', '2021-11-02', '2022-11-08', '2023-11-07', '2024-11-05', '2025-11-04'];
+   }
+
+   function getUncompletedIdsFor(string $type): array {
+      if      ($type == 'county')  $sql = "SELECT DISTINCT id FROM v4counties WHERE id NOT IN";
+      else if ($type == 'school')  $sql = "SELECT DISTINCT id FROM v4schools  WHERE id NOT IN ";
+      else    throw new \Exception('Not implemented', 501);
+
+      $sql = $sql . "   (SELECT district FROM v4completed WHERE type='$type')";
+      return $this->getAllOfSingleFieldFrom('id', $sql);
+   }
+
+   function hasCompleteCountiesFor(string $type, int $id): bool {
+      if ($type != 'school')  throw new \Exception('Not implemented', 501);
+      $sql = "SELECT DISTINCT county_id FROM v4schools WHERE id=$id";
+      $counties = $this->getAllOfSingleFieldFrom('id', $sql);
+      foreach ($counties as $county) {
+         if (! $this->isCountyImported($county)) return false;
+      }
+      return true;
    }
 
    function markRaceWinners(string $sql): void {
