@@ -64,7 +64,7 @@ class IncumbentCompressor {
    function hasCompleteCountiesFor(string $type, int $id): bool {
       if ($type != 'school')  throw new \Exception('Not implemented', 501);
       $sql = "SELECT DISTINCT county_id FROM v4schools WHERE id=$id";
-      $counties = $this->getAllOfSingleFieldFrom('id', $sql);
+      $counties = $this->getAllOfSingleFieldFrom('county_id', $sql);
       foreach ($counties as $county) {
          if (! $this->isCountyImported($county)) return false;
       }
