@@ -24,7 +24,7 @@ $years = $ic->getElectionDates();
 $sql = "SELECT DISTINCT district, county FROM v4elections WHERE org='comcol-cou'";
 $result = $pdo->run($sql);
 foreach ($result->getRows() as $row) {
-    $sql = "INSERT INTO v4commcolleges_county (id, county_id) VALUES ({$row['id']}, {$row['county']})";
+    $sql = "INSERT INTO v4commcolleges_county (id, county_id) VALUES ({$row['district']}, {$row['county']})";
     $pdo->run($sql);
 }
 exit(1);
