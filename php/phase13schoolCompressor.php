@@ -6,6 +6,7 @@ namespace CharlesRothDotNet\ElectionImport;
 
 use CharlesRothDotNet\Alfred\EnvFile;
 use CharlesRothDotNet\Alfred\PdoHelper;
+use CharlesRothDotNet\ElectionImport\MultiCountyOfficeCombiner;
 
 require "vendor/autoload.php";
 
