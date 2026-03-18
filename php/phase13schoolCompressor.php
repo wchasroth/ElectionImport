@@ -18,7 +18,10 @@ $years = $ic->getElectionDates();
 $schools = $ic->getUncompletedIdsFor("school");
 
 foreach ($schools as $school) {
-    if ($ic->hasCompleteCountiesFor('school', $school)) {
+    if (! $ic->hasCompleteCountiesFor('school', $school)) {
+       echo "unready $school\n";
+    }
+    else {
         echo "$school uncompleted but ready\n";
         continue;
        //---Select the winners of all of the county races.
