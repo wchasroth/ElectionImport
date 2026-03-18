@@ -12,8 +12,8 @@ SELECT i.id, s.org, 81 AS district, ' ' AS locale, s.office, s.seatnum, s.subdis
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
        i.status, i.web, i.email, i.phone, i.address, i.headshot
-  FROM      v3incumbents AS i
-  LEFT JOIN v3seats      AS s  ON (i.seat_id = s.id)
+  FROM      v4incumbents AS i
+  LEFT JOIN v4seats      AS s  ON (i.seat_id = s.id)
  WHERE s.org = 'mi-sen'
    AND s.district IN (SELECT DISTINCT senate FROM streets WHERE county_code = $1)
 
@@ -25,8 +25,8 @@ SELECT i.id, s.org, 81 AS district, '_' AS locale, s.office, s.seatnum, s.subdis
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
        i.status, i.web, i.email, i.phone, i.address, i.headshot
-  FROM      v3incumbents AS i
-  LEFT JOIN v3seats      AS s  ON (i.seat_id = s.id)
+  FROM      v4incumbents AS i
+  LEFT JOIN v4seats      AS s  ON (i.seat_id = s.id)
  WHERE s.org = 'mi-hou'
    AND s.district IN (SELECT DISTINCT house FROM streets WHERE county_code = $1)
 
@@ -38,8 +38,8 @@ SELECT i.id, s.org, 81 AS district, '__' AS locale, s.office, s.seatnum, s.subdi
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
        i.status, i.web, i.email, i.phone, i.address, i.headshot
-  FROM      v3incumbents AS i
-  LEFT JOIN v3seats      AS s  ON (i.seat_id = s.id)
+  FROM      v4incumbents AS i
+  LEFT JOIN v4seats      AS s  ON (i.seat_id = s.id)
  WHERE s.org LIKE 'cnty%'
    AND s.district = $1
 
@@ -51,12 +51,13 @@ SELECT i.id, s.org, j.id AS district, j.simplename AS locale, s.office, s.seatnu
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
        i.status, i.web, i.email, i.phone, i.address, i.headshot
-  FROM      v3incumbents AS i
-  LEFT JOIN v3seats      AS s  ON (i.seat_id = s.id)
+  FROM      v4incumbents AS i
+  LEFT JOIN v4seats      AS s  ON (i.seat_id = s.id)
   LEFT JOIN jurisdiction AS j  ON (s.district = j.id)
  WHERE (s.org LIKE 'city%'  OR  s.org LIKE 'town%')
    AND j.county_id = $1
 
+/*
 UNION ALL
 
 SELECT i.id, s.org, v.id AS district, v.simplename AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
@@ -65,8 +66,8 @@ SELECT i.id, s.org, v.id AS district, v.simplename AS locale, s.office, s.seatnu
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
        i.status, i.web, i.email, i.phone, i.address, i.headshot
-  FROM      v3incumbents AS i
-  LEFT JOIN v3seats      AS s  ON (i.seat_id  = s.id)
+  FROM      v4incumbents AS i
+  LEFT JOIN v4seats      AS s  ON (i.seat_id  = s.id)
   LEFT JOIN village      AS v  ON (s.district = v.id)
  WHERE (s.org LIKE 'vil%')
    AND v.county_id = $1
@@ -79,8 +80,8 @@ SELECT i.id, s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnu
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
        i.status, i.web, i.email, i.phone, i.address, i.headshot
-  FROM      v3incumbents    AS i
-  LEFT JOIN v3seats         AS s ON (i.seat_id  = s.id)
+  FROM      v4incumbents    AS i
+  LEFT JOIN v4seats         AS s ON (i.seat_id  = s.id)
   LEFT JOIN school_district AS c ON (s.district = c.id)
  WHERE s.org = 'schl-cou'
    AND c.county_id = $1
@@ -93,12 +94,13 @@ SELECT i.id, s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnu
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
        i.status, i.web, i.email, i.phone, i.address, i.headshot
-  FROM      v3incumbents          AS i
-  LEFT JOIN v3seats               AS s ON (i.seat_id  = s.id)
+  FROM      v4incumbents          AS i
+  LEFT JOIN v4seats               AS s ON (i.seat_id  = s.id)
   LEFT JOIN comm_college26        AS c ON (s.district = c.id)
   LEFT JOIN comm_college2county26 AS y ON (c.id = y.comm_college_id)
  WHERE s.org = 'comm-cou'
    AND y.county_id = $1
+*/
 
 ORDER BY locale, org, office, seatnum, subdist, name;
 END
