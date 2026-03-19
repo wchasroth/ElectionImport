@@ -21,9 +21,12 @@ Level 2: completely rebuild the v4elections table.
 
 Level 3: Determine and apply all election winners,
    to offices that are not yet "complete".
-      phase13stateCompressor.php
-      phase13countyCompressor.php
-      phase13cityCompressor.php
-      phase13villageCompressor.php
-      phase13schoolCompressor.php
-      phase13collegeCompressor.php
+      v4compress
+
+      which runs:
+         phase13stateCompressor.php
+         phase13countyCompressor.php
+         phase13cityCompressor.php
+         phase13villageCompressor.php
+         phase13schoolCompressor.php
+         phase13collegeCompressor.php
