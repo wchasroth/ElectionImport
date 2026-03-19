@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#---Remove incumbent (but leave seat "empty").  E.g. MI 35th sen district resigned.
+
+if test "x$1" = "x"; then
+   echo "Usage: removeIncumbentAndSeat  conditions-for-WHERE-clause" >&2
+   exit
+fi
+
+# E.g.
+# removeIncumbent "s.org='mi-sen' AND s.district='35'
+
+(
+   echo "SELECT i.seat_id INTO @seatid FROM v4incumbents AS i LEFT JOIN v4seats AS s  ON (s.id = i.seat_id) WHERE $1;"
+   echo "DELETE FROM v4incumbents WHERE seat_id IN (SELECT @seatid);"
+) | my

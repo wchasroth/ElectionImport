@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#---Replace incumbent.  Particularly in case of resignation followed by appointment
+
+if test "x$2" = "x"; then
+   echo "Usage: replaceIncumbentAndSeat  \"new name\"  \"conditions-for-WHERE-clause\"" >&2
+   exit
+fi
+
+# E.g.
+# replaceIncumbent "Kristine Bolhuis" "s.org='town' AND s.district=3020 AND s.office='town-clerk'"
+
+(
+   echo "SELECT i.seat_id INTO @seatid FROM v4incumbents AS i LEFT JOIN v4seats AS s  ON (s.id = i.seat_id) WHERE $2;"
+   echo "UPDATE v4incumbents SET name=\"$1\" WHERE seat_id IN (SELECT @seatid);"
+) | my

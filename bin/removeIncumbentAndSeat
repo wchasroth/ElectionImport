@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+#---Remove incumbent and matching seat.  Usually a fixup for a mess involving a board or council.
+
+if test "x$1" = "x"; then
+   echo "Usage: removeIncumbentAndSeat  conditions-for-WHERE-clause" >&2
+   exit
+fi
+
+# E.g.
+# removeIncumbentAndSeat "s.org='schl-cou' AND s.district=8940 AND i.name='Ross Greenstein'"
+
+(
+   echo "SELECT i.seat_id INTO @seatid FROM v4incumbents AS i LEFT JOIN v4seats AS s  ON (s.id = i.seat_id) WHERE $1;"
+   echo "DELETE FROM v4seats      WHERE id      IN (SELECT @seatid);"
+   echo "DELETE FROM v4incumbents WHERE seat_id IN (SELECT @seatid);"
+) | my
