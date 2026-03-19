@@ -63,7 +63,7 @@ for ($i=1;   $i < $rowCount;   $i++) {
    $result = $pdo->run($sql);
    if ($result->succeeded() && $result->getRowCount() == 1) {
       $id = intval($result->getRows()[0]['id']);
-      $contactFields = ['web' => $row[16], 'email' => $row[17], 'phone' => $row[18], 'address' => $row[19], 'headshot' => $row[20]];
+      $contactFields = ['web' => $row['web'], 'email' => $row['email'], 'phone' => $row['phone'], 'address' => $row['address'], 'headshot' => $row['headshot']];
       foreach ($contactFields as $field => $value) {
          if (!empty ($value)  &&  $value !== "NOT_FOUND") {
             $sql = "UPDATE v4incumbents SET $field = '$value' WHERE id = $id AND $field = ''";
