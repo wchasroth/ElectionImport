@@ -89,13 +89,16 @@ class IncumbentCompressor {
             'partial' => $race['partial'], 'year' => $race['year'], 'termlen' => $race['termlen'], 'incumbent' => $race['incumbent'],
             'cycle' => $race['cycle']]);
          $result = $this->pdo->runSF("SELECT * FROM v4elections WHERE ", "ORDER BY votes_C DESC", $fields);
+         if (! $this->found($result))           continue;
          $rows = $result->getRows();
+         if (intval($rows[0]['votes_C']) == 0)  continue;   // Nobody wins if # votes = 0.
 
          $maxVoteFor = 1;  // At least one, no matter what!
          foreach ($rows as $row)  $maxVoteFor = max($maxVoteFor, intval($row['voteFor']));
          $maxVoteFor = min ($maxVoteFor, count($rows));  // sometimes voteFor > number of candidates!
 
          $winnerIds = [];
+
          for ($i=0;   $i<$maxVoteFor;   $i++)  $winnerIds[] = $rows[$i]['id'];
          $sql = "UPDATE v4elections SET winner=1 WHERE id in (" . Str::join($winnerIds, ",") . ")";
          $result = $this->pdo->run($sql);
