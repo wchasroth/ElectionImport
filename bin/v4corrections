@@ -50,9 +50,11 @@ replaceIncumbent "Tonie Brovont"       "s.org='town'     AND s.district=85100 AN
 replaceIncumbent "Dave Ludwig"         "s.org='town'     AND s.district=89100 AND s.office='town-super'"
 replaceIncumbent "Noah P. Hood"        "s.org='crt-sup'                       AND i.name='Elizabeth T. Clement'"
 
-php phase18renumber.php                       #---Renumber seats if holes were introduced in phase 17 and removeIncumbent.
+phase18renumber.php                       #---Renumber seats if holes were introduced in phase 17 and removeIncumbent.
 
-php phase19address.php >buildAll.contactInfo  #---Import contact info from matching incumbents in 2024 db
+phase19address.php >buildAll.contactInfo  #---Import contact info from matching incumbents in 2024 db
+
+exit
 
 #---Import 
 for x in ImportData/*.tsv; do

@@ -37,6 +37,11 @@ for x in *.sql; do
    echo "source $x" | my
 done
 
+#---But remove any imported termlens for county commissioners,
+#   those values are set by statute, changed in 2024, and
+#   are hard-coded in other scripts.
+echo "DELETE FROM v4termlen WHERE org='cnty-com'" | my
+
 #---Wipe all parsed election county files, and re-parse them.
 cd $ELECTION_IMPORT/Counties
 rm -f */.tsv
