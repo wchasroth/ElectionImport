@@ -30,7 +30,7 @@ echo "source 10-v4counties.sql"       | my   # complete = 0
 
 #---Fill v4termlen table with data from Vishu's AI work.
 cd $ELECTION_IMPORT/Vishu
-for x in *.csv; do
+for x in *.tsv; do
    importTermLen.php $x
 done
 for x in *.sql; do
