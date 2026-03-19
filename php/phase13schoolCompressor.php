@@ -26,14 +26,14 @@ foreach ($schools as $school) {
         foreach ($years as $year) {
            $sql = "SELECT DISTINCT org, office, district, subdist, partial, termlen, incumbent, year FROM v4elections "
                 . " WHERE year='$year' "
-                . "   AND org='schl-cou' AND district=$school "
+                . "   AND org='schl-cou' AND district='$school' "
               . " ORDER BY org, office, district, subdist, incumbent, name";
            $moc->combine($sql);
         }
 
        //---Select the winners
        $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
-          . "    FROM v4elections WHERE org = 'schl-cou' AND district=$school "
+          . "    FROM v4elections WHERE org = 'schl-cou' AND district='$school' "
           . "   ORDER BY year, org, office, district, subdist, incumbent";
        $ic->markRaceWinners($sql);
 
@@ -42,7 +42,7 @@ foreach ($schools as $school) {
        foreach ($years as $year) {
           $sql = "SELECT DISTINCT org, office, district, subdist "
              . "    FROM v4elections WHERE year='$year' "
-             . "     AND org IN ('schl-cou') AND district=$school "
+             . "     AND org IN ('schl-cou') AND district='$school' "
              . "   ORDER BY org, office, district, subdist";
           $ic->applyRaceWinnersToIncumbents($sql, $year);
        }

@@ -18,8 +18,6 @@ $years    = $ic->getElectionDates();
 $org = " org in "
      . "    ('us', 'us-vp', 'us-sen', 'us-hou', 'mi', 'mi-lt', 'mi-ag', 'mi-sos', 'mi-boe', 'mi-msu', 'mi-um', 'mi-wsu', "
      . "     'crt-sup', 'crt-a', 'crt-c', 'crt-d', 'crt-p') ";
-//$org = " org in "
-//   . "    ('crt-d') ";
 
 //---Select the winners of all of the state-level races
 $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "

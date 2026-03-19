@@ -23,7 +23,7 @@ foreach ($villages as $village) {
     if ($ic->hasCompleteCountiesFor('village', $village)) {
 
         // Qualifier to match offices for this village.
-        $orgAndDistrict = " org IN ('vil', 'vil-cou') AND district=$village ";
+        $orgAndDistrict = " org IN ('vil', 'vil-cou') AND district='$village' ";
 
         //---For villages that cross counties, combine (add up) the individual county election rows, into one row each.
         foreach ($years as $year) {
