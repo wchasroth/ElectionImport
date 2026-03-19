@@ -66,7 +66,8 @@ for ($i=1;   $i < $rowCount;   $i++) {
       $contactFields = ['web' => $row['web'], 'email' => $row['email'], 'phone' => $row['phone'], 'address' => $row['address'], 'headshot' => $row['headshot']];
       foreach ($contactFields as $field => $value) {
          if (!empty ($value)  &&  $value !== "NOT_FOUND") {
-            $value = Str::replaceAll($value, "'", "''");
+            $value = Str::replaceAll($value, "'", ";");
+            $value = Str::replaceAll($value, ";", "''");
             $sql = "UPDATE v4incumbents SET $field = '$value' WHERE id = $id AND $field = ''";
             $result = $pdo->run($sql);
             if ($result->failed())  echo "phase20aiContactInfo failed: $sql\n";
