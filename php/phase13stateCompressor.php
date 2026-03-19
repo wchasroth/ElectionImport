@@ -20,7 +20,7 @@ $org = " org in "
      . "     'crt-sup', 'crt-a', 'crt-c', 'crt-d', 'crt-p') ";
 
 $state = $ic->getUncompletedIdsFor("state");
-if (count($state) == 0) {  // i.e. continue only if we haven't previously handled/compressed all of the state-level offices.
+if (count($state) > 0) {  // i.e. continue only if we haven't previously handled/compressed all of the state-level offices.
 
    //---Select the winners of all of the state-level races
    $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
