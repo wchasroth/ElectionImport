@@ -19,17 +19,23 @@ $org = " org in "
      . "    ('us', 'us-vp', 'us-sen', 'us-hou', 'mi', 'mi-lt', 'mi-ag', 'mi-sos', 'mi-boe', 'mi-msu', 'mi-um', 'mi-wsu', "
      . "     'crt-sup', 'crt-a', 'crt-c', 'crt-d', 'crt-p') ";
 
-//---Select the winners of all of the state-level races
-$sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
-     . "  FROM v4elections WHERE $org "
-     . "   ORDER BY year, org, office, district, subdist, incumbent";
-$ic->markRaceWinners($sql);
+$state = $ic->getUncompletedIdsFor("state");
+if (count($state) == 0) {  // i.e. continue only if we haven't previously handled/compressed all of the state-level offices.
 
-//---Layer each year's race winners "over top of" the existing incumbents, replacing them
-//   with new incumbents as needed.
-foreach ($years as $year) {
-   $sql = "SELECT DISTINCT org, office, district, subdist "
-        . "  FROM v4elections WHERE year='$year'  AND $org "
-        . " ORDER BY org, office, district, subdist";
-   $ic->applyRaceWinnersToIncumbents($sql, $year);
+   //---Select the winners of all of the state-level races
+   $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
+        . "  FROM v4elections WHERE $org "
+        . " ORDER BY year, org, office, district, subdist, incumbent";
+   $ic->markRaceWinners($sql);
+
+   //---Layer each year's race winners "over top of" the existing incumbents, replacing them
+   //   with new incumbents as needed.
+   foreach ($years as $year) {
+      $sql = "SELECT DISTINCT org, office, district, subdist "
+           . "  FROM v4elections WHERE year='$year'  AND $org "
+           . " ORDER BY org, office, district, subdist";
+      $ic->applyRaceWinnersToIncumbents($sql, $year);
+   }
+
+   $ic->setCompleted("state", 0);
 }

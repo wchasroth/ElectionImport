@@ -19,8 +19,11 @@ Level 2: completely rebuild the v4elections table.
 
    v4elections
 
-Level 3: dedup and winners
-
-Level 4: Scan all incomplete kinds of jurisdictions.
-   If they are now complete, create the v4seats and
-   v4incumbents rows.  Mark the jurisdiction as complete.
+Level 3: Determine and apply all election winners,
+   to offices that are not yet "complete".
+      phase13stateCompressor.php
+      phase13countyCompressor.php
+      phase13cityCompressor.php
+      phase13villageCompressor.php
+      phase13schoolCompressor.php
+      phase13collegeCompressor.php
