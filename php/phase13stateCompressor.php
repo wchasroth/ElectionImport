@@ -33,5 +33,3 @@ foreach ($years as $year) {
         . " ORDER BY org, office, district, subdist";
    $ic->applyRaceWinnersToIncumbents($sql, $year);
 }
-
-$ic->setCompleted("state", 0);

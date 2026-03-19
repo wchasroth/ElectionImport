@@ -37,14 +37,14 @@ class IncumbentCompressor {
       return array_key_exists($county, $this->countiesImported);
    }
 
-   function isCompleted(string $type, int $district): bool {
-      $sql = "SELECT 1 FROM v4completed WHERE type='$type' AND district=$district LIMIT 1";
-      $result = $this->pdo->run($sql);
-      return $result->getRowCount() > 0;
-   }
+//   function isCompleted(string $type, int $district): bool {
+//      $sql = "SELECT 1 FROM v4completed WHERE type='$type' AND district=$district LIMIT 1";
+//      $result = $this->pdo->run($sql);
+//      return $result->getRowCount() > 0;
+//   }
 
-   function setCompleted (string $type, int $district): void {
-      $sql = "INSERT INTO v4completed (type, district) VALUES ('$type', $district)";
+   function setCompleted (string $type, int $id): void {
+      $sql = "INSERT INTO v4completed (type, id) VALUES ('$type', $id)";
       $this->pdo->run($sql);
    }
 
@@ -60,7 +60,7 @@ class IncumbentCompressor {
       else if ($type === 'college') $sql = "SELECT DISTINCT id FROM v4commcolleges  WHERE id NOT IN ";
       else    throw new \Exception('Not implemented', 501);
 
-      $sql = $sql . "   (SELECT district FROM v4completed WHERE type='$type')";
+      $sql = $sql . "   (SELECT id FROM v4completed WHERE type='$type')";
       return $this->getAllOfSingleFieldFrom('id', $sql);
    }
 
@@ -284,13 +284,6 @@ class IncumbentCompressor {
             $insertFields['seat_id'] = $id;
             $result = $this->pdo->runSF("INSERT INTO v4incumbents", "", new SqlFields($insertFields), true);
 
-            // For community colleges, we also have to add the mapping between college and county
-            // (since one college may cover multiple counties).
-            if ($org == 'comcol-cou') {
-               $sql = "INSERT INTO v4commcolleges (comm_college_id, county_id) VALUES "
-                  . "   ({$elected['district']}, {$elected['county']})";
-               $this->pdo->run($sql);
-            }
             echo "Case E: $officeMatchClause\n";
          }
       }
