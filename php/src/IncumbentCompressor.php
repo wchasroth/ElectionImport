@@ -58,7 +58,7 @@ class IncumbentCompressor {
       else if ($type === 'city')    $sql = "SELECT DISTINCT id FROM v4jurisdictions WHERE type='c' AND id NOT IN ";
       else if ($type === 'village') $sql = "SELECT DISTINCT id FROM v4villages      WHERE id NOT IN ";
       else if ($type === 'college') $sql = "SELECT DISTINCT id FROM v4commcolleges  WHERE id NOT IN ";
-      else if ($type === 'state')   $sql = "SELECT 0 WHERE 0 NOT IN ";
+      else if ($type === 'state')   $sql = "SELECT 0 AS id WHERE 0 NOT IN ";
       else    throw new \Exception('Not implemented', 501);
 
       $sql = $sql . "   (SELECT id FROM v4completed WHERE type='$type')";
