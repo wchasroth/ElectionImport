@@ -116,10 +116,10 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 7482	schl-cou	8520	cedar springs		4	0	Heidi Reed	2022-11-08	?	4769	22	4	Y		 		www.csredhawks.org/our-district/board-of-education	Heidi.Reed@csredhawks.org				4	2	4
 9381	schl-cou	8520	cedar springs		4	0	Matthew D. Shoffner	2024-11-05	?	5193	26	4	 		 		www.csredhawks.org/our-district/board-of-education	Matt.Shoffner@csredhawks.org				4	3	4
 9382	schl-cou	8520	cedar springs		4	0	Trent Gilmore	2024-11-05	?	4957	25	4	 		 		www.csredhawks.org/our-district/board-of-education	Trent.Gilmore@csredhawks.org				4	4	4
-1494	schl-cou	10620	comstock park		4	0	David L. Hood	2024-11-05	?	4028	32	4	 		 		www.cppschools.com/district/board-of-education	boardofeducation@cppschools.com&nbsp;&nbsp;				4	1	4
-6748	schl-cou	10620	comstock park		4	0	Michael Brown	2022-11-08	?	2931	21	4	Y		 		www.cppschools.com/district/board-of-education	boardofeducation@cppschools.com&nbsp;&nbsp;				4	2	4
+1494	schl-cou	10620	comstock park		4	0	David L. Hood	2024-11-05	?	4028	32	4	 		 		www.cppschools.com/district/board-of-education	boardofeducation@cppschools.com				4	1	4
+6748	schl-cou	10620	comstock park		4	0	Michael Brown	2022-11-08	?	2931	21	4	Y		 		www.cppschools.com/district/board-of-education	boardofeducation@cppschools.com				4	2	4
 8595	schl-cou	10620	comstock park		4	0	Jeremy A. Kelly	2024-11-05	?	3795	30	4	 		 							4	3	4
-8596	schl-cou	10620	comstock park		4	0	Christy Nowak	2024-11-05	?	4433	35	4	 		 		www.cppschools.com/district/board-of-education	boardofeducation@cppschools.com&nbsp;&nbsp;				4	4	4
+8596	schl-cou	10620	comstock park		4	0	Christy Nowak	2024-11-05	?	4433	35	4	 		 		www.cppschools.com/district/board-of-education	boardofeducation@cppschools.com				4	4	4
 7888	city	23980	east grand rapids	mayor	1	0	Katie Favale	2023-11-07	?	2586	95	4	 		 		www.eastgrmi.gov/245/Mayor-Commission	kfavale@eastgr.org	616-949-2110			4	1	1
 5995	city-cou	23980	east grand rapids		2	1	Kate Skaggs	2025-11-04	?	653	69	4	 		 							4	1	2
 5996	city-cou	23980	east grand rapids		2	2	Chris Wessely	2025-11-04	?	465	46	4	 		 		www.eastgrmi.gov/245/Mayor-Commission	cwessely@eastgr.org	616-915-7090			4	1	2
@@ -366,7 +366,7 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 2185	schl-cou	35550	wayland union		8	0	Theresa Dobry	2024-11-05	?	3	30	4	 	R	 		waylandunion.org/district/board-of-education	dobryt@waylandunion.org				4	4	8
 7349	schl-cou	35550	wayland union		8	0	Jeff Koon	2022-11-08	?	4552	24	4	Y		 		waylandunion.org/district/board-of-education	koonjeff@waylandunion.org	616-886-8280			4	5	8
 7350	schl-cou	35550	wayland union		8	0	Norman L. Taylor	2022-11-08	?	4520	24	4	Y		 		waylandunion.org/district/board-of-education	taylornorm@waylandunion.org	616-293-6648			4	6	8
-7351	schl-cou	35550	wayland union		8	0	Pete Zondervan	2022-11-08	?	3329	18	4	Y		 		waylandunion.org/district/board-of-education	zondervanp@waylandunion.org&nbsp;				4	7	8
+7351	schl-cou	35550	wayland union		8	0	Pete Zondervan	2022-11-08	?	3329	18	4	Y		 		waylandunion.org/district/board-of-education	zondervanp@waylandunion.org				4	7	8
 7352	schl-cou	35550	wayland union		8	0	Janel L. Hott	2022-11-08	?	3974	51	4	 		P		waylandunion.org/district/board-of-education	hottj@waylandunion.org	269-250-0286			4	8	8
 666	city-cou	88940	wyoming		3	0	Sheldon DeKryger	2024-11-05	?	13251	49	4	 		 							4	1	3
 6459	city-cou	88940	wyoming		1	1	Sheldon DeKryger	2022-11-08	?	5904	96	4	Y		 		www.wyomingmi.gov/About-Wyoming/City-Government/Mayor-City-Council		616-437-3045			4	1	1

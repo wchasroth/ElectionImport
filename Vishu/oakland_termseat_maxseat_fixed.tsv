@@ -148,7 +148,7 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 7493	schl-cou	9840	clarenceville		7	0	Cynthia M. Immonen	2022-11-08	?	1984	20	4	Y		 							4	5	7
 7494	schl-cou	9840	clarenceville		7	0	Dennis Myers	2022-11-08	?	1879	19	4	Y		 		www.clarenceville.k12.mi.us		248-919-0400	20210 Middlebelt Road Livonia, MI 48152		4	6	7
 7495	schl-cou	9840	clarenceville		7	0	Kim Arnett	2022-11-08	?	2352	24	4	Y		 		www.clarenceville.k12.mi.us		248-919-0400	20210 Middlebelt Road Livonia, MI 48152		4	7	7
-440	city	82450	clarkston	mayor	1	0	Sue Wylie	2024-11-05	W	205	59	2	Y		 		http://villageofclarkston.org	&nbsp;WylieS@VillageofClarkston.org	248-625-1559	375 Depot Rd Clarkston, Michigan  48346-1418		2	1	1
+440	city	82450	clarkston	mayor	1	0	Sue Wylie	2024-11-05	W	205	59	2	Y		 		http://villageofclarkston.org	WylieS@VillageofClarkston.org	248-625-1559	375 Depot Rd Clarkston, Michigan  48346-1418		2	1	1
 644	city-cou	82450	clarkston		6	0	Erica Jones	2024-11-05	?	256	39	2	Y		 							2	1	6
 645	city-cou	82450	clarkston		6	0	Alfred A. Avery	2024-11-05	W	152	23	2	Y		 							2	2	6
 646	city-cou	82450	clarkston		6	0	Amanda Catherine Forte	2024-11-05	W	166	25	2	Y		 		http://villageofclarkston.org	ForteA@VillageofClarkston.org	248-625-1559	375 Depot Rd Clarkston, Michigan  48346-1418		2	3	6
@@ -261,8 +261,8 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 4580	town-cou	35640	groveland	council	2	0	Gina Muzzarelli	2024-11-05	R	2591	50	4	 		 		grovelandmi.gov	trustee2@grovelandtownship.net	248-634-4152	4695 Grange Hall Rd Holly, Michigan 48442		4	2	2
 5905	city	37420	hazel park	mayor	1	0	Michael Webb	2025-11-04	?	1459	67	4	 		 		www.hazelpark.org	mwebb@hazelpark.org		111 E Nine Mile Rd. Hazel Park, Michigan  48030		4	1	1
 6041	city-cou	37420	hazel park		4	0	Luke Londo	2025-11-04	?	1440	46	4	 		 		www.hazelpark.org	LLondo@hazelpark.org		111 E Nine Mile Rd. Hazel Park, Michigan  48030		4	1	4
-6042	city-cou	37420	hazel park		4	0	Alissa Sullivan	2025-11-04	?	1658	53	4	 		 		www.hazelpark.org	&nbsp;asullivan@hazelpark.org		111 E Nine Mile Rd. Hazel Park, Michigan  48030		4	2	4
-7983	city-cou	37420	hazel park		4	0	Andy LeCureaux	2023-11-07	?	942	36	4	 		 		www.hazelpark.org	&nbsp;alecureaux@hazelpark.org		111 E Nine Mile Rd. Hazel Park, Michigan  48030		4	3	4
+6042	city-cou	37420	hazel park		4	0	Alissa Sullivan	2025-11-04	?	1658	53	4	 		 		www.hazelpark.org	asullivan@hazelpark.org		111 E Nine Mile Rd. Hazel Park, Michigan  48030		4	2	4
+7983	city-cou	37420	hazel park		4	0	Andy LeCureaux	2023-11-07	?	942	36	4	 		 		www.hazelpark.org	alecureaux@hazelpark.org		111 E Nine Mile Rd. Hazel Park, Michigan  48030		4	3	4
 7984	city-cou	37420	hazel park		4	0	Andrea Washington	2023-11-07	?	681	26	4	 		 		www.hazelpark.org	awashington@hazelpark.org		111 E Nine Mile Rd. Hazel Park, Michigan  48030		4	4	4
 1651	schl-cou	18030	hazel park		7	0	April Beaton	2024-11-05	?	3840	20	4	 		 							4	1	7
 1652	schl-cou	18030	hazel park		7	0	Nathan Becker	2024-11-05	?	2297	12	4	 		 							4	2	7
@@ -295,12 +295,12 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 10412	town-cou	38720	holly	council	4	0	Michael McCanney	2024-11-05	R	4078	21	4	 		 							4	4	4
 5432	vil	38700	holly	pres	1	0	April Brandon	2024-11-05	?	927	36	2	Y		 							2	1	1
 5641	vil-cou	38700	holly	council	10	0	Ryan J. Delaney	2020-11-03	?	869	18	2	?		 							0	1	10
-5642	vil-cou	38700	holly	council	10	0	Debra Musgrave	2020-11-03	?	967	20	2	?		 		www.hollyvillage.org	dmusgrave@hollyvillage.org		504 ½ East Maple . Holly, Michigan 48442		0	2	10
-5643	vil-cou	38700	holly	council	10	0	James Perkins	2020-11-03	?	797	16	2	?		 		www.hollyvillage.org	jperkins@hollyvillage.org		504 ½ East Maple . Holly, Michigan 48442		0	3	10
+5642	vil-cou	38700	holly	council	10	0	Debra Musgrave	2020-11-03	?	967	20	2	?		 		www.hollyvillage.org	dmusgrave@hollyvillage.org		504 1/2 East Maple . Holly, Michigan 48442		0	2	10
+5643	vil-cou	38700	holly	council	10	0	James Perkins	2020-11-03	?	797	16	2	?		 		www.hollyvillage.org	jperkins@hollyvillage.org		504 1/2 East Maple . Holly, Michigan 48442		0	3	10
 5644	vil-cou	38700	holly	council	10	0	Buster Winebrenner	2020-11-03	?	1652	100	2	?		P							0	4	10
-7697	vil-cou	38700	holly	council	10	0	April Brandon	2022-11-08	?	976	21	2	?		 		www.hollyvillage.org	abrandon@hollyvillage.org		504 ½ East Maple . Holly, Michigan 48442		0	5	10
-7698	vil-cou	38700	holly	council	10	0	Amber Kier	2022-11-08	?	783	16	2	?		 		www.hollyvillage.org	akier@hollyvillage.org		504 ½ East Maple . Holly, Michigan 48442		0	6	10
-7699	vil-cou	38700	holly	council	10	0	Richard Kinnamon	2022-11-08	?	564	12	2	?		 		www.hollyvillage.org	rkinnamon@hollyvillage.org		504 ½ East Maple . Holly, Michigan 48442		0	7	10
+7697	vil-cou	38700	holly	council	10	0	April Brandon	2022-11-08	?	976	21	2	?		 		www.hollyvillage.org	abrandon@hollyvillage.org		504 1/2 East Maple . Holly, Michigan 48442		0	5	10
+7698	vil-cou	38700	holly	council	10	0	Amber Kier	2022-11-08	?	783	16	2	?		 		www.hollyvillage.org	akier@hollyvillage.org		504 1/2 East Maple . Holly, Michigan 48442		0	6	10
+7699	vil-cou	38700	holly	council	10	0	Richard Kinnamon	2022-11-08	?	564	12	2	?		 		www.hollyvillage.org	rkinnamon@hollyvillage.org		504 1/2 East Maple . Holly, Michigan 48442		0	7	10
 11111	vil-cou	38700	holly	council	10	0	Thomas Ryan	2024-11-05	?	1144	29	2	?		 							0	8	10
 11112	vil-cou	38700	holly	council	10	0	Daniel Wendel	2024-11-05	?	827	21	2	?		 							0	9	10
 11113	vil-cou	38700	holly	council	10	0	Buster Winebrenner	2024-11-05	?	1126	28	2	?		 							0	10	10
@@ -445,7 +445,7 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 4006	town	59460	novi	town-treas	1	0	David C. Hall	2024-11-05	N	89	100	4	 		 							4	1	1
 4914	town-cou	59460	novi	council	2	0	Nathan J. Foster	2024-11-05	D	83	52	4	 		 							4	1	2
 4915	town-cou	59460	novi	council	2	0	Kevin McCallum	2024-11-05	N	76	47	4	 		 							4	2	2
-5920	city	59920	oak park	mayor	1	0	Marian McClellan	2025-11-04	?	3935	99	2	 		 		www.oakparkmi.gov	&nbsp;mmcclellan@oakparkmi.gov	248-691-7410	14000 Oak Park Blvd Oak Park, Michigan  48237		2	1	1
+5920	city	59920	oak park	mayor	1	0	Marian McClellan	2025-11-04	?	3935	99	2	 		 		www.oakparkmi.gov	mmcclellan@oakparkmi.gov	248-691-7410	14000 Oak Park Blvd Oak Park, Michigan  48237		2	1	1
 6120	city-cou	59920	oak park		4	0	Stephanie Crawford	2025-11-04	?	3636	52	4	 		 							4	1	4
 6121	city-cou	59920	oak park		4	0	Shaun Edward Whitehead	2025-11-04	?	3231	47	4	 		 		www.oakparkmi.gov	swhitehead@oakparkmi.gov	248-691-7556	14000 Oak Park Blvd Oak Park, Michigan  48237		4	2	4
 8070	city-cou	59920	oak park		4	0	Julie Edgar	2023-11-07	?	3254	36	4	 		 		www.oakparkmi.gov	jedgar@oakparkmi.gov	248-691-7556	14000 Oak Park Blvd Oak Park, Michigan  48237		4	3	4
@@ -454,7 +454,7 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 1917	schl-cou	26190	oak park		9	0	Maxine Gutfreund	2020-11-03	?	4039	24	6	Y	R	 							6	2	9
 1918	schl-cou	26190	oak park		9	0	Claudette Lunkins	2022-11-08	?	4558	40	6	 	R	 							6	3	9
 7127	schl-cou	26190	oak park		9	0	Paige Mattison	2022-11-08	?	3937	34	6	 	R	 		www.oakparkschools.org	Paige.mattison@opsk12.org		13900 Granzon  Oak Park, MI 48237		6	4	9
-9006	schl-cou	26190	oak park		9	0	Xondra Clark	2024-11-05	?	4253	20	6	 		 		www.oakparkschools.org	xondra.clark@opsk12.org&nbsp;		13900 Granzon  Oak Park, MI 48237		6	5	9
+9006	schl-cou	26190	oak park		9	0	Xondra Clark	2024-11-05	?	4253	20	6	 		 		www.oakparkschools.org	xondra.clark@opsk12.org		13900 Granzon  Oak Park, MI 48237		6	5	9
 9007	schl-cou	26190	oak park		9	0	Dawn Corporan	2024-11-05	?	4235	20	6	 		 		www.oakparkschools.org	Dawn.Corporan@opsk12.org		13900 Granzon  Oak Park, MI 48237		6	6	9
 9008	schl-cou	26190	oak park		9	0	Aisha Tyler	2024-11-05	?	5632	26	6	 		 							6	7	9
 9009	schl-cou	26190	oak park		9	0	Tiffany L. Scott	2024-11-05	?	6820	73	6	 		P							6	8	9
@@ -466,7 +466,7 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 4917	town-cou	59820	oakland charter	council	4	0	Emily Campbell	2024-11-05	R	8209	25	4	 		 							4	1	4
 4918	town-cou	59820	oakland charter	council	4	0	John Casadei	2024-11-05	R	8015	25	4	 		 							4	2	4
 4919	town-cou	59820	oakland charter	council	4	0	Jack E. Elder	2024-11-05	R	7886	24	4	 		 		www.oaklandtownship.org	jelder@oaklandtownship.org		4393 Collins Rd Rochester, Michigan  48306		4	3	4
-4920	town-cou	59820	oakland charter	council	4	0	Jeanne Langlois	2024-11-05	R	7889	24	4	 		 		www.oaklandtownship.org	&nbsp;jlanglois@oaklandtownship.org		4393 Collins Rd Rochester, Michigan  48306		4	4	4
+4920	town-cou	59820	oakland charter	council	4	0	Jeanne Langlois	2024-11-05	R	7889	24	4	 		 		www.oaklandtownship.org	jlanglois@oaklandtownship.org		4393 Collins Rd Rochester, Michigan  48306		4	4	4
 586	city-cou	61020	orchard lake		7	0	Kelly Mandel	2023-11-07	?	240	35	3	Y		 		www.cityoforchardlake.com	KMandel@cityoforchardlake.com		3955 Orchard Lake Rd. Orchard Lake, Michigan  48323		3	1	7
 587	city-cou	61020	orchard lake		7	0	David Steuer	2023-11-07	?	240	35	3	Y		 		www.cityoforchardlake.com	DSteuer@cityoforchardlake.com		3955 Orchard Lake Rd. Orchard Lake, Michigan  48323		3	2	7
 588	city-cou	61020	orchard lake		7	0	Joseph S. Majcher	2024-11-05	?	570	31	3	 		 							3	3	7
@@ -530,9 +530,9 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 6142	city-cou	65440	pontiac		1	5	William A. Carrington	2025-11-04	?	1027	100	4	 		 							4	1	1
 6143	city-cou	65440	pontiac		1	6	Regina K. Campbell	2025-11-04	?	1299	88	4	 		 							4	1	1
 1985	schl-cou	28740	pontiac		8	0	Jennifer L. Dooley	2024-11-05	?	7619	14	4	 	R	 							4	1	8
-1986	schl-cou	28740	pontiac		8	0	G. Kevin Gross	2024-11-05	?	7295	13	4	 	R	 		www.pontiac.k12.mi.us	kevin.gross@pontiacschools.org&nbsp;	248-451-6800	47200 Woodward Avenue Pontiac MI 48342		4	2	8
+1986	schl-cou	28740	pontiac		8	0	G. Kevin Gross	2024-11-05	?	7295	13	4	 	R	 		www.pontiac.k12.mi.us	kevin.gross@pontiacschools.org	248-451-6800	47200 Woodward Avenue Pontiac MI 48342		4	2	8
 1987	schl-cou	28740	pontiac		8	0	Tanisha Miller	2024-11-05	?	6554	12	4	 	R	 							4	3	8
-7191	schl-cou	28740	pontiac		8	0	Kenyada Bowman	2022-11-08	?	12907	53	4	 		 		www.pontiac.k12.mi.us	kenyada.bowman@pontiacschools.org&nbsp;	248-451-6800	47200 Woodward Avenue Pontiac MI 48342		6	4	8
+7191	schl-cou	28740	pontiac		8	0	Kenyada Bowman	2022-11-08	?	12907	53	4	 		 		www.pontiac.k12.mi.us	kenyada.bowman@pontiacschools.org	248-451-6800	47200 Woodward Avenue Pontiac MI 48342		6	4	8
 7192	schl-cou	28740	pontiac		8	0	ShaQuana Davis-Smith	2022-11-08	?	11129	46	4	 		 		www.pontiac.k12.mi.us	shaquana.davis-smith@pontiacschools.org	248-451-6800	47200 Woodward Avenue Pontiac MI 48342		6	5	8
 7193	schl-cou	28740	pontiac		8	0	Anisha D. Hannah	2022-11-08	?	11977	52	4	Y		 		www.pontiac.k12.mi.us	anisha.hannah@pontiacschools.org	248-451-6800	47200 Woodward Avenue Pontiac MI 48342		4	6	8
 7194	schl-cou	28740	pontiac		8	0	Marcus Terry	2022-11-08	?	10990	47	4	Y		 		www.pontiac.k12.mi.us	marcus.terry@pontiacschools.org	248-451-6800	47200 Woodward Avenue Pontiac MI 48342		4	7	8

@@ -27,11 +27,11 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 9007	schl-cou	2670	almont		9	0	Katie Rotarius	2024-11-05	N	478	53	6	Y		P		https://www.almontschools.org/board		810-798-8561	4701 Howland Rd. Almont, MI 48003	
 9008	schl-cou	2670	almont		9	0	Russell Buero	2024-11-05	N	596	50	6					https://www.almontschools.org/board		810-798-8561	4701 Howland Rd. Almont, MI 48003	
 1962	schl-cou	2790	anchor bay		4	0	Dennis Richards	2020-11-03	?	750	29	6	Y				www.anchorbay.misd.net	DennisRichardsForABSchoolBoard@gmail.com	508-344-4312	5201 County Line Rd Casco Twp, MI 48064	
-7158	schl-cou	2790	anchor bay		4	0	Patrick Green	2022-11-08	?	383	24	6					www.anchorbay.misd.net	pgreen@abs.misd.net&nbsp;&nbsp;	586-265-7872	5201 County Line Rd Casco Twp, MI 48064	
+7158	schl-cou	2790	anchor bay		4	0	Patrick Green	2022-11-08	?	383	24	6					www.anchorbay.misd.net	pgreen@abs.misd.net	586-265-7872	5201 County Line Rd Casco Twp, MI 48064	
 9028	schl-cou	2790	anchor bay		4	0	Brian Powers	2024-11-05	N	7271	28	6					www.anchorbay.misd.net			5201 County Line Rd Casco Twp, MI 48064	
 9029	schl-cou	2790	anchor bay		4	0	Jamie Sonneberger	2024-11-05	N	5081	19	6					https://www.anchorbay.misd.net/departments/board-of-education/	jsonneberger@abs.misd.net	(586) 725-2861	5201 County Line Rd Casco Twp, MI 48064	
 2087	schl-cou	3240	armada		4	0	Susan Nieman	2024-11-05	N	3659	98	6	Y		P		www.armadaschools.org	snieman@armadaschools.org	586-784-2112	74500 Burk St. Armada, MI 48005	
-7256	schl-cou	3240	armada		4	0	Stacey Wolak	2022-11-08	?	315	25	6					www.armadaschools.org	&nbsp;swolak@armadaschools.org	586-784-2112	74500 Burk St. Armada, MI 48005	
+7256	schl-cou	3240	armada		4	0	Stacey Wolak	2022-11-08	?	315	25	6					www.armadaschools.org	swolak@armadaschools.org	586-784-2112	74500 Burk St. Armada, MI 48005	
 7257	schl-cou	3240	armada		4	0	Chad Nikkel	2024-11-05	N	2439	31	6					www.armadaschools.org		586-784-2112	74500 Burk St. Armada, MI 48005	
 9101	schl-cou	3240	armada		4	0	Michele Meerschaert	2024-11-05	N	2014	26	6					www.armadaschools.org	mmeerschaert@armadaschools.org	586-784-2112	74500 Burk St. Armada, MI 48005	
 9470	town	3540	armada	town-clerk	1	0	Mary K. Swiacki	2024-11-05	R	2748	98	4					http://www.armadatwp.org/board-of-trustees/	clerk@armadatwp.org	586-784-5200	23121 East Main Street P.o. Box 578 Armada, Michigan  48005	
@@ -106,9 +106,9 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 10377	town-cou	36820	harrison	council	4	0	Liza Brown	2024-11-05	R	8790	21	4					www.harrisontownshipmi.gov/government/elected_officials/brian_batkins.php		586-466-1400	38151 Lanse Creuse Road Harrison Township, Michigan  48045	
 10378	town-cou	36820	harrison	council	4	0	David Bratto	2024-11-05	R	8743	21	4					www.harrisontownshipmi.gov/government/elected_officials/bill_bitonti.php	dbratto@harrisontownshipmi.gov	586-466-1400	38151 Lanse Creuse Road Harrison Township, Michigan  48045	
 10379	town-cou	36820	harrison	council	4	0	Dean Olgiati	2024-11-05	R	8380	20	4					www.harrisontownshipmi.gov/government/elected_officials/bill_servial.php	dolgiati@harrisontownshipmi.gov	586-466-1400	38151 Lanse Creuse Road Harrison Township, Michigan  48045	
-9112	schl-cou	32670	lake shore		3	0	Susan J. DeLong	2024-11-05	N	7141	50	6					http://lakeshoreschools.org	&nbsp;sdelong@lsps.org		23055 Masonic Blvd. Saint Clair Shores, MI 48082	
+9112	schl-cou	32670	lake shore		3	0	Susan J. DeLong	2024-11-05	N	7141	50	6					http://lakeshoreschools.org	sdelong@lsps.org		23055 Masonic Blvd. Saint Clair Shores, MI 48082	
 9113	schl-cou	32670	lake shore		3	0	Kurt Joseph Ziegler	2024-11-05	N	6688	47	6					http://lakeshoreschools.org	kziegler@lsps.org		23055 Masonic Blvd.Saint Clair Shores, MI 48082	
-9114	schl-cou	32670	lake shore		3	0	Kenneth R. Gulock	2024-11-05	N	8683	97	6	Y		P		http://lakeshoreschools.org	&nbsp;kgulock@lsps.org		23055 Masonic Blvd. Saint Clair Shores, MI 48082	
+9114	schl-cou	32670	lake shore		3	0	Kenneth R. Gulock	2024-11-05	N	8683	97	6	Y		P		http://lakeshoreschools.org	kgulock@lsps.org		23055 Masonic Blvd. Saint Clair Shores, MI 48082	
 8849	schl-cou	20880	lakeview		3	0	Michael Bayer	2024-11-05	N	5814	35	6					www.lakeviewpublicschools.org	mbayer@scslakeview-k12.com	586-445-4000	27575 Harper Ave. St. Clair Shores, MI 48081	
 8850	schl-cou	20880	lakeview		3	0	Robin Stanton	2024-11-05	N	5209	31	6					www.lakeviewpublicschools.org		586-445-4000	27575 Harper Ave. St. Clair Shores, MI 48081	
 8851	schl-cou	20880	lakeview		3	0	Genevieve Taylor	2024-11-05	N	4972	30	6					www.lakeviewpublicschools.org	gtaylor@scslakeview-k12.com	586-445-4000	27575 Harper Ave. St. Clair Shores, MI 48081	
@@ -145,7 +145,7 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 8954	schl-cou	24690	mount clemens		4	0	Paul Sheppard	2024-11-05	N	3695	18	4					www.mtcps.org		(586) 469-6100	167 Cass Avenue  Mount Clemens, MI 48043	
 8955	schl-cou	24690	mount clemens		4	0	Alex Bronson	2024-11-05	N	3496	17	4					www.mtcps.org			167 Cass Avenue  Mount Clemens, MI 48043	
 11328	city	57100	new baltimore	clerk	1	0	Marcella Shinska	2025-11-04	N	2429	98	4					www.cityofnewbaltimore.org	mshinska@cityofnewbaltimore.org	586-725-2151	36535 Green Street New Baltimore, Michigan 48047	
-11336	city	57100	new baltimore	mayor	1	0	Tom Semaan	2025-11-04	N	1520	52	4					www.cityofnewbaltimore.org	tsemaan@cityofnewbaltimore.org	586-725-2151	36535 Green Street New Baltimore, Michigan&nbsp; 48047	
+11336	city	57100	new baltimore	mayor	1	0	Tom Semaan	2025-11-04	N	1520	52	4					www.cityofnewbaltimore.org	tsemaan@cityofnewbaltimore.org	586-725-2151	36535 Green Street New Baltimore, Michigan 48047	
 11343	city	57100	new baltimore	treas	1	0	Jeanne Bade	2025-11-04	N	1795	66	4					www.cityofnewbaltimore.org		586-725-2151	36535 Green Street New Baltimore, Michigan 48047	
 11409	city-cou	57100	new baltimore		3	0	David D. Duffy	2025-11-04	N	1918	29	4					www.cityofnewbaltimore.org	dduffy@cityofnewbaltimore.org	586-805-6990	36535 Green Street New Baltimore, Michigan 48047	
 11410	city-cou	57100	new baltimore		3	0	Mel Eason	2025-11-04	N	1635	25	4					www.cityofnewbaltimore.org		586-725-2151	36535 Green Street New Baltimore, Michigan 48047	

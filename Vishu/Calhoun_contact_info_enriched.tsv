@@ -31,20 +31,20 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 7321	schl-cou	3510	athens		8	0	John Knowles	2022-11-08	N	1315	25	4	Y				www.athensk12.org	knowlesj@athensk12.org	269-729-5414	300 E Holcomb St, Athens, MI 49011	
 7322	schl-cou	3510	athens		8	0	Mike R. Harvey	2022-11-08	N	1349	26	4	Y				www.athensk12.org	harveym@athensk12.org	269-729-5414	300 E Holcomb St, Athens, MI 49011	
 7323	schl-cou	3510	athens		8	0	Teri S. Loew	2024-11-05	?	1288	26	4					www.athensk12.org	loewt@athensk12.org	269-729-5414	300 E Holcomb St, Athens, MI 49011	
-2564	town	3900	athens	town-clerk	1	0	Debera Denney	2024-11-05	?	1116	100	4					www.athenstwp.org		269-729-5305	130 East Burr Oak Street&nbsp;PO BOX 368Athens, MI 49011	
-3230	town	3900	athens	town-super	1	0	Stephen G. Irons	2024-11-05	?	1099	100	4					www.athenstwp.org		269-317-8214	130 East Burr Oak Street&nbsp;PO BOX 368Athens, MI 49011	
-3850	town	3900	athens	town-treas	1	0	Michael V. Irons	2024-11-05	?	1123	100	4					www.athenstwp.org		269-729-5305	130 East Burr Oak Street&nbsp;PO BOX 368Athens, MI 49011	
-4633	town-cou	3900	athens	council	2	0	Cliff Denney	2024-11-05	?	1027	50	4					www.athenstwp.org		269-275-0458	130 East Burr Oak Street&nbsp;PO BOX 368Athens, MI 49011	
-4634	town-cou	3900	athens	council	2	0	Stephen Tuttle	2024-11-05	?	1009	49	4					www.athenstwp.org		269-317-8218	130 East Burr Oak Street&nbsp;PO BOX 368Athens, MI 49011	
-5378	vil	3880	athens	clerk	1	0	Bonnie J. Conant	2024-11-05	?	414	100	2	Y				http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI&nbsp; 49011	
-5433	vil	3880	athens	pres	1	0	Martin Preston	2024-11-05	?	247	55	2	Y				http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI&nbsp; 49011	
-5516	vil	3880	athens	treas	1	0	Anita K. Shoup	2024-11-05	?	414	100	2	Y				http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI&nbsp; 49011	
-5641	vil-cou	3880	athens	council	6	0	J. R. Brunner	2024-11-05	?	352	37	4		R			http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI&nbsp; 49011	
-5642	vil-cou	3880	athens	council	6	0	Matthew Harvey	2024-11-05	?	329	35	4		R			http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI&nbsp; 49011	
-7688	vil-cou	3880	athens	council	6	0	Lucy M. Lamson	2022-11-08	?	265	33	4	Y				http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI&nbsp; 49011	
-7689	vil-cou	3880	athens	council	6	0	Jerry G. Qualls	2022-11-08	?	265	33	4	Y				http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI&nbsp; 49011	
-7690	vil-cou	3880	athens	council	6	0	Robin H. Shoup	2022-11-08	?	272	33	4	Y				http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI&nbsp; 49011	
-7691	vil-cou	3880	athens	council	6	0	Donald Crapoff	2024-11-05	?	258	27	4					http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI&nbsp; 49011	
+2564	town	3900	athens	town-clerk	1	0	Debera Denney	2024-11-05	?	1116	100	4					www.athenstwp.org		269-729-5305	130 East Burr Oak StreetPO BOX 368Athens, MI 49011	
+3230	town	3900	athens	town-super	1	0	Stephen G. Irons	2024-11-05	?	1099	100	4					www.athenstwp.org		269-317-8214	130 East Burr Oak StreetPO BOX 368Athens, MI 49011	
+3850	town	3900	athens	town-treas	1	0	Michael V. Irons	2024-11-05	?	1123	100	4					www.athenstwp.org		269-729-5305	130 East Burr Oak StreetPO BOX 368Athens, MI 49011	
+4633	town-cou	3900	athens	council	2	0	Cliff Denney	2024-11-05	?	1027	50	4					www.athenstwp.org		269-275-0458	130 East Burr Oak StreetPO BOX 368Athens, MI 49011	
+4634	town-cou	3900	athens	council	2	0	Stephen Tuttle	2024-11-05	?	1009	49	4					www.athenstwp.org		269-317-8218	130 East Burr Oak StreetPO BOX 368Athens, MI 49011	
+5378	vil	3880	athens	clerk	1	0	Bonnie J. Conant	2024-11-05	?	414	100	2	Y				http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI 49011	
+5433	vil	3880	athens	pres	1	0	Martin Preston	2024-11-05	?	247	55	2	Y				http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI 49011	
+5516	vil	3880	athens	treas	1	0	Anita K. Shoup	2024-11-05	?	414	100	2	Y				http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI 49011	
+5641	vil-cou	3880	athens	council	6	0	J. R. Brunner	2024-11-05	?	352	37	4		R			http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI 49011	
+5642	vil-cou	3880	athens	council	6	0	Matthew Harvey	2024-11-05	?	329	35	4		R			http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI 49011	
+7688	vil-cou	3880	athens	council	6	0	Lucy M. Lamson	2022-11-08	?	265	33	4	Y				http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI 49011	
+7689	vil-cou	3880	athens	council	6	0	Jerry G. Qualls	2022-11-08	?	265	33	4	Y				http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI 49011	
+7690	vil-cou	3880	athens	council	6	0	Robin H. Shoup	2022-11-08	?	272	33	4	Y				http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI 49011	
+7691	vil-cou	3880	athens	council	6	0	Donald Crapoff	2024-11-05	?	258	27	4					http://athensarea.org		269-729-5515	129 East Burr Oak Street, Athens, MI 49011	
 430	city	5920	battle creek	mayor	1	0	Mark A. Behnke	2024-11-05	?	14470	99	2	Y				www.battlecreekmi.gov		269-441-7663	10 N. Division St. Battle Creek, MI, 49014	
 575	city-cou	5920	battle creek		3	0	Paige Katsarsky-Smith	2024-11-05	?	7334	23	2	Y				www.battlecreekmi.gov			10 N. Division St. Battle Creek, MI, 49014	
 578	city-cou	5920	battle creek		1	1	Jessica LaCosse	2024-11-05	?	1528	53	2	Y				www.battlecreekmi.gov			10 N. Division St. Battle Creek, MI, 49014	
@@ -79,7 +79,7 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 2956	town	11820	burlington	town-cons	1	0	L. Douglas Mack	2024-11-05	?	840	100	4	?				burlingtontownshipcalhouncountymi.com			135 Elm Street, P. O. Box 69  Burlington, Michigan, 49029	
 3025	town	11820	burlington	town-super	1	0	Jeff Eyre	2024-11-05	?	875	100	4					burlingtontownshipcalhouncountymi.com	jeffeyre@yahoo.com	269-209-7875	135 Elm Street, P. O. Box 69  Burlington, Michigan, 49029	
 3645	town	11820	burlington	town-treas	1	0	Sara Converse	2024-11-05	?	851	100	4					burlingtontownshipcalhouncountymi.com			135 Elm Street, P. O. Box 69  Burlington, Michigan, 49029	
-4278	town-cou	11820	burlington	council	2	0	Barton Boyer	2024-11-05	?	762	48	4					burlingtontownshipcalhouncountymi.com		269-967-7308	135 Elm Street, P. O. Box 69&nbsp;Burlington, Michigan, 49029	
+4278	town-cou	11820	burlington	council	2	0	Barton Boyer	2024-11-05	?	762	48	4					burlingtontownshipcalhouncountymi.com		269-967-7308	135 Elm Street, P. O. Box 69Burlington, Michigan, 49029	
 4279	town-cou	11820	burlington	council	2	0	Gene Mack	2024-11-05	?	805	51	4					burlingtontownshipcalhouncountymi.com			135 Elm Street, P. O. Box 69  Burlington, Michigan, 49029	
 5403	vil	11800	burlington	pres	1	0	Deborah Kaye Vanderpool	2024-11-05	?	57	50	2	Y				https://worldaffairscouncils.org/who-we-are/staff/matthew-hughes/				
 5551	vil-cou	11800	burlington	council	6	0	Jacklyn Gibson	2024-11-05	?	45	17	4					https://worldaffairscouncils.org/who-we-are/staff/matthew-hughes/		(517) 351-6840	596 S. Hamilton Street, Ypsilanti, MI 48197	
@@ -134,15 +134,15 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 8747	schl-cou	17250	gull lake		7	0	Eddie Keene	2024-11-05	?	4936	31	6					www.gulllakecs.org	ekeenegl@gmail.com	269-548-3400	10100 E D Ave Richland, MI 49083	
 8748	schl-cou	17250	gull lake		7	0	John W. McCann	2024-11-05	?	5195	32	6					www.gulllakecs.org	johnmccann66@gmail.com	269-548-3400	10100 E D Ave Richland, MI 49083	
 8749	schl-cou	17250	gull lake		7	0	Laura M. Zervic	2024-11-05	?	5487	34	6					www.gulllakecs.org	ZervicGLBoard@gmail.com	269-548-3400	10100 E D Ave Richland, MI 49083	
-1633	schl-cou	17730	harper creek		9	0	Beau Bess	2020-11-03	?	3093	33	6	Y				www.harpercreek.net			7454 B Drive NorthBattle Creek,&nbsp;MI&nbsp;49014	
-1634	schl-cou	17730	harper creek		9	0	Barry J. Smith	2020-11-03	?	3503	37	6	Y				www.harpercreek.net			7454 B Drive NorthBattle Creek,&nbsp;MI&nbsp;49014	
-1635	schl-cou	17730	harper creek		9	0	Tim Martin	2020-11-03	?	2900	51	6			P		www.harpercreek.net			7454 B Drive NorthBattle Creek,&nbsp;MI&nbsp;49014	
-6887	schl-cou	17730	harper creek		9	0	Brad M. Halverson	2022-11-08	?	2838	23	6		R			www.harpercreek.net			7454 B Drive NorthBattle Creek,&nbsp;MI&nbsp;49014	
-6888	schl-cou	17730	harper creek		9	0	Don Myers	2022-11-08	?	2345	19	6		R			www.harpercreek.net			7454 B Drive NorthBattle Creek,&nbsp;MI&nbsp;49014	
-6889	schl-cou	17730	harper creek		9	0	Sara Wallace	2022-11-08	?	2828	23	6		R			www.harpercreek.net			7454 B Drive NorthBattle Creek,&nbsp;MI&nbsp;49014	
-6890	schl-cou	17730	harper creek		9	0	Erin Allwardt	2024-11-05	?	4009	48	6					www.harpercreek.net			7454 B Drive NorthBattle Creek,&nbsp;MI&nbsp;49014	
-8761	schl-cou	17730	harper creek		9	0	Ashley Risner	2024-11-05	?	4315	51	6					www.harpercreek.net			7454 B Drive NorthBattle Creek,&nbsp;MI&nbsp;49014	
-8762	schl-cou	17730	harper creek		9	0	Chae Waterson	2024-11-05	?	5024	100	6			P		www.harpercreek.net			7454 B Drive NorthBattle Creek,&nbsp;MI&nbsp;49014	
+1633	schl-cou	17730	harper creek		9	0	Beau Bess	2020-11-03	?	3093	33	6	Y				www.harpercreek.net			7454 B Drive NorthBattle Creek,MI49014	
+1634	schl-cou	17730	harper creek		9	0	Barry J. Smith	2020-11-03	?	3503	37	6	Y				www.harpercreek.net			7454 B Drive NorthBattle Creek,MI49014	
+1635	schl-cou	17730	harper creek		9	0	Tim Martin	2020-11-03	?	2900	51	6			P		www.harpercreek.net			7454 B Drive NorthBattle Creek,MI49014	
+6887	schl-cou	17730	harper creek		9	0	Brad M. Halverson	2022-11-08	?	2838	23	6		R			www.harpercreek.net			7454 B Drive NorthBattle Creek,MI49014	
+6888	schl-cou	17730	harper creek		9	0	Don Myers	2022-11-08	?	2345	19	6		R			www.harpercreek.net			7454 B Drive NorthBattle Creek,MI49014	
+6889	schl-cou	17730	harper creek		9	0	Sara Wallace	2022-11-08	?	2828	23	6		R			www.harpercreek.net			7454 B Drive NorthBattle Creek,MI49014	
+6890	schl-cou	17730	harper creek		9	0	Erin Allwardt	2024-11-05	?	4009	48	6					www.harpercreek.net			7454 B Drive NorthBattle Creek,MI49014	
+8761	schl-cou	17730	harper creek		9	0	Ashley Risner	2024-11-05	?	4315	51	6					www.harpercreek.net			7454 B Drive NorthBattle Creek,MI49014	
+8762	schl-cou	17730	harper creek		9	0	Chae Waterson	2024-11-05	?	5024	100	6			P		www.harpercreek.net			7454 B Drive NorthBattle Creek,MI49014	
 1646	schl-cou	17970	hastings		7	0	Bradley Tolles	2020-11-03	?	5004	25	6	Y				www.hassk12.org	brad.tolles@hassk12.org		232 W Grand St, Hastings, MI 49058	
 1647	schl-cou	17970	hastings		7	0	Luke Haywood	2020-11-03	?	6151	31	6	Y				www.hassk12.org	luke.haywood@hassk12.org		232 W Grand St, Hastings, MI 49058	
 1648	schl-cou	17970	hastings		7	0	Mike Nickels	2020-11-03	?	5162	26	6	Y				www.hassk12.org	mike.nickels@hassk12.org		232 W Grand St, Hastings, MI 49058	
@@ -178,7 +178,7 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 8847	schl-cou	20850	lakeview		8	0	Jeffrey Perry	2024-11-05	?	5614	46	6					www.lakeviewspartans.org	jperry@lakeviewspartans.org		15 Arbor Street, Battle Creek, MI 49015	
 8848	schl-cou	20850	lakeview		8	0	Michael E. Glass	2024-11-05	?	7625	100	6	Y		P		www.lakeviewspartans.org	mglass@lakeviewspartans.org		15 Arbor Street, Battle Creek, MI 49015	
 2620	town	46620	lee	town-clerk	1	0	Samantha J. VanDorsten	2024-11-05	?	551	100	4					www.leetwpcc.com/elected-officials	Clerk@leetwpcc.com	269-749-9292	23045 21 Mile Road, Olivet, Michigan 49076	
-3285	town	46620	lee	town-super	1	0	Brad Shrontz	2024-11-05	?	547	100	4					www.leetwpcc.com/elected-officials	Supervisor@leetwpcc.com	269-317-7459	23045 21 Mile Road, Olivet,&nbsp;Michigan 49076	
+3285	town	46620	lee	town-super	1	0	Brad Shrontz	2024-11-05	?	547	100	4					www.leetwpcc.com/elected-officials	Supervisor@leetwpcc.com	269-317-7459	23045 21 Mile Road, Olivet,Michigan 49076	
 3906	town	46620	lee	town-treas	1	0	Douglas Mathewson	2024-11-05	?	540	100	4					www.leetwpcc.com/elected-officials			23045 21 Mile Road, Olivet, Michigan 49076	
 4739	town-cou	46620	lee	council	2	0	Scott Piepkow	2024-11-05	?	527	72	4					www.leetwpcc.com/elected-officials			23045 21 Mile Road, Olivet, Michigan 49076	
 4740	town-cou	46620	lee	council	2	0	Casey Hall	2024-11-05	?	196	27	4					www.leetwpcc.com/elected-officials		269-317-2790	23045 21 Mile Road, Olivet, Michigan 49076	
@@ -243,16 +243,16 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 7124	schl-cou	26370	olivet		8	0	Kalyn Critchlow	2022-11-08	?	983	17	6					https://www.olivetschools.org/board			255 First Street  Olivet Michigan, 49076	
 9002	schl-cou	26370	olivet		8	0	Jeff Barkley	2024-11-05	?	391	37	6					https://www.olivetschools.org/board			255 First Street  Olivet Michigan, 49076	
 9003	schl-cou	26370	olivet		8	0	Katie Starkweather	2024-11-05	?	330	31	6					https://www.olivetschools.org/board			255 First Street  Olivet Michigan, 49076	
-1954	schl-cou	27810	pennfield		10	0	Jeffrey Lee Wolfersberger	2020-11-03	W	134	98	6			P		https://www.pennfield.net/board			8587 Pennfield Road, Battle Creek, MI 49017&nbsp;	
-1955	schl-cou	27810	pennfield		10	0	Dana Wells-Jenney	2020-11-03	?	1118	12	6	Y	R			https://www.pennfield.net/board			8587 Pennfield Road, Battle Creek, MI 49017&nbsp;	
-1956	schl-cou	27810	pennfield		10	0	Sarah Marie Jones	2020-11-03	?	1278	14	6	Y	R			https://www.pennfield.net/board	joness@pennfield.net		8587 Pennfield Road, Battle Creek, MI 49017&nbsp;	
-1957	schl-cou	27810	pennfield		10	0	Tim Wood	2020-11-03	?	1144	12	6	Y	R			https://www.pennfield.net/board	woodt@pennfield.net		8587 Pennfield Road, Battle Creek, MI 49017&nbsp;	
-7155	schl-cou	27810	pennfield		10	0	Brad C. Crandall	2022-11-08	?	1541	26	6		R			https://www.pennfield.net/board	crandallb@pennfield.net		8587 Pennfield Road, Battle Creek, MI 49017&nbsp;	
-7156	schl-cou	27810	pennfield		10	0	Krystal Newman	2022-11-08	?	1086	18	6		R			https://www.pennfield.net/board			8587 Pennfield Road, Battle Creek, MI 49017&nbsp;	
-7157	schl-cou	27810	pennfield		10	0	Dawn R. Forton	2024-11-05	?	2376	49	6					https://www.pennfield.net/board	fortond@pennfield.net		8587 Pennfield Road, Battle Creek, MI 49017&nbsp;	
-9025	schl-cou	27810	pennfield		10	0	Stephen Herbstreith	2024-11-05	?	2459	50	6					https://www.pennfield.net/board			8587 Pennfield Road, Battle Creek, MI 49017&nbsp;	
-9026	schl-cou	27810	pennfield		10	0	Austin Brown	2024-11-05	?	1858	50	6			P		https://www.pennfield.net/board			8587 Pennfield Road, Battle Creek, MI 49017&nbsp;	
-9027	schl-cou	27810	pennfield		10	0	Jennifer Sheldon	2024-11-05	?	2965	100	6	Y		P		https://www.pennfield.net/board	sheldonj@pennfield.net		8587 Pennfield Road, Battle Creek, MI 49017&nbsp;	
+1954	schl-cou	27810	pennfield		10	0	Jeffrey Lee Wolfersberger	2020-11-03	W	134	98	6			P		https://www.pennfield.net/board			8587 Pennfield Road, Battle Creek, MI 49017	
+1955	schl-cou	27810	pennfield		10	0	Dana Wells-Jenney	2020-11-03	?	1118	12	6	Y	R			https://www.pennfield.net/board			8587 Pennfield Road, Battle Creek, MI 49017	
+1956	schl-cou	27810	pennfield		10	0	Sarah Marie Jones	2020-11-03	?	1278	14	6	Y	R			https://www.pennfield.net/board	joness@pennfield.net		8587 Pennfield Road, Battle Creek, MI 49017	
+1957	schl-cou	27810	pennfield		10	0	Tim Wood	2020-11-03	?	1144	12	6	Y	R			https://www.pennfield.net/board	woodt@pennfield.net		8587 Pennfield Road, Battle Creek, MI 49017	
+7155	schl-cou	27810	pennfield		10	0	Brad C. Crandall	2022-11-08	?	1541	26	6		R			https://www.pennfield.net/board	crandallb@pennfield.net		8587 Pennfield Road, Battle Creek, MI 49017	
+7156	schl-cou	27810	pennfield		10	0	Krystal Newman	2022-11-08	?	1086	18	6		R			https://www.pennfield.net/board			8587 Pennfield Road, Battle Creek, MI 49017	
+7157	schl-cou	27810	pennfield		10	0	Dawn R. Forton	2024-11-05	?	2376	49	6					https://www.pennfield.net/board	fortond@pennfield.net		8587 Pennfield Road, Battle Creek, MI 49017	
+9025	schl-cou	27810	pennfield		10	0	Stephen Herbstreith	2024-11-05	?	2459	50	6					https://www.pennfield.net/board			8587 Pennfield Road, Battle Creek, MI 49017	
+9026	schl-cou	27810	pennfield		10	0	Austin Brown	2024-11-05	?	1858	50	6			P		https://www.pennfield.net/board			8587 Pennfield Road, Battle Creek, MI 49017	
+9027	schl-cou	27810	pennfield		10	0	Jennifer Sheldon	2024-11-05	?	2965	100	6	Y		P		https://www.pennfield.net/board	sheldonj@pennfield.net		8587 Pennfield Road, Battle Creek, MI 49017	
 2747	town	63440	pennfield	town-clerk	1	0	Kathy Case	2024-11-05	?	3671	100	4					www.pennfieldmi.gov	kcase@pennfieldmi.gov		20260 Capital Avenue N.E.Battle Creek, Michigan 49017	
 3413	town	63440	pennfield	town-super	1	0	Kevin Leiter	2024-11-05	?	3121	65	4					www.pennfieldmi.gov	kleiter@pennfieldmi.gov		20260 Capital Avenue N.E.Battle Creek, Michigan 49017	
 4035	town	63440	pennfield	town-treas	1	0	Deborah L. Jackson	2024-11-05	?	3625	100	4					www.pennfieldmi.gov	djackson@pennfieldmi.gov		20260 Capital Avenue N.E.Battle Creek, Michigan 49017	
@@ -288,13 +288,13 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 7287	schl-cou	33750	tekonsha		6	0	Adam Shedd	2022-11-08	?	683	51	6					www.tekonshaschools.org	shedda@tekonsha.k12.mi.us		245 S Elm St, Tekonsha, MI 49092	
 7288	schl-cou	33750	tekonsha		6	0	Sara Griffith	2022-11-08	?	563	42	6					www.tekonshaschools.org	griffiths@tekonsha.k12.mi.us		245 S Elm St, Tekonsha, MI 49092	
 9143	schl-cou	33750	tekonsha		6	0	Brandie Aldrich	2024-11-05	?	890	100	6					www.tekonshaschools.org	aldrichb@tekonsha.k12.mi.us		245 S Elm St, Tekonsha, MI 49092	
-2872	town	79180	tekonsha	town-clerk	1	0	BobbieJo Garnant	2024-11-05	?	480	100	4					tekonshatownship.com	Clerk@TekonshaTownship.com	517-767-3366	166 Spires Parkway, Tekonsha, MI, USA&nbsp;&nbsp;49092-0091&nbsp;	
-7500	town	79180	tekonsha	town-clerk	1	11	Roberta Stemaly	2022-11-08	R	542	100	4			P		tekonshatownship.com		517-767-3022	166 Spires Parkway, Tekonsha, MI, USA&nbsp;&nbsp;49092-0091&nbsp;	
-3540	town	79180	tekonsha	town-super	1	0	Roberta Stemaly	2024-11-05	?	450	81	4					tekonshatownship.com		517-767-3022	166 Spires Parkway, Tekonsha, MI, USA&nbsp;&nbsp;49092-0091&nbsp;	
-4161	town	79180	tekonsha	town-treas	1	0	Lynnette Phillips	2024-11-05	?	498	100	4					tekonshatownship.com	Treasurer@TekonshaTownship.com	517-767-3022	166 Spires Parkway, Tekonsha, MI, USA&nbsp;&nbsp;49092-0091&nbsp;	
-7517	town	79180	tekonsha	town-treas	1	11	Lynnette Phillips	2022-11-08	N	429	100	4			P		tekonshatownship.com	Treasurer@TekonshaTownship.com	517-767-3022	166 Spires Parkway, Tekonsha, MI, USA&nbsp;&nbsp;49092-0091&nbsp;	
-5217	town-cou	79180	tekonsha	council	2	0	George R. Moore	2024-11-05	?	632	68	4					tekonshatownship.com		517-767-3022	166 Spires Parkway, Tekonsha, MI, USA&nbsp;&nbsp;49092-0091&nbsp;	
-5218	town-cou	79180	tekonsha	council	2	0	Jeanette Stiebeling	2024-11-05	?	294	31	4					tekonshatownship.com		517-767-3022	166 Spires Parkway, Tekonsha, MI, USA&nbsp;&nbsp;49092-0091&nbsp;	
+2872	town	79180	tekonsha	town-clerk	1	0	BobbieJo Garnant	2024-11-05	?	480	100	4					tekonshatownship.com	Clerk@TekonshaTownship.com	517-767-3366	166 Spires Parkway, Tekonsha, MI, USA49092-0091	
+7500	town	79180	tekonsha	town-clerk	1	11	Roberta Stemaly	2022-11-08	R	542	100	4			P		tekonshatownship.com		517-767-3022	166 Spires Parkway, Tekonsha, MI, USA49092-0091	
+3540	town	79180	tekonsha	town-super	1	0	Roberta Stemaly	2024-11-05	?	450	81	4					tekonshatownship.com		517-767-3022	166 Spires Parkway, Tekonsha, MI, USA49092-0091	
+4161	town	79180	tekonsha	town-treas	1	0	Lynnette Phillips	2024-11-05	?	498	100	4					tekonshatownship.com	Treasurer@TekonshaTownship.com	517-767-3022	166 Spires Parkway, Tekonsha, MI, USA49092-0091	
+7517	town	79180	tekonsha	town-treas	1	11	Lynnette Phillips	2022-11-08	N	429	100	4			P		tekonshatownship.com	Treasurer@TekonshaTownship.com	517-767-3022	166 Spires Parkway, Tekonsha, MI, USA49092-0091	
+5217	town-cou	79180	tekonsha	council	2	0	George R. Moore	2024-11-05	?	632	68	4					tekonshatownship.com		517-767-3022	166 Spires Parkway, Tekonsha, MI, USA49092-0091	
+5218	town-cou	79180	tekonsha	council	2	0	Jeanette Stiebeling	2024-11-05	?	294	31	4					tekonshatownship.com		517-767-3022	166 Spires Parkway, Tekonsha, MI, USA49092-0091	
 5396	vil	79160	tekonsha	clerk	1	0	Debra Taylor	2024-11-05	?	246	100	2	Y				villageoftekonsha.com			537 North Church Street, PO Box 301 Tekonsha, MI  49092	
 5496	vil	79160	tekonsha	pres	1	0	Daniel Scott Hawver	2024-11-05	W	29	100	2	Y				villageoftekonsha.com			537 North Church Street, PO Box 301 Tekonsha, MI  49092	
 5539	vil	79160	tekonsha	treas	1	0	Rose K. Bush	2024-11-05	?	249	100	2	Y				villageoftekonsha.com			537 North Church Street, PO Box 301 Tekonsha, MI  49092	

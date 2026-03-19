@@ -105,7 +105,7 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 8670	schl-cou	14520	flint		1	0	Linda K. Boose	2024-11-05	?	16	69	6									
 9442	town	29020	flint	town-clerk	1	0	Manya Triplett	2024-11-05	D	11	100	4					www.flinttownship.org/departments/clerk	mtriplett@flinttownship.org	810-600-3212	1490 S Dye Road Flint, Michigan  48532	
 9670	town	29020	flint	town-super	1	0	Karyn Miller	2024-11-05	D	11	100	4					www.flinttownship.org/the-township/board-of-trustees/supervisor	kmiller@flinttownship.org	810-241-2570	1490 S Dye Road Flint, Michigan 48532	
-9883	town	29020	flint	town-treas	1	0	Tom Klee	2024-11-05	D	11	39	4					www.flinttownship.org/the-township/board-of-trustees/treasurer	&nbsp;tklee@flinttownship.org&nbsp;	810-732-1350	1490 S Dye Road Flint, Michigan 48532	
+9883	town	29020	flint	town-treas	1	0	Tom Klee	2024-11-05	D	11	39	4					www.flinttownship.org/the-township/board-of-trustees/treasurer	tklee@flinttownship.org	810-732-1350	1490 S Dye Road Flint, Michigan 48532	
 10259	town-cou	29020	flint	council	4	0	Tenesia Amadou	2024-11-05	D	10	20	4					www.flinttownship.org/the-township/board-of-trustees/trustees			1490 S Dye Road Flint, Michigan 48532	
 10260	town-cou	29020	flint	council	4	0	Gene A. Leverette Sr.	2024-11-05	D	10	20	4					www.flinttownship.org/the-township/board-of-trustees/trustees			1490 S Dye Road Flint, Michigan 48532	
 10261	town-cou	29020	flint	council	4	0	Jenna McIntire	2024-11-05	D	10	20	4					www.flinttownship.org/the-township/board-of-trustees/trustees			1490 S Dye Road Flint, Michigan 48532	
@@ -189,7 +189,7 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 5521	vil	46880	lennon	treas	1	0	Larry Widigan	2024-11-05	?	176	96	2	Y				www.villageoflennon.org/index.php/about-us/village-officials	VILLAGEOFLENNON@LENTEL.COM	(810) 621-4285	11904 Lennon Road P.O. Box 349 Lennon, MI 48449	
 5678	vil-cou	46880	lennon	council	4	0	Paul Terry	2024-11-05	?	117	30	4		R			www.villageoflennon.org/index.php/about-us/village-officials	pterry@lentel.com	(810) 621-4285	11904 Lennon Road P.O. Box 349 Lennon, MI 48449	
 5679	vil-cou	46880	lennon	council	4	0	Keith St. Clair	2024-11-05	?	116	30	4		R			www.villageoflennon.org/index.php/about-us/village-officials	CNCLMANSTCLAIR@LENTEL.COM	(810) 621-4285	11904 Lennon Road P.O. Box 349 Lennon, MI 48449	
-7726	vil-cou	46880	lennon	council	4	0	Byron Vowell	2024-11-05	?	178	98	4	Y		P		www.villageoflennon.org/index.php/about-us/village-officials	&nbsp;BVOWELL@LENTEL.COM	(810) 621-4285	11904 Lennon Road P.O. Box 349 Lennon, MI 48449	
+7726	vil-cou	46880	lennon	council	4	0	Byron Vowell	2024-11-05	?	178	98	4	Y		P		www.villageoflennon.org/index.php/about-us/village-officials	BVOWELL@LENTEL.COM	(810) 621-4285	11904 Lennon Road P.O. Box 349 Lennon, MI 48449	
 7727	vil-cou	46880	lennon	council	4	0	David Campbell	2024-11-05	?	143	37	4					www.villageoflennon.org/index.php/about-us/village-officials	Dcampbell@lentel.com	(810) 621-4285	11904 Lennon Road P.O. Box 349 Lennon, MI 48449	
 8158	city	47820	linden	mayor	1	0	Liz Armstrong	2024-11-05	?	1	50	2	Y				https://www.lindenmi.us/city-council		(810) 735-7980	707 North Bridge Street, Linden, Michigan, 48451	
 8211	city-cou	47820	linden		3	0	Thomas Hicks	2024-11-05	?	745	21	4					https://www.lindenmi.us/city-council	thicks@lindenmi.us	(810) 735-7980	132 E. Broad St. Linden, MI 48451	
@@ -234,7 +234,7 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 9531	town	56160	mundy	town-clerk	1	0	Cory Jo Bostwick	2024-11-05	D	5	100	4					www.mundytwp-mi.gov/departments/clerk/contact_the_clerk.php	cory.bostwick@mundytwp-mi.gov	810-655-4631	3478 Mundy Ave Swartz Creek, Michigan  48473-8866	
 9753	town	56160	mundy	town-super	1	0	Jennifer Arrand Stainton	2024-11-05	R	5	55	4					www.mundytwp-mi.gov/departments/clerk/contact_the_clerk.php		810-655-4631	3478 Mundy Ave Swartz Creek, Michigan 48473-8866	
 9970	town	56160	mundy	town-treas	1	0	Danelle Barker	2024-11-05	R	6	100	4					www.mundytwp-mi.gov/departments/clerk/contact_the_clerk.php		810-655-4631	3478 Mundy Ave Swartz Creek, Michigan 48473-8866	
-10576	town-cou	56160	mundy	council	4	0	Mark T. Gorton	2024-11-05	D	4	14	4					https://mundytwp-mi.gov/city-council	&nbsp;mark.gorton@mundytwp-mi.gov	810-655-4631	3478 Mundy Ave Swartz Creek, Michigan 48473-8866	
+10576	town-cou	56160	mundy	council	4	0	Mark T. Gorton	2024-11-05	D	4	14	4					https://mundytwp-mi.gov/city-council	mark.gorton@mundytwp-mi.gov	810-655-4631	3478 Mundy Ave Swartz Creek, Michigan 48473-8866	
 10577	town-cou	56160	mundy	council	4	0	Kimberly Jimenez	2024-11-05	D	4	14	4					https://mundytwp-mi.gov/city-council	kim.jimenez@mundytwp-mi.gov	810-655-4631	3478 Mundy Ave Swartz Creek, Michigan 48473-8866	
 10578	town-cou	56160	mundy	council	4	0	Dan Morey	2024-11-05	D	4	14	4					https://mundytwp-mi.gov/city-council		810-655-4631	3478 Mundy Ave Swartz Creek, Michigan 48473-8866	
 10579	town-cou	56160	mundy	council	4	0	Leah Davis	2024-11-05	R	5	17	4					https://mundytwp-mi.gov/city-council		810-655-4631	3478 Mundy Ave Swartz Creek, Michigan 48473-8866	
@@ -273,7 +273,7 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 10034	town	82380	vienna	town-treas	1	0	Catherine A. Thompson	2024-11-05	R	5	100	4					viennatwp.com/government/clerk/index.php			3400 West Vienna Road | Clio, MI 48420	
 10843	town-cou	82380	vienna	council	4	0	Richard T. Johnson	2024-11-05	D	3	18	4					viennatwp.com/government/board_of_trustees.php			3400 West Vienna Road | Clio, MI 48420	
 10844	town-cou	82380	vienna	council	4	0	Karin J. Muron	2024-11-05	R	3	18	4					viennatwp.com/government/board_of_trustees.php			3400 West Vienna Road | Clio, MI 48420	
-10845	town-cou	82380	vienna	council	4	0	Sheryllynn Russo	2024-11-05	R	3	18	4					viennatwp.com/government/board_of_trustees.php	&nbsp;srusso@viennatwp.com	810-397-7724	3400 West Vienna Road | Clio, MI 48420	
+10845	town-cou	82380	vienna	council	4	0	Sheryllynn Russo	2024-11-05	R	3	18	4					viennatwp.com/government/board_of_trustees.php	srusso@viennatwp.com	810-397-7724	3400 West Vienna Road | Clio, MI 48420	
 10846	town-cou	82380	vienna	council	4	0	Jeffrey Thomas	2024-11-05	R	3	18	4					viennatwp.com/government/board_of_trustees.php	jthomas@viennatwp.com	810-275-2517	3400 West Vienna Road | Clio, MI 48420	https://viennatwpgc.gov/government/government/images/Jeff
 9217	schl-cou	35970	westwood heights		4	0	Cherese Bransford	2024-11-05	?	1	0	4					www.hamadyhawks.net/administration/board_of_education/board_members		810-591-0870	3425 W. Pierson Rd., Flint, Michigan 48504	
 9218	schl-cou	35970	westwood heights		4	0	Jessie B. Cloman Sr.	2024-11-05	?	962	53	4					www.hamadyhawks.net/administration/board_of_education/board_members	jcloman@hamadyhawks.net	810-591-0870	3425 W. Pierson Rd., Flint, Michigan 48504	

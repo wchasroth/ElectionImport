@@ -20,6 +20,6 @@ CREATE TABLE           v4incumbents (
    county    tinyint       NOT NULL DEFAULT  0,
    resigned  char(1)       NOT NULL DEFAULT '',
    partial   tinyint       NOT NULL DEFAULT  0,
-   headshot  varchar(160)  NOT NULL DEFAULT '',
+   headshot  varchar(240)  NOT NULL DEFAULT '',
    status    varchar(20)   NOT NULL DEFAULT ''
 );

@@ -24,7 +24,7 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 4224	town	8760	blackman	town-treas	1	0	Philip H. Preston	2024-11-05	D	5048	100	4					https://blackmantwp.com/board-meeting-01-16-2024/	treasurer@blackmantwp.com	517-990-8226	1990 W. Parnall Road, Jackson, MI 49201	
 5329	town-cou	8760	blackman	council	3	0	Mike Ambs	2024-11-05	R	5519	34	4					https://blackmantwp.com/board-meeting-01-16-2024/	mambs@blackmantwp.com	517-788-4345	1990 W. Parnall Road, Jackson, MI 49201	
 5330	town-cou	8760	blackman	council	3	0	Scott J. Pack	2024-11-05	R	5322	33	4					https://blackmantwp.com/board-meeting-01-16-2024/	spack@blackmantwp.com	517-788-4345	1990 W. Parnall Road, Jackson, MI 49201	
-5331	town-cou	8760	blackman	council	3	0	Mike Thomas	2024-11-05	R	5275	32	4					https://blackmantwp.com/board-meeting-01-16-2024/	&nbsp;mthomas@blackmantwp.com	517-788-4345	1990 W. Parnall Road, Jackson, MI 49201	
+5331	town-cou	8760	blackman	council	3	0	Mike Thomas	2024-11-05	R	5275	32	4					https://blackmantwp.com/board-meeting-01-16-2024/	mthomas@blackmantwp.com	517-788-4345	1990 W. Parnall Road, Jackson, MI 49201	
 5402	vil	11000	brooklyn	pres	1	0	Estella Roberts	2024-11-05	?	321	50	2	?				https://www.villageofbrooklyn.com/council.html		517-592-2591	121 N Main St, Brooklyn, MI 49230	
 5548	vil-cou	11000	brooklyn	council	9	0	Stacy Hicks	2020-11-03	?	320	34	4	?				https://www.villageofbrooklyn.com/council.html	stacy.hicks@villageofbrooklyn.com	517-592-2591	121 N Main St, Brooklyn, MI 49230	https://www.villageofbrooklyn.com/img/team/stacyhicks.jpg
 5549	vil-cou	11000	brooklyn	council	9	0	Philip M. Krauss	2020-11-03	?	304	32	4	?				https://www.villageofbrooklyn.com/city-council	phil.krauss@villageofbrooklyn.com	517-592-2591	121 N Main St, Brooklyn, MI 49230	
@@ -182,7 +182,7 @@ id	org	district	locale	office	seatnum	subdist	name	elected	party	votes_C	pct	ter
 2628	town	47360	liberty	town-clerk	1	0	Debbie Sheehan	2024-11-05	R	1591	100	4					https://www.libertytwp.us/officials.html	libertyclerk@comcast.net	517-529-4374	101 W Liberty Rd Clarklake, Michigan  49234	
 3293	town	47360	liberty	town-super	1	0	Mark D. Hubbard	2024-11-05	R	1594	100	4					https://www.libertytwp.us/officials.html	mark.hubbardlibertysuper@gmail.com	517-529-4374	101 W Liberty Rd Clarklake, Michigan  49234	
 3914	town	47360	liberty	town-treas	1	0	Karen Garver	2024-11-05	R	1578	100	4					https://www.libertytwp.us/officials.html	libertytreasurer@comcast.net	517-529-4374	101 W Liberty Rd Clarklake, Michigan  49234	
-4755	town-cou	47360	liberty	council	2	0	Mark L. Smith	2024-11-05	R	1472	50	4					https://www.libertytwp.us/officials.html	&nbsp;arumsmithret@yahoo.com	517-529-4374	101 W Liberty Rd Clarklake, Michigan  49234	
+4755	town-cou	47360	liberty	council	2	0	Mark L. Smith	2024-11-05	R	1472	50	4					https://www.libertytwp.us/officials.html	arumsmithret@yahoo.com	517-529-4374	101 W Liberty Rd Clarklake, Michigan  49234	
 4756	town-cou	47360	liberty	council	2	0	Jack L. Vincent	2024-11-05	R	1444	49	4					https://www.libertytwp.us/officials.html	libertyclerk@comcast.net	517-529-4374	101 W Liberty Rd Clarklake, Michigan  49234	
 1770	schl-cou	21750	litchfield		9	0	Jason Ray Eichler	2020-11-03	W	2	66	6	Y				www.litchfieldschools.com		517-542-2388	210 WILLIAMS STREET LITCHFIELD, MI 49252	
 1771	schl-cou	21750	litchfield		9	0	Maurice Lloyd Parks III	2020-11-03	W	1	33	6	Y				www.litchfieldschools.com	maurice.parks@litchfieldschools.com	517-542-2388	210 WILLIAMS STREET LITCHFIELD, MI 49252	
