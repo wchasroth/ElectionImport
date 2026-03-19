@@ -16,7 +16,8 @@ $ic = new IncumbentCompressor($pdo);
 $years    = $ic->getElectionDates();
 
 $org = " org in "
-     . "    ('us', 'us-vp', 'us-sen', 'us-hou', 'mi', 'mi-lt', 'mi-ag', 'mi-sos', 'mi-boe', 'mi-msu', 'mi-um', 'mi-wsu', "
+     . "    ('us', 'us-vp', 'us-sen', 'us-hou', "
+     . "     'mi', 'mi-lt', 'mi-ag', 'mi-sos', 'mi-boe', 'mi-msu', 'mi-um', 'mi-wsu', 'mi-sen', 'mi-hou', "
      . "     'crt-sup', 'crt-a', 'crt-c', 'crt-d', 'crt-p') ";
 
 $state = $ic->getUncompletedIdsFor("state");
