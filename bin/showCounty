@@ -6,7 +6,7 @@ if test "x$1" = "x"; then
 fi
 
 cat <<END
-SELECT i.id, s.org, 81 AS district, ' ' AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
+SELECT s.org, 81 AS district, ' ' AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
        i.votes_C, TRUNCATE(( (i.votes_C * 1.0) / i.votes_T) * 100, 0) AS pct,
        s.termlen, IF(s.termlen = 0, '?', IF((2026 - s.termcycle) % s.termlen = 0, 'Y', ' ')) AS open,
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
@@ -19,7 +19,7 @@ SELECT i.id, s.org, 81 AS district, ' ' AS locale, s.office, s.seatnum, s.subdis
 
 UNION ALL
 
-SELECT i.id, s.org, 81 AS district, '_' AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
+SELECT s.org, 81 AS district, '_' AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
        i.votes_C, TRUNCATE(( (i.votes_C * 1.0) / i.votes_T) * 100, 0) AS pct,
        s.termlen, IF(s.termlen = 0, '?', IF((2026 - s.termcycle) % s.termlen = 0, 'Y', ' ')) AS open,
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
@@ -32,7 +32,7 @@ SELECT i.id, s.org, 81 AS district, '_' AS locale, s.office, s.seatnum, s.subdis
 
 UNION ALL
 
-SELECT i.id, s.org, 81 AS district, '__' AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
+SELECT s.org, 81 AS district, '__' AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
        i.votes_C, TRUNCATE(( (i.votes_C * 1.0) / i.votes_T) * 100, 0) AS pct,
        s.termlen, IF(s.termlen = 0, '?', IF((2026 - s.termcycle) % s.termlen = 0, 'Y', ' ')) AS open,
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
@@ -45,7 +45,7 @@ SELECT i.id, s.org, 81 AS district, '__' AS locale, s.office, s.seatnum, s.subdi
 
 UNION ALL
 
-SELECT i.id, s.org, j.id AS district, j.simplename AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
+SELECT s.org, j.id AS district, j.simplename AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
        i.votes_C, TRUNCATE(( (i.votes_C * 1.0) / i.votes_T) * 100, 0) AS pct,
        s.termlen, IF(s.termlen = 0, '?', IF((2026 - s.termcycle) % s.termlen = 0, 'Y', ' ')) AS open,
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
@@ -60,7 +60,7 @@ SELECT i.id, s.org, j.id AS district, j.simplename AS locale, s.office, s.seatnu
 /*
 UNION ALL
 
-SELECT i.id, s.org, v.id AS district, v.simplename AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
+SELECT s.org, v.id AS district, v.simplename AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
        i.votes_C, TRUNCATE(( (i.votes_C * 1.0) / i.votes_T) * 100, 0) AS pct,
        s.termlen, IF(s.termlen = 0, '?', IF((2026 - s.termcycle) % s.termlen = 0, 'Y', ' ')) AS open,
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
@@ -74,7 +74,7 @@ SELECT i.id, s.org, v.id AS district, v.simplename AS locale, s.office, s.seatnu
 
 UNION ALL
 
-SELECT i.id, s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
+SELECT s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
        i.votes_C, TRUNCATE(( (i.votes_C * 1.0) / i.votes_T) * 100, 0) AS pct,
        s.termlen, IF(s.termlen = 0, '?', IF((2026 - s.termcycle) % s.termlen = 0, 'Y', ' ')) AS open,
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
@@ -88,7 +88,7 @@ SELECT i.id, s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnu
 
 UNION ALL
 
-SELECT i.id, s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
+SELECT s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
        i.votes_C, TRUNCATE(( (i.votes_C * 1.0) / i.votes_T) * 100, 0) AS pct,
        s.termlen, IF(s.termlen = 0, '?', IF((2026 - s.termcycle) % s.termlen = 0, 'Y', ' ')) AS open,
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,

@@ -2,6 +2,9 @@
 
 #---v4corrections.  Apply all of the manual and other sourced corrections.
 
+#---All county commissioners are now 4 year termlen.
+echo "UPDATE v4seats SET termlen=4 WHERE org='cnty-com'" | my
+
 removeIncumbent        "s.org='mi-sen' AND s.district='35'"    # MI sen 35 resigned 2025(?)
 removeIncumbentAndSeat "s.org='us-hou' AND s.district='14'"    # 2020 redistricting eliminated district 14.
 
