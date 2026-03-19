@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#---v4compress.  Determine the election winners, then layer each year's elections
+#   on top of the existing v4incumbents, creating rows in v4seats as needed.
+#
+#   Uses v4completed to track which offices are "complete", and (must!) not be
+#   calculated again!
+#
+#   E.g. a school district is only "complete" if all of the counties it is in, are
+#   themselves completely imported.  At which point that school district's elections
+#   are computed, layered into v4incumbents & v4seats... and never done again!
+
+phase13stateCompressor.php
+phase13countyCompressor.php
+phase13cityCompressor.php
+phase13villageCompressor.php
+phase13schoolCompressor.php
+phase13collegeCompressor.php
