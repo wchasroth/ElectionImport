@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-#---v4parse.  Parse all files in "incomplete" counties.
+#---v4parseNew.  Parse all files in "incomplete" counties, in order to
+#   (a) detect any errors in new data, and (b) to find any newly-complete counties.
 
 #---For the counties that are NOT complete, run the parser on the files that we do have,
 #   so we can detect errors or problems.
@@ -40,3 +41,7 @@ if test $xs -gt 0; then
    ls -l */x*
    exit
 fi
+
+#---If any counties are NOW complete, mark them so.
+markImportedCounties
+

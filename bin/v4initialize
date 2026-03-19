@@ -79,3 +79,7 @@ if test $xs -gt 0; then
    echo "Resolve them, or delete the files and try again."
    ls -l */x*
 fi
+
+#---Mark the counties that are (now) fully imported.
+markImportedCounties
+
