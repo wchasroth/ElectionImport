@@ -67,8 +67,8 @@ for ($i=1;   $i < $rowCount;   $i++) {
       foreach ($contactFields as $field => $value) {
          if (!empty ($value)  &&  $value !== "NOT_FOUND") {
             $sql = "UPDATE v4incumbents SET $field = '$value' WHERE id = $id AND $field = ''";
-            echo "$sql\n";
-//          $pdo->run($sql);
+            $result = $pdo->run($sql);
+            if ($result->failed())  echo "phase20aiContactInfo failed: $sql\n";
          }
       }
    }
