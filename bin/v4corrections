@@ -49,8 +49,6 @@ replaceIncumbent "Justin Richardson"   "s.org='schl-cou' AND s.district=33030 AN
 replaceIncumbent "Tonie Brovont"       "s.org='town'     AND s.district=85100 AND s.office='town-clerk'"
 replaceIncumbent "Dave Ludwig"         "s.org='town'     AND s.district=89100 AND s.office='town-super'"
 replaceIncumbent "Noah P. Hood"        "s.org='crt-sup'                       AND i.name='Elizabeth T. Clement'"
-exit
-
 
 php phase18renumber.php                       #---Renumber seats if holes were introduced in phase 17 and removeIncumbent.
 
