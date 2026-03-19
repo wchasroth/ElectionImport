@@ -70,7 +70,7 @@ for ($i=1;   $i < $rowCount;   $i++) {
             $value = Str::replaceAll($value, ";", "''");
             $sql = "UPDATE v4incumbents SET $field = '$value' WHERE id = $id AND $field = ''";
             $result = $pdo->run($sql);
-            if ($result->failed())  echo "phase20aiContactInfo failed: $sql\n";
+            if ($result->failed())  echo "phase20aiContactInfo failed: $sql " . $result->getError() . "\n";
          }
       }
    }
