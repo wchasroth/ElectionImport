@@ -52,12 +52,11 @@ SELECT s.org, j.id AS district, j.simplename AS locale, s.office, s.seatnum, s.s
        i.name,
        i.status, i.web, i.email, i.phone, i.address, i.headshot
   FROM      v4incumbents AS i
-  LEFT JOIN v4seats      AS s  ON (i.seat_id = s.id)
-  LEFT JOIN jurisdiction AS j  ON (s.district = j.id)
+  LEFT JOIN v4seats         AS s  ON (i.seat_id = s.id)
+  LEFT JOIN v4jurisdictions AS j  ON (s.district = j.id)
  WHERE (s.org LIKE 'city%'  OR  s.org LIKE 'town%')
    AND j.county_id = $1
 
-/*
 UNION ALL
 
 SELECT s.org, v.id AS district, v.simplename AS locale, s.office, s.seatnum, s.subdist, i.elected, i.party, 
@@ -68,7 +67,7 @@ SELECT s.org, v.id AS district, v.simplename AS locale, s.office, s.seatnum, s.s
        i.status, i.web, i.email, i.phone, i.address, i.headshot
   FROM      v4incumbents AS i
   LEFT JOIN v4seats      AS s  ON (i.seat_id  = s.id)
-  LEFT JOIN village      AS v  ON (s.district = v.id)
+  LEFT JOIN v4villages   AS v  ON (s.district = v.id)
  WHERE (s.org LIKE 'vil%')
    AND v.county_id = $1
 
@@ -80,9 +79,9 @@ SELECT s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnum, s.s
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
        i.status, i.web, i.email, i.phone, i.address, i.headshot
-  FROM      v4incumbents    AS i
-  LEFT JOIN v4seats         AS s ON (i.seat_id  = s.id)
-  LEFT JOIN school_district AS c ON (s.district = c.id)
+  FROM      v4incumbents AS i
+  LEFT JOIN v4seats      AS s ON (i.seat_id  = s.id)
+  LEFT JOIN v4schools    AS c ON (s.district = c.id)
  WHERE s.org = 'schl-cou'
    AND c.county_id = $1
 
@@ -96,11 +95,10 @@ SELECT s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnum, s.s
        i.status, i.web, i.email, i.phone, i.address, i.headshot
   FROM      v4incumbents          AS i
   LEFT JOIN v4seats               AS s ON (i.seat_id  = s.id)
-  LEFT JOIN comm_college26        AS c ON (s.district = c.id)
-  LEFT JOIN comm_college2county26 AS y ON (c.id = y.comm_college_id)
+  LEFT JOIN v4commcolleges        AS c ON (s.district = c.id)
+  LEFT JOIN v4commcolleges_county AS y ON (c.id = y.id)
  WHERE s.org = 'comm-cou'
    AND y.county_id = $1
-*/
 
 ORDER BY locale, org, office, seatnum, subdist, name;
 END
