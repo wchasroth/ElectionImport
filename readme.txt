@@ -28,6 +28,9 @@ Level 3: Determine and apply all election winners,
          phase13villageCompressor.php
          phase13schoolCompressor.php
          phase13collegeCompressor.php
+ 
+      CHECK LOGS!  See v4compress.stderr and v4compress.stdout.
+      In particular, errors about 'too many seats' go to stderr.
 
 Level 4: apply corrections from external sources
    v4corrections
