@@ -226,9 +226,9 @@ class IncumbentCompressor {
             //      Otherwise, skip this elected.  (Might be a partial term to fill out current year, where there's
             //      already one for the new term.)
             $sql = "SELECT i.id, i.elected"
-               . "  FROM v4incumbents AS i "
-               . "  LEFT JOIN v4seats AS s  ON (i.seat_id = s.id) "
-               . "  LEFT JOIN v4title AS t  ON (t.org = s.org  AND  t.office = s.office) "
+               . "  FROM v4incumbents  AS i "
+               . "  LEFT JOIN v4seats  AS s  ON (i.seat_id = s.id) "
+               . "  LEFT JOIN v4titles AS t  ON (t.org = s.org  AND  t.office = s.office) "
                . " WHERE $officeMatchClause "
                . "   AND t.seats = 1 "
                . " LIMIT 1 ";
@@ -260,7 +260,7 @@ class IncumbentCompressor {
                continue;
             }
 
-            //---Case D: If not, have we reached the max # of seats (if there is one, per v4title)?  Error message!
+            //---Case D: If not, have we reached the max # of seats (if there is one, per v4titles)?  Error message!
             // (NOT YET: Get the seatmax value for v4seats org/office/district/subdist)
             $maxSeats = $this->maxSeatsCache[$elected['org'] . "-" . $elected['office']] ?? 0;
             $currentSeats = $this->getCurrentMaxSeats($this->pdo, $officeMatchClause);
@@ -271,7 +271,7 @@ class IncumbentCompressor {
             }
 
             //---Case E: Finally!  Create a new v4seats row.  Add a new incumbent row, pointing at it.
-            //     If there's an inherent seatmax (from v4title), supply that as well.
+            //     If there's an inherent seatmax (from v4titles), supply that as well.
             $seatsFields = [
                'org' => $elected['org'], 'office' => $elected['office'], 'district' => $elected['district'], 'subdist' => $elected['subdist'],
                'seatnum' => $currentSeats + 1, 'termlen' => $elected['termlen'], 'termcycle' => $elected['cycle'],
@@ -363,7 +363,7 @@ class IncumbentCompressor {
    }
 
    private function loadMaxSeatsCache(AlfredPDO $pdo): array {
-      $sql = "SELECT org, office, seats FROM v4title WHERE seats > 0";
+      $sql = "SELECT org, office, seats FROM v4titles WHERE seats > 0";
       $result = $pdo->run($sql);
       $rows = $result->getRows();
       $cache = [];
