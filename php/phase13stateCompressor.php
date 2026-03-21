@@ -19,6 +19,7 @@ $org = " org in "
      . "    ('us', 'us-vp', 'us-sen', 'us-hou', "
      . "     'mi', 'mi-lt', 'mi-ag', 'mi-sos', 'mi-boe', 'mi-msu', 'mi-um', 'mi-wsu', 'mi-sen', 'mi-hou', "
      . "     'crt-sup', 'crt-a', 'crt-c', 'crt-d', 'crt-p') ";
+$org = " org in ('crt-sup') ";
 
 $state = $ic->getUncompletedIdsFor("state");
 if (count($state) > 0) {  // i.e. continue only if we haven't previously handled/compressed all of the state-level offices.
