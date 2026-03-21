@@ -265,7 +265,7 @@ class IncumbentCompressor {
             $maxSeats = $this->maxSeatsCache[$elected['org'] . "-" . $elected['office']] ?? 0;
             $currentSeats = $this->getCurrentMaxSeats($this->pdo, $officeMatchClause);
             if ($maxSeats > 0 && $currentSeats >= $maxSeats) {
-               fwrite(STDERR, "Too many seats? $officeMatchClause\n");
+               fwrite(STDERR, "Too many seats? $officeMatchClause: {$elected['name']} \n");
                echo "Case D: too many\n";
                continue;
             }
