@@ -57,3 +57,6 @@ echo "source SQL/11-v4FixManchester.sql" | my
 #---Fix-ups #5: Some election reports have 'X' for unknown party.
 echo "UPDATE v4elections SET party='?' WHERE party='X'" | my
 
+#---Fix-ups #6: fix some counties that have a leading 0 in their district/county number.
+echo "UPDATE v4seats SET district = district+0 WHERE org IN ('cnty', 'cnty-com') AND SUBSTRING(district, 1, 1) = '0'" | my
+
