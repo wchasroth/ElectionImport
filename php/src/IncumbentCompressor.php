@@ -273,7 +273,8 @@ class IncumbentCompressor {
             //---Case E: Finally!  Create a new v4seats row.  Add a new incumbent row, pointing at it.
             //     If there's an inherent seatmax (from v4titles), supply that as well.
             $seatsFields = [
-               'org' => $elected['org'], 'office' => $elected['office'], 'district' => $elected['district'], 'subdist' => $elected['subdist'],
+               'org' => $elected['org'], 'office' => $elected['office'],
+               'district' => $this->simplifyDistrict($elected['district']), 'subdist' => $elected['subdist'],
                'seatnum' => $currentSeats + 1, 'termlen' => $elected['termlen'], 'termcycle' => $elected['cycle'],
                'seatmax' => $maxSeats
             ];
@@ -371,5 +372,10 @@ class IncumbentCompressor {
          $cache[$row['org'] . "-" . $row['office']] = intval($row['seats']);
       }
       return $cache;
+   }
+
+   private function simplifyDistrict(string $district): string {
+      if (! Str::startsWith($district, '0'))  return $district;
+      return Str::substringAfter ($district, '0');
    }
 }
