@@ -66,3 +66,7 @@ done
 for x in Corrections/*.sql; do
    echo "source $x" | my
 done
+
+#---Shorten comm college name
+echo "UPDATE v4commcolleges SET name='Wayne County Community College' WHERE name='Wayne County Community College District'" | my
+
