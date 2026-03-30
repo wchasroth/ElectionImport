@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if test "x$3" = "x"; then
+   echo "Usage: parseClaudeResults  claude-results.csv yyyy-mm-dd county#" >&2
+   exit
+fi
+
+if test ! -s $1; then
+   echo "No such file $1" >&2
+   exit
+fi
+
+fieldFilter.php    $1    precinct_full_name contest_name vote_for choice_name party total_votes >out.1
+
+addJuris.php       out.1 precinct_full_name contest_name choice_name                            >out.2
+
+fieldFilter.php    out.2                    contest_name vote_for choice_name party total_votes >out.3
+
+fieldSum.php       out.3                    contest_name+choice_name                total_votes >out.4
+
+addElectionCounty  out.4 $2 $3                                                                  >out.5
+
+fieldFilter.php -t out.5 yyyy-mm-dd county# contest_name vote_for choice_name party total_votes >out.6
+
+echo -n "#"
+head -n  1 out.6
+tail -n +2 out.6
