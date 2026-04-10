@@ -33,7 +33,7 @@ require "vendor/autoload.php";
 
 $env  = new EnvFile("_env");
 $pdo1 = PdoHelper::makePdo($env);  // importer
-$pdo2 = new AlfredPDO($env->get('dbname2'), $env->get('dbuser'), $env->get('dbpass'));
+$pdo2 = new AlfredPDO($env->get('dbname2'), $env->get('dbuser'), $env->get('dbpw'));
 
 $sql = "SELECT * FROM v4completed ORDER BY type, id";
 $result1 = $pdo1->run($sql);
