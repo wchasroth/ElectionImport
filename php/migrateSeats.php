@@ -42,8 +42,21 @@ $result2 = $pdo2->run($sql);
 $typeIds1 = makeCompletedTypeIds($result1->getRows());
 $typeIds2 = makeCompletedTypeIds($result2->getRows());
 $diffs = array_diff($typeIds1, $typeIds2);
-foreach ($diffs as $diff)  echo "$diff\n";
+foreach ($diffs as $diff)  {
+    $sql = "SELECT * FROM v4seats WHERE " . makeQualifier($diff);
+    $result = $pdo1->run($sql);
+    echo $result->getRowCount() . "  $sql\n";
+}
 
+function makeQualifier (string $typeId): string {
+    $type2Org = ["county" => "(org LIKE 'cnty%'  OR  org LIKE 'town%')", "city" => "org LIKE 'city%'", "village" => "org LIKE 'vil%'",
+       "school" => "org = 'schl-cou'", "college" => "org = 'comcol-cou'"];
+    $type = Str::substringBefore($typeId, ':');
+    $id   = Str::substringAfter ($typeId, ':');
+
+    $org = $type2Org[$type];
+    return " $org AND district='%id' ";
+}
 function makeCompletedTypeIds (array $rows): array {
     $typeIds = [];
     foreach ($rows as $row) $typeIds[] = $row['type'] . ":" . $row['id'];
