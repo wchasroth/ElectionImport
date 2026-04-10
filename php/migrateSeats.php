@@ -35,17 +35,17 @@ $env  = new EnvFile("_env");
 $pdo1 = PdoHelper::makePdo($env);  // importer
 $pdo2 = new AlfredPDO($env->get('dbname2'), $env->get('dbuser'), $env->get('dbpw'));
 
-$sql = "SELECT * FROM v4completed ORDER BY type, id";
+$sql = "SELECT type, id FROM v4completed ORDER BY type, id";
 $result1 = $pdo1->run($sql);
 $result2 = $pdo2->run($sql);
 
-$orgDist1 = makeCompletedOrgDistricts($result1->getRows());
-$orgDist2 = makeCompletedOrgDistricts($result2->getRows());
-$diffs = array_diff($orgDist1, $orgDist2);
+$typeIds1 = makeCompletedTypeIds($result1->getRows());
+$typeIds2 = makeCompletedTypeIds($result2->getRows());
+$diffs = array_diff($typeIds1, $typeIds2);
 foreach ($diffs as $diff)  echo "$diff\n";
 
-function makeCompletedOrgDistricts (array $rows): array {
-    $orgDistricts = [];
-    foreach ($rows as $row) $orgDistricts[] = $row['org'] . ":" . $row['district'];
-    return $orgDistricts;
+function makeCompletedTypeIds (array $rows): array {
+    $typeIds = [];
+    foreach ($rows as $row) $typeIds[] = $row['type'] . ":" . $row['id'];
+    return $typeIds;
 }
