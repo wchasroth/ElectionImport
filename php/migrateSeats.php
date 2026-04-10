@@ -39,5 +39,13 @@ $sql = "SELECT * FROM v4completed ORDER BY type, id";
 $result1 = $pdo1->run($sql);
 $result2 = $pdo2->run($sql);
 
-echo "result1: " . $result1->getRowCount() . "\n";
-echo "result2: " . $result2->getRowCount() . "\n";
+$orgDist1 = makeCompletedOrgDistricts($result1->getRows());
+$orgDist2 = makeCompletedOrgDistricts($result2->getRows());
+$diffs = array_diff($orgDist1, $orgDist2);
+foreach ($diffs as $diff)  echo "$diff\n";
+
+function makeCompletedOrgDistricts (array $rows): array {
+    $orgDistricts = [];
+    foreach ($rows as $row) $orgDistricts[] = $row['org'] . ":" . $row['district'];
+    return $orgDistricts;
+}
