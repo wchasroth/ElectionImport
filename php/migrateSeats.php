@@ -55,7 +55,7 @@ function makeQualifier (string $typeId): string {
     $id   = Str::substringAfter ($typeId, ':');
 
     $org = $type2Org[$type];
-    return " $org AND district='%id' ";
+    return " $org AND district='$id' ";
 }
 function makeCompletedTypeIds (array $rows): array {
     $typeIds = [];
