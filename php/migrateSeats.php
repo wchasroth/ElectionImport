@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace CharlesRothDotNet\ElectionImport;
 
+use CharlesRothDotNet\Alfred\AlfredPDO;
 use CharlesRothDotNet\Alfred\Csv;
 use CharlesRothDotNet\Alfred\SqlFields;
 use CharlesRothDotNet\Alfred\EnvFile;
@@ -30,7 +31,6 @@ require "vendor/autoload.php";
 //
 //   That's what this script does.
 
-$rows = Csv::loadTrimmed(STDIN, "\t");
 $env  = new EnvFile("_env");
 $pdo1 = PdoHelper::makePdo($env);  // importer
 $pdo2 = new AlfredPDO($env->get('dbname2'), $env->get('dbuser'), $env->get('dbpass'));
