@@ -7,21 +7,23 @@ echo "source $ELECTION_IMPORT/SQL/03-v4elections.sql" | my
 #---For (ONLY) the imported counties, import the phase8 TSV files into v4elections.
 cd $ELECTION_IMPORT/Counties
 for x in *; do
-   cd $x
-   countyNum=`getCountyNum $x`
-   if isImported $countyNum; then
-      rm -f y*
-      for f in *.ph8.tsv; do
-         if test -f $f; then
-            echo $f
-            phase09db.php <$f 2>y.$f
-            if [[ -f "y.$f" && ! -s "y.$f" ]]; then
-               rm -f  y.$f
+   if test -d $x; then
+      cd $x
+      countyNum=`getCountyNum $x`
+      if isImported $countyNum; then
+         rm -f y*
+         for f in *.ph8.tsv; do
+            if test -f $f; then
+               echo $f
+               phase09db.php <$f 2>y.$f
+               if [[ -f "y.$f" && ! -s "y.$f" ]]; then
+                  rm -f  y.$f
+               fi
             fi
-         fi
-      done
+         done
+      fi
+      cd ..
    fi
-   cd ..
 done
 
 ys=`ls Counties/*/y* 2>/dev/null | wc -l`

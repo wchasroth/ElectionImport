@@ -11,7 +11,7 @@ SELECT s.org, 81 AS district, ' ' AS locale, s.office, s.seatnum, s.subdist, i.e
        s.termlen, IF(s.termlen = 0, '?', IF((2026 - s.termcycle) % s.termlen = 0, 'Y', ' ')) AS open,
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
-       i.status, i.web, i.email, i.phone, i.address, i.headshot
+       i.status, i.web, i.email, i.phone, i.address, i.headshot, i.num2elect
   FROM      v4incumbents AS i
   LEFT JOIN v4seats      AS s  ON (i.seat_id = s.id)
  WHERE s.org = 'mi-sen'
@@ -24,7 +24,7 @@ SELECT s.org, 81 AS district, '_' AS locale, s.office, s.seatnum, s.subdist, i.e
        s.termlen, IF(s.termlen = 0, '?', IF((2026 - s.termcycle) % s.termlen = 0, 'Y', ' ')) AS open,
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
-       i.status, i.web, i.email, i.phone, i.address, i.headshot
+       i.status, i.web, i.email, i.phone, i.address, i.headshot, i.num2elect
   FROM      v4incumbents AS i
   LEFT JOIN v4seats      AS s  ON (i.seat_id = s.id)
  WHERE s.org = 'mi-hou'
@@ -37,7 +37,7 @@ SELECT s.org, 81 AS district, '__' AS locale, s.office, s.seatnum, s.subdist, i.
        s.termlen, IF(s.termlen = 0, '?', IF((2026 - s.termcycle) % s.termlen = 0, 'Y', ' ')) AS open,
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
-       i.status, i.web, i.email, i.phone, i.address, i.headshot
+       i.status, i.web, i.email, i.phone, i.address, i.headshot, i.num2elect
   FROM      v4incumbents AS i
   LEFT JOIN v4seats      AS s  ON (i.seat_id = s.id)
  WHERE s.org LIKE 'cnty%'
@@ -50,7 +50,7 @@ SELECT s.org, j.id AS district, j.simplename AS locale, s.office, s.seatnum, s.s
        s.termlen, IF(s.termlen = 0, '?', IF((2026 - s.termcycle) % s.termlen = 0, 'Y', ' ')) AS open,
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
-       i.status, i.web, i.email, i.phone, i.address, i.headshot
+       i.status, i.web, i.email, i.phone, i.address, i.headshot, i.num2elect
   FROM      v4incumbents AS i
   LEFT JOIN v4seats         AS s  ON (i.seat_id = s.id)
   LEFT JOIN v4jurisdictions AS j  ON (s.district = j.id)
@@ -64,7 +64,7 @@ SELECT s.org, v.id AS district, v.simplename AS locale, s.office, s.seatnum, s.s
        s.termlen, IF(s.termlen = 0, '?', IF((2026 - s.termcycle) % s.termlen = 0, 'Y', ' ')) AS open,
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
-       i.status, i.web, i.email, i.phone, i.address, i.headshot
+       i.status, i.web, i.email, i.phone, i.address, i.headshot, i.num2elect
   FROM      v4incumbents AS i
   LEFT JOIN v4seats      AS s  ON (i.seat_id  = s.id)
   LEFT JOIN v4villages   AS v  ON (s.district = v.id)
@@ -78,7 +78,7 @@ SELECT s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnum, s.s
        s.termlen, IF(s.termlen = 0, '?', IF((2026 - s.termcycle) % s.termlen = 0, 'Y', ' ')) AS open,
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
-       i.status, i.web, i.email, i.phone, i.address, i.headshot
+       i.status, i.web, i.email, i.phone, i.address, i.headshot, i.num2elect
   FROM      v4incumbents AS i
   LEFT JOIN v4seats      AS s ON (i.seat_id  = s.id)
   LEFT JOIN v4schools    AS c ON (s.district = c.id)
@@ -92,7 +92,7 @@ SELECT s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnum, s.s
        s.termlen, IF(s.termlen = 0, '?', IF((2026 - s.termcycle) % s.termlen = 0, 'Y', ' ')) AS open,
        i.resigned AS Res, IF(i.partial=1, 'P', ' ') AS Part,
        i.name,
-       i.status, i.web, i.email, i.phone, i.address, i.headshot
+       i.status, i.web, i.email, i.phone, i.address, i.headshot, i.num2elect
   FROM      v4incumbents          AS i
   LEFT JOIN v4seats               AS s ON (i.seat_id  = s.id)
   LEFT JOIN v4commcolleges        AS c ON (s.district = c.id)

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if test "x$3" = "x"; then
+   echo "Usage: addElectionCounty file yyyy-mm-dd county#" >&2
+   exit
+fi
+
+if test ! -s $1; then
+   echo "No such file $1" >&2
+   exit
+fi
+
+line=`head -n 1 $1 | sed "s/#//"`
+echo "yyyy-mm-dd,county#,$line"
+
+tail -n +2 $1 | sed "s/^/$2,$3,/"
