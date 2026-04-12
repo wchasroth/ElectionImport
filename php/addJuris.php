@@ -37,6 +37,7 @@ for ($i=1;   $i < $rowCount;   $i++) {
       $key = $contestName . "_" . $row[$choice];
       if (! isset($ambiguousCases[$key]))  $ambiguousCases[$key] = [];
       $juris = Str::substringBefore($row[$precinct], ",");
+      $juris = removePrecinct($juris);
       if (! array_key_exists($juris, $ambiguousCases[$key]))  $ambiguousCases[$key][$juris] = 1;
    }
 }
@@ -82,4 +83,10 @@ function extractMinimalOfficeName(string $office): string {
       $result[] = $word;
    }
    return Str::join($result, " ");
+}
+
+function removePrecinct(string $precinctFullName): string {
+   if (Str::contains($precinctFullName, "Precinct"))  return trim(Str::substringBefore ($precinctFullName, "Precinct"));
+   if (Str::contains($precinctFullName, "precinct"))  return trim(Str::substringBefore ($precinctFullName, "precinct"));
+   return $precinctFullName;
 }
