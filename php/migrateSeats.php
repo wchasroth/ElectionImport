@@ -42,10 +42,56 @@ $result2 = $pdo2->run($sql);
 $typeIds1 = makeCompletedTypeIds($result1->getRows());
 $typeIds2 = makeCompletedTypeIds($result2->getRows());
 $diffs = array_diff($typeIds1, $typeIds2);
-foreach ($diffs as $diff)  {
-    $sql = "SELECT * FROM v4seats WHERE " . makeQualifier($diff);
+foreach ($diffs as $typeId)  {
+    if (Str::startsWith($typeId, "county"))  echo "New $typeId\n";
+
+    //---Mark this typeId as completed.
+    $newType = Str::substringBefore($typeId, ':');
+    $newId   = Str::substringAfter ($typeId, ':');
+    $sql = "INSERT INTO v4completed (type, id) VALUES ('$newType', $newId)";
+    $pdo2->run($sql);
+
+    //---Find all the seats for this typeId.
+    $sql = "SELECT * FROM v4seats WHERE " . makeQualifier($typeId);
+    $result = $pdo2->run($sql);
+    if ($result->getRowCount() > 0) {
+        echo "Error: got " . $result->getRowCount() . " for $sql\n";
+        continue;
+    }
+
+    //---Accumulate matching sets of seats and incumbents.
     $result = $pdo1->run($sql);
-    echo $result->getRowCount() . "  $sql\n";
+    $seats = [];
+    $incumbents = [];
+    foreach ($result->getRows() as $row) $seats[$row['id']] = $row;
+
+    foreach (array_keys($seats) as $seatId) {
+        $sql = "SELECT * FROM v4incumbents WHERE seat_id=$seatId";
+        $result = $pdo1->run($sql);
+        if ($result->getRowCount() > 0)  $incumbents[$seatId] = $result->getRows()[0];
+    }
+
+    //---Insert new v4seats entry into pdo2, and remember the NEW v4seats id to be used for the new v4incumbents.seat_id.
+    foreach ($seats as $id => $row) {
+        $sqlFields = new SqlFields(["org" => $row['org'], "office" => $row['office'], 'district' => $row['district'],
+           'seatnum' => $row['seatnum'], 'seatmax' => $row['seatmax'], 'termlen' => $row['termlen'], 'termcycle' => $row['termcycle']]);
+        $sql = "INSERT INTO v4seats " .  $sqlFields->getInsertFragment();
+        $result    = $pdo2->run($sql);
+        if ($result->failed()) echo $result->getError() . "\n";
+        $newSeatid = $result->getInsertId();
+        $incumbents[$id]['seat_id'] = $newSeatid;
+    }
+
+    //---Insert new v4incumbents entry into pdo2, pointing at the matching NEW v4seats id.
+    foreach ($incumbents as $id => $row) {
+        $sqlFields = new SqlFields(['seat_id' => $row['seat_id'], 'name' => $row['name'], 'role' => $row['role'], 'elected' => $row['elected'], 'party' => $row['party'],
+           'votes_C' => $row['votes_C'], 'votes_D' => $row['votes_D'], 'votes_R' => $row['votes_R'], 'votes_O' => $row['votes_O'], 'votes_T' => $row['votes_T'],
+           'web' => $row['web'], 'email' => $row['email'], 'phone' => $row['phone'], 'address' => $row['address'], 'num2elect' => $row['num2elect'],
+           'county' => $row['county'], 'resigned' => $row['resigned'], 'partial' => $row['partial'], 'headshot' => $row['headshot'], 'status' => $row['status']]);
+        $sql = "INSERT INTO v4incumbents " .  $sqlFields->getInsertFragment();
+        $result    = $pdo2->run($sql);
+        if ($result->failed()) echo $result->getError() . "\n";
+    }
 }
 
 function makeQualifier (string $typeId): string {
