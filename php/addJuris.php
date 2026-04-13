@@ -67,7 +67,8 @@ function isIgnorableCandidate(string $choiceName): bool {
 function isAmbiguousOffice (string $office): bool {
    $minimalOffice = extractMinimalOfficeName($office);
    return in_array($minimalOffice,
-      ["clerk", "trustee", "supervisor", "treasurer", "mayor", "council", "commissioner", "city commissioner", "city commission", "councilperson", "city council", "library"]);
+      ["clerk", "trustee", "supervisor", "treasurer", "mayor", "council", "commissioner", "city commissioner", "city commission",
+       "city councilperson", "councilperson", "city council", "library"]);
 }
 
 function mayNeedDisambiguating(string $office): bool {
