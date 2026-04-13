@@ -68,7 +68,7 @@ function isAmbiguousOffice (string $office): bool {
    $minimalOffice = extractMinimalOfficeName($office);
    return in_array($minimalOffice,
       ["clerk", "trustee", "supervisor", "treasurer", "mayor", "council", "commissioner", "city commissioner", "city commission",
-       "city councilperson", "councilperson", "city council", "library"]);
+       "city councilperson", "councilperson", "city council", "library", "constable"]);
 }
 
 function mayNeedDisambiguating(string $office): bool {
