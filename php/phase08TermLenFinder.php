@@ -66,7 +66,7 @@ foreach ($rows as $row) {
 
    if ($row[Column::ORG] == "schl-cou") {
       $sd = $row[Column::DIST];
-      $sql = "SELECT DISTINCT termlen FROM v4schools WHERE id=$sd";
+      $sql = "SELECT DISTINCT termlen FROM s4schools WHERE id=$sd";
       $result = $pdo->run($sql);
       if ($result->succeeded()  &&  $result->getRowCount() > 0) {
          $termlen = intval($result->getRows()[0]['termlen']);
@@ -105,7 +105,7 @@ function writeRow (array $row, string $diag="", $key=''): void {
 
 function getTermLenFromTitleTable (AlfredPDO $pdo, string $org, string $office): int {
    $sqlFields = new SqlFields(['org' => $org, 'office' => $office]);
-   $result = $pdo->runSF("SELECT termlen FROM v4titles WHERE ", "", $sqlFields);
+   $result = $pdo->runSF("SELECT termlen FROM s4titles WHERE ", "", $sqlFields);
    if ($result->failed()  ||  $result->getRowcount() == 0)   return 0;
    return intval($result->getRows()[0]['termlen']);
 }

@@ -88,7 +88,7 @@ function makeVoteForKey(string $org, string $office): string {
 }
 
 function makeVoteForCache(AlfredPDO $pdo): array {
-   $result = $pdo->run("SELECT org, office FROM v4titles WHERE seats=1");
+   $result = $pdo->run("SELECT org, office FROM s4titles WHERE seats=1");
    $voteForCache = [];
    foreach ($result->getRows() as $row) {
 //    $voteForKey = $row['org'] . ":" . $row['office'];
@@ -112,23 +112,23 @@ function getDistrictFromDb(AlfredPDO $pdo, string $org, string $region, string $
    $region = trim($region, "-");
    if (Str::startsWith($org, "vil")) {
       $name = NameSimplifier::simplifyVillageName($region);
-      $sql = "SELECT DISTINCT id FROM v4villages WHERE simplename='$name' AND county_id=$countyNum";
+      $sql = "SELECT DISTINCT id FROM s4villages WHERE simplename='$name' AND county_id=$countyNum";
    }
    else if (Str::startsWith($org, "city")) {
       $name = NameSimplifier::simplifyJurisdictionName($region);
-      $sql = "SELECT DISTINCT id FROM v4jurisdictions WHERE simplename='$name' AND type='c' AND county_id=$countyNum";
+      $sql = "SELECT DISTINCT id FROM s4jurisdictions WHERE simplename='$name' AND type='c' AND county_id=$countyNum";
    }
    else if (Str::startsWith($org, "town")) {
       $name = NameSimplifier::simplifyJurisdictionName($region);
-      $sql = "SELECT DISTINCT id FROM v4jurisdictions WHERE simplename IN ('$name', '$name charter') AND type='t' AND county_id=$countyNum";
+      $sql = "SELECT DISTINCT id FROM s4jurisdictions WHERE simplename IN ('$name', '$name charter') AND type='t' AND county_id=$countyNum";
    }
    else if (Str::startsWith($org, "schl")) {
       $name = NameSimplifier::simplifySchoolName($region);
-      $sql = "SELECT DISTINCT id FROM v4schools WHERE simplename='$name' AND county_id=$countyNum";
+      $sql = "SELECT DISTINCT id FROM s4schools WHERE simplename='$name' AND county_id=$countyNum";
    }
    else if (Str::startsWith($org, "comcol")) {
       $name = NameSimplifier::simplifyCommCollegeName($region);
-      $sql = "SELECT DISTINCT id FROM v4commcolleges WHERE simplename='$name'";
+      $sql = "SELECT DISTINCT id FROM s4commcolleges WHERE simplename='$name'";
    }
    else {
       fwrite(STDERR, "PHASE 7 BAD ORG: $org, $region, $countyNum\n");
