@@ -17,7 +17,7 @@ $ic  = new IncumbentCompressor($pdo);
 $moc = new MultiCountyOfficeCombiner($pdo);
 $years = $ic->getElectionDates();
 
-//---Unlike the other kinds of orgs, v4commcolleges does NOT denormalize/duplicate rows in order to include the county!
+//---Unlike the other kinds of orgs, s4commcolleges does NOT denormalize/duplicate rows in order to include the county!
 //   Instead, we have a link table,  v4commcolleges_county that links each college to one or more counties.
 //   But we have to BUILD that table from the v4elections data, which is a nuisance.  Most of the time, we'll end
 //   up with a ton of duplicate INSERTS -- that are thrown away by the primary key rule.  That's fine.

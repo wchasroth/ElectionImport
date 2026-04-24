@@ -53,11 +53,11 @@ class IncumbentCompressor {
    }
 
    function getUncompletedIdsFor(string $type): array {
-      if      ($type === 'county')  $sql = "SELECT DISTINCT id FROM v4counties      WHERE id NOT IN";
-      else if ($type === 'school')  $sql = "SELECT DISTINCT id FROM v4schools       WHERE id NOT IN ";
-      else if ($type === 'city')    $sql = "SELECT DISTINCT id FROM v4jurisdictions WHERE type='c' AND id NOT IN ";
-      else if ($type === 'village') $sql = "SELECT DISTINCT id FROM v4villages      WHERE id NOT IN ";
-      else if ($type === 'college') $sql = "SELECT DISTINCT id FROM v4commcolleges  WHERE id NOT IN ";
+      if      ($type === 'county')  $sql = "SELECT DISTINCT id FROM s4counties      WHERE id NOT IN";
+      else if ($type === 'school')  $sql = "SELECT DISTINCT id FROM s4schools       WHERE id NOT IN ";
+      else if ($type === 'city')    $sql = "SELECT DISTINCT id FROM s4jurisdictions WHERE type='c' AND id NOT IN ";
+      else if ($type === 'village') $sql = "SELECT DISTINCT id FROM s4villages      WHERE id NOT IN ";
+      else if ($type === 'college') $sql = "SELECT DISTINCT id FROM s4commcolleges  WHERE id NOT IN ";
       else if ($type === 'state')   $sql = "SELECT 0 AS id WHERE 0 NOT IN ";
       else    throw new \Exception('Not implemented', 501);
 
@@ -66,9 +66,9 @@ class IncumbentCompressor {
    }
 
    function hasCompleteCountiesFor(string $type, int $id): bool {
-      if      ($type === 'school')  $sql = "SELECT DISTINCT county_id FROM v4schools              WHERE id=$id";
-      else if ($type === 'city')    $sql = "SELECT DISTINCT county_id FROM v4jurisdictions        WHERE id=$id";
-      else if ($type === 'village') $sql = "SELECT DISTINCT county_id FROM v4villages             WHERE id=$id";
+      if      ($type === 'school')  $sql = "SELECT DISTINCT county_id FROM s4schools              WHERE id=$id";
+      else if ($type === 'city')    $sql = "SELECT DISTINCT county_id FROM s4jurisdictions        WHERE id=$id";
+      else if ($type === 'village') $sql = "SELECT DISTINCT county_id FROM s4villages             WHERE id=$id";
       else if ($type === 'college') $sql = "SELECT DISTINCT county_id FROM v4commcolleges_county  WHERE id=$id";
       else  throw new \Exception('Not implemented', 501);
 
@@ -228,7 +228,7 @@ class IncumbentCompressor {
             $sql = "SELECT i.id, i.elected"
                . "  FROM v4incumbents  AS i "
                . "  LEFT JOIN v4seats  AS s  ON (i.seat_id = s.id) "
-               . "  LEFT JOIN v4titles AS t  ON (t.org = s.org  AND  t.office = s.office) "
+               . "  LEFT JOIN s4titles AS t  ON (t.org = s.org  AND  t.office = s.office) "
                . " WHERE $officeMatchClause "
                . "   AND t.seats = 1 "
                . " LIMIT 1 ";
@@ -260,7 +260,7 @@ class IncumbentCompressor {
                continue;
             }
 
-            //---Case D: If not, have we reached the max # of seats (if there is one, per v4titles)?  Error message!
+            //---Case D: If not, have we reached the max # of seats (if there is one, per s4titles)?  Error message!
             // (NOT YET: Get the seatmax value for v4seats org/office/district/subdist)
             $maxSeats = $this->maxSeatsCache[$elected['org'] . "-" . $elected['office']] ?? 0;
             $currentSeats = $this->getCurrentMaxSeats($this->pdo, $officeMatchClause);
@@ -271,7 +271,7 @@ class IncumbentCompressor {
             }
 
             //---Case E: Finally!  Create a new v4seats row.  Add a new incumbent row, pointing at it.
-            //     If there's an inherent seatmax (from v4titles), supply that as well.
+            //     If there's an inherent seatmax (from s4titles), supply that as well.
             $seatsFields = [
                'org' => $elected['org'], 'office' => $elected['office'],
                'district' => $this->simplifyDistrict($elected['district']), 'subdist' => $elected['subdist'],
@@ -365,7 +365,7 @@ class IncumbentCompressor {
    }
 
    private function loadMaxSeatsCache(AlfredPDO $pdo): array {
-      $sql = "SELECT org, office, seats FROM v4titles WHERE seats > 0";
+      $sql = "SELECT org, office, seats FROM s4titles WHERE seats > 0";
       $result = $pdo->run($sql);
       $rows = $result->getRows();
       $cache = [];
