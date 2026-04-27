@@ -33,16 +33,16 @@ foreach ($result->getRows() as $row) {
    if ($rowCount <= 1)             continue;
 
    $maxSeatnum = getMaxSeatnum($seats->getRows());
-   if ($maxSeatnum <= $rowCount)   continue;
+   if ($maxSeatnum == $rowCount)   continue;
 
    echo "Renumbering seats for: {$row['org']}, {$row['office']}, {$row['district']}, {$row['subdist']}\n";
-   $seatnum = 0;
-   foreach ($seats->getRows() as $row) {
-      $id = intval($row['id']);
-      ++$seatnum;
-      $sql = "UPDATE v4seats SET seatnum=$seatnum WHERE id=$id";
-      $pdo->run($sql);
-   }
+//   $seatnum = 0;
+//   foreach ($seats->getRows() as $row) {
+//      $id = intval($row['id']);
+//      ++$seatnum;
+//      $sql = "UPDATE v4seats SET seatnum=$seatnum WHERE id=$id";
+//      $pdo->run($sql);
+//   }
 }
 
 function getMaxSeatnum(array $rows): int {
