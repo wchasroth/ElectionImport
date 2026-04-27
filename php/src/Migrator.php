@@ -7,7 +7,7 @@ use CharlesRothDotNet\Alfred\AlfredPDO;
 use CharlesRothDotNet\Alfred\SqlFields;
 
 class Migrator {
-   function __construct(AlfredPDO $pdo) { }
+   function __construct() { }
 
    public function insertSeatAndIncumbent(AlfredPDO $pdo, array $seat, array $incumbent): bool {
       $sqlFields = new SqlFields(["org" => $seat['org'], "office" => $seat['office'], 'district' => $seat['district'],
