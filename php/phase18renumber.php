@@ -33,7 +33,7 @@ foreach ($result->getRows() as $row) {
    if ($rowCount <= 1)             continue;
 
    $maxSeatnum = getMaxSeatnum($seats->getRows());
-   if ($maxSeatnum == $rowCount)   continue;
+   if ($maxSeatnum == 0  ||  $maxSeatnum == $rowCount)   continue;
 
    echo "Renumbering seats for: {$row['org']}, {$row['office']}, {$row['district']}, {$row['subdist']}\n";
 //   $seatnum = 0;
