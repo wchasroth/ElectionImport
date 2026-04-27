@@ -20,14 +20,6 @@ echo "source 12-v4completed.sql"         | my
 echo "source 13-v4imported.sql"          | my
 echo "source 14-commcolleges_county.sql" | my
 
-#---These tables will eventuallly become (mostly) static.
-echo "source 04-v4jurisdictions.sql"  | my   # Cities need complete = 0 at the outset.
-echo "source 05-v4titles.sql"         | my
-echo "source 06-v4villages.sql"       | my
-echo "source 07-v4schools.sql"        | my   # complete = 0
-echo "source 08-v4commcolleges.sql"   | my   # complete = 0
-echo "source 10-v4counties.sql"       | my   # complete = 0
-
 #---Fill v4termlen table with data from Vishu's AI work.
 cd $ELECTION_IMPORT/Vishu
 for x in *.tsv; do
