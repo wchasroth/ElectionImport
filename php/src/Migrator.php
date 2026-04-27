@@ -13,24 +13,24 @@ class Migrator {
       $sqlFields = new SqlFields(["org" => $seat['org'], "office" => $seat['office'], 'district' => $seat['district'],
          'seatnum' => $seat['seatnum'], 'seatmax' => $seat['seatmax'], 'termlen' => $seat['termlen'], 'termcycle' => $seat['termcycle']]);
       $sql = "INSERT INTO v4seats " .  $sqlFields->getInsertFragment();
-//    $result    = $pdo->run($sql);
+      $result    = $pdo->run($sql);
       echo "   $sql\n";
+      if ($result->failed()) {
+         fwrite(STDERR, "insertSeatAndIncumber error: " . $result->getError() . "\n");
+         return false;
+      }
+
+      if ($incumbent === null || count($incumbent) == 0)  return true;   // unlikely, but possible: creating an empty seat?
+
+      $newSeatid = $result->getInsertId();
+      $sqlFields = new SqlFields(['seat_id' => $newSeatid, 'name' => $incumbent['name'], 'role' => $incumbent['role'], 'elected' => $incumbent['elected'], 'party' => $incumbent['party'],
+         'votes_C' => $incumbent['votes_C'], 'votes_D' => $incumbent['votes_D'], 'votes_R' => $incumbent['votes_R'], 'votes_O' => $incumbent['votes_O'], 'votes_T' => $incumbent['votes_T'],
+         'web' => $incumbent['web'], 'email' => $incumbent['email'], 'phone' => $incumbent['phone'], 'address' => $incumbent['address'], 'num2elect' => $incumbent['num2elect'],
+         'county' => $incumbent['county'], 'resigned' => $incumbent['resigned'], 'partial' => $incumbent['partial'], 'headshot' => $incumbent['headshot'], 'status' => $incumbent['status']]);
+      $sql = "INSERT INTO v4incumbents " .  $sqlFields->getInsertFragment();
+      $result    = $pdo->run($sql);
+      if ($result->failed()) echo $result->getError() . "\n";
       return true;
-//      if ($result->failed()) {
-//         echo $result->getError() . "\n";
-//         return false;
-//      }
-//
-//      if ($incumbent === null || count($incumbent) == 0)  return true;   // unlikely, but possible: creating an empty seat?
-//
-//      $newSeatid = $result->getInsertId();
-//      $sqlFields = new SqlFields(['seat_id' => $newSeatid, 'name' => $incumbent['name'], 'role' => $incumbent['role'], 'elected' => $incumbent['elected'], 'party' => $incumbent['party'],
-//         'votes_C' => $incumbent['votes_C'], 'votes_D' => $incumbent['votes_D'], 'votes_R' => $incumbent['votes_R'], 'votes_O' => $incumbent['votes_O'], 'votes_T' => $incumbent['votes_T'],
-//         'web' => $incumbent['web'], 'email' => $incumbent['email'], 'phone' => $incumbent['phone'], 'address' => $incumbent['address'], 'num2elect' => $incumbent['num2elect'],
-//         'county' => $incumbent['county'], 'resigned' => $incumbent['resigned'], 'partial' => $incumbent['partial'], 'headshot' => $incumbent['headshot'], 'status' => $incumbent['status']]);
-//      $sql = "INSERT INTO v4incumbents " .  $sqlFields->getInsertFragment();
-//      $result    = $pdo->run($sql);
-//      if ($result->failed()) echo $result->getError() . "\n";
    }
 
    public function getSeat(AlfredPDO $pdo, int $id): array {
