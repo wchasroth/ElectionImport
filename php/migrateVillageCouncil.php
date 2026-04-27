@@ -27,6 +27,7 @@ require "vendor/autoload.php";
 $env  = new EnvFile("_env");
 $pdo1 = PdoHelper::makePdo($env);  // importer
 $pdo2 = new AlfredPDO($env->get('dbname2'), $env->get('dbuser'), $env->get('dbpw'));  // dmeditor
+$migrator = new Migrator();
 
 //---Get ALL the village council seats from importer
 $sql = "SELECT s.id, s.org, s.district, s.termlen, s.termcycle, "
@@ -41,19 +42,26 @@ echo "$sql\n";
 $result1 = $pdo1->run($sql);
 foreach ($result1->getRows() as $row) {
     $district = $row['district'];
+    $seatId   = intval($row['id']);
+    $incId    = intval($row['iid']);
     $name     = $row['name'];
     $newName  = new MatchableName($name);
-    $sql = "SELECT s.id, i.id, i.name "
+
+    $sql = "SELECT i.id AS iid, i.name "
          . "  FROM v4seats           AS s "
          . "  LEFT JOIN v4incumbents AS i  ON (i.seat_id = s.id) "
          . " WHERE s.org='vil-cou' "
          . "   AND s.district='$district' ";
     $result2 = $pdo2->run($sql);
     $existingNames = [];
-    foreach ($result2->getRows() as $existingRow)  $existingNames[] = new MatchableName($existingRow['name']);
+    foreach ($result2->getRows() as $existingRow) $existingNames[] = new MatchableName($existingRow['name']);
+
     $best = $newName->findBestMatch($existingNames, 2);
-    if ($best < 0) fwrite(STDERR, "Should add: $district $name\n");
+    if ($best >= 0) fwrite(STDERR, "Found dup: $district $name == " . $existingNames[$best]->getSimplifiedName() . "\n");
     else {
-        echo "Found dup: $district $name == " . $existingNames[$best]->getSimplifiedName() . "\n";
+       echo "Adding: $district $name\n";
+       $seatRow = $migrator->getSeat     ($pdo1, $seatId);
+       $incRow  = $migrator->getIncumbent($pdo1, $incId);
+       $migrator->insertSeatAndIncumbent($pdo2, $seatRow, $incRow);
     }
 }
