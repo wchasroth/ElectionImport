@@ -34,14 +34,14 @@ class Migrator {
    }
 
    public function getSeat(AlfredPDO $pdo, int $id): array {
-      $sql = "SELECT * FROM v4seats WHERE seat_id = $id";
+      $sql = "SELECT * FROM v4seats WHERE id = $id";
       $result = $pdo->run($sql);
       if ($result->failed())  fwrite(STDERR, "getSeat Error: " . $result->getError() . "\n");
       return ($result->getRowCount() == 1 ? $result->getRows()[0] : []);
    }
 
    public function getIncumbent(AlfredPDO $pdo, int $id): array {
-      $sql = "SELECT * FROM v4incumbents WHERE seat_id = $id";
+      $sql = "SELECT * FROM v4incumbents WHERE id = $id";
       $result = $pdo->run($sql);
       if ($result->failed())  fwrite(STDERR, "getIncumbent Error: " . $result->getError() . "\n");
       return ($result->getRowCount() == 1 ? $result->getRows()[0] : []);
