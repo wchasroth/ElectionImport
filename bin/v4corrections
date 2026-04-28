@@ -74,5 +74,5 @@ echo "UPDATE s4commcolleges SET name='Wayne County Community College' WHERE name
 echo "UPDATE v4seats SET seatmax=0 WHERE org='vil-cou' AND seatmax=1" | my
 
 #---Remove old Manchester village entry (now a city)
-echo "DELETE FROM v4villages WHERE id=50660" | my
+echo "DELETE FROM s4villages WHERE id=50660" | my
 
