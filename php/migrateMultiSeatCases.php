@@ -14,29 +14,41 @@ use CharlesRothDotNet\Alfred\Str;
 
 require "vendor/autoload.php";
 
-//---migrateVillageCouncil.php:  Migrate new village council seats/incumbents from 'importer' to 'dmeditor'.
+//---migrateMultiSeatCases.php:  Migrate additional multi-seat offices that were missed due to a bug.
 //
-//   We keep TWO copies of the v4 mivoter database going at any one time:
-//      "importer"  (frequently, 'elections')   pdo1
-//      "dmeditor"  (frequently, 'elections2')  pdo2
+//   Early in the county-election import process, a bug was introduced, that caused some multi-seat
+//   offices (specifically village council, town-park, and libry-cou) to only include the first seat.
+//   (Specifically, incorrect values of 'seats' in the s4titles table for those offices.)
 //
-//   There were some problems with the original parsing of village council seats.  When we fixed,
-//   we may end up with more village council seats.  We need to migrate only the NEW (not already in
-//   'dmeditor') village council seats, from 'importer' to 'dmeditor.
+//   Now, we keep TWO copies of the v4 mivoter database going at any one time:
+//      "importer"  (frequently, 'elections')   pdo1   Data built from the election county reports
+//      "dmeditor"  (frequently, 'elections2')  pdo2   Data edited manually by our volunteers
+//
+//   So this is a 'fix up' script, that finds the multi-seat offices (that were missing in dmeditor),
+//   and migrates them from importer to dmeditor.  It does some clever name-matching of the existing
+//   seats in dmeditor, to make sure that we don't introduce duplicates.
+//
+//   Because this is a one-time fix-up script, we manually modify the queries below to cover
+//   the three cases of org='vil-cou', org='libry-cou', and office='town-park'.  Yes, it's
+//   a hack.  Yes, if we need to repeat it, I will generalize it.
 
 $env  = new EnvFile("_env");
 $pdo1 = PdoHelper::makePdo($env);  // importer
 $pdo2 = new AlfredPDO($env->get('dbname2'), $env->get('dbuser'), $env->get('dbpw'));  // dmeditor
 $migrator = new Migrator();
 
-//---Get ALL the village council seats from importer
+//---Get ALL the missing seats from importer
+$clause = " s.org = 'vil-cou' ";
+//$clause = " s.org = 'libry-cou' ";
+//$clause = " s.office = 'town-park' ";
+
 $sql = "SELECT s.id, s.org, s.district, s.termlen, s.termcycle, "
      . "       i.id AS iid, i.name, i.elected, i.party, i.votes_C, i.votes_D, i.votes_R, i.votes_O, i.votes_T, "
      . "       i.web, i.email, i.phone, i.address, i.num2elect, i.county, i.resigned, i.partial, "
      . "       i.headshot, i.status "
      . "  FROM v4seats           AS s "
      . "  LEFT JOIN v4incumbents AS i  ON (i.seat_id = s.id) "
-     . " WHERE s.org='vil-cou' AND i.name != '' ";
+     . " WHERE $clause AND i.name != '' ";
 echo "$sql\n";
 
 $result1 = $pdo1->run($sql);
@@ -50,7 +62,7 @@ foreach ($result1->getRows() as $row) {
     $sql = "SELECT i.id AS iid, i.name "
          . "  FROM v4seats           AS s "
          . "  LEFT JOIN v4incumbents AS i  ON (i.seat_id = s.id) "
-         . " WHERE s.org='vil-cou' "
+         . " WHERE $clause "
          . "   AND s.district='$district' ";
     $result2 = $pdo2->run($sql);
     $existingNames = [];
