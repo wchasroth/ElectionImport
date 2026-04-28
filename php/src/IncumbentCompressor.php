@@ -53,12 +53,13 @@ class IncumbentCompressor {
    }
 
    function getUncompletedIdsFor(string $type): array {
-      if      ($type === 'county')  $sql = "SELECT DISTINCT id FROM s4counties      WHERE id NOT IN";
-      else if ($type === 'school')  $sql = "SELECT DISTINCT id FROM s4schools       WHERE id NOT IN ";
-      else if ($type === 'city')    $sql = "SELECT DISTINCT id FROM s4jurisdictions WHERE type='c' AND id NOT IN ";
-      else if ($type === 'village') $sql = "SELECT DISTINCT id FROM s4villages      WHERE id NOT IN ";
-      else if ($type === 'college') $sql = "SELECT DISTINCT id FROM s4commcolleges  WHERE id NOT IN ";
-      else if ($type === 'state')   $sql = "SELECT 0 AS id WHERE 0 NOT IN ";
+      if      ($type === 'county')   $sql = "SELECT DISTINCT id FROM s4counties      WHERE id NOT IN";
+      else if ($type === 'school')   $sql = "SELECT DISTINCT id FROM s4schools       WHERE id NOT IN ";
+      else if ($type === 'city')     $sql = "SELECT DISTINCT id FROM s4jurisdictions WHERE type='c' AND id NOT IN ";
+      else if ($type === 'township') $sql = "SELECT DISTINCT id FROM s4jurisdictions WHERE type='t' AND id NOT IN ";
+      else if ($type === 'village')  $sql = "SELECT DISTINCT id FROM s4villages      WHERE id NOT IN ";
+      else if ($type === 'college')  $sql = "SELECT DISTINCT id FROM s4commcolleges  WHERE id NOT IN ";
+      else if ($type === 'state')    $sql = "SELECT 0 AS id WHERE 0 NOT IN ";
       else    throw new \Exception('Not implemented', 501);
 
       $sql = $sql . "   (SELECT id FROM v4completed WHERE type='$type')";
@@ -66,10 +67,11 @@ class IncumbentCompressor {
    }
 
    function hasCompleteCountiesFor(string $type, int $id): bool {
-      if      ($type === 'school')  $sql = "SELECT DISTINCT county_id FROM s4schools              WHERE id=$id";
-      else if ($type === 'city')    $sql = "SELECT DISTINCT county_id FROM s4jurisdictions        WHERE id=$id";
-      else if ($type === 'village') $sql = "SELECT DISTINCT county_id FROM s4villages             WHERE id=$id";
-      else if ($type === 'college') $sql = "SELECT DISTINCT county_id FROM v4commcolleges_county  WHERE id=$id";
+      if      ($type === 'school')    $sql = "SELECT DISTINCT county_id FROM s4schools              WHERE id=$id";
+      else if ($type === 'city')      $sql = "SELECT DISTINCT county_id FROM s4jurisdictions        WHERE id=$id";
+      else if ($type === 'township')  $sql = "SELECT DISTINCT county_id FROM s4jurisdictions        WHERE id=$id";
+      else if ($type === 'village')   $sql = "SELECT DISTINCT county_id FROM s4villages             WHERE id=$id";
+      else if ($type === 'college')   $sql = "SELECT DISTINCT county_id FROM v4commcolleges_county  WHERE id=$id";
       else  throw new \Exception('Not implemented', 501);
 
       $counties = $this->getAllOfSingleFieldFrom('county_id', $sql);

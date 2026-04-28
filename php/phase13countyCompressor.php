@@ -19,8 +19,11 @@ $counties = $ic->getUncompletedIdsFor("county");
 foreach ($counties as $county) {
     if ($ic->isCountyImported($county)) {
        //---Select the winners of all of the county races.
+//       $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
+//          . "    FROM v4elections WHERE org in ('cnty', 'cnty-com', 'town', 'town-cou') AND county=$county "
+//          . "   ORDER BY year, org, office, district, subdist, incumbent";
        $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "
-          . "    FROM v4elections WHERE org in ('cnty', 'cnty-com', 'town', 'town-cou') AND county=$county "
+          . "    FROM v4elections WHERE org in ('cnty', 'cnty-com') AND county=$county "
           . "   ORDER BY year, org, office, district, subdist, incumbent";
        $ic->markRaceWinners($sql);
 
@@ -29,7 +32,8 @@ foreach ($counties as $county) {
        foreach ($years as $year) {
           $sql = "SELECT DISTINCT org, office, district, subdist "
              . "    FROM v4elections WHERE year='$year' "
-             . "     AND org IN ('cnty', 'cnty-com', 'town', 'town-cou') AND county=$county "
+//           . "     AND org IN ('cnty', 'cnty-com', 'town', 'town-cou') AND county=$county "
+             . "     AND org IN ('cnty', 'cnty-com') AND county=$county "
              . "   ORDER BY org, office, district, subdist";
           $ic->applyRaceWinnersToIncumbents($sql, $year);
        }
