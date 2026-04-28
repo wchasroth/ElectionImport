@@ -45,8 +45,11 @@ rm -f */y*
 for x in *; do
    if test -d $x; then 
       cd $x
-      for f in *.sum1.ph2.xml    *.json.ph1.json *.man.ph2.man *.ph2.tab \
-               *.clarity.ph1.csv *.clarity.ph1.html  *.state.ph1.csv;  do
+
+      #---This list MUST match the list in 'parser'
+      for f in *.sum1.ph2.xml  *.column.ph2.xml  *.clarity.ph1.csv *.clarity.ph1.html  \
+               *.json.ph1.json *.state.ph1.csv   *.man.ph2.man     *.ph2.tab ; do
+
          if test -f $f; then
             echo $f
             parser $f 2>x.$f
