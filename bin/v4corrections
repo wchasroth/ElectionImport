@@ -68,7 +68,7 @@ for x in Corrections/*.sql; do
 done
 
 #---Shorten comm college name
-echo "UPDATE v4commcolleges SET name='Wayne County Community College' WHERE name='Wayne County Community College District'" | my
+echo "UPDATE s4commcolleges SET name='Wayne County Community College' WHERE name='Wayne County Community College District'" | my
 
 #---No max seats for village councils
 echo "UPDATE v4seats SET seatmax=0 WHERE org='vil-cou' AND seatmax=1" | my
