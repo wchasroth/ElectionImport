@@ -28,20 +28,22 @@ $sql = "SELECT DISTINCT org, office, district, subdist FROM v4seats";
 $result = $pdo->run($sql);
 foreach ($result->getRows() as $row) {
    $fields = ['org' => $row['org'], 'office' => $row['office'], 'district' => $row['district'], 'subdist' => $row['subdist']];
-   $seats = $pdo->runSF("SELECT * FROM v4seats WHERE", "", new SqlFields($fields), true);
+   $seats = $pdo->runSF("SELECT * FROM v4seats WHERE", "ORDER BY seatnum", new SqlFields($fields), true);
    $rowCount = $seats->getRowCount();
    if ($rowCount <= 1)             continue;
 
    $maxSeatnum = getMaxSeatnum($seats->getRows());
-   if ($maxSeatnum == 0  ||  $maxSeatnum == $rowCount)   continue;
+// if ($maxSeatnum == 0  ||  $maxSeatnum == $rowCount)   continue;
+   if ($maxSeatnum == 0) continue;
 
    echo "Renumbering seats for: {$row['org']}, {$row['office']}, {$row['district']}, {$row['subdist']}\n";
    $seatnum = 0;
    foreach ($seats->getRows() as $row) {
-      $id = intval($row['id']);
-      ++$seatnum;
-      $sql = "UPDATE v4seats SET seatnum=$seatnum WHERE id=$id";
-      $pdo->run($sql);
+      echo "  " . $row['seatnum'] . "\n";
+//      $id = intval($row['id']);
+//      ++$seatnum;
+//      $sql = "UPDATE v4seats SET seatnum=$seatnum WHERE id=$id";
+//      $pdo->run($sql);
    }
 }
 
