@@ -39,12 +39,13 @@ foreach ($result->getRows() as $row) {
    echo "Renumbering seats for: {$row['org']}, {$row['office']}, {$row['district']}, {$row['subdist']}\n";
    $seatnum = 0;
    foreach ($seats->getRows() as $row) {
-      echo "  " . $row['seatnum'] . "\n";
+      echo "  " . $row['seatnum'];
 //      $id = intval($row['id']);
 //      ++$seatnum;
 //      $sql = "UPDATE v4seats SET seatnum=$seatnum WHERE id=$id";
 //      $pdo->run($sql);
    }
+   echo "\n";
 }
 
 function getMaxSeatnum(array $rows): int {
