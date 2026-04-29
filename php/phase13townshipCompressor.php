@@ -21,6 +21,7 @@ $townships = $ic->getUncompletedIdsFor("township");
 
 foreach ($townships as $township) {
     if ($ic->hasCompleteCountiesFor('township', $township)) {
+       if ($township != 3540)  continue;
 
         //---For cities that cross counties, combine (add up) the individual county election rows, into one row each.
         foreach ($years as $year) {
@@ -28,6 +29,7 @@ foreach ($townships as $township) {
                 . " WHERE year='$year' "
                 . "   AND org IN ('town', 'town-cou') AND district='$township' "
               . " ORDER BY org, office, district, subdist, incumbent, name";
+           echo "$sql\n";
            $moc->combine($sql);
         }
 
