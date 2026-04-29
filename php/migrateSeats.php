@@ -95,8 +95,8 @@ foreach ($diffs as $typeId)  {
 }
 
 function makeQualifier (string $typeId): string {
-    $type2Org = ["county" => "(org LIKE 'cnty%'  OR  org LIKE 'town%')", "city" => "org LIKE 'city%'", "village" => "org LIKE 'vil%'",
-       "school" => "org = 'schl-cou'", "college" => "org = 'comcol-cou'"];
+    $type2Org = ["county" => "org LIKE 'cnty%'", "city" => "org LIKE 'city%'", "village" => "org LIKE 'vil%'",
+       "school" => "org = 'schl-cou'", "college" => "org = 'comcol-cou'", 'township' => "org LIKE 'town%'"];
     $type = Str::substringBefore($typeId, ':');
     $id   = Str::substringAfter ($typeId, ':');
 
