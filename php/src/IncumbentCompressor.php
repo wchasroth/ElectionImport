@@ -281,7 +281,6 @@ class IncumbentCompressor {
                'seatmax' => $maxSeats
             ];
             $result = $this->pdo->runSF("INSERT INTO v4seats", "", new SqlFields($seatsFields), true);
-            fwrite(STDERR, "v4seats: " . $result->getRawSql() . "\n");
             if ($result->failed()) {
                fwrite(STDERR, "Insert failed v4seats: " . $result->getError() . " " . Str::join($seatsFields, ', ') . "\n");
                echo "Case E fail\n";
