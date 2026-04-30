@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if test "x$1" = "x"; then
+   ( echo "Usage: fixConverted  filename >output"
+     echo "
+     echo "  (replaces non-ASCII chars with closest equivalent ASCII)"
+   ) >&2
+   exit
+fi
+
+iconv -f ISO-8859-1 -t ASCII//TRANSLIT $1
