@@ -11,11 +11,12 @@
 #   are computed, layered into v4incumbents & v4seats... and never done again!
 
 phase13stateCompressor.php     >v4compress.stdout   2>v4compress.stderr
-phase13countyCompressor.php   >>v4compress.stdout  2>>v4compress.stderr
-phase13townshipCompressor.php >>v4compress.stdout  2>>v4compress.stderr
-phase13cityCompressor.php     >>v4compress.stdout  2>>v4compress.stderr
-phase13villageCompressor.php  >>v4compress.stdout  2>>v4compress.stderr
-phase13schoolCompressor.php   >>v4compress.stdout  2>>v4compress.stderr
-phase13collegeCompressor.php  >>v4compress.stdout  2>>v4compress.stderr
+phase13countyCompressor.php   >>v4compress.stdout   2>>v4compress.stderr
+phase13townshipCompressor.php >>v4compress.stdout   2>>v4compress.stderr
+
+phase13cityCompressor.php     >>v4compress.stdout   2>>v4compress.stderr
+phase13villageCompressor.php  >>v4compress.stdout   2>>v4compress.stderr
+phase13schoolCompressor.php   >>v4compress.stdout   2>>v4compress.stderr
+phase13collegeCompressor.php  >>v4compress.stdout   2>>v4compress.stderr
 
 ls -l v4compress.s*
