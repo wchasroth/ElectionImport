@@ -74,6 +74,7 @@ foreach ($diffs as $typeId)  {
     //---Insert new v4seats entry into pdo2, and remember the NEW v4seats id to be used for the new v4incumbents.seat_id.
     foreach ($seats as $id => $row) {
         $sqlFields = new SqlFields(["org" => $row['org'], "office" => $row['office'], 'district' => $row['district'],
+           'subdist' => $row['subdist'],
            'seatnum' => $row['seatnum'], 'seatmax' => $row['seatmax'], 'termlen' => $row['termlen'], 'termcycle' => $row['termcycle']]);
         $sql = "INSERT INTO v4seats " .  $sqlFields->getInsertFragment();
         $result    = $pdo2->run($sql);
