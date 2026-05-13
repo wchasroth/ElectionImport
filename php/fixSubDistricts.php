@@ -28,7 +28,6 @@ $sql = "SELECT s.org, s.office, s.district, s.subdist, i.name "
      . "  FROM v4seats           AS s "
      . "  LEFT JOIN v4incumbents AS i  ON (i.seat_id = s.id) "
      . " WHERE s.org in ('city-cou', 'town-cou', 'vil-cou') AND s.subdist > 0"
-     . "   and s.district='12320'"
    ;
 $original = $pdo1->run($sql);
 if ($original->failed())  echo $original->getError() . "\n";
