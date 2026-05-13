@@ -43,5 +43,5 @@ foreach ($original->getRows() as $row) {
         . "   AND s.subdist = 0";
    $result = $pdo2->run($sql);
    if ($result->getRowCount() != 1)  continue;
-   echo "Match: {$row['org']} {$row['office']} {$row['district']} $name\n";
+   echo "Match: {$row['org']} {$row['office']} {$row['district']} $name new subdist={$row['subdist']}\n";
 }
