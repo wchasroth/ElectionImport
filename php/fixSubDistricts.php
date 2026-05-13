@@ -26,7 +26,7 @@ $pdo2 = new AlfredPDO($env->get('dbname2'), $env->get('dbuser'), $env->get('dbpw
 
 $sql = "SELECT s.org, s.office, s.district, s.subdist, i.name "
      . "  FROM v4seats           AS s "
-     . "  LEFT JOIN v4incumbents AS i  ON (i.seat_id = i.id) "
+     . "  LEFT JOIN v4incumbents AS i  ON (i.seat_id = s.id) "
      . " WHERE s.org in ('city-cou', 'town-cou', 'vil-cou') AND s.subdist > 0"
      . "   and s.district='12320'"
    ;
