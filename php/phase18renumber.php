@@ -30,7 +30,7 @@ foreach ($result->getRows() as $row) {
    $fields = ['org' => $row['org'], 'office' => $row['office'], 'district' => $row['district'], 'subdist' => $row['subdist']];
    $seats = $pdo->runSF("SELECT * FROM v4seats WHERE", "ORDER BY seatnum", new SqlFields($fields), true);
    $rowCount = $seats->getRowCount();
-   if ($rowCount <= 1)             continue;
+   if ($rowCount < 1)    continue;
 
    $maxSeatnum = getMaxSeatnum($seats->getRows());
    if ($maxSeatnum == 0) continue;
@@ -38,9 +38,9 @@ foreach ($result->getRows() as $row) {
    echo "Renumbering seats for: {$row['org']}, {$row['office']}, {$row['district']}, {$row['subdist']}\n";
    $seatnum = 0;
    foreach ($seats->getRows() as $row) {
-      echo "  " . $row['seatnum'];
-      $id = intval($row['id']);
       ++$seatnum;
+      echo "  {$row['seatnum']} becomes $seatnum\n";
+      $id = intval($row['id']);
       $sql = "UPDATE v4seats SET seatnum=$seatnum WHERE id=$id";
       $pdo->run($sql);
    }
