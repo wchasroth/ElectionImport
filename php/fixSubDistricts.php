@@ -44,5 +44,7 @@ foreach ($original->getRows() as $row) {
         . "   AND s.subdist = 0";
    $result = $pdo2->run($sql);
    if ($result->getRowCount() != 1)  continue;
-   echo "Match: {$row['org']} {$row['office']} {$row['district']} $name new subdist={$row['subdist']}\n";
+   $sid = $result->getRows()[0]['id'];
+   $sql = "UPDATE v4seats SET subdist='{$row['subdist']}' WHERE id=$sid";
+   echo "$sql    Match: {$row['org']} {$row['office']} {$row['district']} $name new subdist={$row['subdist']}\n";
 }
