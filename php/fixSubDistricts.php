@@ -24,13 +24,14 @@ $env  = new EnvFile("_env");
 $pdo1 = PdoHelper::makePdo($env);  // importer
 $pdo2 = new AlfredPDO($env->get('dbname2'), $env->get('dbuser'), $env->get('dbpw'));
 
-$sql = "SELECT s.org, s.office, s.district, i.subdist, i.name "
+$sql = "SELECT s.org, s.office, s.district, s.subdist, i.name "
      . "  FROM v4seats           AS s "
      . "  LEFT JOIN v4incumbents AS i  ON (i.seat_id = i.id) "
      . " WHERE s.subdist > 0";
 $original = $pdo1->run($sql);
-if ($original-failed())  echo $original->getError() . "\n";
+if ($original->failed())  echo $original->getError() . "\n";
 foreach ($original->getRows() as $row) {
+   fwrite(STDERR, "{$row['name']} {$row['org']} {$row['office']} {$row['district']}\n");
    $name = addslashes($row['name']);
    $sql = "SELECT s.id "
         . "  FROM      v4seats      AS s"
