@@ -30,9 +30,8 @@ $sql = "SELECT s.org, s.office, s.district, s.subdist, i.name "
      . " WHERE s.org in ('city-cou', 'town-cou', 'vil-cou') AND s.subdist > 0"
    ;
 $original = $pdo1->run($sql);
-if ($original->failed())  echo $original->getError() . "\n";
+if ($original->failed())  fwrite(STDERR, $original->getError() . "\n");
 foreach ($original->getRows() as $row) {
-   fwrite(STDERR, "{$row['name']} {$row['org']} {$row['office']} {$row['district']}\n");
    $name = addslashes($row['name']);
    $sql = "SELECT s.id "
         . "  FROM      v4seats      AS s"
@@ -45,6 +44,8 @@ foreach ($original->getRows() as $row) {
    $result = $pdo2->run($sql);
    if ($result->getRowCount() != 1)  continue;
    $sid = $result->getRows()[0]['id'];
-   $sql = "UPDATE v4seats SET subdist='{$row['subdist']}' WHERE id=$sid";
+   $sql = "UPDATE v4seats SET subdist={$row['subdist']} WHERE id=$sid";
    echo "$sql    Match: {$row['org']} {$row['office']} {$row['district']} $name new subdist={$row['subdist']}\n";
+   $result = $pdo2->run($sql);
+   if ($result->failed()) fwrite(STDERR, $result->getError() . "\n");
 }
