@@ -29,6 +29,7 @@ $sql = "SELECT s.org, s.office, s.district, i.subdist, i.name "
      . "  LEFT JOIN v4incumbents AS i  ON (i.seat_id = i.id) "
      . " WHERE s.subdist > 0";
 $original = $pdo1->run($sql);
+if ($original-failed())  echo $original->getError() . "\n";
 foreach ($original->getRows() as $row) {
    $name = addslashes($row['name']);
    $sql = "SELECT s.id "
