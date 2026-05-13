@@ -35,7 +35,7 @@ foreach ($original->getRows() as $row) {
    $name = addslashes($row['name']);
    $sql = "SELECT s.id "
         . "  FROM      v4seats      AS s"
-        . "  LEFT JOIN v4incumbents AS i  ON (i.seat_id = i.id) "
+        . "  LEFT JOIN v4incumbents AS i  ON (i.seat_id = s.id) "
         . " WHERE s.org     ='{$row['org']}' "
         . "   AND s.office  ='{$row['office']}' "
         . "   AND s.district='{$row['district']}' "
