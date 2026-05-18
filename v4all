@@ -1,3 +1,10 @@
+#!/bin/bash
+
+db=`grep "dbname=" $ELECTION_IMPORT/_env | sed "s/dbname="//`
+if test "x$db" != "xelections"; then
+   echo "ERROR!  Wrong database."
+   exit
+fi
 
    v4initialize
 
@@ -8,4 +15,3 @@
    v4compress
 
    v4corrections
-

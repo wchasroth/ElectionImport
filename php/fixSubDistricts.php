@@ -27,7 +27,7 @@ $pdo2 = new AlfredPDO($env->get('dbname2'), $env->get('dbuser'), $env->get('dbpw
 $sql = "SELECT s.org, s.office, s.district, s.subdist, i.name "
      . "  FROM v4seats           AS s "
      . "  LEFT JOIN v4incumbents AS i  ON (i.seat_id = s.id) "
-     . " WHERE s.org in ('city-cou', 'town-cou', 'vil-cou') AND s.subdist > 0"
+     . " WHERE s.org in ('cnty-com', 'city-cou', 'town-cou', 'vil-cou') AND s.subdist > 0"
    ;
 $original = $pdo1->run($sql);
 if ($original->failed())  fwrite(STDERR, $original->getError() . "\n");
@@ -46,6 +46,6 @@ foreach ($original->getRows() as $row) {
    $sid = $result->getRows()[0]['id'];
    $sql = "UPDATE v4seats SET subdist={$row['subdist']} WHERE id=$sid";
    echo "$sql    Match: {$row['org']} {$row['office']} {$row['district']} $name new subdist={$row['subdist']}\n";
-// $result = $pdo2->run($sql);
-// if ($result->failed()) fwrite(STDERR, $result->getError() . "\n");
+   $result = $pdo2->run($sql);
+   if ($result->failed()) fwrite(STDERR, $result->getError() . "\n");
 }
