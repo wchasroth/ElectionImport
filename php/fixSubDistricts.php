@@ -46,6 +46,6 @@ foreach ($original->getRows() as $row) {
    $sid = $result->getRows()[0]['id'];
    $sql = "UPDATE v4seats SET subdist={$row['subdist']} WHERE id=$sid";
    echo "$sql    Match: {$row['org']} {$row['office']} {$row['district']} $name new subdist={$row['subdist']}\n";
-   $result = $pdo2->run($sql);
-   if ($result->failed()) fwrite(STDERR, $result->getError() . "\n");
+// $result = $pdo2->run($sql);
+// if ($result->failed()) fwrite(STDERR, $result->getError() . "\n");
 }
