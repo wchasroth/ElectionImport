@@ -44,6 +44,7 @@ if (! $csv->loadfile($argv[1]))  $csv->exitWithError();
 //  name  (lowercase, space->dash, punctuation removed, same extension as parsed from url
 
 $rowCount = $csv->getRowCount();
+$rowsUpdated = 0;
 for ($i=1;   $i < $rowCount;   $i++) {
    $row = $csv->getRow($i);
 
@@ -71,7 +72,9 @@ for ($i=1;   $i < $rowCount;   $i++) {
             $sql = "UPDATE v4incumbents SET $field = '$value' WHERE id = $id AND $field = ''";
             $result = $pdo->run($sql);
             if ($result->failed())  echo "phase20aiContactInfo failed: $sql " . $result->getError() . "\n";
+            else $rowsUpdated += $result->getRowCount();
          }
       }
    }
+   echo "Total # of rows updated: $rowsUpdated\n";
 }
