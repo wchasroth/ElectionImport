@@ -15,7 +15,7 @@ SELECT s.org, 81 AS district, ' ' AS locale, s.office, s.seatnum, s.subdist, i.e
   FROM      v4incumbents AS i
   LEFT JOIN v4seats      AS s  ON (i.seat_id = s.id)
  WHERE s.org = 'mi-sen'
-   AND s.district IN (SELECT DISTINCT senate FROM streets WHERE county_code = $1)
+   AND s.district IN (SELECT DISTINCT senate FROM s4streets WHERE county_code = $1)
 
 UNION ALL
 
@@ -28,7 +28,7 @@ SELECT s.org, 81 AS district, '_' AS locale, s.office, s.seatnum, s.subdist, i.e
   FROM      v4incumbents AS i
   LEFT JOIN v4seats      AS s  ON (i.seat_id = s.id)
  WHERE s.org = 'mi-hou'
-   AND s.district IN (SELECT DISTINCT house FROM streets WHERE county_code = $1)
+   AND s.district IN (SELECT DISTINCT house FROM s4streets WHERE county_code = $1)
 
 UNION ALL
 
@@ -53,7 +53,7 @@ SELECT s.org, j.id AS district, j.simplename AS locale, s.office, s.seatnum, s.s
        i.status, i.web, i.email, i.phone, i.address, i.headshot, i.num2elect
   FROM      v4incumbents AS i
   LEFT JOIN v4seats         AS s  ON (i.seat_id = s.id)
-  LEFT JOIN v4jurisdictions AS j  ON (s.district = j.id)
+  LEFT JOIN s4jurisdictions AS j  ON (s.district = j.id)
  WHERE (s.org LIKE 'city%'  OR  s.org LIKE 'town%')
    AND j.county_id = $1
 
@@ -67,7 +67,7 @@ SELECT s.org, v.id AS district, v.simplename AS locale, s.office, s.seatnum, s.s
        i.status, i.web, i.email, i.phone, i.address, i.headshot, i.num2elect
   FROM      v4incumbents AS i
   LEFT JOIN v4seats      AS s  ON (i.seat_id  = s.id)
-  LEFT JOIN v4villages   AS v  ON (s.district = v.id)
+  LEFT JOIN s4villages   AS v  ON (s.district = v.id)
  WHERE (s.org LIKE 'vil%')
    AND v.county_id = $1
 
@@ -81,7 +81,7 @@ SELECT s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnum, s.s
        i.status, i.web, i.email, i.phone, i.address, i.headshot, i.num2elect
   FROM      v4incumbents AS i
   LEFT JOIN v4seats      AS s ON (i.seat_id  = s.id)
-  LEFT JOIN v4schools    AS c ON (s.district = c.id)
+  LEFT JOIN s4schools    AS c ON (s.district = c.id)
  WHERE s.org = 'schl-cou'
    AND c.county_id = $1
 
@@ -95,7 +95,7 @@ SELECT s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnum, s.s
        i.status, i.web, i.email, i.phone, i.address, i.headshot, i.num2elect
   FROM      v4incumbents          AS i
   LEFT JOIN v4seats               AS s ON (i.seat_id  = s.id)
-  LEFT JOIN v4commcolleges        AS c ON (s.district = c.id)
+  LEFT JOIN s4commcolleges        AS c ON (s.district = c.id)
   LEFT JOIN v4commcolleges_county AS y ON (c.id = y.id)
  WHERE s.org = 'comm-cou'
    AND y.county_id = $1

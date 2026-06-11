@@ -70,11 +70,13 @@ for ($i=1;   $i < $rowCount;   $i++) {
             $value = Str::replaceAll($value, "'", ";");
             $value = Str::replaceAll($value, ";", "''");
             $sql = "UPDATE v4incumbents SET $field = '$value' WHERE id = $id AND $field = ''";
+            echo "$sql\n";
             $result = $pdo->run($sql);
             if ($result->failed())  echo "phase20aiContactInfo failed: $sql " . $result->getError() . "\n";
             else $rowsUpdated += $result->getRowCount();
          }
       }
    }
-   echo "Total # of rows updated: $rowsUpdated\n";
 }
+
+echo "Total # of rows updated: $rowsUpdated\n";
