@@ -10,6 +10,7 @@ use CharlesRothDotNet\Alfred\Str;
 use CharlesRothDotNet\Alfred\EnvFile;
 use CharlesRothDotNet\Alfred\PdoHelper;
 use CharlesRothDotNet\Alfred\AlfredPDO;
+use CharlesRothDotNet\Alfred\NameSimplifier;
 
 require "vendor/autoload.php";
 
