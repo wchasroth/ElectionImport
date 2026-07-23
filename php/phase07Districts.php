@@ -10,7 +10,6 @@ use CharlesRothDotNet\Alfred\Str;
 use CharlesRothDotNet\Alfred\EnvFile;
 use CharlesRothDotNet\Alfred\PdoHelper;
 use CharlesRothDotNet\Alfred\AlfredPDO;
-use CharlesRothDotNet\Alfred\NameSimplifier;
 
 require "vendor/autoload.php";
 
@@ -112,23 +111,23 @@ function writeRow (array $row, string $diag="", $key=''): void {
 function getDistrictFromDb(AlfredPDO $pdo, string $org, string $region, string $countyNum): int {
    $region = trim($region, "-");
    if (Str::startsWith($org, "vil")) {
-      $name = NameSimplifier::simplifyVillageName($region);
+      $name = ElectionNameSimplifier::simplifyVillageName($region);
       $sql = "SELECT DISTINCT id FROM s4villages WHERE simplename='$name' AND county_id=$countyNum";
    }
    else if (Str::startsWith($org, "city")) {
-      $name = NameSimplifier::simplifyJurisdictionName($region);
+      $name = ElectionNameSimplifier::simplifyJurisdictionName($region);
       $sql = "SELECT DISTINCT id FROM s4jurisdictions WHERE simplename='$name' AND type='c' AND county_id=$countyNum";
    }
    else if (Str::startsWith($org, "town")) {
-      $name = NameSimplifier::simplifyJurisdictionName($region);
+      $name = ElectionNameSimplifier::simplifyJurisdictionName($region);
       $sql = "SELECT DISTINCT id FROM s4jurisdictions WHERE simplename IN ('$name', '$name charter') AND type='t' AND county_id=$countyNum";
    }
    else if (Str::startsWith($org, "schl")) {
-      $name = NameSimplifier::simplifySchoolName($region);
+      $name = ElectionNameSimplifier::simplifySchoolName($region);
       $sql = "SELECT DISTINCT id FROM s4schools WHERE simplename='$name' AND county_id=$countyNum";
    }
    else if (Str::startsWith($org, "comcol")) {
-      $name = NameSimplifier::simplifyCommCollegeName($region);
+      $name = ElectionNameSimplifier::simplifyCommCollegeName($region);
       $sql = "SELECT DISTINCT id FROM s4commcolleges WHERE simplename='$name'";
    }
    else {
