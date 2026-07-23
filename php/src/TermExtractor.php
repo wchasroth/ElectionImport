@@ -27,7 +27,7 @@ class TermExtractor {
    function __construct(string $text) {
       $this->title = $text;
       $text = Str::replaceAll($text, "-year", " year");
-      foreach (["6 yrs", "4 yrs", "2 yrs", "6 yr", "4 yr", "2 yr", "6 year", "4 year", "2 year", "six year", "four year", "5 year", "3 year"] as $year) {
+      foreach (["6 yrs", "4 yrs", "2 yrs", "6 yr", "4 yr", "2 yr", "6 year", "4 year", "2 year", "six year", "four year", "5 year", "3 year", "1 year"] as $year) {
          foreach ([" $year ", "($year)", " $year term ", "($year term)"] as $yearTerm) {
             if (Str::contains($text, $yearTerm)) {
                $text = Str::replaceFirst($text, "terms", "term");
