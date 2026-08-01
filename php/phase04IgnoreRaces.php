@@ -9,6 +9,7 @@ use CharlesRothDotNet\Alfred\Str;
 
 require "vendor/autoload.php";
 
+$includeZeroVotes = $argc > 1 &&  $argv[1] == "-v";
 $rows = Csv::loadTrimmed(STDIN, "\t");
 
 //yyyy-mm-dd   county#   title   voteFor#   candidateName   partyLetter   #votes
@@ -22,7 +23,7 @@ foreach ($rows as $row) {
          $row[Column::VOTES_C] = $votes;
       }
    }
-   if (intval($row[Column::VOTES_C]) == 0)         continue;
+   if (! $includeZeroVotes  &&  intval($row[Column::VOTES_C]) == 0)         continue;
 
    $candidate = safeLower($row[Column::NAME]);
    if ($candidate == "yes")                        continue;
