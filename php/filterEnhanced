@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if test "x$1" = "x"; then
+   echo "Usage: filterEnhanced county.tsv" >&2
+   exit
+fi
+
+php phase04IgnoreRaces.php -v <$1 | \
+    grep -v Delegate              | \
+    grep -v "(REP)"               | \
+    grep -v "Write-in"            | \
+    php phase05ParseVotes.php     | \
+    php phase06ParseOrg.php       | \
+    php phase07Districts.php 
