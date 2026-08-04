@@ -29,7 +29,8 @@ def party_to_p(party):
              'u.s. ':  'T',
              'u. s.':  'T',
              'worki':  'C',
-             'write':  'W'
+             'write':  'W',
+             'propo':  ''
     }
     return pmap[party]
 

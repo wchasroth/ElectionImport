@@ -9,19 +9,29 @@ countyId="$1"
 countyName="$2"
 electionDate="August 4, 2026"
 
-#(
-#   cd $HOME/ImportTools/bin/PRIMARY
-#   ./grabEnhancedJsonForCounty ${countyName}-county-mi $electionDate
-#) >${countyName}.json
+echo "Fetching ${countyName} ..."
+(
+   cd $HOME/ImportTools/bin/PRIMARY
+   ./grabEnhancedJsonForCounty ${countyName}-county-mi "$electionDate"
+) >${countyName}.json
 
-(echo -n "#"; phase03ParseJson.py <${countyName}.json $countyId ) >${countyName}.0.tsv
+if test -s ${countyName}.json; then
 
-phase04IgnoreRaces.php -v <${countyName}.0.tsv | \
-   grep -v Delegate          | \
-   grep -v "(REP)"           | \
-   grep -v "Write-in"        | \
-   phase05ParseVotes.php     | \
-   phase06ParseOrg.php       | \
-   phase07Districts.php  >${countyName}.1.tsv
+   (echo -n "#"; phase03ParseJson.py <${countyName}.json $countyId ) >${countyName}.0.tsv
+   
+   phase04IgnoreRaces.php -v <${countyName}.0.tsv | \
+      grep -v Delegate          | \
+      grep -v "(REP)"           | \
+      grep -v "Write-in"        | \
+      phase05ParseVotes.php     | \
+      phase06ParseOrg.php       | \
+      phase07Districts.php  >${countyName}.1.tsv
+   
+   phase80MatchCandidates.php <${countyName}.1.tsv >${countyName}.matches
+   echo ""
+   echo "${countyName} matches:"
+   cat ${countyName}.matches
+else
+   echo "No primary election for $countyName"
+fi
 
-phase80MatchCandidates.php <${countyName}.1.tsv >${countyName}.matches
