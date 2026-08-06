@@ -6,7 +6,8 @@ for x in *; do
       cd $x
       countyNum=`getCountyNum $x`
       if ! isImported $countyNum; then
-         ph1s=`ls *.ph1.* *.ph2.* 2>/dev/null | sed "s/\.ph[12].*//" | sort | uniq  | wc -l`
+#        ph1s=`ls *.ph1.* *.ph2.* 2>/dev/null | sed "s/\.ph[12].*//" | sort | uniq  | wc -l`
+         ph1s=`ls *.ph1.* *.ph2.* 2>/dev/null | sed "s/\.ph[12].*//" | sed "s/\.[a-z0-9]*//" | sort | uniq  | wc -l`
          ph8s=`ls *.ph8.*         2>/dev/null |                                       wc -l`
          if test "$ph1s" = "$ph8s" -a "$ph1s" -gt 0; then
             echo "$x completely parsed"
