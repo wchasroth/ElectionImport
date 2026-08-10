@@ -2,8 +2,15 @@ README for 2026-08-04 primary elections.
 
 I. Finding, getting, and storing the data from the county election reports.
 
+   All of this is done in the ElectionImport project, currently checked-out from
+   git and set up on the mivoter.org server, user elections, in the ElectionImport directory.
+
+   The "top of ticket" races (Governor, US Senate, state house, state senate, etc.) 
+   are automatically downloaded from other sources, and require little manual handling.
+   So this section is all about the county (and below) level races.
+
    1. Tracking the data.
-      The tracking spreadsheet for the primary election data is at:
+      The tracking spreadsheet for the primary election county data is at:
       https://docs.google.com/spreadsheets/d/1tQl_3ekd6uBhWYle5eNGthreMqoJj8LS7ARjkUaDkkM/edit?gid=158379855#gid=158379855
 
       Green bars are 1st priority counties; yellow bars are 2nd priority.  Everything else is 3rd priority.
@@ -24,15 +31,32 @@ I. Finding, getting, and storing the data from the county election reports.
        
          ACTUAL Results           -- the URL of the actual results, typically a PDF file.
 
-   4. Getting the data.
-      The actual method of downloading the data depends on the data format:
+   4. Getting and saving the data.
+      The actual method of downloading the data depends on the data format.  The results must
+      be stored in the PRIMARIES subdirectory, under a sub-sub-directory with the county name.
+      The filename format fits the standard that we've used for previous elections, e.g.
+      11-berrien_2026-08-04.json.ph1.json or 70-ottawa_2026-08-04.clarity.ph1.csv.
 
-      Enhanced voting.  
+      a. Enhanced voting:
+            fetchEnhancedPrimaryResults  countyid  countyname
+         where countyid is the county # from the master spreadsheet, and countyname is EXACTLY
+         the name as shown in the enhancedvoting.com URL (e.g. just "berrien", not "berrien-county-mi")
 
-   4. Saving the data.
-      The election results files are stored in the ElectionImport project, PRIMARIES directory.  We use the
-      same filename format as before, e.g. 11-berrien_2026-08-04.json.ph1.json or
-      70-ottawa_2026-08-04.clarity.ph1.csv
+         The script automatically stores the file in the proper PRIMARIES directory.
+
+      b. Clarity:
+         These downloads are currently all done manually.  On the page for the election report,
+         on the right, there is a link for "Summary CSV" download.  The download is typically
+         a "summary.zip" file; unzip it, then place and rename the resulting CSV file in the
+         proper PRIMARIES subdirectory, e.g. eaton/23-eaton_2026-08-04.clarity.ph1.csv.
+
+      c. PDF:
+         These downloads are currently all done manually (although they could be scripted).
+         The URL in the "August 2026 election report URL" should be the PDF, or automatically
+         get redirected to the PDF.  Click on it, then download or "save as" a PDF file.
+         Place it in the proper PRIMARIES subdirectory, e.g. bay/03-bay_2026-08-04.pdf.ph1.pdf.
+ 
+II. Parsing the county election reports.
 
 
 1. Wipe v4elections
