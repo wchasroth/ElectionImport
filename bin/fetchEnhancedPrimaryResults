@@ -28,5 +28,6 @@ if test -s tmp; then
    mv tmp $countyName/$countyId-${countyName}_$yyyymmdd.json.ph1.json
 else
    echo "No primary election found for $countyName"
+   rm -f tmp
 fi
 
