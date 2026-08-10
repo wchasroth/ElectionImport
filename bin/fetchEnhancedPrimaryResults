@@ -31,10 +31,12 @@ if test -s ${countyName}.json; then
       grep -v Delegate          | \
       grep -v "(REP)"           | \
       grep -v "Write-in"        | \
+      grep -v $'\tREP '         | \
+      sed "s/\tDEM /\t/"        | \
       phase05ParseVotes.php     | \
       phase06ParseOrg.php       | \
       phase07Districts.php      | \
-      phase08TermLenFinder.php  >$primaries/$countyName/$countyId-${countyName}_2026-08-04.json,ph8.tsv
+      phase08TermLenFinder.php  >$primaries/$countyName/$countyId-${countyName}_2026-08-04.json.ph8.tsv
    
 else
    echo "No primary election for $countyName"
