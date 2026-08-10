@@ -1,0 +1,4 @@
+Full steps to import primary election results.
+
+1. Wipe v4elections
+   echo "source SQL/03-v4elections.sql" | my
