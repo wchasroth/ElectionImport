@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if test "x$1" = "x"; then
-   echo "Usage: translator [-d] nn-name_yyyy-mm-dd.sum1.ph2.xml  ... " >&2
-   echo "   or             [-d] nn-name_yyyy-mm-dd.json.ph1.json ... " >&2
+   echo "Usage: parser [-d] nn-name_yyyy-mm-dd.sum1.ph2.xml  ... " >&2
+   echo "   or         [-d] nn-name_yyyy-mm-dd.json.ph1.json ... " >&2
    exit
 fi
 
