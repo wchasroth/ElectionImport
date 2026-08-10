@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#rsync -avz -e ssh elections@mivoter.org:ElectionImport/PRIMARIES .
+
+rsync -avz -e ssh PRIMARIES elections@mivoter.org:ElectionImport

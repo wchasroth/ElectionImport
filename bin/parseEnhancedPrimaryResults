@@ -1,0 +1,44 @@
+#!/bin/bash
+#
+#---Fetch the August 4 2026 primary results data from the counties
+#   that use the "Enhanced Voting" vendor.  Store in 
+#------------------------------------------------------------
+
+if test "x$2" = "x"; then
+   echo "Usage: fetchEnhancedPrimaryResults county_id county_name" >&2
+   exit
+fi
+
+countyId="$1"
+countyName="$2"
+electionDate="August 4, 2026"
+primaries=$HOME/ElectionImport/PRIMARIES
+
+cd $HOME/ElectionImport/PRIMARY
+
+echo "Fetching ${countyName} ..."
+(
+   cd $HOME/ImportTools/bin/PRIMARY
+   ./grabEnhancedJsonForCounty ${countyName}-county-mi "$electionDate"
+) >${countyName}.json
+
+if test -s ${countyName}.json; then
+   mkdir $primaries/$countyName 2>/dev/null
+
+   (echo -n "#"; phase03ParseJson.py <${countyName}.json $countyId ) >${countyName}.0.tsv
+   
+   phase04IgnoreRaces.php -v <${countyName}.0.tsv | \
+      grep -v Delegate          | \
+      grep -v "(REP)"           | \
+      grep -v "Write-in"        | \
+      grep -v $'\tREP '         | \
+      sed "s/\tDEM /\t/"        | \
+      phase05ParseVotes.php     | \
+      phase06ParseOrg.php       | \
+      phase07Districts.php      | \
+      phase08TermLenFinder.php  >$primaries/$countyName/$countyId-${countyName}_2026-08-04.json.ph8.tsv
+   
+else
+   echo "No primary election for $countyName"
+fi
+

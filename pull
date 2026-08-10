@@ -1,3 +1,4 @@
 #!/bin/bash
 
 rsync -avz -e ssh elections@mivoter.org:ElectionImport/Counties .
+rsync -avz -e ssh elections@mivoter.org:ElectionImport/PRIMARIES .

@@ -1,4 +1,39 @@
-Full steps to import primary election results.
+README for 2026-08-04 primary elections.
+
+I. Finding, getting, and storing the data from the county election reports.
+
+   1. Tracking the data.
+      The tracking spreadsheet for the primary election data is at:
+      https://docs.google.com/spreadsheets/d/1tQl_3ekd6uBhWYle5eNGthreMqoJj8LS7ARjkUaDkkM/edit?gid=158379855#gid=158379855
+
+      Green bars are 1st priority counties; yellow bars are 2nd priority.  Everything else is 3rd priority.
+
+   2. Recording county clerk election pages.
+      This time around, we're saving the page that, in turn, points to the actual primary election results URL.
+      This way, come November, we can (presumably) start from THAT page, to find the general election results
+      URL.
+
+   3. Actual election results.
+      We have several 'flavors' of election results URLs, which are in turn indicated by the "page type"
+      column:
+         Vendor Page (w/ Result)  -- the vendor page (notably EnhancedVoting) that in turn contains
+                                     results for multiple elections.  Our download scripts start from
+                                     there to get the final, machine-readable, result (usually JSON).
+
+         Vendor Page (NO Results) -- same as above, except there are NO results for this election there (yet).
+       
+         ACTUAL Results           -- the URL of the actual results, typically a PDF file.
+
+   4. Getting the data.
+      The actual method of downloading the data depends on the data format:
+
+      Enhanced voting.  
+
+   4. Saving the data.
+      The election results files are stored in the ElectionImport project, PRIMARIES directory.  We use the
+      same filename format as before, e.g. 11-berrien_2026-08-04.json.ph1.json or
+      70-ottawa_2026-08-04.clarity.ph1.csv
+
 
 1. Wipe v4elections
    echo "source SQL/03-v4elections.sql" | my
