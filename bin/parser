@@ -52,7 +52,12 @@ for x in $@; do
 
    elif [[ "$x" == *"clarity.ph1.csv"* ]]; then
       base=`basename $x .ph1.csv`
-      phase03Clarity.php  $electionDate $countyNum     <$x  >$base.ph3.tsv
+      grep -v Delegate  $x               | \
+         grep -v ',"REP '                | \
+         grep -v "Unassigned write-ins"  | \
+         sed 's/,"DEM /,"/'              | \
+         sed 's/,"NP- /,"/'              | \
+         phase03Clarity.php  $electionDate $countyNum >$base.ph3.tsv 
 
    elif [[ "$x" == *"clarity.ph1.html"* ]]; then
       base=`basename $x .ph1.html`
@@ -76,10 +81,19 @@ for x in $@; do
    elif [[ "$x" == *".ph2.tab"* ]]; then
       base=`basename $x .ph2.tab`
       cp $x $base.ph3.tsv
+
+   else
+      echo "No match for $x" >&2
+      continue
    fi
 
    if test "$state" = "n"; then
-      phase04IgnoreRaces.php  <$base.ph3.tsv >/tmp/j4
+      phase04IgnoreRaces.php  <$base.ph3.tsv | \
+         grep -v Delegate          | \
+         grep -v "(REP)"           | \
+         grep -v "Write-in"        | \
+         grep -v $'\tREP '         | \
+         sed "s/\tDEM /\t/"  >/tmp/j4
       cp /tmp/j4 $base.ph4.tsv
    
       phase05ParseVotes.php   <$base.ph4.tsv >/tmp/j5
