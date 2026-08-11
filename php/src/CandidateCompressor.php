@@ -119,7 +119,7 @@ class CandidateCompressor {
          // Find all winners for this year for this office. For each winner:
          $electeds = $this->getMatchingElectedsForOffice($this->pdo, $office, $year);
          foreach ($electeds as $elected) {
-            $debug = false;
+            $debug = true;
 //          $debug =           ($elected['name'] === 'KYRA HARRIS BOLDEN');
             if ($debug) echo "NAME: " . $elected['name'] . " $year ";
             // General match clause, used in several queries.
