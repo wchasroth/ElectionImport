@@ -17,6 +17,7 @@ $year = "2026";
 $counties = $cc->getUncompletedIdsFor("county");
 
 foreach ($counties as $county) {
+    echo "county=$county\n";
     if ($cc->isCountyImported($county)) {
        //---Select the winners of all of the county races.
        $sql = "SELECT DISTINCT org, office, subdist, district, partial, termlen, incumbent, cycle, year "

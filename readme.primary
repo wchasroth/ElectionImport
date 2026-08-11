@@ -91,6 +91,7 @@ III. Importing into our DB
       Only do this at the outset.
 
          echo "source SQL/03-v4elections.sql" | my
+         echo "source SQL/12-v4completed.sql" | my
          echo "source SQL/13-v4imported.sql"  | my
 
    3. New counties.  It may take a while to get the parsed data for all of the
