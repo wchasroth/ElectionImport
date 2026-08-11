@@ -1,0 +1,253 @@
+<?php
+declare(strict_types=1);
+
+namespace CharlesRothDotNet\ElectionImport;
+
+use CharlesRothDotNet\Alfred\AlfredPDO;
+use CharlesRothDotNet\Alfred\MatchableName;
+use CharlesRothDotNet\Alfred\SqlFields;
+use CharlesRothDotNet\Alfred\Str;
+
+define ("ANY_NAME", false);
+define ("MUST_MATCH_NAME", true);
+
+class CandidateCompressor {
+   private AlfredPDO $pdo;
+   private array     $maxSeatsCache;
+   private array     $countiesImported = [];
+
+   function __construct(AlfredPDO $pdo) {
+      $this->pdo = $pdo;
+      $this->maxSeatsCache = $this->loadMaxSeatsCache($pdo);
+
+      // Cache the isImported value for a county, so we only calculate it once.
+      $sql = "SELECT county FROM v4imported";
+      $result = $pdo->run($sql);
+      foreach ($result->getRows() as $row)  $this->countiesImported[intval($row["county"])] = 1;
+   }
+
+   private function getAllOfSingleFieldFrom (string $fieldName, string $sql): array {
+      $values = [];
+      $result = $this->pdo->run($sql);
+      foreach ($result->getRows() as $row)  $values[] = intval($row[$fieldName]);
+      return $values;
+   }
+
+   function isCountyImported(int $county): bool {
+      return array_key_exists($county, $this->countiesImported);
+   }
+
+//   function isCompleted(string $type, int $district): bool {
+//      $sql = "SELECT 1 FROM v4completed WHERE type='$type' AND district=$district LIMIT 1";
+//      $result = $this->pdo->run($sql);
+//      return $result->getRowCount() > 0;
+//   }
+
+   function setCompleted (string $type, int $id): void {
+      $sql = "INSERT INTO v4completed (type, id) VALUES ('$type', $id)";
+      $this->pdo->run($sql);
+   }
+
+   function getElectionDates(): array {
+      return ['2018-11-06', '2020-11-03', '2021-11-02', '2022-11-08', '2023-11-07', '2024-11-05', '2025-11-04'];
+   }
+
+   function getUncompletedIdsFor(string $type): array {
+      if      ($type === 'county')   $sql = "SELECT DISTINCT id FROM s4counties      WHERE id NOT IN";
+      else if ($type === 'school')   $sql = "SELECT DISTINCT id FROM s4schools       WHERE id NOT IN ";
+      else if ($type === 'city')     $sql = "SELECT DISTINCT id FROM s4jurisdictions WHERE type='c' AND id NOT IN ";
+      else if ($type === 'township') $sql = "SELECT DISTINCT id FROM s4jurisdictions WHERE type='t' AND id NOT IN ";
+      else if ($type === 'village')  $sql = "SELECT DISTINCT id FROM s4villages      WHERE id NOT IN ";
+      else if ($type === 'college')  $sql = "SELECT DISTINCT id FROM s4commcolleges  WHERE id NOT IN ";
+      else if ($type === 'state')    $sql = "SELECT 0 AS id WHERE 0 NOT IN ";
+      else    throw new \Exception('Not implemented', 501);
+
+      $sql = $sql . "   (SELECT id FROM v4completed WHERE type='$type')";
+      return $this->getAllOfSingleFieldFrom('id', $sql);
+   }
+
+   function hasCompleteCountiesFor(string $type, int $id): bool {
+      if      ($type === 'school')    $sql = "SELECT DISTINCT county_id FROM s4schools              WHERE id=$id";
+      else if ($type === 'city')      $sql = "SELECT DISTINCT county_id FROM s4jurisdictions        WHERE id=$id";
+      else if ($type === 'township')  $sql = "SELECT DISTINCT county_id FROM s4jurisdictions        WHERE id=$id";
+      else if ($type === 'village')   $sql = "SELECT DISTINCT county_id FROM s4villages             WHERE id=$id";
+      else if ($type === 'college')   $sql = "SELECT DISTINCT county_id FROM v4commcolleges_county  WHERE id=$id";
+      else  throw new \Exception('Not implemented', 501);
+
+      $counties = $this->getAllOfSingleFieldFrom('county_id', $sql);
+      foreach ($counties as $county) {
+         if (! $this->isCountyImported($county)) return false;
+      }
+      return true;
+   }
+
+   function markRaceWinners(string $sql): void {
+      $result = $this->pdo->run($sql);
+      $races  = $result->getRows();
+
+      foreach ($races as $race) {
+
+         $fields = new SqlFields(['org' => $race['org'], 'office' => $race['office'], 'district' => $race['district'], 'subdist' => $race['subdist'],
+            'partial' => $race['partial'], 'termlen' => $race['termlen'],
+            'cycle' => $race['cycle']]);
+         $result = $this->pdo->runSF("SELECT * FROM v4elections WHERE ", "ORDER BY votes_C DESC", $fields);
+         if (! $this->found($result))           continue;
+         $rows = $result->getRows();
+         if (intval($rows[0]['votes_C']) == 0)  continue;   // Nobody wins if # votes = 0.
+
+         $maxVoteFor = 1;  // At least one, no matter what!
+         foreach ($rows as $row)  $maxVoteFor = max($maxVoteFor, intval($row['voteFor']));
+         $maxVoteFor = min ($maxVoteFor, count($rows));  // sometimes voteFor > number of candidates!
+
+         $winnerIds = [];
+
+         for ($i=0;   $i<$maxVoteFor;   $i++)  $winnerIds[] = $rows[$i]['id'];
+         $sql = "UPDATE v4elections SET winner=1 WHERE id in (" . Str::join($winnerIds, ",") . ")";
+         $result = $this->pdo->run($sql);
+         if ($result->failed()) fwrite(STDERR, "Failed: $sql\n");
+      }
+   }
+
+   function applyRaceWinnersToCandidates(string $sql, string $year): void {
+      $yyyy    = intval($year);
+      $result  = $this->pdo->run($sql);
+      $offices = $result->getRows();
+
+      foreach ($offices as $office) {
+         $org = $office['org'];
+
+         // Find all winners for this year for this office. For each winner:
+         $electeds = $this->getMatchingElectedsForOffice($this->pdo, $office, $year);
+         foreach ($electeds as $elected) {
+            $debug = false;
+//          $debug =           ($elected['name'] === 'KYRA HARRIS BOLDEN');
+            if ($debug) echo "NAME: " . $elected['name'] . " $year ";
+            // General match clause, used in several queries.
+            $officeMatchClause = " s.org ='{$elected['org']}' "
+               . "AND s.office  ='{$elected['office']}' "
+               . "AND s.district='{$elected['district']}' "
+               . "AND s.subdist = {$elected['subdist']} ";
+
+            $partial = intval($elected['partial']);
+            $isFullTerm = $partial == 0;
+            $electedCycle = intval($elected['cycle']);
+
+            //---Does this elected match an existing candidate by seat AND by name?
+            $sql = "SELECT c.id, c.name, c.seat_id "
+               . "  FROM      v4candidates AS c "
+               . "  LEFT JOIN v4seats      AS s ON (s.id = c.seat_id) "
+               . " WHERE $officeMatchClause ";
+            $match = $this->pdo->run($sql);
+            if ($match->failed()) {
+               fwrite(STDERR, "Case 1 error " . $match->getError() . " " . $match->getRawSql() . "\n");
+               continue;
+            }
+            if ($this->found($match)) {
+               $matchRows = $match->getRows();
+               $bestIndex = $this->getBestMatchingRowIndex($elected, $matchRows, MUST_MATCH_NAME);
+               if ($bestIndex >= 0) {
+                  $row = $matchRows[$bestIndex];
+                  echo "Case 2 match: {$row['name']}  $officeMatchClause\n";
+                  $id = intval($row['id']);
+                  // replace termlen if we have a better one.  v4seats?
+//                  $this->replaceCandidate($this->pdo, $id, $elected, $year, $debug);
+//                  $newCycle = intval($elected['cycle']);
+//                  if ($newCycle > 0) {
+//                     $seatId = intval($row['seat_id']);
+//                     $this->pdo->run("UPDATE v4seats SET termcycle=$newCycle WHERE id=$seatId");
+//                  }
+                  continue;
+               }
+               else {
+                  echo "Case 3 no-match: {$row['name']}  $officeMatchClause\n";
+               }
+            }
+         }
+      }
+   }
+
+   function getBestMatchingRowIndex(array $elected, array $rows, bool $nameMustMatch=false): int {
+      $rowCount = count($rows);
+      if (! $nameMustMatch  &&  $rowCount === 1)  return 0;
+
+      $electedName = new MatchableName($elected['name']);
+      $incumbentNames = [];
+      for ($i=0;   $i<$rowCount;   $i++) {
+         $row = $rows[$i];
+         $incumbentNames[] = new MatchableName($row['name']);
+      }
+
+      $bestIndex    = $electedName->findBestMatch($incumbentNames, 2);
+      $hadNameMatch = ($bestIndex >= 0);
+      if ($hadNameMatch) {
+         if ($incumbentNames[$bestIndex]->getSimplifiedName() != $electedName->getSimplifiedName()) {
+            echo "Replacing " . $incumbentNames[$bestIndex]->getSimplifiedName() . " with " . $electedName->getSimplifiedName() . "\n";
+         }
+      }
+
+      if (! $hadNameMatch  &&  $nameMustMatch)  return -1;
+
+      return max($bestIndex, 0);
+   }
+
+   private function getCurrentMaxSeats (AlfredPDO $pdo, string $officeMatchClause): int {
+      $sql = "SELECT MAX(s.seatnum) AS maxcurrent FROM v4seats AS s WHERE $officeMatchClause ";
+      $result = $pdo->run($sql);
+      if (! $this->found($result))  return 0;
+
+      $row = $result->getRows()[0];
+      return intval($row['maxcurrent']);
+   }
+
+   private function found($match): bool {
+      return ($match->succeeded() && $match->getRowCount() > 0);
+   }
+
+   private function getMatchingElectedsForOffice(AlfredPDO $pdo, array $office, string $year): array {
+      $fields = new SqlFields(['org' => $office['org'], 'office' => $office['office'], 'district' => $office['district'],
+         'subdist' => $office['subdist'], 'year' => $year, 'winner' => 1]);
+      $result = $pdo->runSF("SELECT * FROM v4elections WHERE ", "", $fields);
+      $rows = $result->getRows();
+      return $rows;
+   }
+
+   private function makeIncumbentFields(array $elected, string $year): array {
+      $fields = ['name' => $elected['name'], 'elected' => $year, 'party' => $elected['party'],
+         'votes_C' => $elected['votes_C'], 'votes_D' => $elected['votes_D'], 'votes_R' => $elected['votes_R'],
+         'votes_O' => $elected['votes_O'], 'votes_T' => $elected['votes_T'],
+         'num2elect' => $elected['voteFor'], 'county' => $elected['county'], 'partial' => $elected['partial']
+      ];
+      return $fields;
+   }
+
+   private function replaceIncumbentWithMatch(AlfredPDO $pdo, int $id, array $elected, string $year, bool $debug=false): void {
+      $newName = strtolower($elected['name']);
+      $updateFields = new SqlFields($this->makeIncumbentFields($elected, $year));
+
+      $oldNameResult = $pdo->run("SELECT name FROM v4incumbents WHERE id=$id");
+      if ($this->found($oldNameResult)) {
+         echo "SUBSTITUTE: $newName REPLACES " . strtolower($oldNameResult->getRows()[0]['name']) . "\n";
+      }
+
+      $sql = "UPDATE v4incumbents SET " . $updateFields->getSetFragment() . " WHERE id=$id";
+      $result = $pdo->run($sql);
+      if ($result->failed()) echo "BAD: $sql\n";
+      if ($debug) echo "DEBUG: $sql\n";
+   }
+
+   private function loadMaxSeatsCache(AlfredPDO $pdo): array {
+      $sql = "SELECT org, office, seats FROM s4titles WHERE seats > 0";
+      $result = $pdo->run($sql);
+      $rows = $result->getRows();
+      $cache = [];
+      foreach ($rows as $row) {
+         $cache[$row['org'] . "-" . $row['office']] = intval($row['seats']);
+      }
+      return $cache;
+   }
+
+   private function simplifyDistrict(string $district): string {
+      if (! Str::startsWith($district, '0'))  return $district;
+      return Str::substringAfter ($district, '0');
+   }
+}
