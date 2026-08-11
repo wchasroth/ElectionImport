@@ -2,6 +2,7 @@
 #
 #---v4primaries
 
+#---Step 1: import any NEW ph8.tsv files into v4elections.
 cd $ELECTION_IMPORT/PRIMARIES
 for x in *; do
    if test -d $x; then
@@ -12,11 +13,34 @@ for x in *; do
             echo "Processing $x"
             tsv=`ls *ph8.tsv`
             phase09db.php <$tsv 2>error
+            if test ! -s error; then
+               rm -f error
+            fi
             markImported $countyNum
          fi
          cd ..
       fi
    fi
 done
+
+#---Step 2: complain about any DB errors (rare/unlikely)
+errorCount=`ls */error 2>/dev/null | wc -l`
+if test $errorCount -gt 0; then
+   echo ""
+   echo "Some database errors occurred.  Check these files:"
+   ls -l */error
+fi
+
+
+#---Step 3: fix up as many strange/odd term lengths as possible.
+#   (No harm if run multiple times.)
+cd $ELECTION_IMPORT
+phase10clean.php 2026-08-04 2>primaries.clean
+
+phase11termlen.php >primaries.termlen
+echo "source primaries.termlen" | my
+
+
+
 
 
