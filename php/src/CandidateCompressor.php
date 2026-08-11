@@ -111,6 +111,7 @@ class CandidateCompressor {
    function applyRaceWinnersToCandidates(string $sql, string $year): void {
       $yyyy    = intval($year);
       $result  = $this->pdo->run($sql);
+      if ($result->failed()) fwrite(STDERR, "Error: $sql\n");
       $offices = $result->getRows();
 
       foreach ($offices as $office) {
