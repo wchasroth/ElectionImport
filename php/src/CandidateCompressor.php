@@ -119,7 +119,7 @@ class CandidateCompressor {
          $org = $office['org'];
 
          // Find all winners for this year for this office. For each winner:
-         $electeds = $this->getMatchingElectedsForOffice($this->pdo, $office, $year);
+         $electeds = $this->getMatchingElectedsForOffice($this->pdo, $office);
          foreach ($electeds as $elected) {
             $debug = true;
 //          $debug =           ($elected['name'] === 'KYRA HARRIS BOLDEN');
@@ -205,9 +205,9 @@ class CandidateCompressor {
       return ($match->succeeded() && $match->getRowCount() > 0);
    }
 
-   private function getMatchingElectedsForOffice(AlfredPDO $pdo, array $office, string $year): array {
+   private function getMatchingElectedsForOffice(AlfredPDO $pdo, array $office): array {
       $fields = new SqlFields(['org' => $office['org'], 'office' => $office['office'], 'district' => $office['district'],
-         'subdist' => $office['subdist'], 'year' => $year, 'winner' => 1]);
+         'subdist' => $office['subdist'], 'winner' => 1]);
       $result = $pdo->runSF("SELECT * FROM v4elections WHERE ", "", $fields);
       $rows = $result->getRows();
       return $rows;
