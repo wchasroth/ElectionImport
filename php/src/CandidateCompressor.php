@@ -160,7 +160,7 @@ class CandidateCompressor {
                   continue;
                }
                else {
-                  echo "Case 3 no-name-match: {$row['name']}  $officeMatchClause\n";
+                  echo "Case 3 no-name-match: {$elected['name']}  $officeMatchClause\n";
                }
             }
             else {

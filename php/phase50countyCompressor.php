@@ -32,6 +32,6 @@ foreach ($counties as $county) {
           . "   ORDER BY org, office, district, subdist";
        $cc->applyRaceWinnersToCandidates($sql, $year);
 
-       $cc->setCompleted("county", $county);
+//     $cc->setCompleted("county", $county);
     }
 }
