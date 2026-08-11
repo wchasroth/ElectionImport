@@ -1,29 +1,25 @@
 #!/bin/bash
 #
-#---Fetch the August 4 2026 primary results data from the counties
-#   that use the "Enhanced Voting" vendor.  Store in 
+#---parseEnhancedPrimaryResults
+#
+#
 #------------------------------------------------------------
 
 if test "x$2" = "x"; then
-   echo "Usage: fetchEnhancedPrimaryResults county_id county_name" >&2
+   echo "Usage: parseEnhancedPrimaryResults county_name" >&2
    exit
 fi
 
-countyId="$1"
-countyName="$2"
+countyName="$1"
 electionDate="August 4, 2026"
 primaries=$HOME/ElectionImport/PRIMARIES
 
-cd $HOME/ElectionImport/PRIMARY
+cd $primaries
+if test ! -d $countyName; then
+   echo "No such county directory $1" >&2
+   exit
+fi
 
-echo "Fetching ${countyName} ..."
-(
-   cd $HOME/ImportTools/bin/PRIMARY
-   ./grabEnhancedJsonForCounty ${countyName}-county-mi "$electionDate"
-) >${countyName}.json
-
-if test -s ${countyName}.json; then
-   mkdir $primaries/$countyName 2>/dev/null
 
    (echo -n "#"; phase03ParseJson.py <${countyName}.json $countyId ) >${countyName}.0.tsv
    
@@ -37,8 +33,3 @@ if test -s ${countyName}.json; then
       phase06ParseOrg.php       | \
       phase07Districts.php      | \
       phase08TermLenFinder.php  >$primaries/$countyName/$countyId-${countyName}_2026-08-04.json.ph8.tsv
-   
-else
-   echo "No primary election for $countyName"
-fi
-
