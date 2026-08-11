@@ -23,7 +23,7 @@ foreach ($townships as $township) {
     if ($ic->hasCompleteCountiesFor('township', $township)) {
 //      if ($township != 3540)  continue;
 
-        //---For cities that cross counties, combine (add up) the individual county election rows, into one row each.
+        //---For townships that cross counties, combine (add up) the individual county election rows, into one row each.
         foreach ($years as $year) {
            $sql = "SELECT DISTINCT org, office, district, subdist, partial, termlen, incumbent, year FROM v4elections "
                 . " WHERE year='$year' "
