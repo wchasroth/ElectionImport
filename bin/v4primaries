@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+#---v4primaries
+
+cd $ELECTION_IMPORT/PRIMARIES
+for x in *; do
+   if test -d $x; then
+      countyNum=`getPrimaryCountyNum $x`
+      if ! isImported $countyNum; then
+         cd $x
+         if test -s *ph8.tsv; then
+            echo "Processing $x"
+            tsv=`ls *ph8.tsv`
+            phase09db.php <$tsv 2>error
+            markImported $countyNum
+         fi
+         cd ..
+      fi
+   fi
+done
+
+
