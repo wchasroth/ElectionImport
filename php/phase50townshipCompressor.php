@@ -43,7 +43,7 @@ foreach ($townships as $township) {
           . "    FROM v4elections WHERE year='$year' "
           . "     AND org IN ('town', 'town-cou') AND district='$township' "
           . "   ORDER BY org, office, district, subdist";
-       $cc->applyRaceWinnersToIncumbents($sql, $year);
+       $cc->applyRaceWinnersToCandidates($sql, $year);
 
        $cc->setCompleted("township", $township);
     }
