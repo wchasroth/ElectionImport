@@ -15,7 +15,6 @@ $pdo  = PdoHelper::makePdo($env);
 $cc = new CandidateCompressor($pdo);
 $year = "2026";
 $counties = $cc->getUncompletedIdsFor("county");
-$counties = [18];
 
 foreach ($counties as $county) {
     if ($cc->isCountyImported($county)) {
