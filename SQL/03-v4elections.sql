@@ -21,5 +21,6 @@ CREATE TABLE           v4elections (
    cycle      smallint    NOT NULL DEFAULT 0,
    partial    tinyint     NOT NULL DEFAULT 0,
    winner     tinyint     NOT NULL DEFAULT 0,
-   incumbent  char(1)     NOT NULL DEFAULT ''
+   incumbent  char(1)     NOT NULL DEFAULT '',
+   imported   tinyint     NOT NULL DEFAULT 0
 );

@@ -166,19 +166,8 @@ class CandidateCompressor {
             if ($bestIndex >= 0) {
                $row = $matchRows[$bestIndex];
                echo "Case 1 match: {$row['name']}  $officeMatchClause\n";
-
-//               $id = intval($row['id']);
-//
-//               // update v4seats termlen if was 0 and new value is > 0
-//               $sql = "UPDATE v4seats SET termlen = {$row['termlen']} "
-//                    . " WHERE id = {$row['seat_id']}  AND termlen = 0 ";
-//               $result = $this->pdo->run($sql);
-//               echo "Case 2 update: $sql\n";
-//               if ($result->failed())  fwrite(STDERR, "Could not update v4seats termlen for $id\n");
-//
-//               // set v4candidates won = 1
-//               $sql = "UPDATE v4candidates SET won=1 WHERE id=$id";
-//               $this->pdo->run($sql);
+               $this->markElectedRowAsImported($elected['id']);
+               $this->updateCandidateRow($row['id'], $row['name'], $row['termlen']);
                continue;
             }
 
@@ -186,6 +175,8 @@ class CandidateCompressor {
             $emptyIndex = $this->findRowWithName($matchRows, "");
             if ($emptyIndex > -1) {
                echo "Case 2: empty name match for {$elected['name']}, $officeMatchClause\n";
+               $this->markElectedRowAsImported($elected['id']);
+               $this->updateCandidateRow($row['id'], $row['name'], $row['termlen']);
                continue;
             }
 
@@ -199,6 +190,25 @@ class CandidateCompressor {
             echo "ERROR: should be impossible case: $officeMatchClause\n";
          }
       }
+   }
+
+   function updateCandidateRow(string $id, string $name, int $termlen) {
+      $sqlFields = new SqlFields(['name' => $name]);
+      $sqlFields->getUpdateFragment();
+      $sql = "UPDATE v4candidates SET " . $sqlFields->getUpdateFragment() . " WHERE id = $id";
+      $this->runQuery($sql);
+      if (intval($termlen) > 0)  $this->runQuery("UPDATE v4candidates SET termlen=$termlen WHERE id = $id AND termlen = 0");
+   }
+
+   function runQuery(string $sql): void {
+      echo "   About to run: $sql\n";
+//    $result = $this->pdo->run($sql);
+//    if ($result->failed()) fwrite(STDERR, "Query failed: $sql\n");
+   }
+
+   private function markElectedRowAsImported(string $id): void {
+      $sql = "UPDATE v4elections SET imported=1 WHERE id=$id";
+//    $this->pdo->run($sql);
    }
 
    function findRowWithName (array $rows, $nameValue): int {
@@ -247,7 +257,7 @@ class CandidateCompressor {
 
    private function getMatchingElectedsForOffice(AlfredPDO $pdo, array $office): array {
       $fields = new SqlFields(['org' => $office['org'], 'office' => $office['office'], 'district' => $office['district'],
-         'subdist' => $office['subdist'], 'winner' => 1]);
+         'subdist' => $office['subdist'], 'winner' => 1, 'imported' => 0]);
       $result = $pdo->runSF("SELECT * FROM v4elections WHERE ", "", $fields);
       $rows = $result->getRows();
       return $rows;

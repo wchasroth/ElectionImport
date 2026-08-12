@@ -28,7 +28,6 @@ foreach ($townships as $township) {
              . " WHERE year='$year' "
              . "   AND org IN ('town', 'town-cou') AND district='$township' "
              . " ORDER BY org, office, district, subdist, incumbent, name";
-        echo "$sql\n";
         $moc->combine($sql);
 
        //---Select the winners
