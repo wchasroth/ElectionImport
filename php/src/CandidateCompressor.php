@@ -175,6 +175,7 @@ class CandidateCompressor {
             $emptyIndex = $this->findRowWithName($matchRows, "");
             if ($emptyIndex > -1) {
                echo "Case 2: empty name match for {$elected['name']}, $officeMatchClause\n";
+               $row = $matchRows[0];
                $this->markElectedRowAsImported($elected['id']);
                $this->updateCandidateRow($row['id'], $row['name'], $row['termlen']);
                continue;
