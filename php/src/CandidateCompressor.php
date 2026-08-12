@@ -206,7 +206,7 @@ class CandidateCompressor {
 //    if ($result->failed()) fwrite(STDERR, "Query failed: $sql\n");
    }
 
-   private function markElectedRowAsImported(string $id): void {
+   private function markElectedRowAsImported(int $id): void {
       $sql = "UPDATE v4elections SET imported=1 WHERE id=$id";
 //    $this->pdo->run($sql);
    }
