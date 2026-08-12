@@ -166,8 +166,9 @@ class CandidateCompressor {
             if ($bestIndex >= 0) {
                $row = $matchRows[$bestIndex];
                echo "Case 1 match: {$row['name']}  $officeMatchClause\n";
+               $this->updateCandidateName($row['id'],      $elected['name']);
+               $this->updateSeatTermlen  ($row['seat_id'], $elected['termlen']);
                $this->markElectedRowAsImported($elected['id']);
-               $this->updateCandidateRow($row['id'], $elected['name'], $elected['termlen']);
                continue;
             }
 
@@ -176,8 +177,9 @@ class CandidateCompressor {
             if ($emptyIndex > -1) {
                echo "Case 2: empty name match for {$elected['name']}, $officeMatchClause\n";
                $row = $matchRows[0];
+               $this->updateCandidateName($row['id'],      $elected['name']);
+               $this->updateSeatTermlen  ($row['seat_id'], $elected['termlen']);
                $this->markElectedRowAsImported($elected['id']);
-               $this->updateCandidateRow($row['id'], $elected['name'], $elected['termlen']);
                continue;
             }
 
@@ -193,12 +195,15 @@ class CandidateCompressor {
       }
    }
 
-   function updateCandidateRow(int $id, string $name, int $termlen) {
+   function updateCandidateName(int $id, string $name): void {
       $sqlFields = new SqlFields(['name' => $name]);
       $sqlFields->getUpdateFragment();
       $sql = "UPDATE v4candidates SET " . $sqlFields->getUpdateFragment() . " WHERE id = $id";
       $this->runQuery($sql);
-      if (intval($termlen) > 0)  $this->runQuery("UPDATE v4candidates SET termlen=$termlen WHERE id = $id AND termlen = 0");
+   }
+
+   function updateSeatTermlen (int $id, int $termlen): void {
+      if ($termlen > 0) $this->runQuery ("UPDATE v4seats SET termlen=$termlen WHERE id = $id AND termlen = 0");
    }
 
    function runQuery(string $sql): void {
