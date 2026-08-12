@@ -5,6 +5,7 @@ namespace CharlesRothDotNet\ElectionImport;
 
 use CharlesRothDotNet\Alfred\AlfredPDO;
 use CharlesRothDotNet\Alfred\MatchableName;
+use CharlesRothDotNet\Alfred\MichiganCounties;
 use CharlesRothDotNet\Alfred\SqlFields;
 use CharlesRothDotNet\Alfred\Str;
 
@@ -15,10 +16,12 @@ class CandidateCompressor {
    private AlfredPDO $pdo;
    private array     $maxSeatsCache;
    private array     $countiesImported = [];
+   private MichiganCounties $michiganCounties;
 
    function __construct(AlfredPDO $pdo) {
       $this->pdo = $pdo;
       $this->maxSeatsCache = $this->loadMaxSeatsCache($pdo);
+      $this->michiganCounties = new MichiganCounties();
 
       // Cache the isImported value for a county, so we only calculate it once.
       $sql = "SELECT county FROM v4imported";
@@ -149,15 +152,19 @@ class CandidateCompressor {
                continue;
             }
 
-            //---Case 4: no v4seats row at all!  Create a new one.
+            //---Case 4: no v4seats row at all (for partial-term election)
             $matchRows = $match->getRows();
             if (count($matchRows) == 0  &&  $elected['partial'] == 1) {
-               echo "Case 5: no-seat for PARTIAL TERM {$elected['name']} $officeMatchClause\n";
+//             echo "Case 5: no-seat for PARTIAL TERM {$elected['name']} $officeMatchClause\n";
+               $this->reportCase("Case 5, no partial term seat: ", $elected);
                continue;
             }
 
+
+            //---Case 5: no v4seats at all (regular election)
             if (count($matchRows) == 0) {
-               echo "Case 4: no-seat for {$elected['name']} $officeMatchClause\n";
+//             echo "Case 4: no-seat for {$elected['name']} $officeMatchClause\n";
+               $this->reportCase("Case 4, no regular seat: ", $elected);
                continue;
             }
 
@@ -186,13 +193,32 @@ class CandidateCompressor {
             //---Case 3: v4seats row, but no candidate row at all.
             $nullIndex = $this->findRowWithName($matchRows, null);
             if ($nullIndex > -1) {
-               echo "Case 3: no candidates row for {$elected['name']}, $officeMatchClause\n";
+//             echo "Case 3: no candidates row for {$elected['name']}, $officeMatchClause\n";
+               $this->reportCase("Case 3, no candidates row: ", $elected);
                continue;
             }
 
             echo "ERROR: should be impossible case: $officeMatchClause\n";
          }
       }
+   }
+
+   function reportCase(string $text, array $elected) {
+      $countyName = $this->michiganCounties->getName($elected['county']);
+      $juris  = "";
+      $office = $elected['office'];
+      $org = $elected['org'];
+      if      ($org === 'cnty-com')    $office = "commissioner";
+      else if ($org === 'city')        $juris  = getJurisName($elected['district']);
+      else if ($org === 'city-cou')  { $juris  = getJurisName($elected['district']);  $office = "council"; }
+      else if ($org === 'town')        $juris  = getJurisName($elected['district']);
+
+      echo "$text  for $countyName $juris $office\n";
+   }
+
+   function getJurisName (string $district): string {
+      $sql = "SELECT name FROM s4jurisdiction WHERE id='$district'";
+      return $this->pdo->run($sql)->getSingleValue('name');
    }
 
    function updateCandidateName(int $id, string $name): void {
