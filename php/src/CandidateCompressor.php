@@ -167,7 +167,7 @@ class CandidateCompressor {
                $row = $matchRows[$bestIndex];
                echo "Case 1 match: {$row['name']}  $officeMatchClause\n";
                $this->markElectedRowAsImported($elected['id']);
-               $this->updateCandidateRow($row['id'], $row['name'], $row['termlen']);
+               $this->updateCandidateRow($row['id'], $elected['name'], $elected['termlen']);
                continue;
             }
 
@@ -177,7 +177,7 @@ class CandidateCompressor {
                echo "Case 2: empty name match for {$elected['name']}, $officeMatchClause\n";
                $row = $matchRows[0];
                $this->markElectedRowAsImported($elected['id']);
-               $this->updateCandidateRow($row['id'], $row['name'], $row['termlen']);
+               $this->updateCandidateRow($row['id'], $elected['name'], $elected['termlen']);
                continue;
             }
 
