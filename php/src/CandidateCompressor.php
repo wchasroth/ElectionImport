@@ -159,7 +159,6 @@ class CandidateCompressor {
                continue;
             }
 
-
             //---Case 5: no v4seats at all (regular election)
             if (count($matchRows) == 0) {
                $this->reportCase("Case 4: no regular seat", $elected);
@@ -174,6 +173,7 @@ class CandidateCompressor {
                $this->updateCandidateName($row['id'],      $elected['name']);
                $this->updateSeatTermlen  ($row['seat_id'], $elected['termlen']);
                $this->markElectedRowAsImported($elected['id']);
+               $this->reportCase("Case 1: success", $elected);
                continue;
             }
 
@@ -185,6 +185,7 @@ class CandidateCompressor {
                $this->updateCandidateName($row['id'],      $elected['name']);
                $this->updateSeatTermlen  ($row['seat_id'], $elected['termlen']);
                $this->markElectedRowAsImported($elected['id']);
+               $this->reportCase("Case 2: success (empty slot)", $elected);
                continue;
             }
 
