@@ -117,14 +117,15 @@ class CandidateCompressor {
       foreach ($offices as $office) {
          $org = $office['org'];
 
-         // Find all winners for this year for this office. For each winner:
+         // For each of the winners for this year for this office:
          $electeds = $this->getMatchingElectedsForOffice($this->pdo, $office);
          foreach ($electeds as $elected) {
-            $debug = true;
+            $debug = false;
 //          $debug =           ($elected['name'] === 'KYRA HARRIS BOLDEN');
             if ($debug) echo "NAME: " . $elected['name'] . " $year ";
             // General match clause, used in several queries.
-            $officeMatchClause = " s.org ='{$elected['org']}' "
+            $officeMatchClause
+               = "    s.org     ='{$elected['org']}' "
                . "AND s.office  ='{$elected['office']}' "
                . "AND s.district='{$elected['district']}' "
                . "AND s.subdist = {$elected['subdist']} ";
@@ -133,41 +134,73 @@ class CandidateCompressor {
             $isFullTerm = $partial == 0;
             $electedCycle = intval($elected['cycle']);
 
-            //---Does this elected match an existing candidate by seat AND by name?
-            $sql = "SELECT c.id, c.name, c.seat_id "
+            //---Case 1: does this elected match an existing candidate by seat AND by name? Update termlen if old=0 and new>0
+            //---Case 2: is there a candidate row that matches by seat, but has an EMPTY name?  Update name, termlen if old=0 and new>0
+            //---Case 3: is there a v4seats rows that matches by office, but has no candidate row at all?  (Create a candidate row, put all data there)
+            //---Case 4: create a new v4seats row.  Create a candidate row, put all data there.
+            $sql = "SELECT c.id, c.seat_id, c.name, c.seat_id, s.termlen "
                . "  FROM      v4candidates AS c "
                . "  LEFT JOIN v4seats      AS s ON (s.id = c.seat_id) "
-               . " WHERE $officeMatchClause ";
+               . " WHERE $officeMatchClause "
+               . "   AND s.termcycle = $yyyy";
             $match = $this->pdo->run($sql);
             if ($match->failed()) {
                fwrite(STDERR, "Case 1 error " . $match->getError() . " " . $match->getRawSql() . "\n");
                continue;
             }
-            if ($this->found($match)) {
-               $matchRows = $match->getRows();
-               $bestIndex = $this->getBestMatchingRowIndex($elected, $matchRows, MUST_MATCH_NAME);
-               if ($bestIndex >= 0) {
-                  $row = $matchRows[$bestIndex];
-                  echo "Case 2 match: {$row['name']}  $officeMatchClause\n";
-                  $id = intval($row['id']);
-                  // replace termlen if we have a better one.  v4seats?
-//                  $this->replaceCandidate($this->pdo, $id, $elected, $year, $debug);
-//                  $newCycle = intval($elected['cycle']);
-//                  if ($newCycle > 0) {
-//                     $seatId = intval($row['seat_id']);
-//                     $this->pdo->run("UPDATE v4seats SET termcycle=$newCycle WHERE id=$seatId");
-//                  }
-                  continue;
-               }
-               else {
-                  echo "Case 3 no-name-match: {$elected['name']}  $officeMatchClause\n";
-               }
+
+            //---Case 4: no v4seats row at all!  Create a new one.
+            $matchRows = $match->getRows();
+            if (count($matchRows) == 0) {
+               echo "Case 4: no-seat for $officeMatchClause\n";
+               continue;
             }
-            else {
-               echo "Case 4: no-office-match: {$elected['name']}  $officeMatchClause\n";
+
+            //---Case 1: Does this elected match an existing candidate by seat AND by name? Update termlen if old=0 and new>0
+            $bestIndex = $this->getBestMatchingRowIndex($elected, $matchRows, MUST_MATCH_NAME);
+            if ($bestIndex >= 0) {
+               $row = $matchRows[$bestIndex];
+               echo "Case 1 match: {$row['name']}  $officeMatchClause\n";
+
+//               $id = intval($row['id']);
+//
+//               // update v4seats termlen if was 0 and new value is > 0
+//               $sql = "UPDATE v4seats SET termlen = {$row['termlen']} "
+//                    . " WHERE id = {$row['seat_id']}  AND termlen = 0 ";
+//               $result = $this->pdo->run($sql);
+//               echo "Case 2 update: $sql\n";
+//               if ($result->failed())  fwrite(STDERR, "Could not update v4seats termlen for $id\n");
+//
+//               // set v4candidates won = 1
+//               $sql = "UPDATE v4candidates SET won=1 WHERE id=$id";
+//               $this->pdo->run($sql);
+               continue;
             }
+
+            //---Case 2: find empty name row
+            $emptyIndex = $this->findRowWithName($matchRows, "");
+            if ($emptyIndex > -1) {
+               echo "Case 2: empty name match for $officeMatchClause\n";
+               continue;
+            }
+
+            //---Case 3: v4seats row, but no candidate row at all.
+            $nullIndex = $this->findRowWithName($matchRows, null);
+            if ($nullIndex > -1) {
+               echo "Case 3: empty name match for $officeMatchClause\n";
+               continue;
+            }
+
+            echo "ERROR: should be impossible case: $officeMatchClause\n";
          }
       }
+   }
+
+   function findRowWithName (array $rows, $nameValue): int {
+      for ($i=0;   $i<count($rows); $i++) {
+         if ($rows[$i]['name'] == $nameValue) return $i;
+      }
+      return -1;
    }
 
    function getBestMatchingRowIndex(array $elected, array $rows, bool $nameMustMatch=false): int {

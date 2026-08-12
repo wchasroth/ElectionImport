@@ -45,6 +45,6 @@ foreach ($townships as $township) {
           . "   ORDER BY org, office, district, subdist";
        $cc->applyRaceWinnersToCandidates($sql, $year);
 
-       $cc->setCompleted("township", $township);
+//     $cc->setCompleted("township", $township);
     }
 }
