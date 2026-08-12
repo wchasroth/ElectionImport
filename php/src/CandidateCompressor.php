@@ -218,7 +218,7 @@ class CandidateCompressor {
    }
 
    function getJurisName (string $district): string {
-      $sql = "SELECT name FROM s4jurisdiction WHERE id='$district'";
+      $sql = "SELECT name FROM s4jurisdictions WHERE id='$district'";
       return $this->pdo->run($sql)->getSingleValue('name');
    }
 
