@@ -212,8 +212,9 @@ class CandidateCompressor {
       else if ($org === 'city')        $juris  = $this->getJurisName($elected['district']);
       else if ($org === 'city-cou')  { $juris  = $this->getJurisName($elected['district']);  $office = "council"; }
       else if ($org === 'town')        $juris  = $this->getJurisName($elected['district']);
+      else if ($org === 'town-cou')    $juris  = $this->getJurisName($elected['district']);
 
-      echo "$text  for $countyName $juris $office\n";
+      echo "$text $countyName County,  $juris $office\n";
    }
 
    function getJurisName (string $district): string {
