@@ -14,13 +14,13 @@ define ("MUST_MATCH_NAME", true);
 
 class CandidateCompressor {
    private AlfredPDO $pdo;
-   private array     $maxSeatsCache;
+// private array     $maxSeatsCache;
    private array     $countiesImported = [];
    private MichiganCounties $michiganCounties;
 
    function __construct(AlfredPDO $pdo) {
       $this->pdo = $pdo;
-      $this->maxSeatsCache = $this->loadMaxSeatsCache($pdo);
+//      $this->maxSeatsCache = $this->loadMaxSeatsCache($pdo);
       $this->michiganCounties = new MichiganCounties();
 
       // Cache the isImported value for a county, so we only calculate it once.
@@ -40,19 +40,9 @@ class CandidateCompressor {
       return array_key_exists($county, $this->countiesImported);
    }
 
-//   function isCompleted(string $type, int $district): bool {
-//      $sql = "SELECT 1 FROM v4completed WHERE type='$type' AND district=$district LIMIT 1";
-//      $result = $this->pdo->run($sql);
-//      return $result->getRowCount() > 0;
-//   }
-
    function setCompleted (string $type, int $id): void {
       $sql = "INSERT INTO v4completed (type, id) VALUES ('$type', $id)";
       $this->pdo->run($sql);
-   }
-
-   function getElectionDates(): array {
-      return ['2018-11-06', '2020-11-03', '2021-11-02', '2022-11-08', '2023-11-07', '2024-11-05', '2025-11-04'];
    }
 
    function getUncompletedIdsFor(string $type): array {
@@ -273,14 +263,14 @@ class CandidateCompressor {
       return max($bestIndex, 0);
    }
 
-   private function getCurrentMaxSeats (AlfredPDO $pdo, string $officeMatchClause): int {
-      $sql = "SELECT MAX(s.seatnum) AS maxcurrent FROM v4seats AS s WHERE $officeMatchClause ";
-      $result = $pdo->run($sql);
-      if (! $this->found($result))  return 0;
-
-      $row = $result->getRows()[0];
-      return intval($row['maxcurrent']);
-   }
+//   private function getCurrentMaxSeats (AlfredPDO $pdo, string $officeMatchClause): int {
+//      $sql = "SELECT MAX(s.seatnum) AS maxcurrent FROM v4seats AS s WHERE $officeMatchClause ";
+//      $result = $pdo->run($sql);
+//      if (! $this->found($result))  return 0;
+//
+//      $row = $result->getRows()[0];
+//      return intval($row['maxcurrent']);
+//   }
 
    private function found($match): bool {
       return ($match->succeeded() && $match->getRowCount() > 0);
@@ -294,43 +284,43 @@ class CandidateCompressor {
       return $rows;
    }
 
-   private function makeIncumbentFields(array $elected, string $year): array {
-      $fields = ['name' => $elected['name'], 'elected' => $year, 'party' => $elected['party'],
-         'votes_C' => $elected['votes_C'], 'votes_D' => $elected['votes_D'], 'votes_R' => $elected['votes_R'],
-         'votes_O' => $elected['votes_O'], 'votes_T' => $elected['votes_T'],
-         'num2elect' => $elected['voteFor'], 'county' => $elected['county'], 'partial' => $elected['partial']
-      ];
-      return $fields;
-   }
+//   private function makeIncumbentFields(array $elected, string $year): array {
+//      $fields = ['name' => $elected['name'], 'elected' => $year, 'party' => $elected['party'],
+//         'votes_C' => $elected['votes_C'], 'votes_D' => $elected['votes_D'], 'votes_R' => $elected['votes_R'],
+//         'votes_O' => $elected['votes_O'], 'votes_T' => $elected['votes_T'],
+//         'num2elect' => $elected['voteFor'], 'county' => $elected['county'], 'partial' => $elected['partial']
+//      ];
+//      return $fields;
+//   }
 
-   private function replaceIncumbentWithMatch(AlfredPDO $pdo, int $id, array $elected, string $year, bool $debug=false): void {
-      $newName = strtolower($elected['name']);
-      $updateFields = new SqlFields($this->makeIncumbentFields($elected, $year));
+//   private function replaceIncumbentWithMatch(AlfredPDO $pdo, int $id, array $elected, string $year, bool $debug=false): void {
+//      $newName = strtolower($elected['name']);
+//      $updateFields = new SqlFields($this->makeIncumbentFields($elected, $year));
+//
+//      $oldNameResult = $pdo->run("SELECT name FROM v4incumbents WHERE id=$id");
+//      if ($this->found($oldNameResult)) {
+//         echo "SUBSTITUTE: $newName REPLACES " . strtolower($oldNameResult->getRows()[0]['name']) . "\n";
+//      }
+//
+//      $sql = "UPDATE v4incumbents SET " . $updateFields->getSetFragment() . " WHERE id=$id";
+//      $result = $pdo->run($sql);
+//      if ($result->failed()) echo "BAD: $sql\n";
+//      if ($debug) echo "DEBUG: $sql\n";
+//   }
 
-      $oldNameResult = $pdo->run("SELECT name FROM v4incumbents WHERE id=$id");
-      if ($this->found($oldNameResult)) {
-         echo "SUBSTITUTE: $newName REPLACES " . strtolower($oldNameResult->getRows()[0]['name']) . "\n";
-      }
+//   private function loadMaxSeatsCache(AlfredPDO $pdo): array {
+//      $sql = "SELECT org, office, seats FROM s4titles WHERE seats > 0";
+//      $result = $pdo->run($sql);
+//      $rows = $result->getRows();
+//      $cache = [];
+//      foreach ($rows as $row) {
+//         $cache[$row['org'] . "-" . $row['office']] = intval($row['seats']);
+//      }
+//      return $cache;
+//   }
 
-      $sql = "UPDATE v4incumbents SET " . $updateFields->getSetFragment() . " WHERE id=$id";
-      $result = $pdo->run($sql);
-      if ($result->failed()) echo "BAD: $sql\n";
-      if ($debug) echo "DEBUG: $sql\n";
-   }
-
-   private function loadMaxSeatsCache(AlfredPDO $pdo): array {
-      $sql = "SELECT org, office, seats FROM s4titles WHERE seats > 0";
-      $result = $pdo->run($sql);
-      $rows = $result->getRows();
-      $cache = [];
-      foreach ($rows as $row) {
-         $cache[$row['org'] . "-" . $row['office']] = intval($row['seats']);
-      }
-      return $cache;
-   }
-
-   private function simplifyDistrict(string $district): string {
-      if (! Str::startsWith($district, '0'))  return $district;
-      return Str::substringAfter ($district, '0');
-   }
+//   private function simplifyDistrict(string $district): string {
+//      if (! Str::startsWith($district, '0'))  return $district;
+//      return Str::substringAfter ($district, '0');
+//   }
 }
