@@ -40,22 +40,21 @@ class CandidateCompressor {
       return array_key_exists($county, $this->countiesImported);
    }
 
-   function setCompleted (string $type, int $id): void {
-      $sql = "INSERT INTO v4completed (type, id) VALUES ('$type', $id)";
-      $this->pdo->run($sql);
-   }
+//   function setCompleted (string $type, int $id): void {
+//      $sql = "INSERT INTO v4completed (type, id) VALUES ('$type', $id)";
+//      $this->pdo->run($sql);
+//   }
 
-   function getUncompletedIdsFor(string $type): array {
-      if      ($type === 'county')   $sql = "SELECT DISTINCT id FROM s4counties      WHERE id NOT IN";
-      else if ($type === 'school')   $sql = "SELECT DISTINCT id FROM s4schools       WHERE id NOT IN ";
-      else if ($type === 'city')     $sql = "SELECT DISTINCT id FROM s4jurisdictions WHERE type='c' AND id NOT IN ";
-      else if ($type === 'township') $sql = "SELECT DISTINCT id FROM s4jurisdictions WHERE type='t' AND id NOT IN ";
-      else if ($type === 'village')  $sql = "SELECT DISTINCT id FROM s4villages      WHERE id NOT IN ";
-      else if ($type === 'college')  $sql = "SELECT DISTINCT id FROM s4commcolleges  WHERE id NOT IN ";
-      else if ($type === 'state')    $sql = "SELECT 0 AS id WHERE 0 NOT IN ";
+   function getIdsFor(string $type): array {
+      if      ($type === 'county')   $sql = "SELECT DISTINCT id FROM s4counties ";
+      else if ($type === 'school')   $sql = "SELECT DISTINCT id FROM s4schools ";
+      else if ($type === 'city')     $sql = "SELECT DISTINCT id FROM s4jurisdictions WHERE type='c'  ";
+      else if ($type === 'township') $sql = "SELECT DISTINCT id FROM s4jurisdictions WHERE type='t' ";
+      else if ($type === 'village')  $sql = "SELECT DISTINCT id FROM s4villages ";
+      else if ($type === 'college')  $sql = "SELECT DISTINCT id FROM s4commcolleges ";
+      else if ($type === 'state')    $sql = "SELECT 0 AS id ";
       else    throw new \Exception('Not implemented', 501);
 
-      $sql = $sql . "   (SELECT id FROM v4completed WHERE type='$type')";
       return $this->getAllOfSingleFieldFrom('id', $sql);
    }
 

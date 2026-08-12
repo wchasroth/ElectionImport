@@ -17,11 +17,10 @@ $cc  = new CandidateCompressor($pdo);
 $moc = new MultiCountyOfficeCombiner($pdo);
 $year = "2026-08-04";
 
-$townships = $cc->getUncompletedIdsFor("township");
+$townships = $cc->getIdsFor("township");
 
 foreach ($townships as $township) {
     if ($cc->hasCompleteCountiesFor('township', $township)) {
-//      if ($township != 3540)  continue;
 
         //---For townships that cross counties, combine (add up) the individual county election rows, into one row each.
         $sql = "SELECT DISTINCT org, office, district, subdist, partial, termlen, incumbent, year FROM v4elections "
@@ -36,14 +35,12 @@ foreach ($townships as $township) {
           . "   ORDER BY year, org, office, district, subdist, incumbent";
        $cc->markRaceWinners($sql);
 
-       //---Layer each year's race winners "over top of" the existing incumbents, replacing them
-       //   with new incumbents as needed.
+       //---Apply the race winners to the v4candidates table where possible, otherwise report
+       //   on ambiguous cases (no matching seat, probably a partial-term/vacancy issue).
        $sql = "SELECT DISTINCT org, office, district, subdist "
           . "    FROM v4elections WHERE year='$year' "
           . "     AND org IN ('town', 'town-cou') AND district='$township' "
           . "   ORDER BY org, office, district, subdist";
        $cc->applyRaceWinnersToCandidates($sql, $year);
-
-//     $cc->setCompleted("township", $township);
     }
 }
