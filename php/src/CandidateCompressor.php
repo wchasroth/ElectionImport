@@ -142,7 +142,7 @@ class CandidateCompressor {
                . "  FROM      v4candidates AS c "
                . "  LEFT JOIN v4seats      AS s ON (s.id = c.seat_id) "
                . " WHERE $officeMatchClause "
-               . "   AND s.termcycle = $yyyy";
+               . "   AND (s.termcycle = $yyyy  OR  s.is_open = 1)";
             $match = $this->pdo->run($sql);
             if ($match->failed()) {
                fwrite(STDERR, "Case 1 error " . $match->getError() . " " . $match->getRawSql() . "\n");
@@ -151,6 +151,11 @@ class CandidateCompressor {
 
             //---Case 4: no v4seats row at all!  Create a new one.
             $matchRows = $match->getRows();
+            if (count($matchRows) == 0  &&  $elected['partial'] == 1) {
+               echo "Case 5: no-seat for PARTIAL TERM {$elected['name']} $officeMatchClause\n";
+               continue;
+            }
+
             if (count($matchRows) == 0) {
                echo "Case 4: no-seat for {$elected['name']} $officeMatchClause\n";
                continue;
