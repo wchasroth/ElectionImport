@@ -202,14 +202,14 @@ class CandidateCompressor {
    }
 
    function runQuery(string $sql): void {
-      echo "   About to run: $sql\n";
-//    $result = $this->pdo->run($sql);
-//    if ($result->failed()) fwrite(STDERR, "Query failed: $sql\n");
+//    echo "   About to run: $sql\n";
+      $result = $this->pdo->run($sql);
+      if ($result->failed()) fwrite(STDERR, "Query failed: $sql\n");
    }
 
    private function markElectedRowAsImported(int $id): void {
       $sql = "UPDATE v4elections SET imported=1 WHERE id=$id";
-//    $this->pdo->run($sql);
+      $this->pdo->run($sql);
    }
 
    function findRowWithName (array $rows, $nameValue): int {
