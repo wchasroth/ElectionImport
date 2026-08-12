@@ -155,14 +155,14 @@ class CandidateCompressor {
             //---Case 4: no v4seats row at all (for partial-term election)
             $matchRows = $match->getRows();
             if (count($matchRows) == 0  &&  $elected['partial'] == 1) {
-               $this->reportCase("Case 5, no partial term seat", $elected);
+               $this->reportCase("Case 5: no partial term seat", $elected);
                continue;
             }
 
 
             //---Case 5: no v4seats at all (regular election)
             if (count($matchRows) == 0) {
-               $this->reportCase("Case 4, no regular seat", $elected);
+               $this->reportCase("Case 4: no regular seat", $elected);
                continue;
             }
 
@@ -191,7 +191,7 @@ class CandidateCompressor {
             //---Case 3: v4seats row, but no candidate row at all.
             $nullIndex = $this->findRowWithName($matchRows, null);
             if ($nullIndex > -1) {
-               $this->reportCase("Case 3, no candidates row", $elected);
+               $this->reportCase("Case 3: no candidates row", $elected);
                continue;
             }
 
