@@ -155,16 +155,14 @@ class CandidateCompressor {
             //---Case 4: no v4seats row at all (for partial-term election)
             $matchRows = $match->getRows();
             if (count($matchRows) == 0  &&  $elected['partial'] == 1) {
-//             echo "Case 5: no-seat for PARTIAL TERM {$elected['name']} $officeMatchClause\n";
-               $this->reportCase("Case 5, no partial term seat: ", $elected);
+               $this->reportCase("Case 5, no partial term seat", $elected);
                continue;
             }
 
 
             //---Case 5: no v4seats at all (regular election)
             if (count($matchRows) == 0) {
-//             echo "Case 4: no-seat for {$elected['name']} $officeMatchClause\n";
-               $this->reportCase("Case 4, no regular seat: ", $elected);
+               $this->reportCase("Case 4, no regular seat", $elected);
                continue;
             }
 
@@ -172,7 +170,7 @@ class CandidateCompressor {
             $bestIndex = $this->getBestMatchingRowIndex($elected, $matchRows, MUST_MATCH_NAME);
             if ($bestIndex >= 0) {
                $row = $matchRows[$bestIndex];
-               echo "Case 1 match: {$row['name']}  $officeMatchClause\n";
+//             echo "Case 1 match: {$row['name']}  $officeMatchClause\n";
                $this->updateCandidateName($row['id'],      $elected['name']);
                $this->updateSeatTermlen  ($row['seat_id'], $elected['termlen']);
                $this->markElectedRowAsImported($elected['id']);
@@ -182,7 +180,7 @@ class CandidateCompressor {
             //---Case 2: find empty name row
             $emptyIndex = $this->findRowWithName($matchRows, "");
             if ($emptyIndex > -1) {
-               echo "Case 2: empty name match for {$elected['name']}, $officeMatchClause\n";
+//             echo "Case 2: empty name match for {$elected['name']}, $officeMatchClause\n";
                $row = $matchRows[0];
                $this->updateCandidateName($row['id'],      $elected['name']);
                $this->updateSeatTermlen  ($row['seat_id'], $elected['termlen']);
@@ -193,12 +191,11 @@ class CandidateCompressor {
             //---Case 3: v4seats row, but no candidate row at all.
             $nullIndex = $this->findRowWithName($matchRows, null);
             if ($nullIndex > -1) {
-//             echo "Case 3: no candidates row for {$elected['name']}, $officeMatchClause\n";
-               $this->reportCase("Case 3, no candidates row: ", $elected);
+               $this->reportCase("Case 3, no candidates row", $elected);
                continue;
             }
 
-            echo "ERROR: should be impossible case: $officeMatchClause\n";
+            echo "ERROR: should be impossible case: $officeMatchClause {$elected['name']}\n";
          }
       }
    }
