@@ -209,9 +209,9 @@ class CandidateCompressor {
       $office = $elected['office'];
       $org = $elected['org'];
       if      ($org === 'cnty-com')    $office = "commissioner";
-      else if ($org === 'city')        $juris  = getJurisName($elected['district']);
-      else if ($org === 'city-cou')  { $juris  = getJurisName($elected['district']);  $office = "council"; }
-      else if ($org === 'town')        $juris  = getJurisName($elected['district']);
+      else if ($org === 'city')        $juris  = $this->getJurisName($elected['district']);
+      else if ($org === 'city-cou')  { $juris  = $this->getJurisName($elected['district']);  $office = "council"; }
+      else if ($org === 'town')        $juris  = $this->getJurisName($elected['district']);
 
       echo "$text  for $countyName $juris $office\n";
    }
