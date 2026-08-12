@@ -206,7 +206,7 @@ class CandidateCompressor {
    function reportCase(string $text, array $elected) {
       $countyName = $this->michiganCounties->getName($elected['county']);
       $juris  = "";
-      $office = $elected['office'];
+      $office = $elected['office'] . " (" . $elected['district'] . ")";
       $org = $elected['org'];
       if      ($org === 'cnty-com')    $office = "commissioner";
       else if ($org === 'city')        $juris  = $this->getJurisName($elected['district']);
