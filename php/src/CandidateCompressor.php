@@ -198,7 +198,7 @@ class CandidateCompressor {
 
    function findRowWithName (array $rows, $nameValue): int {
       for ($i=0;   $i<count($rows); $i++) {
-         if ($rows[$i]['name'] == $nameValue) return $i;
+         if ($rows[$i]['name'] === $nameValue) return $i;
       }
       return -1;
    }
