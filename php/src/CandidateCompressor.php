@@ -152,7 +152,7 @@ class CandidateCompressor {
             //---Case 4: no v4seats row at all!  Create a new one.
             $matchRows = $match->getRows();
             if (count($matchRows) == 0) {
-               echo "Case 4: no-seat for $officeMatchClause\n";
+               echo "Case 4: no-seat for {$elected['name']} $officeMatchClause\n";
                continue;
             }
 
@@ -180,14 +180,14 @@ class CandidateCompressor {
             //---Case 2: find empty name row
             $emptyIndex = $this->findRowWithName($matchRows, "");
             if ($emptyIndex > -1) {
-               echo "Case 2: empty name match for $officeMatchClause\n";
+               echo "Case 2: empty name match for {$elected['name']}, $officeMatchClause\n";
                continue;
             }
 
             //---Case 3: v4seats row, but no candidate row at all.
             $nullIndex = $this->findRowWithName($matchRows, null);
             if ($nullIndex > -1) {
-               echo "Case 3: empty name match for $officeMatchClause\n";
+               echo "Case 3: no candidates row for {$elected['name']}, $officeMatchClause\n";
                continue;
             }
 
