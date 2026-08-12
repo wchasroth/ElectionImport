@@ -193,7 +193,7 @@ class CandidateCompressor {
       }
    }
 
-   function updateCandidateRow(string $id, string $name, int $termlen) {
+   function updateCandidateRow(int $id, string $name, int $termlen) {
       $sqlFields = new SqlFields(['name' => $name]);
       $sqlFields->getUpdateFragment();
       $sql = "UPDATE v4candidates SET " . $sqlFields->getUpdateFragment() . " WHERE id = $id";
