@@ -212,8 +212,7 @@ class CandidateCompressor {
 
    function updateCandidateName(int $id, string $name): void {
       $sqlFields = new SqlFields(['name' => $name, 'won' => 1]);
-      $sqlFields->getSetFragment();
-      $sql = "UPDATE v4candidates SET " . $sqlFields->getUpdateFragment() . " WHERE id = $id";
+      $sql = "UPDATE v4candidates SET " . $sqlFields->getSetFragment() . " WHERE id = $id";
       $this->runQuery($sql);
    }
 
