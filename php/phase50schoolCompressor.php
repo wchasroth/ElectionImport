@@ -40,6 +40,6 @@ foreach ($schools as $school) {
             . "    FROM v4elections WHERE year='$year' "
             . "     AND org IN ('schl-cou') AND district='$school' "
             . "   ORDER BY org, office, district, subdist";
-       $cc->applyRaceWinnersToIncumbents($sql, $year);
+       $cc->applyRaceWinnersToCandidates($sql, $year);
     }
 }
