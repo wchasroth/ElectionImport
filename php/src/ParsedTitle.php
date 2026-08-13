@@ -365,20 +365,25 @@ class ParsedTitle {
       $number = 0;
       $words  = Str::split($phrase->getTop(), " ");
       $result = [];
+      $foundWard  = false;
+      $wardNumber = 0;
       foreach ($words as $word) {
          if (Str::startsWith($word, "#"))  $word = Str::substringAfter($word, "#");
          $possibleNumber = strpbrk($word, "0123456789");
          if ($possibleNumber !== false  &&  ! $isSchool) {
             $number = intval($possibleNumber);
+            if ($foundWard) $wardNumber = $number;
             continue;
          }
-         if (in_array($word, ["district", "dist", "ward", "no", "precinct"]))  continue; // removed "wards" see city of niles
+         if ($word === "ward")  { $foundWard = true;  continue; }
+         $foundWard = false;
+         if (in_array($word, ["district", "dist", "no", "precinct"]))  continue; // removed "wards" see city of niles
          if (in_array($word, $result))                                         continue;
          $result[] = $word;
       }
       $phrase->push(Str::join($result, " "));
 //    echo "phrase = " . $phrase->getTop() . "  num=" . $number . "\n";
-      return $number;
+      return $wardNumber > 0 ? $wardNumber : $number;
    }
 
    function removeParentheticalPhrase (string $title): string {

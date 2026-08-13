@@ -225,6 +225,12 @@ class ParsedTitleTest extends TestCase {
    }
 
    #[Test]
+   public function shouldExtractCityWard_whenPrecinctAlsoPresent() {
+      $pt = new ParsedTitle("commissioner bay city  ward 5  precinct 1", "");
+      self::assertEquals (5, $pt->getDistrict());
+   }
+
+   #[Test]
    public function shouldExtractAndRemoveCommissionerAtLarge() {
       $pt = new ParsedTitle("Commissioner At Large for City of Benton Harbor", "");
       self::assertEquals (0,   $pt->getDistrict());
