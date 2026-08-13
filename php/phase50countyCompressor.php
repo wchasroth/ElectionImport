@@ -14,7 +14,7 @@ $pdo  = PdoHelper::makePdo($env);
 
 $cc = new CandidateCompressor($pdo);
 $year = "2026";
-$counties = $cc->getUncompletedIdsFor("county");
+$counties = $cc->getIdsFor("county");
 
 foreach ($counties as $county) {
     if ($cc->isCountyImported($county)) {
@@ -31,7 +31,5 @@ foreach ($counties as $county) {
           . "   WHERE org IN ('cnty', 'cnty-com') AND county=$county "
           . "   ORDER BY org, office, district, subdist";
        $cc->applyRaceWinnersToCandidates($sql, $year);
-
-//     $cc->setCompleted("county", $county);
     }
 }
