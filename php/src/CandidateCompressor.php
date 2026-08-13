@@ -185,7 +185,8 @@ class CandidateCompressor {
                continue;
             }
 
-            echo "ERROR: should be impossible case: $officeMatchClause {$elected['name']}\n";
+//          echo "ERROR: should be impossible case: $officeMatchClause {$elected['name']}\n";
+            $this->reportCase("ERROR: impossible", $elected);
          }
       }
    }
