@@ -89,10 +89,10 @@ for x in $@; do
 
    if test "$state" = "n"; then
       phase04IgnoreRaces.php  <$base.ph3.tsv | \
-         grep -v Delegate          | \
-         grep -v "(REP)"           | \
-         grep -v "Write-in"        | \
-         grep -v $'\tREP '         | \
+         grep -v    Delegate          | \
+         grep -v    "(REP)"           | \
+         grep -v -i "Write-in"        | \
+         grep -v    $'\tREP '         | \
          sed "s/\tDEM /\t/"  >/tmp/j4
       cp /tmp/j4 $base.ph4.tsv
    

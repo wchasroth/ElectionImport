@@ -10,8 +10,8 @@ for x in *; do
       if ! isImported $countyNum; then
          cd $x
          if test -s *ph8.tsv; then
-            echo "Processing $x"
             tsv=`ls *ph8.tsv`
+            echo "In $x, reading $tsv"
             phase09db.php <$tsv 2>error
             if test ! -s error; then
                rm -f error

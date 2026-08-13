@@ -1,0 +1,28 @@
+#!/bin/bash
+
+cd $ELECTION_IMPORT/PRIMARIES
+pwd
+rm -f */*.tsv
+rm -f */error
+
+for x in *; do
+   if test -d $x; then
+      cd $x
+      if   test -s *.ph2.tab; then
+         echo $x   *.ph2.tab
+         parser    *.ph2.tab  2>error
+
+      elif test -s *.ph1.csv; then
+         echo $x   *.ph1.csv
+         parser    *.ph1.csv  2>error
+
+      elif test -s *.ph1.json; then
+         echo $x   *.ph1.json
+         parser    *.ph1.json 2>error
+
+      else
+         echo nothing found in $x
+      fi
+      cd ..
+   fi
+done
