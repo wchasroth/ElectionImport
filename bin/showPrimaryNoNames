@@ -5,7 +5,8 @@ cat <<END
 SELECT DISTINCT s.org, j.id AS district, j.simplename AS locale, s.office, s.seatnum, s.subdist, i.won, 
        s.termlen, s.termcycle, s.is_open AS vac,
        i.name,
-       i.web, i.email, i.phone, i.headshot
+       i.web, i.email, i.phone, i.headshot,
+         (SELECT COUNT(*) FROM v4filings WHERE org=s.org AND office=s.office AND district=s.district AND subdist=s.subdist) AS filings
   FROM      v4seats         AS s  
   LEFT JOIN s4jurisdictions AS j  ON (s.district = j.id)
   LEFT JOIN v4candidates    AS i  ON (i.seat_id = s.id)
@@ -18,7 +19,8 @@ UNION ALL
 SELECT DISTINCT s.org, v.id AS district, v.simplename AS locale, s.office, s.seatnum, s.subdist, i.won, 
        s.termlen, s.termcycle, s.is_open AS vac,
        i.name,
-       i.web, i.email, i.phone, i.headshot
+       i.web, i.email, i.phone, i.headshot, 
+         (SELECT COUNT(*) FROM v4filings WHERE org=s.org AND office=s.office AND district=s.district AND subdist=s.subdist) AS filings
   FROM      v4seats      AS s  
   LEFT JOIN s4villages   AS v  ON (s.district = v.id)
   LEFT JOIN v4candidates AS i  ON (i.seat_id  = s.id)
@@ -31,7 +33,8 @@ UNION ALL
 SELECT DISTINCT s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnum, s.subdist, i.won, 
        s.termlen, s.termcycle, s.is_open AS vac,
        i.name,
-       i.web, i.email, i.phone, i.headshot
+       i.web, i.email, i.phone, i.headshot, 
+         (SELECT COUNT(*) FROM v4filings WHERE org=s.org AND office=s.office AND district=s.district AND subdist=s.subdist) AS filings
   FROM      v4seats      AS s
   LEFT JOIN s4schools    AS c  ON (s.district = c.id)
   LEFT JOIN v4candidates AS i  ON (i.seat_id  = s.id)
@@ -44,7 +47,8 @@ UNION ALL
 SELECT DISTINCT s.org, c.id AS district, c.simplename AS locale, s.office, s.seatnum, s.subdist, i.won, 
        s.termlen, s.termcycle, s.is_open AS vac,
        i.name,
-       i.web, i.email, i.phone, i.headshot
+       i.web, i.email, i.phone, i.headshot, 
+         (SELECT COUNT(*) FROM v4filings WHERE org=s.org AND office=s.office AND district=s.district AND subdist=s.subdist) AS filings
   FROM      v4seats               AS s 
   LEFT JOIN s4commcolleges        AS c ON (s.district = c.id)
   LEFT JOIN v4commcolleges_county AS y ON (c.id = y.id)
@@ -58,7 +62,8 @@ UNION ALL
 SELECT DISTINCT s.org, c.shortname AS district, c.shortname AS locale, s.office, s.seatnum, s.subdist, i.won, 
        s.termlen, s.termcycle, s.is_open AS vac,
        i.name,
-       i.web, i.email, i.phone, i.headshot
+       i.web, i.email, i.phone, i.headshot, 
+         (SELECT COUNT(*) FROM v4filings WHERE org=s.org AND office=s.office AND district=s.district AND subdist=s.subdist) AS filings
   FROM      v4seats        AS s 
   LEFT JOIN v4courts       AS c  ON (s.org = c.type AND s.district = c.shortname)
   LEFT JOIN v4candidates   AS i  ON (i.seat_id  = s.id)
