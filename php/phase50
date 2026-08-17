@@ -1,0 +1,8 @@
+#!/bin/bash
+
+php phase50cityCompressor.php      >out.1  2>out.2
+php phase50collegeCompressor.php  >>out.1 2>>out.2
+php phase50countyCompressor.php   >>out.1 2>>out.2
+php phase50schoolCompressor.php   >>out.1 2>>out.2
+php phase50townshipCompressor.php >>out.1 2>>out.2
+php phase50villageCompressor.php  >>out.1 2>>out.2
