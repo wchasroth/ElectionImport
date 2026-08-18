@@ -1,0 +1,5 @@
+
+SELECT n.name, c.*
+  FROM      s4county_contacts AS c
+  LEFT JOIN s4counties        AS n  ON (c.county = n.id)
+ ORDER BY n.name
