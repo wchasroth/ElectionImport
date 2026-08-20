@@ -106,13 +106,18 @@ III. Importing into our DB
 
          v4primaries
 
+   4. Import data.  Actually run the import to the v4candidates table.
+      In the ElectionImport/bin directory, run:
 
+         ./phase50
 
+      This will produce two output files, out.1 and out.2.  The latter is just for
+      the (rare) error message.  In out.1, "Case 1" and "Case 2" are successes;
+      everything else are failures that will need some human TLC -- most often
+      partial-term elections where we did not KNOW that somone had resigned a seat.
 
-      
-      
+      Fixing the relevant incumbent page (in the case of resignations, marking the seat
+      as "Vacant") will fix the problem.  Just rerun phase50.  (Rerunning it will not
+      harm any "successes" that have already been processed.)
 
-
-
-1. Wipe v4elections
-   echo "source SQL/03-v4elections.sql" | my
+         
