@@ -40,7 +40,8 @@ for ($i=1;  $i<$rowCount;  $i++) {
    $row = $csv->getRow($i);
    if (empty($row['org']))  continue;
 
-   $fields = ['s.org' => $row['org'], 's.office' => $row['office'], 's.district' => $row['district'], 's.subdist' => $row['subdist']];
+   $fields = ['s.org' => $row['org'], 's.office' => $row['office'], 's.district' => $row['district'], 's.subdist' => $row['subdist'],
+      'is_open' => intval($row['partial'])];
    $sqlFields = new SqlFields($fields);
    $candidateRows = getCandidates($pdo, $sqlFields);
 
@@ -96,13 +97,13 @@ function runQuery(AlfredPDO $pdo, string $sql): void {
 
 function updateField (AlfredPDO $pdo, int $id, string $field, string $value): void {
    $sqlFields = new SqlFields([$field => $value]);
-   $sql = "UPDATE v4candidates SET " . $sqlFields->getSetFragment() . " WHERE id = $id AND $field = '' ";
+   $sql = "UPDATE v4candidates SET " . $sqlFields->getSetFragment() . " WHERE id = $id AND reviewed=0 ";
 #  echo "   $sql\n";
    runQuery($pdo, $sql);
 }
 
 function writeEndorsed (AlfredPDO $pdo, int $id): void {
-   $sql = "UPDATE v4candidates SET endorsed=1, reviewed=1 WHERE id=$id";
+   $sql = "UPDATE v4candidates SET endorsed=1 WHERE id=$id";
    runQuery($pdo, $sql);
 }
 

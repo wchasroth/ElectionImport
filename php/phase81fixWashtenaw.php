@@ -29,7 +29,7 @@ while ($line = fgets(STDIN)) {
       output($prev);
       $prev = $line;
    }
-   else $prev = $prev . "<p/>" . $line;
+   else $prev = $prev . "<br/><br/>" . $line;
 }
 output ($prev);
 

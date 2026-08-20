@@ -1,0 +1,27 @@
+Importing the data from the Washtenaw County endorsements spreadsheet... is WEIRD!
+
+Steps to complete the import.
+
+1. Export google sheet as ODS, say washtenaw.ods
+
+2. Open in OpenOffice.  Save as "Western Europe US ASCII",
+   say washtenaw.tsv.  Use tab for field separators, nothing 
+   for text delimiter.
+
+3. Clean-up.  Translate carriage-return chars, 
+   eliminate completely blank lines.
+
+      tr <washtenaw.tsv "\r" "\n" | grep -v "^$" >temp1
+
+4. Fix special characters and newlines in text
+      php phase81fixWashtenaw.php <temp1 >temp2
+
+5. Fix the header row (in temp2)
+      "Candidate's full name..."    => "name"
+      "Candidate Email Address"     => "email"
+      "Candidate website URL"       => "web"
+      "Phone"                       => "phone"
+      "statement"                   => "description"
+
+6. Import
+      php phase82importWashtenaw.php temp2
