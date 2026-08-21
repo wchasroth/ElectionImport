@@ -35,8 +35,11 @@ $rowCount = $csv->getRowCount();
 
 $env = new EnvFile("_env");
 $pdo = PdoHelper::makePdo($env);
-$newId = 1000000;
 $fieldsUpdated = 0;
+
+$sql = "select max(id) AS maxId from v4filings where id like '10%' and length(id) = 7";
+$newId = $pdo->run($sql)->getSingleValue('maxId');
+if (empty($newId)) $newId = 1000000;
 
 for ($i=1;  $i<$rowCount;  $i++) {
    $row = $csv->getRow($i);
@@ -71,7 +74,7 @@ for ($i=1;  $i<$rowCount;  $i++) {
       $fields['phone'] = $row['phone'];
       $fields['description'] = $row['description'];
       $fields['partialterm'] = intval($row['partialterm']);
-      $fields['headshot_url'] = intval($row['headshot_url']);
+      $fields['headshot_url'] = $row['headshot_url'];
       $sqlFields = new SqlFields($fields);
       $sql = "INSERT INTO v4filings " . $sqlFields->getInsertFragment();
       runQuery($pdo, $sql);
