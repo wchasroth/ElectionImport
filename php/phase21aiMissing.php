@@ -45,7 +45,7 @@ for ($i=1;  $i<$rowCount;  $i++) {
    $row = $csv->getRow($i);
    if (empty($row['org']))  continue;
 
-   $fields = ['org' => $row['org'], 'office' => $row['office'], 'district' => $row['district'], 'subdist' => $row['subdist']];
+   $fields = ['org' => $row['org'], 'office' => $row['office'], 'district' => $row['district'], 'subdist' => intval($row['subdist'])];
    $sqlFields = new SqlFields($fields);
    $filingRows = getFilings($pdo, $sqlFields);
 
