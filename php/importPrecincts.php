@@ -35,6 +35,8 @@ if (count($argv) < 2) {
 
 if (! $csv->loadfile($argv[1]))  $csv->exitWithError();
 
+$pdo->run("DELETE FROM s4precincts");
+
 $mc = new MichiganCounties();
 $rowCount = $csv->getRowCount();
 for ($i=1;   $i < $rowCount;   $i++) {

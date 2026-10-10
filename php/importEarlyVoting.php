@@ -14,7 +14,9 @@ require "vendor/autoload.php";
 
 //---importEarlyVoting.php
 //
-//   Fill in (presumably empty) s4earlyvoting and s4van2early tables.
+//   Fill in the s4earlyvoting and s4van2early tables.
+//
+//   (s4earlyvoting must have been explicitly recreated as empty.)
 //
 //   Reads data from the TSV of the early voting sites, supplied by Liz from
 //   a folder supplied by Cinnamon Williams of the MDP, in turn from VAN data.
@@ -41,6 +43,8 @@ if (count($argv) < 2) {
 }
 
 if (! $csv->loadfile($argv[1]))  $csv->exitWithError();
+
+$pdo->run("DELETE FROM s4van2early");
 
 $rowCount = $csv->getRowCount();
 for ($i=1;   $i < $rowCount;   $i++) {

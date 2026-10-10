@@ -14,7 +14,7 @@ require "vendor/autoload.php";
 
 //---importPollingPlaces.php
 //
-//   Fill in (presumably empty) s4pollingplaces table.
+//   Wip and recreate s4pollingplaces table.
 //
 //   Reads data from the TSV of clerks and polling places, supplied by Liz from
 //   a folder supplied by Cinnamon Williams of the MDP, in turn from VAN data.
@@ -39,6 +39,8 @@ if (count($argv) < 2) {
 }
 
 if (! $csv->loadfile($argv[1]))  $csv->exitWithError();
+
+$pdo->run("DELETE FROM s4pollingplaces");
 
 $rowCount = $csv->getRowCount();
 for ($i=1;   $i < $rowCount;   $i++) {

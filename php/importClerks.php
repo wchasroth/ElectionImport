@@ -46,6 +46,8 @@ if (! $csv->loadfile($argv[1]))  $csv->exitWithError();
 
 $rowCount = $csv->getRowCount();
 $prev_location = "";
+$updatedClerks = 0;
+$newClerks     = 0;
 for ($i=1;   $i < $rowCount;   $i++) {
    $row = $csv->getRow($i);
    if ($row['clerk_location'] === $prev_location) continue;
@@ -71,6 +73,7 @@ for ($i=1;   $i < $rowCount;   $i++) {
       $sql = "INSERT INTO s4clerks " . $fields->getInsertFragment();
       $result = $pdo->run($sql);
       if ($result->failed()) fwrite(STDERR, "Insert error: $sql\n");
+      ++$newClerks;
    }
    else {
       $old = simplifyAddress($result->getSingleValue('street_address'));

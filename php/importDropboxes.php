@@ -14,7 +14,9 @@ require "vendor/autoload.php";
 
 //---importDropboxes.php
 //
-//   Fill in (presumably empty) s4dropboxes and s4van2drop tables.
+//   Fill in s4dropboxes and s4van2drop tables.
+//
+//   (s4dropboxes must have completely recreated as empty)
 //
 //   Reads data from the TSV of the drop-boxes, supplied by Liz from
 //   a folder supplied by Cinnamon Williams of the MDP, in turn from VAN data.
@@ -42,6 +44,8 @@ if (count($argv) < 2) {
 }
 
 if (! $csv->loadfile($argv[1]))  $csv->exitWithError();
+
+$pdo->run("DELETE FROM s4van2drop");
 
 $rowCount = $csv->getRowCount();
 for ($i=1;   $i < $rowCount;   $i++) {

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+mydump s4dropboxes     >s4dropboxes.sql
+mydump s4earlyvoting   >s4earlyvoting.sql
+mydump s4pollingplaces >s4pollingplaces.sql
+mydump s4van2drop      >s4van2drop.sql
+mydump s4van2early     >s4van2early.sql
+
+tar cvf upload.tar s4*sql
+scp upload.tar root@prod.mivoter.org:/tmp
