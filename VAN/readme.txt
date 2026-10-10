@@ -5,10 +5,13 @@ On the server, in miv_dm_v4, VAN, run 'go'.  Download the generated tar file
 to the laptop.  Run all of the below on the laptop.  Only when it has completed
 successfully, upload the results and import into the production database.
 
-1. Precincts.  
+1. Precincts.  Precincts are mostly static during election time.
+   We should update it early in election season, each year.
+
       a. Backup current s4precincts table.
 
       b. Get the URL for the VAN precinct table, that maps county, juris, ward, pct => van_precinct_id.
+         https://docs.google.com/spreadsheets/d/1YDSZdbTMKlpOeud_XCPYo7Oga2SxTxdhp92TR67LFiw/edit?gid=0#gid=0
 
       c. Download the data as TSV.  Make sure it matches the format from the previous data,
          see ei/VAN/DATA/2026-09-04-polling-precinctcodes.tsv
